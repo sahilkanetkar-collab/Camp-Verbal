@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camp Verbal — Student Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:   #0B1628;
+    --navy2:  #111f38;
+    --navy3:  #162440;
+    --gold:   #EBA036;
+    --gold2:  #f5bc6a;
+    --maroon: #930047;
+    --white:  #f5f2ec;
+    --muted:  rgba(245,242,236,0.5);
+    --border: rgba(235,160,54,0.18);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--navy);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Topbar ── */
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 0.5px solid var(--border);
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .topbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .topbar-brand span {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 0.02em;
+  }
+
+  .topbar-brand span em {
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  #student-name-display {
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .logout-btn {
+    background: none;
+    border: 0.5px solid var(--border);
+    color: var(--muted);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: border-color .2s, color .2s;
+  }
+
+  .logout-btn:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── Screens ── */
+  .screen { display: none; }
+  .screen.active { display: block; }
+
+  /* ── Login screen ── */
+  #login-screen {
+    min-height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  #login-screen.active {
+    display: flex;
+  }
+
+  .login-crest {
+    margin-bottom: 2rem;
+  }
+
+  .login-heading {
+    font-family: 'Fraunces', serif;
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .login-sub {
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .login-card {
+    background: var(--navy2);
+    border: 0.5px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .field-label {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .field-input {
+    width: 100%;
+    background: var(--navy3);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 15px;
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1.25rem;
+    outline: none;
+    transition: border-color .2s;
+  }
+
+  .field-input:focus { border-color: var(--gold); }
+  .field-input::placeholder { color: rgba(245,242,236,0.25); }
+
+  .login-btn {
+    width: 100%;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background .2s;
+  }
+
+  .login-btn:hover { background: var(--gold2); }
+
+  .login-error {
+    font-size: 13px;
+    color: #e05a5a;
+    text-align: center;
+    margin-top: 1rem;
+    min-height: 20px;
+  }
+
+  .login-tagline {
+    margin-top: 2.5rem;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  /* ── Portal / Dashboard screen ── */
+  #portal-screen {
+    min-height: calc(100vh - 57px);
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .portal-welcome {
+    margin-bottom: 2.5rem;
+  }
+
+  .portal-welcome h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
+
+  .portal-welcome h1 span { color: var(--gold); }
+
+  .portal-welcome p {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* ── Section heading ── */
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 0.5px;
+    background: var(--border);
+  }
+
+  /* ── Test grid ── */
+  .test-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+    margin-bottom: 2.5rem;
+  }
+
+  .test-card {
+    background: var(--navy2);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    transition: border-color .2s, background .2s;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .test-card:hover {
+    border-color: rgba(235,160,54,0.5);
+    background: var(--navy3);
+  }
+
+  .test-card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .test-cat {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+  }
+
+  .cat-va   { background: rgba(235,160,54,0.12); color: var(--gold); }
+  .cat-rc   { background: rgba(147,0,71,0.15);   color: #e05a9a; }
+  .cat-gr   { background: rgba(59,139,212,0.12); color: #7ab8e8; }
+  .cat-byot { background: rgba(29,158,117,0.12); color: #5ecfb0; }
+  .cat-iwp  { background: rgba(83,74,183,0.12);  color: #a09de8; }
+  .cat-rls  { background: rgba(235,160,54,0.12); color: var(--gold); }
+
+  .test-number {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'Fraunces', serif;
+  }
+
+  .test-card-title {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .test-card-meta {
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    gap: 14px;
+  }
+
+  .test-card-meta span::before {
+    margin-right: 4px;
+    opacity: 0.6;
+  }
+
+  .test-card-arrow {
+    position: absolute;
+    bottom: 1.25rem;
+    right: 1.5rem;
+    color: var(--gold);
+    opacity: 0;
+    transition: opacity .2s, transform .2s;
+    font-size: 18px;
+  }
+
+  .test-card:hover .test-card-arrow {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+
+  /* ── Quick links ── */
+  .quick-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: 2.5rem;
+  }
+
+  .quick-card {
+    background: var(--navy2);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: border-color .2s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .quick-card:hover { border-color: rgba(235,160,54,0.5); }
+
+  .quick-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  .quick-card-text p {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 2px;
+  }
+
+  .quick-card-text span {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ── Footer ── */
+  .portal-footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 12px;
+    color: rgba(245,242,236,0.25);
+    border-top: 0.5px solid var(--border);
+    margin-top: 2rem;
+  }
+
+  /* ── Crest SVG ── */
+  .crest { width: 52px; height: 52px; }
+  .crest-sm { width: 32px; height: 32px; }
+
+  @media (max-width: 600px) {
+    .topbar { padding: 1rem; }
+    #portal-screen { padding: 1.25rem; }
+    .login-heading { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Topbar (hidden on login) -->
+<div class="topbar" id="topbar" style="display:none">
+  <a class="topbar-brand" href="#">
+    <svg class="crest-sm" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <rect width="80" height="80" rx="8" fill="#1a3a6b"/>
+      <path d="M40 12 L62 24 L62 56 Q40 70 18 56 L18 24 Z" fill="#930047"/>
+      <path d="M40 16 L58 27 L58 54 Q40 66 22 54 L22 27 Z" fill="#1a3a6b"/>
+      <text x="40" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#EBA036">CV</text>
+    </svg>
+    <span>Camp <em>Verbal</em></span>
+  </a>
+  <div class="topbar-right">
+    <span id="student-name-display"></span>
+    <button class="logout-btn" onclick="logout()">Sign out</button>
+  </div>
+</div>
+
+<!-- LOGIN SCREEN -->
+<div id="login-screen" class="active">
+  <div class="login-crest">
+    <svg class="crest" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <rect width="80" height="80" rx="10" fill="#1a3a6b"/>
+      <path d="M40 10 L64 23 L64 57 Q40 72 16 57 L16 23 Z" fill="#930047"/>
+      <path d="M40 15 L60 26 L60 55 Q40 68 20 55 L20 26 Z" fill="#1a3a6b"/>
+      <text x="40" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#EBA036">CV</text>
+    </svg>
+  </div>
+
+  <h1 class="login-heading">Student Portal</h1>
+  <p class="login-sub">Enter your details to access your tests and modules</p>
+
+  <div class="login-card">
+    <label class="field-label">Your name</label>
+    <input class="field-input" type="text" id="login-name" placeholder="Full name" autocomplete="off">
+
+    <label class="field-label">Camp Verbal PIN</label>
+    <input class="field-input" type="text" id="login-pin" placeholder="CV + 10 digits" autocomplete="off" maxlength="12">
+
+    <label class="field-label">Cohort</label>
+    <select class="field-input" id="login-cohort" style="cursor:pointer">
+      <option value="">Select your cohort</option>
+      <option value="CV-IPMAT-2026">CV · IPMAT 2026</option>
+      <option value="CV-IPMAT-2027">CV · IPMAT 2027</option>
+      <option value="CV-CAT-2026">CV · CAT 2026</option>
+      <option value="CV-General">CV · General</option>
+    </select>
+
+    <button class="login-btn" onclick="login()">Enter portal</button>
+    <div class="login-error" id="login-error"></div>
+  </div>
+
+  <p class="login-tagline">"Where language becomes your edge."</p>
+</div>
+
+<!-- PORTAL SCREEN -->
+<div id="portal-screen" class="screen">
+
+  <div class="portal-welcome">
+    <h1>Welcome back, <span id="welcome-name">—</span></h1>
+    <p id="welcome-cohort" style="font-size:13px;color:var(--muted);margin-top:4px"></p>
+  </div>
+
+  <!-- Verbal Ability Tests -->
+  <div class="section-eyebrow">Verbal ability tests</div>
+  <div class="test-grid" id="va-grid">
+    <!-- populated by JS -->
+  </div>
+
+  <!-- BYOT -->
+  <div class="section-eyebrow">Build your own test</div>
+  <div class="test-grid" id="byot-grid">
+    <div class="test-card" onclick="openTest('byot')">
+      <div class="test-card-top">
+        <span class="test-cat cat-byot">BYOT</span>
+      </div>
+      <div class="test-card-title">Custom test builder</div>
+      <div class="test-card-meta">
+        <span>5,036 questions</span>
+        <span>CR · RC · SC · GR</span>
+      </div>
+      <div class="test-card-arrow">→</div>
+    </div>
+  </div>
+
+  <!-- Self-study modules -->
+  <div class="section-eyebrow">Self-study modules</div>
+  <div class="quick-row">
+    <a class="quick-card" onclick="openTest('iwp')">
+      <div class="quick-icon" style="background:rgba(83,74,183,0.15)">
+        <svg width="18" height="18" fill="none" stroke="#a09de8" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="quick-card-text">
+        <p>Instant Word Power</p>
+        <span>Etymology · 12 weeks</span>
+      </div>
+    </a>
+    <a class="quick-card" onclick="openTest('rls')">
+      <div class="quick-icon" style="background:rgba(235,160,54,0.12)">
+        <svg width="18" height="18" fill="none" stroke="#EBA036" stroke-width="1.5" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <div class="quick-card-text">
+        <p>Read Like a Scholar</p>
+        <span>RC programme · 6 weeks</span>
+      </div>
+    </a>
+    <a class="quick-card" href="#" onclick="openTracker()">
+      <div class="quick-icon" style="background:rgba(29,158,117,0.12)">
+        <svg width="18" height="18" fill="none" stroke="#5ecfb0" stroke-width="1.5" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="quick-card-text">
+        <p>My progress</p>
+        <span>Scores · patterns · time</span>
+      </div>
+    </a>
+    <a class="quick-card" href="https://campverbal.com" target="_blank">
+      <div class="quick-icon" style="background:rgba(147,0,71,0.12)">
+        <svg width="18" height="18" fill="none" stroke="#e05a9a" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </div>
+      <div class="quick-card-text">
+        <p>Camp Verbal</p>
+        <span>Main site</span>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<div class="portal-footer" id="portal-footer" style="display:none">
+  Camp Verbal · Student Portal · <span id="footer-pin"></span>
+</div>
+
+<script>
+const CV_APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbwETf5XHkKb-OcfW_p_bfigGFmvG8e8IQG3ZbecCpClJazJNgOg6Vy3wO5ZTboZAWWr/exec';
+
+// VA Tests — add new tests here as they're built
+const VA_TESTS = [
+  { num: '01', title: 'Vocabulary & Grammar', desc: '35 questions · +4/−1', time: '35 min', cat: 'VA',  url: '#' },
+  { num: '02', title: 'Critical Reasoning',   desc: '30 questions · +4/−1', time: '30 min', cat: 'VA',  url: '#' },
+  { num: '03', title: 'Reading Comprehension', desc: '35 questions · +4/−1', time: '40 min', cat: 'RC', url: '#' },
+];
+
+function isStudentPin(pin) {
+  return /^CV\d{10}$/.test(pin.trim());
+}
+
+function isAdminPin(pin) {
+  return /^CVA\d{10}$/.test(pin.trim());
+}
+
+function login() {
+  const name   = document.getElementById('login-name').value.trim();
+  const pin    = document.getElementById('login-pin').value.trim().toUpperCase();
+  const cohort = document.getElementById('login-cohort').value;
+  const errEl  = document.getElementById('login-error');
+
+  errEl.textContent = '';
+
+  if (!name) { errEl.textContent = 'Please enter your name.'; return; }
+  if (!isStudentPin(pin) && !isAdminPin(pin)) {
+    errEl.textContent = 'Invalid PIN. Format: CV + 10 digits.';
+    return;
+  }
+  if (!cohort) { errEl.textContent = 'Please select your cohort.'; return; }
+
+  sessionStorage.setItem('cv_name',   name);
+  sessionStorage.setItem('cv_pin',    pin);
+  sessionStorage.setItem('cv_cohort', cohort);
+
+  showPortal(name, cohort, pin);
+}
+
+function showPortal(name, cohort, pin) {
+  document.getElementById('login-screen').classList.remove('active');
+  document.getElementById('portal-screen').classList.add('active');
+  document.getElementById('topbar').style.display = 'flex';
+  document.getElementById('portal-footer').style.display = 'block';
+
+  const firstName = name.split(' ')[0];
+  document.getElementById('welcome-name').textContent = firstName;
+  document.getElementById('welcome-cohort').textContent = cohort;
+  document.getElementById('student-name-display').textContent = name;
+  document.getElementById('footer-pin').textContent = pin;
+
+  buildVaGrid();
+}
+
+function buildVaGrid() {
+  const grid = document.getElementById('va-grid');
+  grid.innerHTML = '';
+  VA_TESTS.forEach(t => {
+    const card = document.createElement('div');
+    card.className = 'test-card';
+    card.onclick = () => openTest(t.url);
+    card.innerHTML = `
+      <div class="test-card-top">
+        <span class="test-cat cat-${t.cat.toLowerCase()}">${t.cat}</span>
+        <span class="test-number">Test ${t.num}</span>
+      </div>
+      <div class="test-card-title">${t.title}</div>
+      <div class="test-card-meta">
+        <span>${t.desc}</span>
+        <span>${t.time}</span>
+      </div>
+      <div class="test-card-arrow">→</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function openTest(url) {
+  if (!url || url === '#') {
+    alert('This test is coming soon.');
+    return;
+  }
+  window.location.href = url;
+}
+
+function openTracker() {
+  const pin    = sessionStorage.getItem('cv_pin') || '';
+  const cohort = sessionStorage.getItem('cv_cohort') || '';
+  window.location.href = `cv_tracker.html?pin=${pin}&cohort=${cohort}`;
+}
+
+function logout() {
+  sessionStorage.clear();
+  document.getElementById('portal-screen').classList.remove('active');
+  document.getElementById('login-screen').classList.add('active');
+  document.getElementById('topbar').style.display = 'none';
+  document.getElementById('portal-footer').style.display = 'none';
+  document.getElementById('login-pin').value = '';
+  document.getElementById('login-name').value = '';
+}
+
+// Auto-restore session
+window.addEventListener('DOMContentLoaded', () => {
+  const name   = sessionStorage.getItem('cv_name');
+  const pin    = sessionStorage.getItem('cv_pin');
+  const cohort = sessionStorage.getItem('cv_cohort');
+  if (name && pin && cohort) showPortal(name, cohort, pin);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camp Verbal | Progress Tracker</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+    --navy:     #0B1628;
+    --navy-mid: #111f38;
+    --navy-lt:  #162440;
+    --gold:     #EBA036;
+    --gold-dim: #c9892a;
+    --maroon:   #930047;
+    --red:      #e05252;
+    --green:    #4caf87;
+    --blue:     #4a9edd;
+    --purple:   #9b7fe8;
+    --text:     #f5f2ec;
+    --text-dim: #8a9bb0;
+    --border:   rgba(235,160,54,0.15);
+    --card:     rgba(255,255,255,0.04);
+    --card-hover: rgba(255,255,255,0.07);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* ── LOGIN ── */
+  #loginScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .login-card {
+    background: var(--navy-mid);
+    border: 0.5px solid var(--border);
+    border-radius: 16px;
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .login-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+
+  .login-brand-name {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--gold);
+  }
+
+  .login-brand-name em { font-style: normal; color: var(--text); }
+
+  .login-sub {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 36px;
+  }
+
+  .login-card label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  .login-card label:first-of-type { margin-top: 0; }
+
+  .login-card input,
+  .login-card select {
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 0.5px solid rgba(235,160,54,0.2);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .login-card input:focus,
+  .login-card select:focus { border-color: var(--gold); }
+  .login-card select option { background: var(--navy-lt); color: var(--text); }
+
+  .login-btn {
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .login-btn:hover  { background: var(--gold-dim); }
+  .login-btn:active { transform: scale(0.98); }
+
+  .login-error {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: rgba(224,82,82,0.12);
+    border: 0.5px solid rgba(224,82,82,0.3);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #f08080;
+    display: none;
+  }
+
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color .2s;
+  }
+  .back-link:hover { color: var(--gold); }
+
+  /* ── DASHBOARD ── */
+  #dashboard { display: none; }
+
+  .topbar {
+    background: var(--navy-mid);
+    border-bottom: 0.5px solid var(--border);
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .topbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .topbar-brand span { color: var(--text); }
+
+  .topbar-meta {
+    font-size: 13px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .logout-btn {
+    background: none;
+    border: 0.5px solid var(--border);
+    color: var(--text-dim);
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+  .logout-btn:hover { border-color: var(--red); color: var(--red); }
+
+  .content { padding: 28px 24px; max-width: 1100px; margin: 0 auto; overflow-x: hidden; }
+
+  /* ── STAT CARDS ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 8px;
+  }
+
+  .stat-value {
+    font-family: 'DM Mono', monospace;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--gold);
+  }
+
+  .stat-sub {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-header {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    color: var(--text);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* ── TABLE ── */
+  .table-wrap {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 28px;
+  }
+
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+
+  thead th {
+    background: rgba(255,255,255,0.04);
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    border-bottom: 0.5px solid var(--border);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  tbody tr {
+    border-bottom: 0.5px solid rgba(235,160,54,0.06);
+    transition: background 0.15s;
+  }
+
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--card-hover); }
+
+  tbody td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: var(--text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 0;
+  }
+
+  .score-pill {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .score-high { background: rgba(76,175,135,0.15); color: var(--green); }
+  .score-mid  { background: rgba(235,160,54,0.15);  color: var(--gold); }
+  .score-low  { background: rgba(224,82,82,0.15);   color: var(--red); }
+
+  .delta-up   { color: var(--green);    font-size: 12px; }
+  .delta-down { color: var(--red);      font-size: 12px; }
+  .delta-same { color: var(--text-dim); font-size: 12px; }
+
+  .review-btn {
+    background: none;
+    border: 0.5px solid var(--border);
+    color: var(--blue);
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.2s;
+  }
+  .review-btn:hover { border-color: var(--blue); background: rgba(74,158,221,0.08); }
+
+  /* ── BARS ── */
+  .bars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    overflow: hidden;
+  }
+
+  .bar-label {
+    font-size: 13px;
+    color: var(--text);
+    min-width: 100px;
+    max-width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: var(--gold);
+    transition: width 0.6s ease;
+  }
+
+  .bar-pct {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--text-dim);
+    min-width: 36px;
+    text-align: right;
+  }
+
+  /* ── CHIPS ── */
+  .chips-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+
+  .chip {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: 'DM Mono', monospace;
+    border: 0.5px solid var(--border);
+    background: var(--card);
+    color: var(--text-dim);
+  }
+  .chip.taken { background: rgba(235,160,54,0.12); border-color: rgba(235,160,54,0.3); color: var(--gold); }
+
+  /* ── BEHAVIOUR FLAGS ── */
+  .flag-card {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .flag-icon  { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .flag-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+  .flag-desc  { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+
+  /* ── ADMIN ── */
+  .admin-badge {
+    display: inline-block;
+    background: rgba(155,127,232,0.15);
+    border: 0.5px solid rgba(155,127,232,0.3);
+    color: var(--purple);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-left: 8px;
+  }
+
+  .filter-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+
+  .filter-select {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 14px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+  }
+  .filter-select:focus { border-color: var(--gold); }
+  .filter-select option { background: var(--navy-lt); }
+
+  tbody tr.student-row { cursor: pointer; }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .modal-overlay.open { display: flex; }
+
+  .modal-box {
+    background: var(--navy-mid);
+    border: 0.5px solid var(--border);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 780px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 32px;
+    position: relative;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 16px;
+    background: none;
+    border: 0.5px solid var(--border);
+    color: var(--text-dim);
+    width: 32px; height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .modal-close:hover { border-color: var(--red); color: var(--red); }
+
+  .modal-title    { font-family: 'Fraunces', serif; font-size: 20px; margin-bottom: 4px; }
+  .modal-subtitle { font-size: 13px; color: var(--text-dim); margin-bottom: 24px; }
+
+  .q-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+
+  .q-chip {
+    width: 36px; height: 36px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    border: 0.5px solid var(--border);
+    color: var(--text-dim);
+    background: var(--card);
+  }
+  .q-chip.correct { background: rgba(76,175,135,0.15); border-color: rgba(76,175,135,0.3); color: var(--green); }
+  .q-chip.wrong   { background: rgba(224,82,82,0.15);  border-color: rgba(224,82,82,0.3);  color: var(--red); }
+  .q-chip.skipped { background: rgba(255,255,255,0.04); border-color: var(--border); color: var(--text-dim); }
+
+  /* ── LOADING ── */
+  .loading-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .spinner {
+    width: 36px; height: 36px;
+    border: 3px solid rgba(235,160,54,0.15);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .loading-text { font-size: 14px; color: var(--text-dim); }
+
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ── PATTERNS ── */
+  .pat-divider  { border: none; border-top: 0.5px solid var(--border); margin: 8px 0 24px; }
+
+  .pat-banner {
+    background: rgba(235,160,54,0.06);
+    border: 0.5px solid rgba(235,160,54,0.2);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+  }
+
+  .pat-banner-title { font-family: 'Fraunces', serif; font-size: 16px; color: var(--gold); margin-bottom: 4px; }
+  .pat-banner-sub   { font-size: 13px; color: var(--text-dim); }
+
+  .pat-coverage-note {
+    font-size: 12px;
+    color: var(--text-dim);
+    background: rgba(255,255,255,0.03);
+    border: 0.5px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .pat-coverage-note b { color: var(--text); }
+
+  .pat-topic-card {
+    background: var(--card);
+    border: 0.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    margin-bottom: 8px;
+  }
+
+  .pat-topic-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .pat-topic-name { font-size: 14px; font-weight: 600; color: var(--text); }
+
+  .pat-verdict-chip {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .pv-strong { background: rgba(76,175,135,0.15);  border: 0.5px solid rgba(76,175,135,0.3);  color: var(--green); }
+  .pv-build  { background: rgba(235,160,54,0.12);  border: 0.5px solid rgba(235,160,54,0.25); color: var(--gold); }
+  .pv-work   { background: rgba(224,82,82,0.12);   border: 0.5px solid rgba(224,82,82,0.25);  color: var(--red); }
+  .pv-avoid  { background: rgba(224,82,82,0.12);   border: 0.5px solid rgba(224,82,82,0.25);  color: var(--red); }
+  .pv-thin   { background: rgba(255,255,255,0.04); border: 0.5px solid var(--border);          color: var(--text-dim); }
+
+  .pat-bar-wrap {
+    background: rgba(255,255,255,0.06);
+    border-radius: 3px;
+    height: 5px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+
+  .pat-bar-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+  .pb-strong { background: var(--green); }
+  .pb-build  { background: var(--gold); }
+  .pb-work   { background: var(--red); }
+  .pb-avoid  { background: var(--red); opacity: 0.5; }
+  .pb-thin   { background: rgba(255,255,255,0.2); }
+
+  .pat-topic-stats {
+    display: flex;
+    gap: 14px;
+    font-size: 11px;
+    color: var(--text-dim);
+    flex-wrap: wrap;
+  }
+  .pat-topic-stats b { color: var(--text); }
+
+  /* ── FOOTER ── */
+  .footer-bar {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: rgba(245,242,236,0.2);
+    border-top: 0.5px solid var(--border);
+    margin-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .login-card { padding: 32px 24px; }
+    .content { padding: 20px 16px; }
+    .topbar  { padding: 12px 16px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .modal-box  { padding: 24px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── LOGIN ── -->
+<div id="loginScreen">
+  <div class="login-card">
+    <div class="login-brand">
+      <svg width="28" height="28" viewBox="0 0 80 80">
+        <rect width="80" height="80" rx="8" fill="#1a3a6b"/>
+        <path d="M40 10 L64 23 L64 57 Q40 72 16 57 L16 23 Z" fill="#930047"/>
+        <path d="M40 15 L60 26 L60 55 Q40 68 20 55 L20 26 Z" fill="#1a3a6b"/>
+        <text x="40" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#EBA036">CV</text>
+      </svg>
+      <div class="login-brand-name">Camp <em>Verbal</em></div>
+    </div>
+    <div class="login-sub">Progress Tracker</div>
+
+    <label>Your name</label>
+    <input type="text" id="loginName" placeholder="Full name" autocomplete="off">
+
+    <label>Camp Verbal PIN</label>
+    <input type="text" id="loginPin" placeholder="CV + 10 digits" autocomplete="off"
+           style="font-family:'DM Mono',monospace; letter-spacing:0.5px;" maxlength="12">
+
+    <label>Cohort</label>
+    <select id="loginCohort">
+      <optgroup label="IPMAT">
+        <option value="CV-IPMAT-2026">CV · IPMAT 2026</option>
+        <option value="CV-IPMAT-2027">CV · IPMAT 2027</option>
+      </optgroup>
+      <optgroup label="CAT">
+        <option value="CV-CAT-2026">CV · CAT 2026</option>
+      </optgroup>
+      <optgroup label="General">
+        <option value="CV-General">CV · General</option>
+      </optgroup>
+      <optgroup label="Admin">
+        <option value="Admin">Admin</option>
+      </optgroup>
+    </select>
+
+    <button class="login-btn" onclick="doLogin()">View my progress</button>
+    <div class="login-error" id="loginError"></div>
+
+    <a href="cv_portal.html" class="back-link">← Back to portal</a>
+  </div>
+</div>
+
+<!-- ── DASHBOARD ── -->
+<div id="dashboard">
+  <div class="topbar">
+    <a href="cv_portal.html" class="topbar-brand">
+      <svg width="24" height="24" viewBox="0 0 80 80">
+        <rect width="80" height="80" rx="8" fill="#1a3a6b"/>
+        <path d="M40 10 L64 23 L64 57 Q40 72 16 57 L16 23 Z" fill="#930047"/>
+        <path d="M40 15 L60 26 L60 55 Q40 68 20 55 L20 26 Z" fill="#1a3a6b"/>
+        <text x="40" y="52" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#EBA036">CV</text>
+      </svg>
+      Camp <span>Verbal</span>
+    </a>
+    <div class="topbar-meta">
+      <span id="topbarUser"></span>
+      <button class="logout-btn" onclick="doLogout()">Sign out</button>
+    </div>
+  </div>
+
+  <div class="content" id="dashContent">
+    <div class="loading-wrap">
+      <div class="spinner"></div>
+      <div class="loading-text">Fetching your data…</div>
+    </div>
+  </div>
+
+  <div class="content" id="rlsContent"      style="display:none; padding-top:0;"></div>
+  <div class="content" id="patternsContent" style="display:none; padding-top:0;"></div>
+
+  <div class="footer-bar">Camp Verbal · Progress Tracker · <span id="footerPin"></span></div>
+</div>
+
+<!-- ── MODAL ── -->
+<div class="modal-overlay" id="reviewModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-title"    id="modalTitle">Test Review</div>
+    <div class="modal-subtitle" id="modalSubtitle"></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+// ── CONSTANTS ──────────────────────────────────────────────
+const CV_APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbwETf5XHkKb-OcfW_p_bfigGFmvG8e8IQG3ZbecCpClJazJNgOg6Vy3wO5ZTboZAWWr/exec';
+const MAX_MARKS      = 180;
+
+const CV_ADMIN_PINS  = [
+  'CVA1111111111','CVA2222222222','CVA3333333333',
+  'CVA4444444444','CVA5555555555'
+];
+
+const PIN_REGEX      = /^CV\d{10}$/;
+const ADMIN_REGEX    = /^CVA\d{10}$/;
+
+// Pattern thresholds
+const PAT_STRONG     = 75;
+const PAT_BUILD_LOW  = 50;
+const PAT_MINSEEN    = 5;
+const PAT_AVOID_RATE = 0.30;
+
+let currentUser = null;
+
+// ── URL PARAM AUTO-LOGIN ───────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const pin    = (params.get('pin')    || '').toUpperCase();
+  const cohort = params.get('cohort')  || '';
+  const name   = sessionStorage.getItem('cv_name') || '';
+
+  if (pin && name && cohort) {
+    document.getElementById('loginName').value   = name;
+    document.getElementById('loginPin').value    = pin;
+    document.getElementById('loginCohort').value = cohort;
+    doLogin();
+  }
+});
+
+// ── LOGIN ──────────────────────────────────────────────────
+function showError(msg) {
+  const el = document.getElementById('loginError');
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+function doLogin() {
+  document.getElementById('loginError').style.display = 'none';
+
+  const name   = document.getElementById('loginName').value.trim();
+  const pin    = document.getElementById('loginPin').value.trim().toUpperCase();
+  const cohort = document.getElementById('loginCohort').value;
+
+  if (!name)   { showError('Please enter your name.'); return; }
+  if (!pin)    { showError('Please enter your CV PIN.'); return; }
+
+  const isAdmin = ADMIN_REGEX.test(pin) && CV_ADMIN_PINS.includes(pin);
+  const isStudent = PIN_REGEX.test(pin);
+
+  if (!isAdmin && !isStudent) {
+    showError('Invalid PIN. Format: CV + 10 digits.');
+    return;
+  }
+
+  if (isAdmin && cohort !== 'Admin') {
+    showError('Admin PINs must select the Admin cohort.');
+    return;
+  }
+
+  if (!isAdmin && cohort === 'Admin') {
+    showError('This PIN is not authorised for Admin.');
+    return;
+  }
+
+  currentUser = { name, pin, cohort, isAdmin };
+
+  document.getElementById('loginScreen').style.display  = 'none';
+  document.getElementById('dashboard').style.display    = 'block';
+  document.getElementById('topbarUser').textContent     = name + (isAdmin ? '' : ' · ' + cohort);
+  document.getElementById('footerPin').textContent      = pin;
+
+  fetchAndRender();
+  if (!isAdmin) {
+    fetchRLS();
+    fetchPatterns();
+  }
+}
+
+function doLogout() {
+  currentUser = null;
+  ['loginName','loginPin'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('loginError').style.display   = 'none';
+  document.getElementById('dashboard').style.display    = 'none';
+  document.getElementById('loginScreen').style.display  = 'flex';
+  document.getElementById('rlsContent').style.display   = 'none';
+  document.getElementById('rlsContent').innerHTML       = '';
+  document.getElementById('patternsContent').style.display = 'none';
+  document.getElementById('patternsContent').innerHTML  = '';
+}
+
+// ── DATA FETCH ─────────────────────────────────────────────
+function fetchAndRender() {
+  const params = new URLSearchParams({
+    pin:   currentUser.pin,
+    batch: currentUser.cohort
+  });
+
+  fetch(CV_APPS_SCRIPT + '?' + params.toString())
+    .then(r => r.json())
+    .then(data => {
+      if (data.isAdmin) renderAdmin(data);
+      else              renderStudent(data);
+    })
+    .catch(err => {
+      document.getElementById('dashContent').innerHTML = `
+        <div class="empty-state">
+          <div style="font-size:28px;margin-bottom:12px;">⚠️</div>
+          <div>Could not load data. Check your connection and try again.</div>
+          <div style="margin-top:8px;font-size:12px;font-family:'DM Mono',monospace;color:rgba(255,255,255,0.3)">${err}</div>
+        </div>`;
+    });
+}
+
+// ── HELPERS ────────────────────────────────────────────────
+function scoreClass(score) {
+  const pct = (score / MAX_MARKS) * 100;
+  if (pct >= 70) return 'score-high';
+  if (pct >= 40) return 'score-mid';
+  return 'score-low';
+}
+
+function deltaHTML(curr, prev) {
+  if (prev === null || prev === undefined) return '<span class="delta-same">–</span>';
+  const d = curr - prev;
+  if (d > 0) return `<span class="delta-up">▲ ${d}</span>`;
+  if (d < 0) return `<span class="delta-down">▼ ${Math.abs(d)}</span>`;
+  return '<span class="delta-same">→ 0</span>';
+}
+
+function parseTime(t) {
+  if (!t || typeof t !== 'string') return null;
+  const parts = t.split(':');
+  if (parts.length !== 2) return null;
+  return parseInt(parts[0]) * 60 + parseInt(parts[1]);
+}
+
+function extractTestNum(testName) {
+  if (!testName) return 0;
+  const m = testName.match(/\d+/);
+  return m ? parseInt(m[0]) : 0;
+}
+
+// ── STUDENT VIEW ───────────────────────────────────────────
+function renderStudent(data) {
+  const rows = (data.rows || []).filter(r => r['Test Name'] || r.testName);
+
+  // Normalise field names (sheet uses header "Test Name", "CV PIN" etc.)
+  rows.forEach(r => {
+    r.testName    = r.testName    || r['Test Name']   || '';
+    r.score       = +r.score      || +r['Score']      || 0;
+    r.correct     = +r.correct    || +r['Correct']    || 0;
+    r.wrong       = +r.wrong      || +r['Wrong']      || 0;
+    r.skipped     = +r.skipped    || +r['Skipped']    || 0;
+    r.timeTaken   = r.timeTaken   || r['Time Taken']  || '';
+    r.sectionErrors = r.sectionErrors || r['Section Errors'] || '{}';
+    r.wrongQuestions = r.wrongQuestions || r['Wrong Questions'] || '[]';
+    r.studentAnswers = r.studentAnswers || r['Student Answers'] || '[]';
+  });
+
+  if (!rows.length) {
+    document.getElementById('dashContent').innerHTML = `
+      <div class="empty-state">
+        <div style="font-size:32px;margin-bottom:12px;">📋</div>
+        <div>No submissions found for PIN <strong style="font-family:'DM Mono',monospace">${currentUser.pin}</strong>.</div>
+        <div style="margin-top:8px;font-size:13px;">Take a test first, then come back here!</div>
+      </div>`;
+    return;
+  }
+
+  rows.sort((a, b) => extractTestNum(a.testName) - extractTestNum(b.testName));
+
+  const best   = Math.max(...rows.map(r => r.score));
+  const avg    = Math.round(rows.reduce((s, r) => s + r.score, 0) / rows.length);
+  const latest = rows[rows.length - 1];
+
+  const takenSet = new Set(rows.map(r => extractTestNum(r.testName)));
+  const maxTest  = Math.max(10, ...takenSet);
+  let chips = '';
+  for (let i = 1; i <= maxTest; i++) {
+    chips += `<div class="chip ${takenSet.has(i) ? 'taken' : ''}">T${String(i).padStart(2,'0')}</div>`;
+  }
+
+  // Section weakness
+  const sectionTotals = {}, sectionCounts = {};
+  rows.forEach(r => {
+    let se = r.sectionErrors;
+    if (typeof se === 'string') { try { se = JSON.parse(se); } catch(e) { se = {}; } }
+    if (typeof se !== 'object' || Array.isArray(se)) se = {};
+    Object.entries(se).forEach(([sec, w]) => {
+      sectionTotals[sec] = (sectionTotals[sec] || 0) + w;
+      sectionCounts[sec] = (sectionCounts[sec] || 0) + 1;
+    });
+  });
+
+  const sectionKeys = Object.keys(sectionTotals);
+  let barsHtml = '';
+  if (sectionKeys.length) {
+    const maxW  = Math.max(...Object.values(sectionTotals)) || 1;
+    const sorted = sectionKeys.sort((a, b) => sectionTotals[b] - sectionTotals[a]);
+    barsHtml = `
+      <div class="section-header">Section weakness</div>
+      <div class="bars-grid" style="margin-bottom:28px;">
+        ${sorted.map(sec => {
+          const pct  = Math.round((sectionTotals[sec] / (sectionCounts[sec] * 10)) * 100);
+          const fill = Math.round((sectionTotals[sec] / maxW) * 100);
+          return `<div class="bar-row">
+            <div class="bar-label">${sec}</div>
+            <div class="bar-track"><div class="bar-fill" style="width:${fill}%"></div></div>
+            <div class="bar-pct">${pct}%</div>
+          </div>`;
+        }).join('')}
+      </div>`;
+  }
+
+  const flags = buildBehaviourFlags(rows);
+
+  let tableRows = '';
+  rows.forEach((r, i) => {
+    const prev = i > 0 ? rows[i-1].score : null;
+    const sc   = scoreClass(r.score);
+    tableRows += `
+      <tr>
+        <td>${r.testName}</td>
+        <td><span class="score-pill ${sc}">${r.score} / ${MAX_MARKS}</span></td>
+        <td>${r.correct}</td>
+        <td>${r.wrong}</td>
+        <td>${r.skipped}</td>
+        <td>${r.timeTaken || '–'}</td>
+        <td>${deltaHTML(r.score, prev)}</td>
+        <td><button class="review-btn" onclick='openReview(${JSON.stringify(r)})'>Review</button></td>
+      </tr>`;
+  });
+
+  document.getElementById('dashContent').innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-label">Tests taken</div><div class="stat-value">${rows.length}</div><div class="stat-sub">all time</div></div>
+      <div class="stat-card"><div class="stat-label">Best score</div><div class="stat-value">${best}</div><div class="stat-sub">/ ${MAX_MARKS}</div></div>
+      <div class="stat-card"><div class="stat-label">Average</div><div class="stat-value">${avg}</div><div class="stat-sub">across all tests</div></div>
+      <div class="stat-card"><div class="stat-label">Latest score</div><div class="stat-value">${latest.score}</div><div class="stat-sub">${latest.testName}</div></div>
+    </div>
+
+    <div class="section-header">Test participation</div>
+    <div class="chips-wrap" style="margin-bottom:28px;">${chips}</div>
+
+    ${barsHtml}
+
+    ${flags.length ? `
+      <div class="section-header">Behaviour flags</div>
+      <div style="margin-bottom:28px;">${flags.map(f => `
+        <div class="flag-card">
+          <div class="flag-icon">${f.icon}</div>
+          <div><div class="flag-title">${f.title}</div><div class="flag-desc">${f.desc}</div></div>
+        </div>`).join('')}
+      </div>` : ''}
+
+    <div class="section-header">All tests</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Test</th><th>Score</th><th>Correct</th><th>Wrong</th>
+            <th>Skipped</th><th>Time</th><th>Change</th><th></th>
+          </tr>
+        </thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    </div>`;
+}
+
+// ── BEHAVIOUR FLAGS ────────────────────────────────────────
+function buildBehaviourFlags(rows) {
+  const flags = [];
+  if (rows.length < 2) return flags;
+
+  const recent     = rows.slice(-3);
+  const avgWrong   = recent.reduce((s, r) => s + (r.wrong || 0), 0) / recent.length;
+  const times      = recent.map(r => parseTime(r.timeTaken)).filter(t => t !== null);
+  const avgTimeSec = times.length ? times.reduce((s, t) => s + t, 0) / times.length : null;
+
+  if (avgTimeSec !== null && avgTimeSec < 20*60 && avgWrong > 8)
+    flags.push({ icon: '⚡', title: 'Rushing', desc: `Finishing tests in under 20 minutes but averaging ${Math.round(avgWrong)} wrong recently. Slow down on uncertain questions — a wrong costs −1.` });
+
+  const avgSkipped = recent.reduce((s, r) => s + (r.skipped || 0), 0) / recent.length;
+  if (avgTimeSec !== null && avgTimeSec > 45*60 && avgSkipped > 5)
+    flags.push({ icon: '🤔', title: 'Overthinking', desc: `Near the full time and still leaving ${Math.round(avgSkipped)} skipped recently. Mark and move — every skipped question is a guaranteed 0.` });
+
+  const last = rows[rows.length - 1];
+  if (last.correct > 0 && last.wrong > last.correct * 0.5)
+    flags.push({ icon: '⚠️', title: 'Negative marking trap', desc: `In ${last.testName}, ${last.wrong} wrong vs ${last.correct} correct. Skip questions you're not 60%+ sure about.` });
+
+  if (rows.length >= 3) {
+    const last3 = rows.slice(-3).map(r => r.score);
+    if (last3[0] < last3[1] && last3[1] < last3[2])
+      flags.push({ icon: '📈', title: 'Improving streak', desc: `Last 3 scores: ${last3[0]} → ${last3[1]} → ${last3[2]}. Keep going.` });
+  }
+
+  return flags;
+}
+
+// ── ADMIN VIEW ─────────────────────────────────────────────
+let adminAllRows = [];
+
+function renderAdmin(data) {
+  adminAllRows = (data.rows || []).filter(r => (r['Cohort'] || r.cohort) !== 'Admin');
+
+  document.getElementById('topbarUser').innerHTML =
+    currentUser.name + ' <span class="admin-badge">Admin</span>';
+
+  if (!adminAllRows.length) {
+    document.getElementById('dashContent').innerHTML = `
+      <div class="empty-state"><div>No student submissions found yet.</div></div>`;
+    return;
+  }
+
+  renderAdminView('All Cohorts', 'All Tests');
+}
+
+function renderAdminView(cohortFilter, testFilter) {
+  // Normalise
+  adminAllRows.forEach(r => {
+    r.testName = r.testName || r['Test Name'] || '';
+    r.score    = +r.score   || +r['Score']    || 0;
+    r.cohort   = r.cohort   || r['Cohort']    || '';
+    r.name     = r.name     || r['Name']      || '';
+    r.pin      = r.pin      || r['CV PIN']    || '';
+  });
+
+  let rows = adminAllRows;
+  if (cohortFilter !== 'All Cohorts') rows = rows.filter(r => r.cohort === cohortFilter);
+  if (testFilter   !== 'All Tests')   rows = rows.filter(r => r.testName === testFilter);
+
+  const total      = rows.length;
+  const uniqueStus = new Set(rows.map(r => r.pin || r.name)).size;
+  const avgScore   = total ? Math.round(rows.reduce((s, r) => s + r.score, 0) / total) : 0;
+  const highest    = total ? Math.max(...rows.map(r => r.score)) : 0;
+
+  const testCounts = {};
+  adminAllRows.forEach(r => { testCounts[r.testName] = (testCounts[r.testName] || 0) + 1; });
+  const testNames = Object.keys(testCounts).sort((a, b) => extractTestNum(a) - extractTestNum(b));
+  const cohorts   = [...new Set(adminAllRows.map(r => r.cohort))].sort();
+
+  const sectionTotals = {};
+  rows.forEach(r => {
+    let se = r.sectionErrors || r['Section Errors'] || '{}';
+    if (typeof se === 'string') { try { se = JSON.parse(se); } catch(e) { se = {}; } }
+    if (typeof se !== 'object' || Array.isArray(se)) se = {};
+    Object.entries(se).forEach(([sec, w]) => { sectionTotals[sec] = (sectionTotals[sec] || 0) + w; });
+  });
+
+  const sectionKeys = Object.keys(sectionTotals).sort((a, b) => sectionTotals[b] - sectionTotals[a]);
+  const maxSec = sectionKeys.length ? Math.max(...Object.values(sectionTotals)) : 1;
+
+  const studentMap = {};
+  const lbSource = testFilter !== 'All Tests'
+    ? adminAllRows.filter(r => r.testName === testFilter)
+    : adminAllRows;
+  lbSource.forEach(r => {
+    const key = r.pin || r.name;
+    if (!studentMap[key] || extractTestNum(r.testName) > extractTestNum(studentMap[key].testName))
+      studentMap[key] = r;
+  });
+  let leaderboard = Object.values(studentMap);
+  if (cohortFilter !== 'All Cohorts') leaderboard = leaderboard.filter(r => r.cohort === cohortFilter);
+  leaderboard.sort((a, b) => b.score - a.score);
+
+  const lbRows = leaderboard.map((r, i) => `
+    <tr class="student-row" onclick="openStudentDrill('${r.pin}','${r.name}','${r.cohort}')">
+      <td style="color:var(--text-dim);font-family:'DM Mono',monospace">${i+1}</td>
+      <td>${r.name}</td>
+      <td><span style="font-family:'DM Mono',monospace;font-size:12px;color:var(--text-dim)">${r.cohort}</span></td>
+      <td>${r.testName}</td>
+      <td><span class="score-pill ${scoreClass(r.score)}">${r.score}</span></td>
+    </tr>`).join('');
+
+  const chips = testNames.map(t =>
+    `<div class="chip taken" style="cursor:default">${t}<br><span style="font-size:10px;opacity:0.7">${testCounts[t]} students</span></div>`
+  ).join('');
+
+  const barsHtml = sectionKeys.map(sec => {
+    const fill = Math.round((sectionTotals[sec] / maxSec) * 100);
+    return `<div class="bar-row">
+      <div class="bar-label">${sec}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${fill}%"></div></div>
+      <div class="bar-pct">${sectionTotals[sec]}</div>
+    </div>`;
+  }).join('');
+
+  const cohortOptions = ['All Cohorts', ...cohorts].map(c =>
+    `<option ${c === cohortFilter ? 'selected' : ''}>${c}</option>`).join('');
+  const testOptions = ['All Tests', ...testNames].map(t =>
+    `<option ${t === testFilter ? 'selected' : ''}>${t}</option>`).join('');
+
+  document.getElementById('dashContent').innerHTML = `
+    <div style="margin-bottom:20px;">
+      <span style="font-family:'Fraunces',serif;font-size:22px;">Admin dashboard</span>
+      <span class="admin-badge">Admin</span>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-label">Total submissions</div><div class="stat-value">${total}</div><div class="stat-sub">filtered view</div></div>
+      <div class="stat-card"><div class="stat-label">Unique students</div><div class="stat-value">${uniqueStus}</div><div class="stat-sub">unique PINs</div></div>
+      <div class="stat-card"><div class="stat-label">Average score</div><div class="stat-value">${avgScore}</div><div class="stat-sub">/ ${MAX_MARKS}</div></div>
+      <div class="stat-card"><div class="stat-label">Highest</div><div class="stat-value">${highest}</div><div class="stat-sub">single submission</div></div>
+    </div>
+
+    <div class="section-header">Participation by test</div>
+    <div class="chips-wrap" style="margin-bottom:28px;">${chips}</div>
+
+    ${sectionKeys.length ? `
+      <div class="section-header">Section weakness (cohort)</div>
+      <div class="bars-grid" style="margin-bottom:28px;">${barsHtml}</div>` : ''}
+
+    <div class="section-header">
+      Student leaderboard
+      <span style="font-size:12px;color:var(--text-dim)">click row to drill down</span>
+    </div>
+
+    <div class="filter-row">
+      <select class="filter-select" onchange="renderAdminView(this.value, document.querySelector('.filter-select:last-child').value)">${cohortOptions}</select>
+      <select class="filter-select" onchange="renderAdminView(document.querySelector('.filter-select').value, this.value)">${testOptions}</select>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th style="width:40px">#</th><th>Student</th><th>Cohort</th><th>Test</th><th>Score</th></tr>
+        </thead>
+        <tbody>${lbRows}</tbody>
+      </table>
+    </div>`;
+}
+
+function openStudentDrill(pin, name, cohort) {
+  const studentRows = adminAllRows
+    .filter(r => (r.pin || r['CV PIN']) === pin || r.name === name)
+    .sort((a, b) => extractTestNum(a.testName) - extractTestNum(b.testName));
+
+  const tableRows = studentRows.map((r, i) => {
+    const prev = i > 0 ? studentRows[i-1].score : null;
+    return `<tr>
+      <td>${r.testName}</td>
+      <td><span class="score-pill ${scoreClass(r.score)}">${r.score} / ${MAX_MARKS}</span></td>
+      <td>${r.correct || '–'}</td><td>${r.wrong || '–'}</td>
+      <td>${r.timeTaken || r['Time Taken'] || '–'}</td>
+      <td>${deltaHTML(r.score, prev)}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('modalTitle').textContent    = name;
+  document.getElementById('modalSubtitle').textContent = cohort + ' · ' + pin;
+  document.getElementById('modalBody').innerHTML = `
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Test</th><th>Score</th><th>Correct</th><th>Wrong</th><th>Time</th><th>Change</th></tr></thead>
+        <tbody>${tableRows}</tbody>
+      </table>
+    </div>`;
+
+  document.getElementById('reviewModal').classList.add('open');
+}
+
+// ── REVIEW MODAL ───────────────────────────────────────────
+function openReview(r) {
+  let wq = r.wrongQuestions || r['Wrong Questions'] || '[]';
+  let sa = r.studentAnswers || r['Student Answers'] || '[]';
+  if (typeof wq === 'string') { try { wq = JSON.parse(wq); } catch(e) { wq = []; } }
+  if (typeof sa === 'string') { try { sa = JSON.parse(sa); } catch(e) { sa = []; } }
+  if (!Array.isArray(wq)) wq = [];
+  if (!Array.isArray(sa)) sa = [];
+
+  const wrongSet = new Set(wq.map(Number));
+
+  document.getElementById('modalTitle').textContent    = r.testName || r['Test Name'] || 'Test review';
+  document.getElementById('modalSubtitle').textContent =
+    `Score: ${r.score} / ${MAX_MARKS} · Correct: ${r.correct} · Wrong: ${r.wrong} · Skipped: ${r.skipped}`;
+
+  let chipsHtml = '';
+  if (sa.length > 0) {
+    chipsHtml = '<div class="q-chips">' +
+      sa.map((ans, idx) => {
+        const qn  = idx + 1;
+        const cls = ans === null ? 'skipped' : (wrongSet.has(qn) ? 'wrong' : 'correct');
+        return `<div class="q-chip ${cls}">${qn}</div>`;
+      }).join('') +
+    '</div>' +
+    `<div style="display:flex;gap:16px;font-size:12px;color:var(--text-dim);margin-bottom:16px;">
+      <span><span style="color:var(--green)">■</span> Correct</span>
+      <span><span style="color:var(--red)">■</span> Wrong</span>
+      <span style="opacity:.5">■ Skipped</span>
+    </div>`;
+  } else {
+    chipsHtml = `<div style="color:var(--text-dim);font-size:13px;margin-bottom:16px;">Question-level data not available for this test.</div>`;
+  }
+
+  if (wq.length > 0) {
+    chipsHtml += `<div style="font-size:13px;color:var(--text-dim);margin-bottom:6px;">Wrong questions: <span style="font-family:'DM Mono',monospace;color:var(--red)">${wq.sort((a,b)=>a-b).join(', ')}</span></div>`;
+  }
+
+  document.getElementById('modalBody').innerHTML = chipsHtml;
+  document.getElementById('reviewModal').classList.add('open');
+}
+
+function closeModal() {
+  document.getElementById('reviewModal').classList.remove('open');
+}
+
+document.getElementById('reviewModal').addEventListener('click', e => {
+  if (e.target === document.getElementById('reviewModal')) closeModal();
+});
+
+// ── RLS ────────────────────────────────────────────────────
+function fetchRLS() {
+  const params = new URLSearchParams({ action: 'rls', pin: currentUser.pin });
+  fetch(CV_APPS_SCRIPT + '?' + params.toString())
+    .then(r => r.json())
+    .then(data => {
+      const rows = data.rows || [];
+      if (!rows.length) return;
+      const el = document.getElementById('rlsContent');
+      el.style.display = 'block';
+
+      const tableRows = rows.map(r => `
+        <tr>
+          <td>${r['Test Name'] || r.testName || ''}</td>
+          <td><span class="score-pill ${scoreClass(r['Score'] || r.score || 0)}">${r['Score'] || r.score || 0} / ${MAX_MARKS}</span></td>
+          <td>${r['Time Taken'] || r.timeTaken || '–'}</td>
+          <td style="font-family:'DM Mono',monospace;font-size:12px;color:var(--text-dim)">${r['Passage Type'] || r.passageType || '–'}</td>
+        </tr>`).join('');
+
+      el.innerHTML = `
+        <hr class="pat-divider">
+        <div class="section-header">Read Like a Scholar</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Session</th><th>Score</th><th>Time</th><th>Passage type</th></tr></thead>
+            <tbody>${tableRows}</tbody>
+          </table>
+        </div>`;
+    })
+    .catch(() => {});
+}
+
+// ── MY PATTERNS ────────────────────────────────────────────
+function fetchPatterns() {
+  if (!currentUser || currentUser.isAdmin) return;
+
+  const el = document.getElementById('patternsContent');
+  el.style.display = 'block';
+  el.innerHTML = `<hr class="pat-divider"><div class="pat-banner"><div class="pat-banner-title">My Patterns</div><div class="pat-banner-sub">Loading topic data…</div></div>`;
+
+  const params = new URLSearchParams({ pin: currentUser.pin });
+  fetch(CV_APPS_SCRIPT + '?' + params.toString())
+    .then(r => r.json())
+    .then(data => renderPatterns(el, data.rows || []))
+    .catch(() => {
+      el.innerHTML = `<hr class="pat-divider"><div class="pat-banner"><div class="pat-banner-title">My Patterns</div><div class="pat-banner-sub">Could not load topic data.</div></div>`;
+    });
+}
+
+function renderPatterns(el, rawRows) {
+  const rows = rawRows.map(r => ({
+    testName:       r.testName || r['Test Name'] || '',
+    wrongQuestions: safeJSON(r.wrongQuestions || r['Wrong Questions'], []),
+    studentAnswers: safeJSON(r.studentAnswers || r['Student Answers'], []),
+    sectionErrors:  safeJSON(r.sectionErrors  || r['Section Errors'],  {})
+  }));
+
+  const TOPIC_AREA = {
+    'Synonym':'Vocabulary','Antonym':'Vocabulary','Word Meaning':'Vocabulary',
+    'Contextual Usage':'Vocabulary','Fill in the Blank':'Vocabulary','Double Blank':'Vocabulary',
+    'One Word Substitution':'Vocabulary','Idiom':'Vocabulary','Analogy':'Vocabulary','Odd One Out':'Vocabulary',
+    'Error Spotting':'Grammar','Sentence Correction':'Grammar','Subject-Verb Agreement':'Grammar',
+    'Tense Usage':'Grammar','Active-Passive Voice':'Grammar','Direct-Indirect Speech':'Grammar',
+    'Parallelism':'Grammar','Dangling Modifier':'Grammar','Article Usage':'Grammar',
+    'Conditional':'Grammar','Preposition':'Grammar','Modifiers':'Grammar'
+  };
+
+  const topicMap = {};
+  const addToMap = (area, sub, seen, correct, wrong, skipped) => {
+    if (!topicMap[area])      topicMap[area] = {};
+    if (!topicMap[area][sub]) topicMap[area][sub] = {seen:0,correct:0,wrong:0,skipped:0};
+    const b = topicMap[area][sub];
+    b.seen += seen; b.correct += correct; b.wrong += wrong; b.skipped += skipped;
+  };
+
+  rows.forEach(r => {
+    if (r.sectionErrors && typeof r.sectionErrors === 'object') {
+      Object.entries(r.sectionErrors).forEach(([sub, wrongCount]) => {
+        const area = TOPIC_AREA[sub] || 'Other';
+        addToMap(area, sub, wrongCount, 0, wrongCount, 0);
+      });
+    }
+  });
+
+  if (Object.keys(topicMap).length === 0) {
+    el.innerHTML = `<hr class="pat-divider">
+      <div class="pat-banner">
+        <div class="pat-banner-title">My Patterns</div>
+        <div class="pat-banner-sub">No topic data yet. Complete tests to see your patterns.</div>
+      </div>`;
+    return;
+  }
+
+  let html = `<hr class="pat-divider">
+    <div class="pat-banner">
+      <div class="pat-banner-title">My Patterns</div>
+      <div class="pat-banner-sub">Topic accuracy across all Camp Verbal tests</div>
+    </div>`;
+
+  ['Grammar','Vocabulary','Other'].forEach(area => {
+    if (!topicMap[area]) return;
+    const subs = Object.entries(topicMap[area]).map(([sub, d]) => {
+      const attempted   = d.correct + d.wrong;
+      const accPct      = attempted > 0 ? Math.round(100 * d.correct / attempted) : null;
+      const attemptRate = d.seen > 0 ? attempted / d.seen : 0;
+      const verdict     = patVerdict(d.seen, attempted, accPct, attemptRate);
+      return { sub, ...d, attempted, accPct, attemptRate, verdict };
+    }).sort((a, b) => patConcern(b) - patConcern(a));
+
+    html += `<div class="section-header">${area}</div>`;
+    subs.forEach(s => {
+      const barPct  = s.accPct !== null ? s.accPct : 0;
+      const vKey    = s.verdict.key;
+      const chipCls = {strong:'pv-strong',build:'pv-build',work:'pv-work',avoid:'pv-avoid',thin:'pv-thin'}[vKey] || 'pv-thin';
+      const barCls  = {strong:'pb-strong',build:'pb-build',work:'pb-work',avoid:'pb-avoid',thin:'pb-thin'}[vKey] || 'pb-thin';
+      html += `<div class="pat-topic-card">
+        <div class="pat-topic-top">
+          <span class="pat-topic-name">${s.sub}</span>
+          <span class="pat-verdict-chip ${chipCls}">${s.verdict.label}</span>
+        </div>
+        <div class="pat-bar-wrap"><div class="pat-bar-fill ${barCls}" style="width:${barPct}%"></div></div>
+        <div class="pat-topic-stats">
+          <span><b>${s.accPct !== null ? s.accPct+'%' : '—'}</b> accuracy</span>
+          <span><b>${s.correct}</b>/${s.attempted} attempted</span>
+          <span><b>${s.seen}</b> seen</span>
+          ${s.skipped > 0 ? `<span><b>${s.skipped}</b> skipped</span>` : ''}
+        </div>
+      </div>`;
+    });
+  });
+
+  el.innerHTML = html;
+}
+
+function patVerdict(seen, attempted, accPct, attemptRate) {
+  if (seen < PAT_MINSEEN)           return { key:'thin',   label:'Thin data' };
+  if (attemptRate < PAT_AVOID_RATE) return { key:'avoid',  label:'Avoids' };
+  if (accPct === null)              return { key:'thin',   label:'Thin data' };
+  if (accPct >= PAT_STRONG)         return { key:'strong', label:'Strong' };
+  if (accPct < PAT_BUILD_LOW)       return { key:'work',   label:'Needs work' };
+  return                                   { key:'build',  label:'Building' };
+}
+
+function patConcern(s) {
+  if (s.verdict.key === 'avoid') return 90 + s.seen;
+  if (s.verdict.key === 'work')  return 60 + (100 - (s.accPct || 50));
+  if (s.verdict.key === 'build') return 30 + (100 - (s.accPct || 50));
+  if (s.verdict.key === 'thin')  return 20;
+  return 0;
+}
+
+function safeJSON(val, fallback) {
+  if (Array.isArray(val) || (val && typeof val === 'object')) return val;
+  if (typeof val === 'string') { try { return JSON.parse(val); } catch(e) {} }
+  return fallback;
+}
+
+// ── KEYBOARD ──────────────────────────────────────────────
+document.getElementById('loginPin').addEventListener('keydown', e => { if (e.key === 'Enter') doLogin(); });
+document.getElementById('loginName').addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('loginPin').focus(); });
+</script>
+</body>
+</html>
