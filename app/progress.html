@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My progress — Camp Verbal</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#06182e">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main id="app" class="wrap"></main>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/supabase-2.117.1.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(async function () {
+  'use strict';
+  const { esc, num, fmtDur, fmtIST } = CV;
+  const app = document.getElementById('app');
+  if (!CV.configured) { CV.header(); return CV.notConfigured(app); }
+  const user = await CV.requireUser();
+  const isAdmin = await CV.rpc('cv_is_admin').catch(() => false);
+  CV.header({ email: user.email, admin: isAdmin, label: 'My progress' });
+  CV.loading(app, 'Loading your record…');
+
+  let A, name = '';
+  try {
+    A = await CV.rpc('cv_my_attempts');
+    const { data: prof } = await CV.sb.from('profiles').select('full_name').eq('id', user.id).maybeSingle();
+    name = prof && prof.full_name ? prof.full_name.split(' ')[0] : '';
+  } catch (e) { app.innerHTML = `<div class="note bad">${esc(e.message)}</div>`; return; }
+
+  const head = `<p class="eyebrow">My progress</p><h1>${name ? esc(name) + ', here’s ' : 'Here’s '}<em>your record.</em></h1>`;
+  if (!A.length) {
+    app.innerHTML = head + `<div class="card mt2"><h2>No tests taken yet</h2><p class="sub">Once you finish a test, your score and a full review will be kept here for good.</p>
+      <a class="btn btn-gold mt1" href="index.html">Go to your tests</a></div>`;
+    return;
+  }
+
+  // Group attempts by test (A arrives newest first)
+  const byTest = new Map();
+  A.forEach(a => { if (!byTest.has(a.test_slug)) byTest.set(a.test_slug, { title: a.test_title, slug: a.test_slug, list: [] }); byTest.get(a.test_slug).list.push(a); });
+  const tests = [...byTest.values()];
+  const firsts = tests.map(t => t.list.find(a => a.is_first) || t.list[t.list.length - 1]);
+
+  const pct = (s, m) => m ? Math.round(Math.max(0, s) / m * 100) : 0;
+  const avgFirst = Math.round(firsts.reduce((x, a) => x + pct(a.score, a.max_marks), 0) / firsts.length);
+  const cor = firsts.reduce((x, a) => x + a.correct, 0), wr = firsts.reduce((x, a) => x + a.wrong, 0);
+  const acc = cor + wr ? Math.round(cor / (cor + wr) * 100) : 0;
+
+  // Question types across first attempts, weakest (most marks lost) first
+  const agg = {};
+  firsts.forEach(a => Object.entries((a.breakdown && a.breakdown.formats) || {}).forEach(([k, v]) => {
+    const g = agg[k] || (agg[k] = { k, correct: 0, wrong: 0, skipped: 0, score: 0, max: 0 });
+    g.correct += v.correct; g.wrong += v.wrong; g.skipped += v.skipped; g.score += +v.score; g.max += +v.max;
+  }));
+  const ABBR = { sva: 'SVA', rc: 'RC', cr: 'CR', va: 'VA', qa: 'QA', lr: 'LR', di: 'DI', fitb: 'FITB', tita: 'TITA', sc: 'SC', pj: 'PJ' };
+  const label = k => k.split(/[-_\s]+/).map(w => ABBR[w.toLowerCase()] || (w.charAt(0).toUpperCase() + w.slice(1))).join(' ');
+  const types = Object.values(agg).map(g => ({ ...g, lost: g.max - g.score, n: g.correct + g.wrong + g.skipped }))
+    .sort((a, b) => b.lost - a.lost || a.score / a.max - b.score / b.max);
+  const weak = types.filter(t => t.lost > 0).slice(0, 6);
+
+  app.innerHTML = head + `
+    <p class="sub">Your first attempt at each test is your score. Retakes are practice, and every review stays here.</p>
+    <section class="stats mt2" style="max-width:720px">
+      <div class="stat"><b>${tests.length}</b><span>Tests taken</span></div>
+      <div class="stat"><b>${A.length}</b><span>Attempts</span></div>
+      <div class="stat"><b>${avgFirst}%</b><span>Avg first score</span></div>
+      <div class="stat"><b>${acc}%</b><span>Accuracy</span></div>
+    </section>
+
+    ${weak.length ? `<h2 class="mt3">What to revise next</h2>
+    <p class="small muted">Question types where you’ve lost the most marks on first attempts.</p>
+    <div class="tbl-wrap mt1"><table class="tbl"><thead><tr><th>Question type</th><th class="num hide-m">Right</th><th class="num">Wrong</th><th class="num hide-m">Blank</th><th class="num">Marks lost</th><th class="hide-m" style="width:26%">Score</th></tr></thead><tbody>
+      ${weak.map(t => `<tr><td>${esc(label(t.k))}</td><td class="num hide-m">${t.correct}</td><td class="num">${t.wrong}</td><td class="num hide-m">${t.skipped}</td>
+        <td class="num">${num(t.lost)}</td><td class="hide-m"><div class="bar"><div style="width:${pct(t.score, t.max)}%"></div></div></td></tr>`).join('')}
+    </tbody></table></div>` : ''}
+
+    <h2 class="mt3">Your tests</h2>
+    <div class="grid mt1" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr))">
+      ${tests.map(t => {
+        const first = t.list.find(a => a.is_first);
+        const best = t.list.reduce((b, a) => (+a.score > +b.score ? a : b), t.list[0]);
+        return `<article class="card tcard">
+          <h3>${esc(t.title)}</h3>
+          <div class="row"><span class="score-pill">${first ? num(first.score) : '–'}<span class="muted small"> / ${t.list[0].max_marks}</span></span>
+            <span class="tiny muted">first attempt${t.list.length > 1 ? ` · best ${num(best.score)}` : ''}</span></div>
+          <div class="tbl-wrap"><table class="tbl"><tbody>
+            ${t.list.map(a => `<tr><td class="small">#${a.attempt_no}${a.is_first ? ' <span class="badge b-gold" style="font-size:.58rem">Scored</span>' : ''}
+              <div class="tiny muted">${esc(fmtIST(a.submitted_at))}${a.auto_submitted ? ' · timed out' : ''}</div></td>
+              <td class="num small">${num(a.score)} / ${a.max_marks}<div class="tiny muted">${fmtDur(a.time_taken_sec)}</div></td>
+              <td style="text-align:right"><a class="btn btn-sm" href="result.html?a=${a.attempt_id}">Review</a></td></tr>`).join('')}
+          </tbody></table></div>
+          <div class="foot"><span class="tiny muted">${t.list.length} attempt${t.list.length > 1 ? 's' : ''}</span>
+            <a class="btn btn-sm" href="test.html?t=${encodeURIComponent(t.slug)}">Retake</a></div>
+        </article>`;
+      }).join('')}
+    </div>`;
+})();
+</script>
+</body>
+</html>

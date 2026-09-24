@@ -54,7 +54,8 @@
     .sort((a, b) => b.lost - a.lost);
   const secRows = T.section_order.map(s => ({ k: s, ...(S.breakdown.sections[s] || {}) })).filter(r => r.max);
   const fmtRows = rows(S.breakdown.formats);
-  const label = k => k.replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const ABBR = { sva: 'SVA', rc: 'RC', cr: 'CR', va: 'VA', qa: 'QA', lr: 'LR', di: 'DI', fitb: 'FITB', tita: 'TITA', sc: 'SC', pj: 'PJ' };
+  const label = k => k.split(/[-_\s]+/).map(w => ABBR[w.toLowerCase()] || (w.charAt(0).toUpperCase() + w.slice(1))).join(' ');
   const tbl = (list, head) => `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${head}</th><th class="num">Right</th><th class="num">Wrong</th><th class="num hide-m">Blank</th><th class="num">Score</th><th class="hide-m" style="width:28%">Of max</th></tr></thead><tbody>` +
     list.map(r => `<tr><td>${esc(label(r.k))}</td><td class="num">${r.correct}</td><td class="num">${r.wrong}</td><td class="num hide-m">${r.skipped}</td>
       <td class="num">${num(r.score)} / ${num(r.max)}</td><td class="hide-m"><div class="bar"><div style="width:${Math.max(0, r.score / r.max * 100)}%"></div></div></td></tr>`).join('') + '</tbody></table></div>';
@@ -63,7 +64,7 @@
 
   app.innerHTML = `
     <div class="spread no-print"><a class="btn btn-sm" href="index.html">← Library</a>
-      <div class="row"><button class="btn btn-sm" id="pdf">Download PDF</button>
+      <div class="row"><a class="btn btn-sm" href="progress.html">My progress</a>
       <a class="btn btn-sm btn-gold" href="test.html?t=${encodeURIComponent(T.slug)}">Retake</a></div></div>
     <p class="eyebrow mt2">${esc(T.exam_name)} · Attempt ${S.attempt_no}${S.is_first ? ' · <span style="color:var(--gold)">scored attempt</span>' : ' · practice'}</p>
     <h1>${esc(T.title)}</h1>
@@ -126,11 +127,6 @@
     document.querySelectorAll('.rq').forEach(el => {
       el.hidden = !(f === 'all' || el.dataset.o === f || (f === 'marked' && el.dataset.m === '1'));
     });
-  });
-  document.getElementById('pdf').addEventListener('click', () => {
-    document.querySelectorAll('.rq').forEach(el => el.hidden = false);
-    document.querySelectorAll('details.pass').forEach(d => d.open = true);
-    window.print();
   });
 })();
 </script>
