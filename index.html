@@ -5,7 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Camp Verbal — Where language becomes your edge.</title>
 <meta name="description" content="Structured verbal ability programmes for IPMAT, CAT, GRE, GMAT and more. Built for students who want method, not shortcuts." />
+<link rel="canonical" href="https://www.campverbal.com/" />
+<meta name="theme-color" content="#06182e" />
+
+<!-- Icons -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- Social sharing (WhatsApp, Instagram, LinkedIn, X) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Camp Verbal" />
+<meta property="og:url" content="https://www.campverbal.com/" />
+<meta property="og:title" content="Camp Verbal — Where language becomes your edge." />
+<meta property="og:description" content="Structured verbal ability programmes for IPMAT and CAT. Reading, vocabulary, grammar and reasoning — built on method, not shortcuts." />
+<meta property="og:image" content="https://www.campverbal.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Camp Verbal crest with the tagline: Where language becomes your edge." />
+<meta property="og:locale" content="en_IN" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Camp Verbal — Where language becomes your edge." />
+<meta name="twitter:description" content="Structured verbal ability programmes for IPMAT and CAT. Built on method, not shortcuts." />
+<meta name="twitter:image" content="https://www.campverbal.com/og-image.jpg" />
+
+<!-- Structured data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Camp Verbal",
+  "url": "https://www.campverbal.com/",
+  "logo": "https://www.campverbal.com/icon-512.png",
+  "email": "letsgoverbal@gmail.com",
+  "slogan": "Where language becomes your edge.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN" }
+}
+</script>
+
+<!-- Vercel Web Analytics (switch on in Vercel → Project → Analytics) -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600;1,9..144,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -449,6 +492,52 @@ footer{
 .foot-brand span{font-family:var(--display);font-weight:700;letter-spacing:.12em;color:var(--gold-light);font-size:.95rem}
 .foot-note{font-size:.78rem;color:var(--mute);font-weight:300}
 
+/* ════ MOBILE MENU ════ */
+.nav-toggle{
+  display:none;
+  width:44px;height:44px;
+  background:transparent;border:1px solid var(--line);border-radius:4px;
+  cursor:pointer;position:relative;
+}
+.nav-toggle span{
+  position:absolute;left:11px;right:11px;height:2px;background:var(--gold-light);
+  transition:transform .25s ease, opacity .2s ease;
+}
+.nav-toggle span:nth-child(1){top:14px}
+.nav-toggle span:nth-child(2){top:21px}
+.nav-toggle span:nth-child(3){top:28px}
+.nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-toggle:focus-visible,.nav-links a:focus-visible,.wa-float:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+
+/* ════ WHATSAPP ════ */
+.wa-float{
+  position:fixed;right:clamp(1rem,3vw,1.8rem);bottom:clamp(1rem,3vw,1.8rem);z-index:90;
+  display:inline-flex;align-items:center;gap:.6rem;
+  background:#25D366;color:#06182e;
+  padding:.8rem 1.15rem .8rem .95rem;border-radius:999px;
+  font-weight:700;font-size:.92rem;text-decoration:none;
+  box-shadow:0 12px 30px -8px rgba(0,0,0,.55);
+  transition:transform .15s, box-shadow .3s;
+}
+.wa-float:hover{transform:translateY(-2px);box-shadow:0 16px 36px -8px rgba(0,0,0,.65)}
+.wa-float svg{width:24px;height:24px;flex:none}
+.enq-direct a.wa-inline{display:inline-flex;align-items:center;gap:.5rem;margin-top:.9rem;color:#4ade80}
+.enq-direct a.wa-inline svg{width:18px;height:18px}
+[hidden]{display:none!important}
+
+/* ════ FORM STATES ════ */
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.enq-submit[disabled]{opacity:.65;cursor:wait;transform:none}
+.enq-status{
+  font-size:.92rem;line-height:1.6;padding:.9rem 1.1rem;border-radius:5px;
+  border:1px solid var(--line);
+}
+.enq-status.ok{background:rgba(74,222,128,.08);border-color:rgba(74,222,128,.35);color:#c6f6d5}
+.enq-status.err{background:rgba(147,0,71,.18);border-color:rgba(194,53,111,.5);color:#ffd6e6}
+.enq-status a{color:var(--gold-light)}
+
 /* ════ REVEAL ════ */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -474,7 +563,28 @@ footer{
   .phil-quote{position:static}
   .about-grid{grid-template-columns:1fr}
   .enq-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
+  .nav-toggle{display:block}
+  .nav-links{
+    position:fixed;top:74px;left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:.6rem clamp(1.2rem,4vw,3.5rem) 1.6rem;
+    background:#06182e;
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 24px 40px -20px rgba(0,0,0,.7);
+    transform:translateY(-8px);opacity:0;visibility:hidden;
+    transition:transform .25s ease, opacity .2s ease, visibility 0s linear .25s;
+  }
+  .nav-links.open{transform:none;opacity:1;visibility:visible;transition:transform .25s ease, opacity .2s ease}
+  .nav-links li{border-bottom:1px solid var(--line-soft)}
+  .nav-links li:last-child{border-bottom:none;padding-top:1.1rem}
+  .nav-links a{display:block;padding:1rem 0;font-size:1rem;color:var(--ink)}
+  .nav-links a.nav-cta{text-align:center;padding:.9rem 1.25rem}
+  body.menu-open{overflow:hidden}
+}
+@media (max-width: 520px){
+  .wa-float .wa-label{display:none}
+  .wa-float{padding:.85rem}
 }
 </style>
 </head>
@@ -507,7 +617,10 @@ footer{
     <svg viewBox="0 0 200 220" aria-hidden="true"><use href="#cvShield"/></svg>
     <span class="nav-wordmark">CAMP VERBAL</span>
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="nav-links">
     <li><a href="#products">Programmes</a></li>
     <li><a href="#philosophy">Philosophy</a></li>
     <li><a href="#about">About</a></li>
@@ -693,24 +806,29 @@ footer{
       <div class="enq-direct">
         <small>Or write directly</small>
         <a href="mailto:letsgoverbal@gmail.com">letsgoverbal@gmail.com</a>
+        <br>
+        <a class="wa-inline" data-wa hidden href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 6.9L3 29l6.5-2c2 1.1 4.2 1.6 6.5 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.8-1.7l-.4-.3-3.9 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 4.9 16 4.9s11.1 4.9 11.1 10.9S22.1 26.4 16 26.4zm6.1-8.1c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1.1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 2-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z"/></svg>
+          Message on WhatsApp
+        </a>
       </div>
     </div>
-    <form class="enq-form rv" id="enqForm">
+    <form class="enq-form rv" id="enqForm" novalidate>
       <div class="fg">
         <label for="f-name">Full name</label>
-        <input type="text" id="f-name" required placeholder="Your name" />
+        <input type="text" id="f-name" name="name" required autocomplete="name" placeholder="Your name" />
       </div>
       <div class="fg">
         <label for="f-email">Email</label>
-        <input type="email" id="f-email" required placeholder="you@email.com" />
+        <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="you@email.com" />
       </div>
       <div class="fg">
         <label for="f-phone">Phone / WhatsApp</label>
-        <input type="tel" id="f-phone" placeholder="+91 XXXXX XXXXX" />
+        <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+91 XXXXX XXXXX" />
       </div>
       <div class="fg">
         <label for="f-exam">Target exam</label>
-        <select id="f-exam">
+        <select id="f-exam" name="exam">
           <option value="">Select your exam</option>
           <option>IPMAT Indore</option>
           <option>IPMAT Rohtak</option>
@@ -725,15 +843,27 @@ footer{
       </div>
       <div class="fg">
         <label for="f-msg">Anything specific <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label>
-        <textarea id="f-msg" placeholder="e.g. I struggle with RC, or I'm targeting the 2027 intake…"></textarea>
+        <textarea id="f-msg" name="message" placeholder="e.g. I struggle with RC, or I'm targeting the 2027 intake…"></textarea>
+      </div>
+      <!-- spam trap: real people never see or fill this -->
+      <div class="hp" aria-hidden="true">
+        <label for="f-gotcha">Leave this empty</label>
+        <input type="text" id="f-gotcha" name="_gotcha" tabindex="-1" autocomplete="off" />
       </div>
       <button type="submit" class="enq-submit">Send enquiry →</button>
-      <p class="enq-note">Opens your email app with the enquiry pre-filled · Response within 24 hours</p>
+      <p class="enq-status" id="enqStatus" role="status" aria-live="polite" hidden></p>
+      <p class="enq-note" id="enqNote">Response within 24 hours</p>
     </form>
   </div>
 </section>
 
 </main>
+
+<!-- ════ WHATSAPP FLOAT ════ -->
+<a class="wa-float" data-wa hidden href="#" target="_blank" rel="noopener" aria-label="Chat with Camp Verbal on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 6.9L3 29l6.5-2c2 1.1 4.2 1.6 6.5 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.8-1.7l-.4-.3-3.9 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 4.9 16 4.9s11.1 4.9 11.1 10.9S22.1 26.4 16 26.4zm6.1-8.1c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1.1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.8 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 2-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.3z"/></svg>
+  <span class="wa-label">WhatsApp us</span>
+</a>
 
 <!-- ════ FOOTER ════ -->
 <footer>
@@ -745,30 +875,112 @@ footer{
 </footer>
 
 <script>
-// Scroll reveal
+/* ═══════════════════════════════════════════════════════════
+   SETTINGS — the only two lines you need to edit
+   ═══════════════════════════════════════════════════════════ */
+// WhatsApp number: country code + number, digits only (e.g. '919876543210').
+// Leave empty and the WhatsApp buttons stay hidden.
+const WHATSAPP_NUMBER = '';
+// Formspree form ID: the part after /f/ in your Formspree endpoint (e.g. 'xyzabcde').
+// Leave empty and the form falls back to opening the visitor's email app.
+const FORMSPREE_ID = '';
+
+const CONTACT_EMAIL = 'letsgoverbal@gmail.com';
+const WHATSAPP_GREETING = "Hi Camp Verbal, I'd like to know which programme suits my exam prep.";
+
+// ─── Scroll reveal ───
 const io = new IntersectionObserver(es => {
   es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
 },{threshold:.12});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 
-// Enquiry form → opens mail client pre-filled to letsgoverbal@gmail.com
-document.getElementById('enqForm').addEventListener('submit', function(ev){
-  ev.preventDefault();
-  const name = document.getElementById('f-name').value.trim();
-  const email = document.getElementById('f-email').value.trim();
-  const phone = document.getElementById('f-phone').value.trim();
-  const exam = document.getElementById('f-exam').value;
-  const msg = document.getElementById('f-msg').value.trim();
-  const subject = encodeURIComponent('Camp Verbal Enquiry — ' + (name || 'New student'));
-  const body = encodeURIComponent(
-    'Name: ' + name + '\n' +
-    'Email: ' + email + '\n' +
-    'Phone/WhatsApp: ' + phone + '\n' +
-    'Target exam: ' + exam + '\n\n' +
-    'Message:\n' + msg
-  );
-  window.location.href = 'mailto:letsgoverbal@gmail.com?subject=' + subject + '&body=' + body;
-});
+// ─── Mobile menu ───
+(function(){
+  const btn = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('nav-links');
+  if (!btn || !menu) return;
+  const setOpen = open => {
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menu.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+  };
+  btn.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('open')) { setOpen(false); btn.focus(); } });
+  document.addEventListener('click', e => {
+    if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) setOpen(false);
+  });
+  window.matchMedia('(min-width: 961px)').addEventListener('change', m => { if (m.matches) setOpen(false); });
+})();
+
+// ─── WhatsApp links ───
+(function(){
+  const num = WHATSAPP_NUMBER.replace(/\D/g, '');
+  if (num.length < 10) return;
+  const url = 'https://wa.me/' + num + '?text=' + encodeURIComponent(WHATSAPP_GREETING);
+  document.querySelectorAll('[data-wa]').forEach(a => {
+    a.href = url; a.hidden = false;
+    a.addEventListener('click', () => window.va && window.va('event', { name: 'whatsapp_click' }));
+  });
+})();
+
+// ─── Enquiry form ───
+(function(){
+  const form = document.getElementById('enqForm');
+  const status = document.getElementById('enqStatus');
+  const btn = form.querySelector('.enq-submit');
+  const btnLabel = btn.textContent;
+  const val = id => document.getElementById(id).value.trim();
+
+  const note = document.getElementById('enqNote');
+  const show = (kind, html) => { status.className = 'enq-status ' + kind; status.innerHTML = html; status.hidden = false; note.hidden = (kind === 'ok'); };
+
+  const mailtoFallback = () => {
+    const subject = encodeURIComponent('Camp Verbal Enquiry — ' + (val('f-name') || 'New student'));
+    const body = encodeURIComponent(
+      'Name: ' + val('f-name') + '\n' +
+      'Email: ' + val('f-email') + '\n' +
+      'Phone/WhatsApp: ' + val('f-phone') + '\n' +
+      'Target exam: ' + val('f-exam') + '\n\n' +
+      'Message:\n' + val('f-msg')
+    );
+    window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
+  };
+
+  form.addEventListener('submit', async ev => {
+    ev.preventDefault();
+    status.hidden = true;
+
+    // Validation, with plain-language messages
+    if (!val('f-name')) { show('err', 'Please add your name.'); document.getElementById('f-name').focus(); return; }
+    const email = val('f-email');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { show('err', 'Please enter a valid email address so we can reply.'); document.getElementById('f-email').focus(); return; }
+    const phone = val('f-phone');
+    if (phone && phone.replace(/\D/g, '').length < 10) { show('err', 'That phone number looks incomplete — or leave it blank.'); document.getElementById('f-phone').focus(); return; }
+
+    if (!FORMSPREE_ID) { mailtoFallback(); return; }
+
+    btn.disabled = true; btn.textContent = 'Sending…';
+    const data = new FormData(form);
+    data.append('_subject', 'Camp Verbal enquiry — ' + val('f-name') + (val('f-exam') ? ' (' + val('f-exam') + ')' : ''));
+    data.append('_replyto', email);
+
+    try {
+      const res = await fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+        method: 'POST', body: data, headers: { 'Accept': 'application/json' }
+      });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      form.reset();
+      show('ok', '<strong>Thanks — your enquiry is in.</strong> We\'ll get back to you within 24 hours' + (phone ? ', on email or WhatsApp.' : ' by email.'));
+      window.va && window.va('event', { name: 'enquiry_sent' });
+    } catch (err) {
+      show('err', 'Something went wrong sending that. Please email us directly at <a href="mailto:' + CONTACT_EMAIL + '">' + CONTACT_EMAIL + '</a>.');
+    } finally {
+      btn.disabled = false; btn.textContent = btnLabel;
+    }
+  });
+})();
 </script>
 
 </body>
