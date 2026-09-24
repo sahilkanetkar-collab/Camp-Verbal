@@ -40,7 +40,6 @@
       .map(x => { const [k, l] = x.split(':'); return `<button class="tab" data-t="${k}">${l}</button>`; }).join('')}</nav>
     <div id="pane"></div>`;
   document.getElementById('tabs').addEventListener('click', e => { const t = e.target.getAttribute('data-t'); if (t) { tab = t; draw(); } });
-  await reload();
 
   async function reload() {
     CV.loading(document.getElementById('pane'));
@@ -244,6 +243,8 @@
         <td class="num">${num(r.score)} / ${r.max}</td><td><a class="btn btn-sm" href="result.html?a=${r.attempt_id}">Open</a></td></tr>`).join('') + '</tbody></table></div>'
       : '<div class="card"><p class="muted">No submissions yet.</p></div>';
   }
+
+  reload();   // last, so every helper above is defined before the first draw
 })();
 </script>
 </body>
