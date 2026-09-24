@@ -9,6 +9,6 @@ window.CV_CONFIG = {
   supabaseAnonKey: 'sb_publishable_butl8cOHsMdBPeTAauXM9Q_J9jh0J1E',
   // Where "Get access" buttons send students for now (until payments are added).
   accessUrl: '/#enquiry',
-  // Must match Supabase → Authentication → Providers → Email → "Email OTP Length".
-  otpLength: 6
+  // Must match Supabase → Authentication → Sign In / Providers → Email → "Email OTP Length".
+  otpLength: 8
 };

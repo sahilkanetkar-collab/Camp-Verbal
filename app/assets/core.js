@@ -7,7 +7,9 @@
   const CREST = '<svg viewBox="0 0 200 220" aria-hidden="true"><defs><linearGradient id="cvg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F0C567"/><stop offset="55%" stop-color="#EBA036"/><stop offset="100%" stop-color="#C77F22"/></linearGradient></defs><path d="M100 6 L188 6 Q194 6 194 12 L194 118 Q194 162 100 214 Q6 162 6 118 L6 12 Q6 6 12 6 Z" fill="url(#cvg)"/><path d="M100 16 L181 16 Q184 16 184 19 L184 115 Q184 154 100 202 Q16 154 16 115 L16 19 Q16 16 19 16 Z" fill="#930047"/><path d="M100 38 L128 76 L113 76 L100 60 L87 76 L72 76 Z" fill="url(#cvg)"/><text x="100" y="148" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="900" font-size="86" fill="url(#cvg)" letter-spacing="-4">CV</text></svg>';
 
   const sb = configured ? window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseAnonKey, {
-    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false }
+    auth: { persistSession: true, autoRefreshToken: true, flowType: 'implicit',
+            // Only the login page reads the token that arrives from an email login link.
+            detectSessionInUrl: /\/login\.html$/.test(location.pathname) }
   }) : null;
 
   // ── text helpers ──
