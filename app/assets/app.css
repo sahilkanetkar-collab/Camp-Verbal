@@ -32,6 +32,7 @@ button{font:inherit;color:inherit}
 .hdr-right{display:flex;align-items:center;gap:.6rem;font-size:.85rem;color:var(--mute)}
 .hdr-right .who{max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media (max-width:560px){.hdr-right .who{display:none}}
+@media (max-width:420px){.hdr-right{gap:.35rem}.hdr-right .btn-sm{padding:.3rem .5rem;font-size:.74rem}.brand small{display:none}}
 
 /* ── layout ── */
 .wrap{max-width:1100px;margin:0 auto;padding:clamp(1.5rem,4vw,3rem) clamp(1rem,4vw,2.5rem) 4rem}
@@ -217,8 +218,9 @@ details.pass div{font-size:.93rem;line-height:1.7;color:#dfe7f1;padding:.6rem 0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media (max-width:700px){.two{grid-template-columns:1fr}}
 
-/* ── print (results → PDF) ── */
+/* ── print: only the score summary prints; questions and answers stay online ── */
 @media print{
+  #rv,.rq,.qarea,.passage{display:none!important}
   body{background:#fff;color:#111}
   body::before,.hdr,.no-print,.filters{display:none!important}
   .card,.rq,.stat{background:#fff!important;border-color:#ccc!important;color:#111;break-inside:avoid}

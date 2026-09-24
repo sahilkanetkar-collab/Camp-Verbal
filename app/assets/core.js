@@ -106,6 +106,7 @@
     h.innerHTML = '<a class="brand" href="index.html" aria-label="Camp Verbal library">' + CREST +
       '<span><b>CAMP VERBAL</b><small>' + esc(opts.label || 'Practice') + '</small></span></a>' +
       '<div class="hdr-right">' + (opts.email ? '<span class="who">' + esc(opts.email) + '</span>' : '') +
+      (opts.email && !/progress\.html$/.test(location.pathname) ? '<a class="btn btn-sm" href="progress.html">My progress</a>' : '') +
       (opts.admin ? '<a class="btn btn-sm" href="admin.html">Admin</a>' : '') +
       (opts.email ? '<button class="btn btn-sm" id="cv-logout">Log out</button>' : '') + '</div>';
     document.body.prepend(h);
