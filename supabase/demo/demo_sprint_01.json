@@ -28,7 +28,13 @@
       "explanation": "Laconic means brief and to the point. 'Lacking energy' is lethargic, a common confusion because of the sound.",
       "status": "approved",
       "verified": "ok",
-      "td": 15
+      "td": 15,
+      "optionTags": [
+        null,
+        "vocab-sound-alike",
+        "vocab-context-blind",
+        "vocab-false-root"
+      ]
     },
     {
       "id": "SPR01-02",
@@ -48,7 +54,13 @@
       "explanation": "Ephemeral means short-lived; enduring is its opposite. Fleeting is a synonym, not an antonym.",
       "status": "approved",
       "verified": "ok",
-      "td": 15
+      "td": 15,
+      "optionTags": [
+        "vocab-opposite",
+        null,
+        "vocab-shade",
+        "vocab-false-root"
+      ]
     },
     {
       "id": "SPR01-03",
@@ -68,7 +80,13 @@
       "explanation": "The subject is 'list' (singular); 'of candidates' is a prepositional phrase and does not change the verb.",
       "status": "approved",
       "verified": "ok",
-      "td": 20
+      "td": 20,
+      "optionTags": [
+        "gram-attraction",
+        null,
+        "gram-attraction",
+        "gram-tense-marker"
+      ]
     },
     {
       "id": "SPR01-04",
@@ -88,7 +106,13 @@
       "explanation": "Sanguine means optimistic. Its link to blood (Latin sanguis) tempts the second option, but that sense is archaic.",
       "status": "approved",
       "verified": "ok",
-      "td": 25
+      "td": 25,
+      "optionTags": [
+        null,
+        "vocab-false-root",
+        "vocab-usage",
+        "vocab-sound-alike"
+      ]
     }
   ]
 }

@@ -26,7 +26,13 @@
       "difficulty": "medium",
       "explanation": "'Between' is a preposition, so it takes the object pronoun 'me'. 'Between you and I' is a hypercorrection.",
       "status": "approved",
-      "verified": "ok"
+      "verified": "ok",
+      "optionTags": [
+        "gram-hypercorrection",
+        null,
+        "gram-pronoun",
+        "gram-pronoun"
+      ]
     },
     {
       "id": "DGD01-02",
@@ -45,7 +51,13 @@
       "difficulty": "medium",
       "explanation": "Only the second sentence has the right doer ('I') right after the opening phrase.",
       "status": "approved",
-      "verified": "ok"
+      "verified": "ok",
+      "optionTags": [
+        "gram-modifier",
+        null,
+        "gram-modifier",
+        "gram-modifier"
+      ]
     },
     {
       "id": "DGD01-03",
@@ -64,7 +76,13 @@
       "difficulty": "medium",
       "explanation": "All three items take the same -ing form.",
       "status": "approved",
-      "verified": "ok"
+      "verified": "ok",
+      "optionTags": [
+        "gram-parallelism",
+        "gram-parallelism",
+        null,
+        "gram-parallelism"
+      ]
     }
   ]
 }

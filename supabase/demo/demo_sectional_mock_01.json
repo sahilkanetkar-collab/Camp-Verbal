@@ -58,7 +58,13 @@
       "explanation": "The passage argues that the layout of a street changes behaviour more reliably than signage or enforcement.",
       "status": "approved",
       "verified": "ok",
-      "passage": "Planners once believed that good behaviour on streets came from rules: more signs, lower limits, stricter fines. Yet the streets where drivers slow down on their own are rarely the most heavily signposted. They are narrow, lined with trees, and full of people. A wide, empty road invites speed no matter what the sign says; a crowded, enclosed one discourages it without a word. The lesson is not that rules are useless, but that the shape of a place speaks louder than its notices."
+      "passage": "Planners once believed that good behaviour on streets came from rules: more signs, lower limits, stricter fines. Yet the streets where drivers slow down on their own are rarely the most heavily signposted. They are narrow, lined with trees, and full of people. A wide, empty road invites speed no matter what the sign says; a crowded, enclosed one discourages it without a word. The lesson is not that rules are useless, but that the shape of a place speaks louder than its notices.",
+      "optionTags": [
+        "rc-extreme",
+        null,
+        "rc-out-of-scope",
+        "rc-word-match"
+      ]
     },
     {
       "id": "DSM01-VA-02",
@@ -78,7 +84,13 @@
       "explanation": "The author says a wide road 'invites speed no matter what the sign says' and that shape speaks louder than notices — but stops short of calling rules useless, which rules out the last option.",
       "status": "approved",
       "verified": "ok",
-      "passage": "Planners once believed that good behaviour on streets came from rules: more signs, lower limits, stricter fines. Yet the streets where drivers slow down on their own are rarely the most heavily signposted. They are narrow, lined with trees, and full of people. A wide, empty road invites speed no matter what the sign says; a crowded, enclosed one discourages it without a word. The lesson is not that rules are useless, but that the shape of a place speaks louder than its notices."
+      "passage": "Planners once believed that good behaviour on streets came from rules: more signs, lower limits, stricter fines. Yet the streets where drivers slow down on their own are rarely the most heavily signposted. They are narrow, lined with trees, and full of people. A wide, empty road invites speed no matter what the sign says; a crowded, enclosed one discourages it without a word. The lesson is not that rules are useless, but that the shape of a place speaks louder than its notices.",
+      "optionTags": [
+        "rc-reversal",
+        "rc-out-of-scope",
+        null,
+        "rc-extreme"
+      ]
     },
     {
       "id": "DSM01-VA-03",
@@ -91,7 +103,12 @@
       "difficulty": "medium",
       "explanation": "Time markers settle it: dawn (2) → mid-morning (4) → afternoon (3) → evening (1).",
       "status": "approved",
-      "verified": "ok"
+      "verified": "ok",
+      "titaTraps": {
+        "2413": "pj-time-order",
+        "4231": "pj-opener",
+        "2341": "pj-time-order"
+      }
     }
   ]
 }
