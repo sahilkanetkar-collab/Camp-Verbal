@@ -142,6 +142,18 @@ create table if not exists public.responses (
   primary key (attempt_id, question_id)
 );
 
+-- Traps: what each wrong option is designed to catch. The Item Factory tags every
+-- wrong option with one of these; marking records which trap caught the student.
+create table if not exists public.trap_types (
+  tag          text primary key check (tag ~ '^[a-z][a-z0-9-]{1,40}$'),
+  area         text not null,
+  label        text not null,
+  explanation  text not null,
+  sort         int  not null default 100
+);
+alter table public.questions add column if not exists option_tags jsonb;  -- [null, "gram-attraction", …] one per option
+alter table public.questions add column if not exists tita_traps  jsonb;  -- {"2341": "pj-topic-link"} common wrong TITA answers
+
 -- ───────────────────────────────────────────────────────────────────────────
 -- 2. ROW-LEVEL SECURITY
 --    Everything is locked by default. Only the few reads below are allowed
@@ -155,6 +167,10 @@ alter table public.questions    enable row level security;
 alter table public.entitlements enable row level security;
 alter table public.attempts     enable row level security;
 alter table public.responses    enable row level security;
+alter table public.trap_types   enable row level security;
+
+drop policy if exists trap_types_read on public.trap_types;
+create policy trap_types_read on public.trap_types for select to authenticated using (true);
 
 drop policy if exists profiles_self_read on public.profiles;
 create policy profiles_self_read on public.profiles
@@ -190,6 +206,8 @@ revoke all on public.questions, public.responses from anon, authenticated;
 revoke insert, update, delete on public.series, public.tests, public.entitlements, public.attempts
   from anon, authenticated;
 grant select on public.series, public.tests to anon, authenticated;
+revoke all on public.trap_types from anon, authenticated;
+grant select on public.trap_types to authenticated;
 grant select on public.entitlements, public.attempts to authenticated;
 
 -- ───────────────────────────────────────────────────────────────────────────
@@ -311,14 +329,27 @@ begin
   return a;
 end $$;
 
+-- Which trap (if any) a given wrong answer fell into.
+create or replace function public.cv_trap_for(p_kind text, p_option_tags jsonb, p_tita_traps jsonb, p_answer text)
+returns text language sql immutable as $$
+  select case
+    when p_answer is null or btrim(p_answer) = '' then null
+    when p_kind = 'mcq' and p_answer ~ '^\d+$' and jsonb_typeof(p_option_tags) = 'array'
+      then p_option_tags->>(p_answer::int)
+    when p_kind = 'tita' and jsonb_typeof(p_tita_traps) = 'object'
+      then (select x.value from jsonb_each_text(p_tita_traps) x
+             where public.cv_tita_norm(x.key) = public.cv_tita_norm(p_answer) limit 1)
+  end;
+$$;
+
 -- Marks an attempt. Idempotent: calling it on a submitted attempt returns it.
 create or replace function public.cv_finalize(p_attempt uuid, p_auto boolean default false)
 returns public.attempts language plpgsql security definer set search_path = public as $$
 declare a public.attempts; t public.tests;
         c numeric; w numeric; tw numeric;
         v_score numeric := 0; v_cor int := 0; v_wr int := 0; v_sk int := 0;
-        by_sec jsonb := '{}'::jsonb; by_fmt jsonb := '{}'::jsonb;
-        r record; outcome text; pts numeric; k text;
+        by_sec jsonb := '{}'::jsonb; by_fmt jsonb := '{}'::jsonb; by_trap jsonb := '{}'::jsonb;
+        r record; outcome text; pts numeric; k text; trap text;
 begin
   select * into a from public.attempts where id = p_attempt for update;
   if a.status = 'submitted' then return a; end if;
@@ -339,6 +370,10 @@ begin
       outcome := 'correct'; pts := c; v_cor := v_cor + 1;
     else
       outcome := 'wrong'; pts := case when r.kind = 'tita' then tw else w end; v_wr := v_wr + 1;
+      trap := public.cv_trap_for(r.kind, r.option_tags, r.tita_traps, r.answer);
+      if trap is not null then
+        by_trap := jsonb_set(by_trap, array[trap], to_jsonb(coalesce((by_trap->>trap)::int, 0) + 1));
+      end if;
     end if;
     v_score := v_score + pts;
 
@@ -362,7 +397,7 @@ begin
     status = 'submitted', submitted_at = now(), auto_submitted = p_auto,
     score = v_score, correct = v_cor, wrong = v_wr, skipped = v_sk, max_marks = t.max_marks,
     time_taken_sec = greatest(0, extract(epoch from (least(now(), a.deadline_at) - a.started_at))::int),
-    breakdown = jsonb_build_object('sections', by_sec, 'formats', by_fmt)
+    breakdown = jsonb_build_object('sections', by_sec, 'formats', by_fmt, 'traps', by_trap)
   where id = a.id returning * into a;
   return a;
 end $$;
@@ -622,7 +657,14 @@ begin
   select jsonb_agg(public.cv_q_public(q) || jsonb_build_object(
            'answer_index', q.answer_index, 'answer_text', q.answer_text,
            'explanation', q.explanation, 'difficulty', q.difficulty,
-           'response', r.answer, 'time_ms', coalesce(r.time_ms, 0), 'marked', coalesce(r.marked, false))
+           'response', r.answer, 'time_ms', coalesce(r.time_ms, 0), 'marked', coalesce(r.marked, false),
+           'trap', (select jsonb_build_object('tag', tt.tag, 'label', tt.label, 'explanation', tt.explanation)
+                      from public.trap_types tt
+                     where tt.tag = public.cv_trap_for(q.kind, q.option_tags, q.tita_traps, r.answer)),
+           'option_traps', (select jsonb_agg((select tt.label from public.trap_types tt where tt.tag = e.v) order by e.n)
+                              from jsonb_array_elements_text(case when jsonb_typeof(q.option_tags) = 'array'
+                                                                  then q.option_tags else '[]'::jsonb end)
+                                   with ordinality e(v, n)))
          order by q.position)
     into qs from public.questions q
     left join public.responses r on r.question_id = q.id and r.attempt_id = a.id
@@ -679,6 +721,7 @@ declare meta jsonb := p_env->'meta'; qs jsonb := p_env->'questions';
         ids text[] := '{}'; keys text[] := '{}'; key text; counts jsonb := '{}'::jsonb;
         sec text; have int; want int; opts jsonb;
         timing text; minutes int; sec_minutes jsonb; present text[]; mk jsonb; td_sum int := 0;
+        j int; tg text; kv record; untagged int := 0;
 begin
   if coalesce(jsonb_typeof(meta),'') <> 'object' or coalesce(jsonb_typeof(qs),'') <> 'array' then
     return jsonb_build_object('errors', jsonb_build_array('Envelope must have top-level "meta" and "questions".'),
@@ -760,8 +803,45 @@ begin
         errs := errs || format('%s: answer text does not match options[answerIndex].', tag);
       end if;
     end if;
+    -- Trap tags: one per option (null on the correct one), each from the trap list.
+    if coalesce(jsonb_typeof(q->'optionTags'), 'null') <> 'null' then
+      if q->>'kind' <> 'mcq' or jsonb_typeof(q->'optionTags') <> 'array'
+         or jsonb_array_length(q->'optionTags') <> jsonb_array_length(opts) then
+        errs := errs || format('%s: optionTags must be a list with one entry per option.', tag);
+      else
+        for j in 0 .. jsonb_array_length(opts) - 1 loop
+          tg := q->'optionTags'->>j;
+          if j::text = q->>'answerIndex' then
+            if tg is not null then errs := errs || format('%s: the correct option (%s) must have trap tag null.', tag, j); end if;
+          elsif tg is null then
+            errs := errs || format('%s: wrong option %s has no trap tag.', tag, j);
+          elsif not exists (select 1 from public.trap_types t2 where t2.tag = tg) then
+            errs := errs || format('%s: unknown trap tag "%s".', tag, tg);
+          end if;
+        end loop;
+      end if;
+    elsif q->>'kind' = 'mcq' then
+      untagged := untagged + 1;
+    end if;
+    if coalesce(jsonb_typeof(q->'titaTraps'), 'null') <> 'null' then
+      if q->>'kind' <> 'tita' or jsonb_typeof(q->'titaTraps') <> 'object' then
+        errs := errs || format('%s: titaTraps belongs on TITA questions, as {"wrong answer": "trap-tag"}.', tag);
+      else
+        for kv in select * from jsonb_each_text(q->'titaTraps') loop
+          if public.cv_tita_norm(kv.key) = public.cv_tita_norm(q->>'answer') then
+            errs := errs || format('%s: titaTraps lists the correct answer "%s".', tag, kv.key);
+          elsif not exists (select 1 from public.trap_types t2 where t2.tag = kv.value) then
+            errs := errs || format('%s: unknown trap tag "%s".', tag, kv.value);
+          end if;
+        end loop;
+      end if;
+    end if;
     i := i + 1;
   end loop;
+
+  if untagged > 0 then
+    warns := warns || format('%s MCQ question(s) have no optionTags, so trap analysis will skip them.', untagged);
+  end if;
 
   foreach sec in array declared loop
     have := coalesce((counts->>sec)::int, 0); want := (cfg->'sections'->>sec)::int;
@@ -858,7 +938,8 @@ begin
     order by case when t.timing = 'rapid' then 0 else array_position(order_arr, x.v->>'section') end, x.n
   loop
     insert into public.questions (test_id, qid, position, section, format, kind, passage, stem,
-        options, fig, table_html, td, difficulty, tags, answer_index, answer_text, explanation)
+        options, fig, table_html, td, difficulty, tags, answer_index, answer_text, explanation,
+        option_tags, tita_traps)
     values (t.id, q->>'id', ord, q->>'section', q->>'format', q->>'kind',
         nullif(q->>'passage',''), q->>'stem',
         case when q->>'kind' = 'mcq' then q->'options' else null end,
@@ -866,7 +947,9 @@ begin
         case when jsonb_typeof(q->'td') = 'number' then (q->>'td')::int end,
         q->>'difficulty', q->'tags',
         case when q->>'kind' = 'mcq' then (q->>'answerIndex')::int end,
-        q->>'answer', q->>'explanation');
+        q->>'answer', q->>'explanation',
+        case when q->>'kind' = 'mcq' and jsonb_typeof(q->'optionTags') = 'array' then q->'optionTags' end,
+        case when q->>'kind' = 'tita' and jsonb_typeof(q->'titaTraps') = 'object' then q->'titaTraps' end);
     ord := ord + 1;
   end loop;
 
@@ -958,6 +1041,47 @@ begin
   update public.entitlements set revoked_at = now() where id = p_entitlement;
   return jsonb_build_object('ok', true);
 end $$;
+
+-- ───────────────────────────────────────────────────────────────────────────
+-- 5b. THE TRAP LIST
+--     Tags the Item Factory puts on wrong options. Re-running updates wording
+--     and adds new tags; tags already used by questions are never deleted.
+-- ───────────────────────────────────────────────────────────────────────────
+insert into public.trap_types (tag, area, label, explanation, sort) values
+  ('vocab-sound-alike', 'Vocabulary', 'Sound-alike', 'You picked a word that looks or sounds like the right one but means something else.', 10),
+  ('vocab-false-root', 'Vocabulary', 'Misread root', 'You split the word into the wrong root, or trusted a root that misleads here.', 20),
+  ('vocab-shade', 'Vocabulary', 'Wrong shade of meaning', 'Right idea, wrong strength or tone. The answer needed a more exact shade.', 30),
+  ('vocab-opposite', 'Vocabulary', 'Opposite pull', 'You chose the opposite meaning. Check whether the question asks for a synonym or an antonym.', 40),
+  ('vocab-context-blind', 'Vocabulary', 'Dictionary over context', 'The usual meaning does not fit this sentence. The context wanted a different sense of the word.', 50),
+  ('vocab-usage', 'Vocabulary', 'Wrong usage', 'The meaning is close, but English does not use the word that way.', 60),
+  ('gram-attraction', 'Grammar', 'Nearest-noun trap', 'The verb agreed with the noun closest to it instead of its real subject.', 70),
+  ('gram-hypercorrection', 'Grammar', 'Over-correction', 'You picked the form that sounds formal, like "between you and I", not the correct one.', 80),
+  ('gram-sounds-right', 'Grammar', 'Sounds right, isn’t', 'Common in speech, but wrong in formal written English.', 90),
+  ('gram-tense-marker', 'Grammar', 'Missed the time marker', 'A word like "since", "by then" or "yesterday" fixes the tense, and the answer ignored it.', 100),
+  ('gram-parallelism', 'Grammar', 'Broken parallelism', 'Items in a list or comparison must take the same grammatical form.', 110),
+  ('gram-modifier', 'Grammar', 'Misplaced modifier', 'The describing phrase attaches to the wrong noun.', 120),
+  ('gram-pronoun', 'Grammar', 'Pronoun mismatch', 'The pronoun’s case or number does not match what it refers to.', 130),
+  ('gram-idiom', 'Grammar', 'Wrong preposition or idiom', 'The phrase needs a fixed preposition or idiom, and this option breaks it.', 140),
+  ('gram-mood', 'Grammar', 'Wrong mood', 'Conditionals, wishes and demands need a particular verb form (were, would have, be).', 150),
+  ('rc-extreme', 'Reading', 'Too extreme', 'The option says always, never or only where the passage is more careful.', 160),
+  ('rc-out-of-scope', 'Reading', 'Out of scope', 'It sounds sensible, but the passage never says or implies it.', 170),
+  ('rc-true-not-answer', 'Reading', 'True, but not the answer', 'The statement is supported, but it does not answer the question asked.', 180),
+  ('rc-half-right', 'Reading', 'Half right', 'One part matches the passage; another part is wrong.', 190),
+  ('rc-reversal', 'Reading', 'Reversed', 'The option flips the passage’s claim, or its cause and effect.', 200),
+  ('rc-detail-as-main', 'Reading', 'Detail for main idea', 'You chose a supporting detail when the question asked for the central point.', 210),
+  ('rc-wrong-voice', 'Reading', 'Wrong voice', 'That view belongs to someone the author quotes or argues against, not the author.', 220),
+  ('rc-word-match', 'Reading', 'Word match', 'The option repeats words from the passage but changes what they say.', 230),
+  ('sc-connector', 'Completion', 'Missed the connector', 'A word like "however", "because" or "yet" sets the direction, and the answer went the other way.', 240),
+  ('sc-collocation', 'Completion', 'Doesn’t collocate', 'The word means the right thing, but does not naturally pair with the words around it.', 250),
+  ('sc-register', 'Completion', 'Wrong register', 'Too casual or too formal for the sentence.', 260),
+  ('sc-one-blank', 'Completion', 'Fits one blank only', 'The pair works for one blank but not the other.', 270),
+  ('pj-topic-link', 'Paragraph', 'Linked on topic, not reference', 'You joined sentences that share a topic; the real link is a pronoun or a "this/these".', 280),
+  ('pj-opener', 'Paragraph', 'Wrong opener', 'That sentence depends on something before it, so it cannot open the paragraph.', 290),
+  ('pj-time-order', 'Paragraph', 'Time order missed', 'Markers like "first", "then" or "by evening" fix the order.', 300),
+  ('pj-pair-broken', 'Paragraph', 'Broken pair', 'Two sentences that must sit together, like a claim and its example, were split.', 310),
+  ('para-same-topic', 'Paragraph', 'Same topic, different point', 'The odd sentence shares the topic, but not the argument the others build.', 320)
+on conflict (tag) do update set area = excluded.area, label = excluded.label,
+  explanation = excluded.explanation, sort = excluded.sort;
 
 -- ───────────────────────────────────────────────────────────────────────────
 -- 6. WHO CAN CALL WHAT
