@@ -30,8 +30,11 @@
   CV.loading(app, 'Loading your record…');
 
   let A, name = '';
+  const TRAPS = {};
   try {
     A = await CV.rpc('cv_my_attempts');
+    const { data: tl } = await CV.sb.from('trap_types').select('tag, area, label, explanation');
+    (tl || []).forEach(t => TRAPS[t.tag] = t);
     const { data: prof } = await CV.sb.from('profiles').select('full_name').eq('id', user.id).maybeSingle();
     name = prof && prof.full_name ? prof.full_name.split(' ')[0] : '';
   } catch (e) { app.innerHTML = `<div class="note bad">${esc(e.message)}</div>`; return; }
@@ -66,6 +69,12 @@
     .sort((a, b) => b.lost - a.lost || a.score / a.max - b.score / b.max);
   const weak = types.filter(t => t.lost > 0).slice(0, 6);
 
+  // Traps across first attempts, most frequent first
+  const trapAgg = {};
+  firsts.forEach(a => Object.entries((a.breakdown && a.breakdown.traps) || {}).forEach(([k, n]) => { trapAgg[k] = (trapAgg[k] || 0) + n; }));
+  const topTraps = Object.entries(trapAgg).filter(([k]) => TRAPS[k]).sort((a, b) => b[1] - a[1]).slice(0, 4)
+    .map(([k, n]) => ({ ...TRAPS[k], n }));
+
   app.innerHTML = head + `
     <p class="sub">Your first attempt at each test is your score. Retakes are practice, and every review stays here.</p>
     <section class="stats mt2" style="max-width:720px">
@@ -74,6 +83,11 @@
       <div class="stat"><b>${avgFirst}%</b><span>Avg first score</span></div>
       <div class="stat"><b>${acc}%</b><span>Accuracy</span></div>
     </section>
+
+    ${topTraps.length ? `<h2 class="mt3">Traps that catch you most</h2>
+    <p class="small muted">Across your first attempts. Spot these while you read the options, and your score climbs fastest.</p>
+    <div class="trap-list mt1">${topTraps.map(t => `<div class="trap-row"><span class="trap-n">${t.n}×</span>
+      <div><b>${esc(t.label)}</b> <span class="badge" style="margin-left:.3rem">${esc(t.area)}</span><div class="small muted">${esc(t.explanation)}</div></div></div>`).join('')}</div>` : ''}
 
     ${weak.length ? `<h2 class="mt3">What to revise next</h2>
     <p class="small muted">Question types where you’ve lost the most marks on first attempts.</p>

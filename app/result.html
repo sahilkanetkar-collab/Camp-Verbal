@@ -49,6 +49,11 @@
   }
   QS.forEach(q => q._o = outcome(q));
 
+  // Traps that caught this student in this attempt (most frequent first)
+  const trapCount = {};
+  QS.forEach(q => { if (q._o === 'wrong' && q.trap) { const t = trapCount[q.trap.tag] || (trapCount[q.trap.tag] = { ...q.trap, n: 0 }); t.n++; } });
+  const trapList = Object.values(trapCount).sort((a, b) => b.n - a.n);
+
   // Breakdown rows, weakest first (by marks lost)
   const rows = obj => Object.entries(obj || {}).map(([k, v]) => ({ k, ...v, lost: v.max - v.score }))
     .sort((a, b) => b.lost - a.lost);
@@ -82,6 +87,10 @@
     <p class="small muted mt1">Time taken: ${fmtDur(S.time_taken_sec)} · time on questions: ${fmtDur(timeUsed)} · marking +${T.marking.c} / ${T.marking.w}${T.marking.titaW !== undefined && T.marking.titaW !== T.marking.w ? ` (type-in wrong: ${T.marking.titaW})` : ''}</p>
 
     ${secRows.length > 1 ? `<h2 class="mt3">By section</h2><div class="mt1">${tbl(secRows, 'Section')}</div>` : ''}
+    ${trapList.length ? `<h2 class="mt3">Traps that caught you</h2>
+      <p class="small muted">Each wrong option is built to catch a specific mistake. These are the ones you fell for.</p>
+      <div class="trap-list mt1">${trapList.map(t => `<div class="trap-row"><span class="trap-n">${t.n}×</span>
+        <div><b>${esc(t.label)}</b><div class="small muted">${esc(t.explanation)}</div></div></div>`).join('')}</div>` : ''}
     ${fmtRows.length > 1 ? `<h2 class="mt3">By question type</h2><p class="small muted">Sorted by marks lost — start your revision at the top.</p><div class="mt1">${tbl(fmtRows, 'Type')}</div>` : ''}
 
     <div class="spread mt3"><h2>Review</h2>
@@ -103,7 +112,8 @@
         const key = k === q.answer_index, mine = q.response != null && +q.response === k;
         const cls = ['ropt', key ? 'is-key' : '', mine ? 'is-mine' : '', mine && !key ? 'is-wrong' : ''].join(' ');
         const t = key && mine ? 'Your answer ✓' : key ? 'Correct answer' : mine ? 'Your answer' : '';
-        return `<div class="${cls}"><span class="k">${KEYS[k]}</span><span>${esc(o)}</span>${t ? `<span class="tag" style="color:${key ? 'var(--ok)' : 'var(--bad)'}">${t}</span>` : ''}</div>`;
+        const ot = !key && q.option_traps && q.option_traps[k];
+        return `<div class="${cls}"><span class="k">${KEYS[k]}</span><span>${esc(o)}${ot ? `<span class="otrap">Trap: ${esc(ot)}</span>` : ''}</span>${t ? `<span class="tag" style="color:${key ? 'var(--ok)' : 'var(--bad)'}">${t}</span>` : ''}</div>`;
       }).join('');
     } else {
       body = `<div class="ropt ${q._o === 'correct' ? 'is-key' : 'is-mine is-wrong'}"><span>Your answer: <b>${q.response ? esc(q.response) : '—'}</b></span></div>
@@ -116,6 +126,7 @@
       <div class="stem">${para(q.stem)}</div>
       ${q.fig ? `<div class="figure">${q.fig}</div>` : ''}${q.table ? `<div class="figure">${q.table}</div>` : ''}
       <div class="mt1">${body}</div>
+      ${q._o === 'wrong' && q.trap ? `<div class="trap-call"><b>You fell for: ${esc(q.trap.label)}.</b> ${esc(q.trap.explanation)}</div>` : ''}
       ${q.explanation ? `<div class="expl"><b>Why:</b> ${para(q.explanation)}</div>` : ''}
     </article>`;
   };
