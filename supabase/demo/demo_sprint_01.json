@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "exam": "IPMAT_INDORE",
+    "testType": "sectional",
+    "sections": [
+      "VA"
+    ],
+    "testName": "Demo Sprint 01",
+    "timerMinutes": null,
+    "timerMode": "perQuestion"
+  },
+  "questions": [
+    {
+      "id": "SPR01-01",
+      "section": "VA",
+      "format": "vocab-meaning",
+      "kind": "mcq",
+      "stem": "Choose the word closest in meaning to LACONIC.",
+      "options": [
+        "Using very few words",
+        "Lacking energy",
+        "Easily angered",
+        "Deeply sorrowful"
+      ],
+      "answer": "Using very few words",
+      "answerIndex": 0,
+      "difficulty": "medium",
+      "explanation": "Laconic means brief and to the point. 'Lacking energy' is lethargic, a common confusion because of the sound.",
+      "status": "approved",
+      "verified": "ok",
+      "td": 15
+    },
+    {
+      "id": "SPR01-02",
+      "section": "VA",
+      "format": "vocab-antonym",
+      "kind": "mcq",
+      "stem": "Choose the word most nearly OPPOSITE in meaning to EPHEMERAL.",
+      "options": [
+        "Fleeting",
+        "Enduring",
+        "Trivial",
+        "Invisible"
+      ],
+      "answer": "Enduring",
+      "answerIndex": 1,
+      "difficulty": "medium",
+      "explanation": "Ephemeral means short-lived; enduring is its opposite. Fleeting is a synonym, not an antonym.",
+      "status": "approved",
+      "verified": "ok",
+      "td": 15
+    },
+    {
+      "id": "SPR01-03",
+      "section": "VA",
+      "format": "grammar-sva",
+      "kind": "mcq",
+      "stem": "Pick the correct form: The list of candidates ____ been finalised.",
+      "options": [
+        "have",
+        "has",
+        "are",
+        "were"
+      ],
+      "answer": "has",
+      "answerIndex": 1,
+      "difficulty": "medium",
+      "explanation": "The subject is 'list' (singular); 'of candidates' is a prepositional phrase and does not change the verb.",
+      "status": "approved",
+      "verified": "ok",
+      "td": 20
+    },
+    {
+      "id": "SPR01-04",
+      "section": "VA",
+      "format": "vocab-usage",
+      "kind": "mcq",
+      "stem": "In which sentence is 'sanguine' used correctly?",
+      "options": [
+        "She was sanguine about the result, confident it would go her way.",
+        "The sanguine wound needed stitches at once.",
+        "He spoke in a sanguine whisper to avoid being heard.",
+        "The sanguine rules left no room for exceptions."
+      ],
+      "answer": "She was sanguine about the result, confident it would go her way.",
+      "answerIndex": 0,
+      "difficulty": "medium",
+      "explanation": "Sanguine means optimistic. Its link to blood (Latin sanguis) tempts the second option, but that sense is archaic.",
+      "status": "approved",
+      "verified": "ok",
+      "td": 25
+    }
+  ]
+}

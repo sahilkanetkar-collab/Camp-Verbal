@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "exam": "UGAT_IIMB",
+    "testType": "sectional",
+    "sections": [
+      "VA"
+    ],
+    "testName": "Demo Grammar Drill 01",
+    "timerMinutes": 10
+  },
+  "questions": [
+    {
+      "id": "DGD01-01",
+      "section": "VA",
+      "format": "grammar-pronoun",
+      "kind": "mcq",
+      "stem": "Choose the correct option: Between you and ____, the plan is flawed.",
+      "options": [
+        "I",
+        "me",
+        "myself",
+        "mine"
+      ],
+      "answer": "me",
+      "answerIndex": 1,
+      "difficulty": "medium",
+      "explanation": "'Between' is a preposition, so it takes the object pronoun 'me'. 'Between you and I' is a hypercorrection.",
+      "status": "approved",
+      "verified": "ok"
+    },
+    {
+      "id": "DGD01-02",
+      "section": "VA",
+      "format": "grammar-modifier",
+      "kind": "mcq",
+      "stem": "Which sentence is free of a dangling modifier?",
+      "options": [
+        "Walking to school, the rain soaked my bag.",
+        "Walking to school, I got my bag soaked in the rain.",
+        "Having finished dinner, the dishes were washed.",
+        "To pass the exam, hard work is needed."
+      ],
+      "answer": "Walking to school, I got my bag soaked in the rain.",
+      "answerIndex": 1,
+      "difficulty": "medium",
+      "explanation": "Only the second sentence has the right doer ('I') right after the opening phrase.",
+      "status": "approved",
+      "verified": "ok"
+    },
+    {
+      "id": "DGD01-03",
+      "section": "VA",
+      "format": "grammar-parallelism",
+      "kind": "mcq",
+      "stem": "Choose the most parallel version.",
+      "options": [
+        "She likes reading, to swim, and hiking.",
+        "She likes reading, swimming, and to hike.",
+        "She likes reading, swimming, and hiking.",
+        "She likes to read, swimming, and hikes."
+      ],
+      "answer": "She likes reading, swimming, and hiking.",
+      "answerIndex": 2,
+      "difficulty": "medium",
+      "explanation": "All three items take the same -ing form.",
+      "status": "approved",
+      "verified": "ok"
+    }
+  ]
+}

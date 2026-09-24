@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "exam": "IPMAT_INDORE",
+    "testType": "sectional",
+    "sections": [
+      "QA-SA",
+      "VA"
+    ],
+    "testName": "Demo Sectional Mock 01",
+    "timerMinutes": null,
+    "sectionTimers": {
+      "QA-SA": 5,
+      "VA": 5
+    }
+  },
+  "questions": [
+    {
+      "id": "DSM01-QA-01",
+      "section": "QA-SA",
+      "format": "arithmetic-percent",
+      "kind": "tita",
+      "stem": "A price rises by 20% and then falls by 20%. By what percentage is the final price lower than the original? (Enter the number only.)",
+      "options": [],
+      "answer": "4",
+      "difficulty": "medium",
+      "explanation": "1.2 × 0.8 = 0.96, so the final price is 4% lower.",
+      "status": "approved",
+      "verified": "ok"
+    },
+    {
+      "id": "DSM01-QA-02",
+      "section": "QA-SA",
+      "format": "number-system",
+      "kind": "tita",
+      "stem": "How many positive integers less than 50 are divisible by both 3 and 4?",
+      "options": [],
+      "answer": "4",
+      "difficulty": "medium",
+      "explanation": "Divisible by both 3 and 4 means divisible by 12: 12, 24, 36, 48 — four numbers.",
+      "status": "approved",
+      "verified": "ok"
+    },
+    {
+      "id": "DSM01-VA-01",
+      "section": "VA",
+      "format": "rc-main-idea",
+      "kind": "mcq",
+      "stem": "Which statement best captures the author's central claim?",
+      "options": [
+        "Cities should ban cars from their centres.",
+        "Street design shapes how people behave, often more than rules do.",
+        "Pedestrians ignore traffic signals more than drivers do.",
+        "Planners care more about cars than people."
+      ],
+      "answer": "Street design shapes how people behave, often more than rules do.",
+      "answerIndex": 1,
+      "difficulty": "medium",
+      "explanation": "The passage argues that the layout of a street changes behaviour more reliably than signage or enforcement.",
+      "status": "approved",
+      "verified": "ok",
+      "passage": "Planners once believed that good behaviour on streets came from rules: more signs, lower limits, stricter fines. Yet the streets where drivers slow down on their own are rarely the most heavily signposted. They are narrow, lined with trees, and full of people. A wide, empty road invites speed no matter what the sign says; a crowded, enclosed one discourages it without a word. The lesson is not that rules are useless, but that the shape of a place speaks louder than its notices."
+    },
+    {
+      "id": "DSM01-VA-02",
+      "section": "VA",
+      "format": "rc-inference",
+      "kind": "mcq",
+      "stem": "The author would most likely agree that a speed-limit sign on a wide, empty road",
+      "options": [
+        "is the most effective way to slow drivers.",
+        "works only when police are present.",
+        "will do less to slow drivers than narrowing the road would.",
+        "should be removed because it has no effect."
+      ],
+      "answer": "will do less to slow drivers than narrowing the road would.",
+      "answerIndex": 2,
+      "difficulty": "medium",
+      "explanation": "The author says a wide road 'invites speed no matter what the sign says' and that shape speaks louder than notices — but stops short of calling rules useless, which rules out the last option.",
+      "status": "approved",
+      "verified": "ok",
+      "passage": "Planners once believed that good behaviour on streets came from rules: more signs, lower limits, stricter fines. Yet the streets where drivers slow down on their own are rarely the most heavily signposted. They are narrow, lined with trees, and full of people. A wide, empty road invites speed no matter what the sign says; a crowded, enclosed one discourages it without a word. The lesson is not that rules are useless, but that the shape of a place speaks louder than its notices."
+    },
+    {
+      "id": "DSM01-VA-03",
+      "section": "VA",
+      "format": "parajumble",
+      "kind": "tita",
+      "stem": "Arrange the sentences into a coherent paragraph and enter the order (e.g. 1234).\n1. By evening, the square had emptied.\n2. The market opened at dawn, as it always did.\n3. Through the afternoon, the crowd thinned as the heat rose.\n4. By mid-morning, traders could barely move between the stalls.",
+      "options": [],
+      "answer": "2431",
+      "difficulty": "medium",
+      "explanation": "Time markers settle it: dawn (2) → mid-morning (4) → afternoon (3) → evening (1).",
+      "status": "approved",
+      "verified": "ok"
+    }
+  ]
+}
