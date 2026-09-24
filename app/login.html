@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Camp Verbal</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#06182e">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main id="app" class="wrap narrow"></main>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/supabase-2.117.1.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(async function () {
+  const { esc, sb, toast } = CV;
+  const app = document.getElementById('app');
+  CV.header({ label: 'Log in' });
+  if (!CV.configured) return CV.notConfigured(app);
+
+  const next = (() => { const n = CV.qs.get('next') || 'index.html'; return /^[\w.-]+\.html(\?[\w=&%.-]*)?$/.test(n) ? n : 'index.html'; })();
+  let email = '';
+  const LEN = Math.min(10, Math.max(6, +CV.cfg.otpLength || 6));
+
+  // Coming back from an email login link that failed (expired or already used)
+  const hash = new URLSearchParams(location.hash.slice(1));
+  const linkError = hash.get('error_description') || hash.get('error');
+  if (linkError) history.replaceState(null, '', location.pathname + location.search);
+
+  const s = await CV.session();
+  if (s) return afterLogin(s.user);
+  // If the login link is opened in another tab, this tab follows along.
+  sb.auth.onAuthStateChange((ev, sess) => { if (ev === 'SIGNED_IN' && sess) setTimeout(() => afterLogin(sess.user), 0); });
+  stepEmail();
+  if (linkError) show(document.getElementById('msg'), 'bad',
+    /expired|invalid/i.test(linkError) ? 'That login link has expired or was already used. Enter your email to get a fresh one.' : linkError);
+  const redirectTo = location.origin + location.pathname + (next !== 'index.html' ? '?next=' + encodeURIComponent(next) : '');
+  const sendLink = () => sb.auth.signInWithOtp({ email, options: { shouldCreateUser: true, emailRedirectTo: redirectTo } });
+
+  function stepEmail(prefill) {
+    app.innerHTML = `
+      <p class="eyebrow">Student login</p>
+      <h1>Welcome to <em>Camp Verbal.</em></h1>
+      <p class="sub">Enter your email and we’ll send you a login link. No password to remember.</p>
+      <form class="card mt2" id="f" novalidate>
+        <div class="field"><label class="lbl" for="em">Email</label>
+          <input class="inp" id="em" type="email" autocomplete="email" inputmode="email" required placeholder="you@email.com" value="${esc(prefill || '')}"></div>
+        <div id="msg" class="mt1" hidden></div>
+        <button class="btn btn-gold btn-block mt1" id="go">Email me a login link</button>
+      </form>`;
+    const f = document.getElementById('f'), msg = document.getElementById('msg'), go = document.getElementById('go');
+    document.getElementById('em').focus();
+    f.addEventListener('submit', async e => {
+      e.preventDefault();
+      email = document.getElementById('em').value.trim().toLowerCase();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { show(msg, 'bad', 'Please enter a valid email address.'); return; }
+      go.disabled = true; go.textContent = 'Sending…';
+      const { error } = await sendLink();
+      go.disabled = false; go.textContent = 'Email me a login link';
+      if (error) {
+        const m = /rate|security purposes|seconds/i.test(error.message)
+          ? 'Too many login emails requested. Please wait a minute and try again.' : CV.friendly(error);
+        show(msg, 'bad', m); return;
+      }
+      stepCode();
+    });
+  }
+
+  function stepCode() {
+    app.innerHTML = `
+      <p class="eyebrow">Check your inbox</p>
+      <h1>Open the email we <em>just sent.</em></h1>
+      <p class="sub">We emailed <b>${esc(email)}</b>. Tap <b>Log In</b> in that email and you’ll land here, logged in. It can take a minute; check spam if it doesn’t show up.</p>
+      <form class="card mt2" id="f" novalidate>
+        <div class="field"><label class="lbl" for="code">Email shows a code instead? Enter it here</label>
+          <input class="inp code-inp" id="code" inputmode="numeric" autocomplete="one-time-code" maxlength="${LEN}" required placeholder="${'•'.repeat(LEN)}"></div>
+        <div id="msg" class="mt1" hidden></div>
+        <button class="btn btn-gold btn-block mt1" id="go">Log in</button>
+        <div class="spread mt1 small"><button type="button" class="btn btn-ghost btn-sm" id="back">← Different email</button>
+          <button type="button" class="btn btn-ghost btn-sm" id="resend">Send again</button></div>
+      </form>`;
+    const code = document.getElementById('code'), msg = document.getElementById('msg'), go = document.getElementById('go');
+    code.addEventListener('input', () => { code.value = code.value.replace(/\D/g, '').slice(0, LEN); if (code.value.length === LEN) document.getElementById('f').requestSubmit(); });
+    document.getElementById('back').onclick = () => stepEmail(email);
+    document.getElementById('resend').onclick = async () => {
+      const { error } = await sendLink();
+      error ? show(msg, 'bad', /rate|seconds/i.test(error.message) ? 'Please wait a minute before asking for another email.' : CV.friendly(error))
+            : show(msg, 'ok', 'A fresh login email is on its way.');
+    };
+    document.getElementById('f').addEventListener('submit', async e => {
+      e.preventDefault();
+      if (!new RegExp('^\\d{' + LEN + '}$').test(code.value)) { show(msg, 'bad', 'The code is ' + LEN + ' digits.'); return; }
+      go.disabled = true; go.textContent = 'Checking…';
+      const { data, error } = await sb.auth.verifyOtp({ email, token: code.value, type: 'email' });
+      go.disabled = false; go.textContent = 'Log in';
+      if (error) { show(msg, 'bad', /expired|invalid/i.test(error.message) ? 'That code is wrong or has expired. Try again or resend.' : CV.friendly(error)); return; }
+      afterLogin(data.user);
+    });
+  }
+
+  async function afterLogin(user) {
+    if (afterLogin.ran) return;          // link + code (or two tabs) can both report a login
+    afterLogin.ran = true;
+    const { data: prof } = await sb.from('profiles').select('full_name, phone, target_exam').eq('id', user.id).maybeSingle();
+    if (prof && prof.full_name) return location.replace(next);
+    stepProfile(user, prof || {});
+  }
+
+  function stepProfile(user, prof) {
+    const exams = ['IPMAT Indore', 'IPMAT Rohtak', 'JIPMAT', 'CAT', 'IIMK BMS', 'UGAT', 'Other'];
+    app.innerHTML = `
+      <p class="eyebrow">One last step</p>
+      <h1>Tell us <em>who you are.</em></h1>
+      <p class="sub">So your results and feedback reach the right person.</p>
+      <form class="card mt2" id="f" novalidate>
+        <div class="field"><label class="lbl" for="nm">Full name</label>
+          <input class="inp" id="nm" autocomplete="name" required value="${esc(prof.full_name || '')}"></div>
+        <div class="field"><label class="lbl" for="ph">Phone / WhatsApp <span class="muted" style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></label>
+          <input class="inp" id="ph" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 XXXXX XXXXX" value="${esc(prof.phone || '')}"></div>
+        <div class="field"><label class="lbl" for="ex">Target exam</label>
+          <select class="inp" id="ex"><option value="">Choose one</option>${exams.map(x => `<option ${prof.target_exam === x ? 'selected' : ''}>${x}</option>`).join('')}</select></div>
+        <div id="msg" class="mt1" hidden></div>
+        <button class="btn btn-gold btn-block mt1" id="go">Continue</button>
+      </form>`;
+    document.getElementById('nm').focus();
+    document.getElementById('f').addEventListener('submit', async e => {
+      e.preventDefault();
+      const msg = document.getElementById('msg');
+      const full_name = document.getElementById('nm').value.trim();
+      const phone = document.getElementById('ph').value.trim();
+      const target_exam = document.getElementById('ex').value;
+      if (full_name.length < 2) { show(msg, 'bad', 'Please add your name.'); return; }
+      if (phone && phone.replace(/\D/g, '').length < 10) { show(msg, 'bad', 'That phone number looks incomplete — or leave it blank.'); return; }
+      const { error } = await sb.from('profiles').update({ full_name, phone: phone || null, target_exam: target_exam || null }).eq('id', user.id);
+      if (error) { show(msg, 'bad', CV.friendly(error)); return; }
+      location.replace(next);
+    });
+  }
+
+  function show(el, kind, text) { el.className = 'note ' + kind + ' mt1'; el.textContent = text; el.hidden = false; }
+})();
+</script>
+</body>
+</html>

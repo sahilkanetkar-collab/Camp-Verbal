@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Camp Verbal</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#06182e">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main id="app" class="wrap"></main>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/supabase-2.117.1.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(async function () {
+  'use strict';
+  const { esc, num, fmtIST, toast, ask, rpc } = CV;
+  const app = document.getElementById('app');
+  if (!CV.configured) { CV.header(); return CV.notConfigured(app); }
+  const user = await CV.requireUser();
+  const isAdmin = await rpc('cv_is_admin').catch(() => false);
+  CV.header({ email: user.email, admin: false, label: 'Admin' });
+  if (!isAdmin) { app.innerHTML = '<div class="note bad">This page is for Camp Verbal admins only.</div><a class="btn mt1" href="index.html">Go to your tests</a>'; return; }
+
+  let D = null, tab = 'tests';
+  const MODE = { rapid: 'Sprint (per question)', locked: 'Locked sections', single: 'Single clock' };
+  const KINDS = { rapid: 'Sprint', ladder: 'Concept ladder', mock: 'Mock', challenge: 'Challenge', drill: 'Drill', other: 'Other' };
+  const toLocalInput = iso => { if (!iso) return ''; const d = new Date(iso); const p = n => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`; };
+  const fromLocalInput = v => v ? new Date(v).toISOString() : '';
+
+  app.innerHTML = `<p class="eyebrow">Admin</p><h1>Camp Verbal <em>control room.</em></h1>
+    <nav class="tabs" id="tabs">${['tests:Tests', 'import:Import a test', 'series:Series', 'access:Access', 'activity:Activity']
+      .map(x => { const [k, l] = x.split(':'); return `<button class="tab" data-t="${k}">${l}</button>`; }).join('')}</nav>
+    <div id="pane"></div>`;
+  document.getElementById('tabs').addEventListener('click', e => { const t = e.target.getAttribute('data-t'); if (t) { tab = t; draw(); } });
+  await reload();
+
+  async function reload() {
+    CV.loading(document.getElementById('pane'));
+    try { D = await rpc('cv_admin_overview'); draw(); }
+    catch (e) { document.getElementById('pane').innerHTML = `<div class="note bad">${esc(e.message)}</div>`; }
+  }
+  function draw() {
+    document.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', b.getAttribute('data-t') === tab));
+    ({ tests: drawTests, import: drawImport, series: drawSeries, access: drawAccess, activity: drawActivity })[tab]();
+  }
+  const pane = () => document.getElementById('pane');
+  const seriesOptions = sel => '<option value="">— no series —</option>' + D.series.map(s => `<option value="${s.id}" ${s.id === sel ? 'selected' : ''}>${esc(s.title)}</option>`).join('');
+
+  // ─────────────── Tests ───────────────
+  function drawTests() {
+    if (!D.tests.length) { pane().innerHTML = '<div class="card"><h2>No tests yet</h2><p class="sub">Create a series, then import your first Studio envelope.</p></div>'; return; }
+    pane().innerHTML = `<p class="small muted">${D.tests.length} test${D.tests.length === 1 ? '' : 's'} · ${D.students} student${D.students === 1 ? '' : 's'} signed up</p>
+      <div class="tbl-wrap mt1"><table class="tbl"><thead><tr><th>Test</th><th>Series</th><th>Mode</th><th class="num">Qs</th><th>Access</th><th>Window</th><th class="num">Taken</th><th></th></tr></thead><tbody>` +
+      D.tests.map(t => `<tr>
+        <td><b>${esc(t.title)}</b><div class="tiny muted">${esc(t.slug)} · ${esc(t.exam_name)}</div></td>
+        <td class="small">${esc(t.series_title || '—')}</td>
+        <td class="small">${MODE[t.timing]} · ${t.minutes}m</td>
+        <td class="num">${t.question_count}</td>
+        <td>${t.published ? '<span class="badge b-ok">Live</span>' : '<span class="badge b-warn">Draft</span>'} <span class="badge">${t.access}</span></td>
+        <td class="tiny">${t.opens_at ? 'from ' + esc(fmtIST(t.opens_at)) : ''}${t.closes_at ? '<br>until ' + esc(fmtIST(t.closes_at)) : ''}${!t.opens_at && !t.closes_at ? '<span class="muted">always</span>' : ''}</td>
+        <td class="num">${t.attempts}</td>
+        <td><button class="btn btn-sm" data-edit="${esc(t.slug)}">Edit</button></td></tr>`).join('') + '</tbody></table></div><div id="ed"></div>';
+    pane().querySelectorAll('[data-edit]').forEach(b => b.onclick = () => editTest(b.getAttribute('data-edit')));
+  }
+  function editTest(slug) {
+    const t = D.tests.find(x => x.slug === slug);
+    const ed = document.getElementById('ed');
+    ed.innerHTML = `<form class="card mt2" id="ef"><div class="spread"><h2>${esc(t.title)}</h2><a class="btn btn-sm" href="test.html?t=${encodeURIComponent(t.slug)}" target="_blank" rel="noopener">Preview as student ↗</a></div>
+      <div class="two mt1">
+        <div class="field"><label class="lbl">Title</label><input class="inp" name="title" value="${esc(t.title)}"></div>
+        <div class="field"><label class="lbl">Series</label><select class="inp" name="series_id">${seriesOptions(t.series_id)}</select></div>
+        <div class="field"><label class="lbl">Access</label><select class="inp" name="access"><option value="paid" ${t.access === 'paid' ? 'selected' : ''}>Paid (needs a grant)</option><option value="free" ${t.access === 'free' ? 'selected' : ''}>Free for anyone logged in</option></select></div>
+        <div class="field"><label class="lbl">Order in series</label><input class="inp" name="sort" type="number" value="${t.sort}"></div>
+        <div class="field"><label class="lbl">Opens (IST)</label><input class="inp" name="opens_at" type="datetime-local" value="${toLocalInput(t.opens_at)}"></div>
+        <div class="field"><label class="lbl">Closes (IST)</label><input class="inp" name="closes_at" type="datetime-local" value="${toLocalInput(t.closes_at)}"></div>
+        <div class="field"><label class="lbl">Max attempts <span class="muted" style="text-transform:none;letter-spacing:0">(blank = unlimited)</span></label><input class="inp" name="max_attempts" type="number" min="1" value="${t.max_attempts || ''}"></div>
+        <div class="field" style="align-self:end"><label class="check"><input type="checkbox" name="published" ${t.published ? 'checked' : ''}> Published (students can see it)</label></div>
+      </div>
+      <div class="row mt2"><button class="btn btn-gold">Save changes</button><button type="button" class="btn" id="cx">Close</button>
+        <button type="button" class="btn btn-danger" id="del" style="margin-left:auto" ${t.attempts ? 'disabled title="Students have taken this test"' : ''}>Delete test</button></div></form>`;
+    ed.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('cx').onclick = () => ed.innerHTML = '';
+    document.getElementById('del').onclick = async () => {
+      if (!await ask('Delete this test?', `<b>${esc(t.title)}</b> and its questions will be removed. This can’t be undone.`, 'Delete', { danger: true })) return;
+      try { await rpc('cv_admin_delete_test', { p_slug: t.slug }); toast('Test deleted.'); reload(); } catch (e) { toast(e.message, true); }
+    };
+    document.getElementById('ef').addEventListener('submit', async e => {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const p = { title: f.get('title'), series_id: f.get('series_id'), access: f.get('access'), sort: +f.get('sort') || 100,
+        opens_at: fromLocalInput(f.get('opens_at')), closes_at: fromLocalInput(f.get('closes_at')),
+        max_attempts: f.get('max_attempts') || '', published: f.get('published') === 'on' };
+      try { await rpc('cv_admin_update_test', { p_slug: t.slug, p }); toast('Saved.'); await reload(); editTest(t.slug); }
+      catch (err) { toast(err.message, true); }
+    });
+  }
+
+  // ─────────────── Import ───────────────
+  let lastEnv = null, lastAudit = null;
+  function drawImport() {
+    pane().innerHTML = `<div class="card">
+      <h2>Import a Studio envelope</h2>
+      <p class="sub small">Paste the JSON from the Item Factory / Test Builder Studio (<code>{"meta":{…},"questions":[…]}</code>), or choose a .json file. It’s checked with the same rules as Studio’s Gate 1.</p>
+      <div class="field mt1"><textarea class="inp" id="env" placeholder='{"meta":{"exam":"IPMAT_INDORE","testType":"sectional",…},"questions":[…]}' style="min-height:200px"></textarea></div>
+      <div class="row mt1"><label class="btn btn-sm" style="cursor:pointer">Choose .json file<input type="file" id="file" accept=".json,application/json" hidden></label>
+        <button class="btn btn-gold" id="chk">Check envelope</button></div>
+      <div id="aud" class="mt2"></div></div>`;
+    document.getElementById('file').onchange = async e => { const f = e.target.files[0]; if (f) { document.getElementById('env').value = await f.text(); check(); } };
+    document.getElementById('chk').onclick = check;
+  }
+  function parseLoose(txt) {
+    const c = String(txt || '').replace(/```json|```/g, '').trim();
+    const s = c.indexOf('{'), e = c.lastIndexOf('}');
+    try { if (s !== -1 && e > s) return JSON.parse(c.slice(s, e + 1)); } catch (x) { /* fall through */ }
+    try { return JSON.parse(c); } catch (x) { return null; }
+  }
+  async function check() {
+    const out = document.getElementById('aud');
+    const env = parseLoose(document.getElementById('env').value);
+    if (!env) { out.innerHTML = '<div class="note bad">That isn’t valid JSON. Paste the whole envelope, starting with { and ending with }.</div>'; return; }
+    CV.loading(out, 'Checking…');
+    try { lastAudit = await rpc('cv_audit_envelope', { p_env: env }); lastEnv = env; }
+    catch (e) { out.innerHTML = `<div class="note bad">${esc(e.message)}</div>`; return; }
+    const A = lastAudit, d = A.delivery || {};
+    const errs = A.errors || [], warns = A.warnings || [];
+    const slug = (env.meta && env.meta.testName || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    const exists = D.tests.some(t => t.slug === slug);
+    out.innerHTML = (errs.length ? `<div class="note bad"><b>${errs.length} problem${errs.length > 1 ? 's' : ''} — fix these in the envelope first:</b><ul>${errs.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` :
+        `<div class="note ok"><b>Passed.</b> ${d.question_count} questions · ${esc(d.exam_name)} · ${MODE[d.timing]} · ${d.minutes} min` +
+        `${d.section_minutes ? ' (' + Object.entries(d.section_minutes).map(([k, v]) => esc(k) + ' ' + v + 'm').join(', ') + ')' : ''} · +${d.marking.c} / ${d.marking.w}` +
+        `${d.marking.titaW !== undefined ? ' (TITA ' + d.marking.titaW + ')' : ''} · max ${d.max_marks}</div>`) +
+      (warns.length ? `<div class="note warn mt1"><b>Heads-up:</b><ul>${warns.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : '') +
+      (errs.length ? '' : `<form id="imf" class="mt2"><div class="two">
+        <div class="field"><label class="lbl">Title students see</label><input class="inp" name="title" value="${esc(d.title)}"></div>
+        <div class="field"><label class="lbl">Web address (slug)</label><input class="inp" name="slug" value="${esc(slug)}" pattern="[a-z0-9][a-z0-9\\-]{1,80}"></div>
+        <div class="field"><label class="lbl">Series</label><select class="inp" name="series_id">${seriesOptions('')}</select></div>
+        <div class="field"><label class="lbl">Access</label><select class="inp" name="access"><option value="paid">Paid (needs a grant)</option><option value="free">Free for anyone logged in</option></select></div>
+        <div class="field"><label class="lbl">Opens (IST, optional)</label><input class="inp" name="opens_at" type="datetime-local"></div>
+        <div class="field"><label class="lbl">Closes (IST, optional)</label><input class="inp" name="closes_at" type="datetime-local"></div>
+      </div>
+      <div class="row mt1"><label class="check"><input type="checkbox" name="published"> Publish now</label>
+        ${exists ? '<label class="check"><input type="checkbox" name="replace"> Replace the existing test at this address</label>' : ''}</div>
+      ${exists ? '<div class="note warn mt1">A test already uses this address. Tick “replace” to overwrite it (only possible if nobody has taken it), or change the address.</div>' : ''}
+      <button class="btn btn-gold mt2">Import test</button></form>`);
+    const imf = document.getElementById('imf');
+    if (imf) imf.addEventListener('submit', async e => {
+      e.preventDefault();
+      const f = new FormData(imf);
+      const opts = { title: f.get('title'), slug: f.get('slug'), series_id: f.get('series_id'), access: f.get('access'),
+        opens_at: fromLocalInput(f.get('opens_at')), closes_at: fromLocalInput(f.get('closes_at')),
+        published: f.get('published') === 'on', replace: f.get('replace') === 'on' };
+      try {
+        const r = await rpc('cv_admin_import_test', { p_env: lastEnv, p_opts: opts });
+        if (!r.ok) { toast('The envelope failed its checks.', true); return; }
+        toast('Imported: ' + r.slug);
+        document.getElementById('env').value = ''; out.innerHTML = '';
+        tab = 'tests'; await reload(); editTest(r.slug);
+      } catch (err) { toast(err.message, true); }
+    });
+  }
+
+  // ─────────────── Series ───────────────
+  function drawSeries() {
+    pane().innerHTML = `<div class="two">
+      <div>${D.series.length ? D.series.map(s => `<div class="card" style="margin-bottom:.8rem"><div class="spread"><div><b>${esc(s.title)}</b>
+        <div class="tiny muted">${esc(s.slug)} · ${KINDS[s.kind] || s.kind} · order ${s.sort}</div></div>
+        <div class="row">${s.published ? '<span class="badge b-ok">Live</span>' : '<span class="badge b-warn">Hidden</span>'}<button class="btn btn-sm" data-s="${s.id}">Edit</button></div></div>
+        ${s.blurb ? `<p class="small muted mt1">${esc(s.blurb)}</p>` : ''}</div>`).join('') : '<p class="muted">No series yet.</p>'}</div>
+      <form class="card" id="sf"><h2 id="sft">New series</h2><input type="hidden" name="id">
+        <div class="field mt1"><label class="lbl">Title</label><input class="inp" name="title" required placeholder="e.g. Word Sprints"></div>
+        <div class="field"><label class="lbl">Web address (slug)</label><input class="inp" name="slug" required pattern="[a-z0-9][a-z0-9\\-]{1,60}" placeholder="word-sprints"></div>
+        <div class="field"><label class="lbl">Type</label><select class="inp" name="kind">${Object.entries(KINDS).map(([k, v]) => `<option value="${k}">${v}</option>`).join('')}</select></div>
+        <div class="field"><label class="lbl">One-line description</label><input class="inp" name="blurb" maxlength="160"></div>
+        <div class="field"><label class="lbl">Order</label><input class="inp" name="sort" type="number" value="100"></div>
+        <div class="field"><label class="check"><input type="checkbox" name="published"> Visible to students</label></div>
+        <div class="row mt1"><button class="btn btn-gold">Save series</button><button type="reset" class="btn" id="sreset">New</button></div></form></div>`;
+    const sf = document.getElementById('sf'); const F = sf.elements;
+    F['title'].addEventListener('input', () => { if (!F['id'].value) F['slug'].value = F['title'].value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); });
+    pane().querySelectorAll('[data-s]').forEach(b => b.onclick = () => {
+      const s = D.series.find(x => x.id === b.getAttribute('data-s'));
+      F['id'].value = s.id; F['title'].value = s.title; F['slug'].value = s.slug; F['kind'].value = s.kind; F['blurb'].value = s.blurb || '';
+      F['sort'].value = s.sort; F['published'].checked = s.published; document.getElementById('sft').textContent = 'Edit series';
+    });
+    document.getElementById('sreset').onclick = () => { F['id'].value = ''; document.getElementById('sft').textContent = 'New series'; };
+    sf.addEventListener('submit', async e => {
+      e.preventDefault();
+      const p = { id: F['id'].value, title: F['title'].value.trim(), slug: F['slug'].value.trim(), kind: F['kind'].value,
+        blurb: F['blurb'].value.trim(), sort: +F['sort'].value || 100, published: F['published'].checked };
+      try { await rpc('cv_admin_save_series', { p }); toast('Series saved.'); await reload(); }
+      catch (err) { toast(/duplicate|unique/i.test(err.message) ? 'That web address is already used by another series.' : err.message, true); }
+    });
+  }
+
+  // ─────────────── Access ───────────────
+  function drawAccess() {
+    pane().innerHTML = `<div class="two">
+      <form class="card" id="gf"><h2>Give a student access</h2>
+        <p class="small muted">They need to have logged in once (so their account exists).</p>
+        <div class="field mt1"><label class="lbl">Student email</label><input class="inp" name="email" type="email" required></div>
+        <div class="field"><label class="lbl">Unlock</label><select class="inp" name="scope">
+          <option value="all">Everything</option><option value="series">One series</option><option value="test">One test</option></select></div>
+        <div class="field" id="refw" hidden><label class="lbl">Which one</label><select class="inp" name="ref"></select></div>
+        <div class="field"><label class="lbl">Access ends <span class="muted" style="text-transform:none;letter-spacing:0">(optional)</span></label><input class="inp" name="expires" type="date"></div>
+        <div class="field"><label class="lbl">Note <span class="muted" style="text-transform:none;letter-spacing:0">(e.g. cohort, payment ref)</span></label><input class="inp" name="note" maxlength="120"></div>
+        <button class="btn btn-gold mt1">Grant access</button></form>
+      <div><h2>Active access</h2><div class="mt1">${D.entitlements.length ? `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Student</th><th>Unlocks</th><th>Ends</th><th></th></tr></thead><tbody>` +
+        D.entitlements.map(e => `<tr><td>${esc(e.name || '')}<div class="tiny muted">${esc(e.email)}</div></td><td class="small">${esc(e.target)}${e.note ? `<div class="tiny muted">${esc(e.note)}</div>` : ''}</td>
+          <td class="tiny">${e.expires_at ? esc(fmtIST(e.expires_at)) : 'never'}</td><td><button class="btn btn-sm btn-danger" data-r="${e.id}">Revoke</button></td></tr>`).join('') +
+        '</tbody></table></div>' : '<p class="muted">Nobody has paid access yet.</p>'}</div></div></div>`;
+    const gf = document.getElementById('gf');
+    const refill = () => {
+      const sc = gf.scope.value; document.getElementById('refw').hidden = sc === 'all';
+      const list = sc === 'series' ? D.series : sc === 'test' ? D.tests : [];
+      gf.ref.innerHTML = list.map(x => `<option value="${x.id}">${esc(x.title)}</option>`).join('');
+    };
+    gf.scope.onchange = refill; refill();
+    gf.addEventListener('submit', async e => {
+      e.preventDefault();
+      const exp = gf.expires.value ? new Date(gf.expires.value + 'T23:59:59+05:30').toISOString() : null;
+      try {
+        await rpc('cv_admin_grant', { p_email: gf.email.value, p_scope: gf.scope.value, p_ref: gf.scope.value === 'all' ? null : gf.ref.value, p_expires: exp, p_note: gf.note.value || null });
+        toast('Access granted to ' + gf.email.value); await reload();
+      } catch (err) { toast(err.message, true); }
+    });
+    pane().querySelectorAll('[data-r]').forEach(b => b.onclick = async () => {
+      if (!await ask('Revoke this access?', 'The student will lose access immediately. Their past results stay.', 'Revoke', { danger: true })) return;
+      try { await rpc('cv_admin_revoke', { p_entitlement: b.getAttribute('data-r') }); toast('Revoked.'); reload(); } catch (e) { toast(e.message, true); }
+    });
+  }
+
+  // ─────────────── Activity ───────────────
+  function drawActivity() {
+    pane().innerHTML = D.recent.length ? `<p class="small muted">Latest 50 submissions</p><div class="tbl-wrap mt1"><table class="tbl"><thead><tr><th>When</th><th>Student</th><th>Test</th><th class="num">Score</th><th></th></tr></thead><tbody>` +
+      D.recent.map(r => `<tr><td class="tiny">${esc(fmtIST(r.submitted_at))}</td><td>${esc(r.name || '')}<div class="tiny muted">${esc(r.email)}</div></td>
+        <td class="small">${esc(r.test)} ${r.is_first ? '' : '<span class="badge">retake</span>'} ${r.auto ? '<span class="badge">timed out</span>' : ''}</td>
+        <td class="num">${num(r.score)} / ${r.max}</td><td><a class="btn btn-sm" href="result.html?a=${r.attempt_id}">Open</a></td></tr>`).join('') + '</tbody></table></div>'
+      : '<div class="card"><p class="muted">No submissions yet.</p></div>';
+  }
+})();
+</script>
+</body>
+</html>

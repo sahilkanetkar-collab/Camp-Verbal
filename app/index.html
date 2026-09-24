@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your tests — Camp Verbal</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#06182e">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<main id="app" class="wrap"></main>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/supabase-2.117.1.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(async function () {
+  const { esc, num, fmtIST } = CV;
+  const app = document.getElementById('app');
+  if (!CV.configured) { CV.header(); return CV.notConfigured(app); }
+  const user = await CV.requireUser();
+  CV.loading(app, 'Loading your tests…');
+
+  let lib, name = '';
+  try {
+    lib = await CV.rpc('cv_library');
+    const { data: prof } = await CV.sb.from('profiles').select('full_name').eq('id', user.id).maybeSingle();
+    name = prof && prof.full_name ? prof.full_name.split(' ')[0] : '';
+  } catch (e) {
+    CV.header({ email: user.email });
+    app.innerHTML = `<div class="note bad">${esc(e.message)}</div><button class="btn mt1" onclick="location.reload()">Try again</button>`;
+    return;
+  }
+  CV.header({ email: user.email, admin: lib.is_admin, label: 'Practice' });
+
+  const MODE = { rapid: 'Sprint · timed per question', locked: 'Sectional · locked sections', single: 'Timed test' };
+  const series = (lib.series || []).filter(s => s.tests && s.tests.length);
+
+  if (!series.length) {
+    app.innerHTML = `<p class="eyebrow">Your library</p><h1>${name ? 'Hi ' + esc(name) + ', ' : ''}<em>tests are on the way.</em></h1>
+      <p class="sub">Nothing has been published yet. You’ll see new tests here as soon as they go live.</p>`;
+    return;
+  }
+
+  const card = t => {
+    const marks = t.marking ? `+${t.marking.c} / ${t.marking.w}` : '';
+    const mins = t.timing === 'rapid' ? `~${t.minutes} min` : `${t.minutes} min`;
+    let status = '', action = '';
+    const href = 'test.html?t=' + encodeURIComponent(t.slug);
+    if (!t.unlocked) {
+      status = '<span class="badge">🔒 Locked</span>';
+      action = `<a class="btn btn-sm" href="${esc(CV.cfg.accessUrl || '/#enquiry')}">Get access</a>`;
+    } else if (t.in_progress) {
+      status = '<span class="badge b-warn">In progress</span>';
+      action = `<a class="btn btn-gold btn-sm" href="${href}">Resume</a>`;
+    } else if (t.window === 'upcoming') {
+      status = `<span class="badge">Opens ${esc(fmtIST(t.opens_at))}</span>`;
+    } else if (t.window === 'closed' && !t.attempts) {
+      status = '<span class="badge">Closed</span>';
+    } else if (t.attempts) {
+      status = `<span class="score-pill">${num(t.first.score)}<span class="muted small"> / ${t.first.max_marks}</span></span>`;
+      action = `<span class="row"><a class="btn btn-sm" href="result.html?a=${t.last_attempt_id}">Review</a>` +
+        (t.window === 'open' && t.attempts_left !== 0 ? `<a class="btn btn-sm" href="${href}">Retake</a>` : '') + '</span>';
+    } else {
+      status = t.access === 'free' ? '<span class="badge b-ok">Free</span>' : '<span class="badge b-ok">Unlocked</span>';
+      action = `<a class="btn btn-gold btn-sm" href="${href}">Start</a>`;
+    }
+    const windowNote = t.closes_at && t.window === 'open' ? `<div class="tiny muted">Closes ${esc(fmtIST(t.closes_at))}</div>` : '';
+    const draft = t.published ? '' : ' <span class="badge b-warn">Draft</span>';
+    return `<article class="card tcard">
+      <div class="spread"><span class="badge">${esc(MODE[t.timing] || '')}</span>${t.attempts > 1 ? `<span class="tiny muted">${t.attempts} attempts</span>` : ''}</div>
+      <h3>${esc(t.title)}${draft}</h3>
+      <div class="meta">${esc(t.exam_name)} · ${t.question_count} Qs · ${mins} · ${marks}</div>
+      ${windowNote}
+      ${t.attempts ? '<div class="tiny muted">First-attempt score</div>' : ''}
+      <div class="foot">${status}${action}</div>
+    </article>`;
+  };
+
+  app.innerHTML = `<p class="eyebrow">Your library</p>
+    <h1>${name ? 'Hi ' + esc(name) + ', ' : ''}<em>ready when you are.</em></h1>
+    <p class="sub">Your first attempt is the score that counts. Retakes are for practice.</p>` +
+    series.map(s => `<section class="series mt2"><div class="spread"><div><h2>${esc(s.title)}</h2>
+      ${s.blurb ? `<p class="muted small">${esc(s.blurb)}</p>` : ''}</div></div>
+      <div class="grid mt1">${s.tests.map(card).join('')}</div></section>`).join('');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Test — Camp Verbal</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#06182e">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="app"></div>
+
+<script src="assets/config.js"></script>
+<script src="assets/vendor/supabase-2.117.1.js"></script>
+<script src="assets/core.js"></script>
+<script>
+(async function () {
+  'use strict';
+  const { esc, para, fmtClock, toast, ask, rpc } = CV;
+  const app = document.getElementById('app');
+  const slug = CV.qs.get('t') || '';
+  const KEYS = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+  if (!CV.configured) { CV.header(); return CV.notConfigured(app); }
+  const user = await CV.requireUser();
+
+  // ─────────────────────────── intro ───────────────────────────
+  let info = null;
+  app.innerHTML = '<div class="wrap"></div>';
+  CV.loading(app.firstChild, 'Loading test…');
+  try {
+    const lib = await rpc('cv_library');
+    for (const s of lib.series) for (const t of s.tests) if (t.slug === slug) info = t;
+  } catch (e) { return fail(e.message); }
+  CV.header({ email: user.email, label: 'Practice' });
+  if (!info) return fail('This test isn’t available. It may be unpublished or the link is wrong.');
+
+  const RULES = {
+    single: ['One clock for the whole test. It keeps running if you close the page.',
+             'Move freely between questions and change answers any time before you submit.',
+             'Answers save automatically as you go.'],
+    locked: ['Each section has its own clock, in a fixed order.',
+             'When a section’s time ends, the next one opens automatically. You can’t go back.',
+             'You can end a section early; the unused time is not carried forward.'],
+    rapid:  ['Every question has its own countdown. When it hits zero, the test moves on.',
+             'Tap an option, then Next. You can change your pick until the time runs out.',
+             'No going back. Speed and accuracy both count.']
+  };
+  const m = info.marking || {};
+  const titaNote = m.titaW !== undefined && m.titaW !== m.w ? ` · type-in answers: wrong ${m.titaW}` : '';
+  app.innerHTML = `<main class="wrap narrow" style="max-width:640px">
+    <p class="eyebrow">${esc(info.exam_name)}</p>
+    <h1>${esc(info.title)}</h1>
+    <div class="card mt2 stack">
+      <div class="row"><span class="badge">${info.question_count} questions</span>
+        <span class="badge">${info.timing === 'rapid' ? '~' : ''}${info.minutes} min</span>
+        <span class="badge">+${m.c} / ${m.w}${titaNote}</span>
+        <span class="badge">Max ${info.max_marks}</span></div>
+      <ul class="muted" style="margin-left:1.1rem">${RULES[info.timing].map(r => `<li>${r}</li>`).join('')}</ul>
+      ${info.attempts ? `<div class="note warn">You’ve taken this test before. Your first-attempt score (${CV.num(info.first.score)}) stays on record; this attempt is for practice.</div>` : ''}
+      <div id="msg" hidden></div>
+      <div class="row"><button class="btn btn-gold" id="go">${info.in_progress ? 'Resume test' : 'Start test'}</button>
+        <a class="btn" href="index.html">Back</a></div>
+    </div></main>`;
+  document.getElementById('go').addEventListener('click', async ev => {
+    ev.target.disabled = true; ev.target.textContent = 'Opening…';
+    try {
+      const p = await rpc('cv_start_attempt', { p_test_slug: slug });
+      if (p.expired) { toast('Your earlier attempt ran out of time and was submitted.'); return go('result.html?a=' + p.attempt_id); }
+      run(p);
+    } catch (e) {
+      ev.target.disabled = false; ev.target.textContent = info.in_progress ? 'Resume test' : 'Start test';
+      const msg = document.getElementById('msg'); msg.className = 'note bad'; msg.textContent = e.message; msg.hidden = false;
+    }
+  });
+
+  // ─────────────────────────── engine ───────────────────────────
+  let P, Q, S, mode, attemptId, offset = 0, cur = 0, finishing = false, tickT = null, saveT = null;
+  let qStart = 0;                 // when the current question was shown (ms, client clock)
+  let online = true, saving = false;
+  const dirty = new Set();
+
+  const now = () => Date.now() + offset;                // server-aligned clock
+  const pendKey = () => 'cv_pending_' + attemptId;
+
+  function run(payload) {
+    P = payload; attemptId = P.attempt_id; mode = P.test.timing;
+    offset = Date.parse(P.server_now) - Date.now();
+    Q = P.questions;
+    S = {};
+    Q.forEach(q => {
+      const r = P.responses[q.id] || {};
+      S[q.id] = { a: r.answer == null ? null : String(r.answer), ms: r.time_ms || 0, m: !!r.marked, seen: r.answer != null || !!r.time_ms };
+    });
+    // Anything saved on this device but not yet on the server (e.g. after a dropped connection)
+    try {
+      const pend = JSON.parse(localStorage.getItem(pendKey()) || '{}');
+      Object.keys(pend).forEach(id => { if (S[id]) { Object.assign(S[id], pend[id]); dirty.add(id); } });
+    } catch (e) { /* storage unavailable — fine */ }
+
+    dirty.forEach(id => { if (!S[id]) dirty.delete(id); });   // answers from a finished section
+    document.querySelector('.hdr') && document.querySelector('.hdr').remove();
+    if (!run.bound) { window.addEventListener('beforeunload', guard); document.addEventListener('keydown', onKey); run.bound = true; }
+    clearInterval(tickT); clearInterval(saveT);
+    tickT = setInterval(tick, 250);
+    saveT = setInterval(() => flush(), 5000);
+
+    if (mode === 'rapid') {
+      cur = Math.min(P.rapid_pos || 0, Q.length - 1);
+      if ((P.rapid_pos || 0) >= Q.length) return submit(true);
+      drawRapid();
+    } else {
+      cur = 0;
+      const firstOpen = Q.findIndex(q => S[q.id].a == null);
+      if (Object.values(S).some(s => s.seen) && firstOpen > 0) cur = firstOpen;
+      drawShell(); show(cur);
+    }
+  }
+
+  function guard(e) { if (!finishing) { e.preventDefault(); e.returnValue = ''; } }
+  function go(url) { finishing = true; window.removeEventListener('beforeunload', guard); location.replace(url); }
+  function fail(msg) {
+    if (!document.querySelector('.hdr')) CV.header({ email: user.email });
+    app.innerHTML = `<main class="wrap narrow"><div class="note bad">${esc(msg)}</div><a class="btn mt1" href="index.html">Back to library</a></main>`;
+  }
+
+  // Time on the current question is added when leaving it (and at each save).
+  function bankTime() {
+    const q = Q[cur]; if (!q || !qStart) return;
+    const d = Date.now() - qStart; qStart = Date.now();
+    if (d > 0 && d < 3600000) { S[q.id].ms += d; }
+  }
+  function setAns(id, a) { S[id].a = a; S[id].seen = true; markDirty(id); }
+  function markDirty(id) {
+    dirty.add(id);
+    try {
+      const pend = JSON.parse(localStorage.getItem(pendKey()) || '{}');
+      pend[id] = { a: S[id].a, ms: S[id].ms, m: S[id].m, seen: true };
+      localStorage.setItem(pendKey(), JSON.stringify(pend));
+    } catch (e) { /* ignore */ }
+  }
+
+  async function flush(force) {
+    if (saving && !force) return;
+    bankTime();
+    if (Q[cur] && dirty.size === 0 && mode !== 'rapid') { /* keep time fresh on the open question */ dirty.add(Q[cur].id); }
+    if (!dirty.size) return true;
+    const ids = [...dirty];
+    const snap = ids.map(id => ({ q: id, a: S[id].a, ms: S[id].ms, m: S[id].m }));
+    saving = true; setSave('Saving…');
+    try {
+      const r = await rpc('cv_save', { p_attempt: attemptId, p_items: snap });
+      saving = false;
+      if (!r.ok) { if (r.reason === 'time_up' || r.reason === 'submitted') { toast('Time’s up — your answers were submitted.'); go('result.html?a=' + attemptId); } return false; }
+      offset = Date.parse(r.server_now) - Date.now();
+      ids.forEach(id => { const s = snap.find(x => x.q === id); if (S[id].a === s.a && S[id].m === s.m) dirty.delete(id); });
+      try {
+        const pend = JSON.parse(localStorage.getItem(pendKey()) || '{}');
+        ids.forEach(id => { if (!dirty.has(id)) delete pend[id]; });
+        localStorage.setItem(pendKey(), JSON.stringify(pend));
+      } catch (e) { /* ignore */ }
+      online = true; setSave('All answers saved');
+      return true;
+    } catch (e) {
+      saving = false; online = false; setSave('Offline — answers kept on this device', true);
+      return false;
+    }
+  }
+  function setSave(t, off) { const el = document.getElementById('sv'); if (el) { el.textContent = t; el.classList.toggle('off', !!off); } }
+
+  function clockTarget() {
+    if (mode === 'locked') return Date.parse(P.section.deadline_at);
+    return Date.parse(P.deadline_at);
+  }
+  function tick() {
+    if (finishing) return;
+    if (mode === 'rapid') return tickRapid();
+    const left = (clockTarget() - now()) / 1000;
+    const el = document.getElementById('clk');
+    if (el) { el.textContent = fmtClock(left); el.classList.toggle('low', left <= 60); }
+    if (left <= 0) {
+      if (mode === 'locked' && !P.section.is_last) nextSection(true);
+      else submit(true);
+    }
+  }
+
+  // ───────────── single-clock + locked-section layout ─────────────
+  function drawShell() {
+    const secLabel = mode === 'locked'
+      ? `Section ${P.section.index + 1} of ${P.test.section_order.length} · ${esc(P.section.name)}` : esc(P.test.exam_name);
+    const endLabel = mode === 'locked' && !P.section.is_last ? 'End section' : 'Submit test';
+    app.innerHTML = `
+      <div class="pbar">
+        <div style="min-width:0"><div class="sec">${secLabel}</div><div class="ttl">${esc(P.test.title)}</div></div>
+        <div class="row" style="flex-wrap:nowrap">
+          <span class="savestate" id="sv"></span>
+          <div class="clock" id="clk" aria-live="off">--:--</div>
+        </div>
+      </div>
+      <div class="pmain">
+        <div id="qa"></div>
+        <aside class="card palette" id="pal" aria-label="Question palette">
+          <div class="spread"><b class="small">Questions</b><span class="row"><span class="tiny muted" id="cnt"></span><button class="btn btn-sm pal-close" id="pc" aria-label="Close palette">Close</button></span></div>
+          <div class="pal-grid" id="pg"></div>
+          <div class="legend"><span><i style="background:rgba(74,222,128,.25)"></i>Answered</span><span><i style="background:rgba(255,122,168,.15)"></i>Seen, no answer</span>
+            <span><i></i>Not seen</span><span><i style="background:#b48cff;border-radius:50%"></i>Marked</span></div>
+          <button class="btn btn-block mt1" id="end2">${endLabel}</button>
+        </aside>
+      </div>
+      <div class="pfoot">
+        <div class="grp"><button class="btn btn-sm pal-toggle" id="pt">Palette</button>
+          <button class="btn btn-sm" id="mk">Mark for review</button><button class="btn btn-sm" id="cl">Clear</button></div>
+        <div class="grp"><button class="btn btn-sm" id="pv">← Prev</button><button class="btn btn-gold btn-sm" id="nx">Save &amp; next →</button>
+          <button class="btn btn-sm" id="end">${endLabel}</button></div>
+      </div>`;
+    document.getElementById('pv').onclick = () => show(cur - 1);
+    document.getElementById('nx').onclick = () => { flush(); show(cur + 1 < Q.length ? cur + 1 : cur); };
+    document.getElementById('mk').onclick = () => { const s = S[Q[cur].id]; s.m = !s.m; markDirty(Q[cur].id); if (s.m && cur + 1 < Q.length) show(cur + 1); else { renderPalette(); updateButtons(); } };
+    document.getElementById('cl').onclick = () => { setAns(Q[cur].id, null); show(cur); };
+    document.getElementById('pt').onclick = () => document.getElementById('pal').classList.toggle('open');
+    document.getElementById('pc').onclick = () => document.getElementById('pal').classList.remove('open');
+    const endFn = () => (mode === 'locked' && !P.section.is_last) ? nextSection(false) : submit(false);
+    document.getElementById('end').onclick = endFn;
+    document.getElementById('end2').onclick = endFn;
+    setSave(dirty.size ? 'Unsaved changes' : 'All answers saved');
+    tick();
+  }
+
+  function show(i) {
+    if (i < 0 || i >= Q.length) return;
+    bankTime();
+    cur = i; qStart = Date.now();
+    const q = Q[i]; const st = S[q.id]; st.seen = true;
+    const qa = document.getElementById('qa');
+    const passage = q.passage ? `<div class="passage" tabindex="0" aria-label="Passage"><div class="plabel">Passage</div>${para(q.passage)}</div>` : '';
+    let body = `<div class="qhead"><span class="qnum">Question ${i + 1} <span class="muted small">of ${Q.length}</span></span>
+        ${q.kind === 'tita' ? '<span class="badge">Type your answer</span>' : ''}</div>
+      <div class="stem">${para(q.stem)}</div>
+      ${q.fig ? `<div class="figure">${q.fig}</div>` : ''}${q.table ? `<div class="figure">${q.table}</div>` : ''}`;
+    if (q.kind === 'mcq') {
+      body += '<div class="opts" role="radiogroup">' + q.options.map((o, k) =>
+        `<button class="opt ${st.a === String(k) ? 'sel' : ''}" role="radio" aria-checked="${st.a === String(k)}" data-k="${k}"><span class="k">${KEYS[k]}</span><span>${esc(o)}</span></button>`).join('') + '</div>';
+    } else {
+      body += `<div class="tita"><label class="lbl" for="ti">Your answer</label><input class="inp" id="ti" autocomplete="off" spellcheck="false" maxlength="60" value="${esc(st.a || '')}"></div>`;
+    }
+    qa.innerHTML = `<div class="qarea ${q.passage ? 'has-passage' : ''}">${passage}<div class="card">${body}</div></div>`;
+    qa.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      const k = b.getAttribute('data-k');
+      setAns(q.id, st.a === k ? null : k);           // tap again to unselect
+      qa.querySelectorAll('.opt').forEach(x => { const on = x.getAttribute('data-k') === S[q.id].a; x.classList.toggle('sel', on); x.setAttribute('aria-checked', on); });
+      renderPalette();
+    });
+    const ti = document.getElementById('ti');
+    if (ti) ti.addEventListener('input', () => { setAns(q.id, ti.value.trim() === '' ? null : ti.value.trim()); renderPalette(); });
+    const pc = qa.querySelector('.passage'); if (pc) pc.scrollTop = 0;
+    window.scrollTo({ top: 0 });
+    document.getElementById('pal').classList.remove('open');
+    renderPalette(); updateButtons();
+  }
+
+  function renderPalette() {
+    const pg = document.getElementById('pg'); if (!pg) return;
+    let ans = 0;
+    pg.innerHTML = Q.map((q, i) => {
+      const s = S[q.id]; const a = s.a != null; if (a) ans++;
+      const cls = ['pal', i === cur ? 'cur' : '', a ? 'ans' : (s.seen && i !== cur ? 'skip' : ''), s.m ? 'mk' : ''].join(' ');
+      return `<button class="${cls}" data-i="${i}" aria-label="Question ${i + 1}${a ? ', answered' : ''}${s.m ? ', marked' : ''}">${i + 1}</button>`;
+    }).join('');
+    pg.querySelectorAll('.pal').forEach(b => b.onclick = () => { flush(); show(+b.getAttribute('data-i')); });
+    document.getElementById('cnt').textContent = ans + ' / ' + Q.length + ' answered';
+  }
+  function updateButtons() {
+    document.getElementById('pv').disabled = cur === 0;
+    document.getElementById('nx').disabled = cur === Q.length - 1;
+    document.getElementById('mk').textContent = S[Q[cur].id].m ? 'Unmark' : 'Mark for review';
+  }
+
+  function counts() {
+    let a = 0, mk = 0; Q.forEach(q => { if (S[q.id].a != null) a++; if (S[q.id].m) mk++; });
+    return { a, mk, left: Q.length - a };
+  }
+
+  async function nextSection(auto) {
+    if (finishing) return;
+    if (!auto) {
+      const c = counts();
+      const okGo = await ask('End this section?', `You’ve answered <b>${c.a}</b> of ${Q.length}${c.left ? ` — <b>${c.left}</b> unanswered` : ''}. ` +
+        `You won’t be able to come back to <b>${esc(P.section.name)}</b>.`, 'End section');
+      if (!okGo) return;
+    }
+    finishing = true;
+    await flushHard();
+    try {
+      const p = await rpc('cv_next_section', { p_attempt: attemptId });
+      if (p.submitted) return go('result.html?a=' + attemptId);
+      finishing = false;
+      if (auto) toast('Time’s up for that section. Next section is open.');
+      run(p);
+    } catch (e) { finishing = false; toast(e.message, true); }
+  }
+
+  async function submit(auto) {
+    if (finishing) return;
+    if (!auto) {
+      const c = counts();
+      const okGo = await ask('Submit your test?', `You’ve answered <b>${c.a}</b> of ${Q.length}` +
+        (c.left ? ` — <b>${c.left}</b> left blank` : '') + (c.mk ? `, <b>${c.mk}</b> marked for review` : '') + '. You can’t change answers after this.', 'Submit');
+      if (!okGo) return;
+    }
+    finishing = true;
+    app.querySelectorAll('button').forEach(b => b.disabled = true);
+    await flushHard();
+    try {
+      await rpc('cv_submit', { p_attempt: attemptId });
+      try { localStorage.removeItem(pendKey()); } catch (e) { /* ignore */ }
+      go('result.html?a=' + attemptId);
+    } catch (e) {
+      finishing = false; app.querySelectorAll('button').forEach(b => b.disabled = false);
+      toast(e.message + ' Your answers are safe — try again.', true);
+    }
+  }
+  // Keep trying to save for a few seconds before submitting.
+  async function flushHard() {
+    for (let i = 0; i < 4; i++) { saving = false; if (await flush(true)) return; await new Promise(r => setTimeout(r, 1200)); }
+  }
+
+  // ─────────────────────────── rapid mode ───────────────────────────
+  let rq = null;   // { deadline }
+  function rStartKey(i) { return 'cv_rq_' + attemptId + '_' + i; }
+  function drawRapid() {
+    const q = Q[cur]; const st = S[q.id]; st.seen = true;
+    // Keep the question's original start across reloads, so reopening doesn't reset its clock.
+    let started = Date.now();
+    try { const s = +localStorage.getItem(rStartKey(cur)); if (s && Date.now() - s < q.td * 1000 + 5000) started = s; else localStorage.setItem(rStartKey(cur), String(started)); } catch (e) { /* ignore */ }
+    rq = { deadline: started + q.td * 1000, td: q.td };
+    qStart = Date.now();
+    const last = cur === Q.length - 1;
+    app.innerHTML = `
+      <div class="pbar"><div style="min-width:0"><div class="sec">Sprint · ${cur + 1} of ${Q.length}</div><div class="ttl">${esc(P.test.title)}</div></div>
+        <div class="row" style="flex-wrap:nowrap"><span class="savestate" id="sv"></span><div class="clock" id="clk">--</div></div></div>
+      <main class="rapid">
+        <div class="tbar" id="tb"><div style="width:100%"></div></div>
+        ${q.passage ? `<details class="pass card" open style="margin-bottom:1rem"><summary>Passage</summary><div>${para(q.passage)}</div></details>` : ''}
+        <div class="card">
+          <div class="qhead"><span class="qnum">Question ${cur + 1}</span><span class="tiny muted">${q.td}s</span></div>
+          <div class="stem">${para(q.stem)}</div>
+          ${q.fig ? `<div class="figure">${q.fig}</div>` : ''}${q.table ? `<div class="figure">${q.table}</div>` : ''}
+          <div class="opts" role="radiogroup">${q.options.map((o, k) =>
+            `<button class="opt ${st.a === String(k) ? 'sel' : ''}" role="radio" aria-checked="${st.a === String(k)}" data-k="${k}"><span class="k">${KEYS[k]}</span><span>${esc(o)}</span></button>`).join('')}</div>
+        </div>
+      </main>
+      <div class="pfoot"><span class="tiny muted">No going back — answer, then move on.</span>
+        <button class="btn btn-gold" id="nx">${last ? 'Finish' : 'Next →'}</button></div>`;
+    app.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      const k = b.getAttribute('data-k'); S[q.id].a = S[q.id].a === k ? null : k;
+      app.querySelectorAll('.opt').forEach(x => { const on = x.getAttribute('data-k') === S[q.id].a; x.classList.toggle('sel', on); x.setAttribute('aria-checked', on); });
+    });
+    document.getElementById('nx').onclick = () => rapidAdvance();
+    setSave(online ? '' : 'Offline — answers kept on this device', !online);
+    tickRapid();
+  }
+  function tickRapid() {
+    if (!rq || finishing) return;
+    const left = (rq.deadline - Date.now()) / 1000;
+    const el = document.getElementById('clk'), tb = document.getElementById('tb');
+    if (el) { el.textContent = Math.max(0, Math.ceil(left)) + 's'; el.classList.toggle('low', left <= 5); }
+    if (tb) { tb.firstChild.style.width = Math.max(0, Math.min(100, left / rq.td * 100)) + '%'; tb.classList.toggle('low', left <= 5); }
+    if (left <= 0) rapidAdvance();
+  }
+  let advancing = false;
+  async function rapidAdvance() {
+    if (advancing || finishing) return;
+    advancing = true;
+    const q = Q[cur];
+    bankTime();
+    markDirty(q.id);
+    try { localStorage.removeItem(rStartKey(cur)); } catch (e) { /* ignore */ }
+    flush();                                   // fire and forget; the next save retries if needed
+    if (cur >= Q.length - 1) { rq = null; advancing = false; return submit(true); }
+    cur++; advancing = false; drawRapid();
+  }
+
+  // ─────────────────────────── keyboard ───────────────────────────
+  function onKey(e) {
+    if (finishing || document.querySelector('.overlay')) return;
+    if (e.target && /INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+    const k = e.key.toUpperCase();
+    const idx = KEYS.indexOf(k) >= 0 ? KEYS.indexOf(k) : (/^[1-6]$/.test(k) ? +k - 1 : -1);
+    if (idx >= 0) { const b = app.querySelector(`.opt[data-k="${idx}"]`); if (b) { b.click(); e.preventDefault(); } return; }
+    if (mode === 'rapid') { if (e.key === 'Enter') { rapidAdvance(); e.preventDefault(); } return; }
+    if (e.key === 'ArrowRight') { flush(); show(cur + 1); }
+    if (e.key === 'ArrowLeft') show(cur - 1);
+  }
+})();
+</script>
+</body>
+</html>
