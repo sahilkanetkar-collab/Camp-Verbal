@@ -1079,7 +1079,29 @@ insert into public.trap_types (tag, area, label, explanation, sort) values
   ('pj-opener', 'Paragraph', 'Wrong opener', 'That sentence depends on something before it, so it cannot open the paragraph.', 290),
   ('pj-time-order', 'Paragraph', 'Time order missed', 'Markers like "first", "then" or "by evening" fix the order.', 300),
   ('pj-pair-broken', 'Paragraph', 'Broken pair', 'Two sentences that must sit together, like a claim and its example, were split.', 310),
-  ('para-same-topic', 'Paragraph', 'Same topic, different point', 'The odd sentence shares the topic, but not the argument the others build.', 320)
+  ('para-same-topic', 'Paragraph', 'Same topic, different point', 'The odd sentence shares the topic, but not the argument the others build.', 320),
+  -- Added 6 Oct 2026 for Item Factory v3.3: quant/LR, four RC, verbal tags
+  ('vocab-wrong-idiom', 'Vocabulary', 'Real idiom, wrong meaning', 'It is a genuine expression, but it means something else.', 62),
+  ('vocab-category', 'Vocabulary', 'Wrong kind of word', 'The word is the wrong part of speech, or names the wrong kind of thing for this blank.', 64),
+  ('vocab-unfamiliar-sense', 'Vocabulary', 'Unfamiliar sense', 'The word is used correctly here, in a sense you may not know.', 66),
+  ('vocab-spelling', 'Vocabulary', 'Misspelt', 'The word is spelt wrong.', 68),
+  ('gram-half-fix', 'Grammar', 'Half fixed', 'It corrects one error but leaves the other.', 152),
+  ('gram-new-error', 'Grammar', 'New error', 'It fixes the original mistake but creates a different one.', 154),
+  ('gram-meaning-change', 'Grammar', 'Changed the meaning', 'It is grammatical, but it no longer says what the original sentence meant.', 156),
+  ('rc-false-link', 'Reading', 'Wrong link', 'Both facts are in the passage, but the passage does not connect them this way.', 232),
+  ('rc-scope-shift', 'Reading', 'Stretched claim', 'The passage says this about some cases; the option widens or narrows it.', 234),
+  ('rc-literal', 'Reading', 'Read literally', 'The line is figurative, and this option takes it at face value.', 236),
+  ('rc-tone', 'Reading', 'Near-miss tone', 'Close to the writer''s attitude, but a shade too strong, too weak or slightly off.', 238),
+  ('qa-intermediate-state', 'Quant & LR', 'Stopped a step early', 'You gave a value from partway through the working, not the quantity the question asks for.', 400),
+  ('qa-case-omission', 'Quant & LR', 'Missed a case', 'Your count or solution left out one of the cases the question allows.', 410),
+  ('qa-off-by-one', 'Quant & LR', 'Off by one', 'An endpoint was counted when it should not be, or left out when it should be in.', 420),
+  ('qa-sign-root', 'Quant & LR', 'Sign or extra root', 'A root that breaks the conditions was kept, or a valid negative one was dropped.', 430),
+  ('qa-wrong-base', 'Quant & LR', 'Wrong base', 'The percentage or rate was worked out on the wrong total, such as selling price instead of cost.', 440),
+  ('qa-quantity-swap', 'Quant & LR', 'Neighbouring quantity', 'You found a related quantity, like the radius instead of the diameter, not the one asked for.', 450),
+  ('qa-miscount', 'Quant & LR', 'Over- or under-counted', 'Identical items were treated as different, or an overlap was counted twice.', 460),
+  ('qa-modular-offset', 'Quant & LR', 'Cycle slip', 'The remainder or last digit is one step off in its repeating cycle.', 470),
+  ('qa-magnitude-cluster', 'Quant & LR', 'Close but unsupported', 'The number sits near the answer, but no correct working leads to it.', 480),
+  ('qa-surface-read', 'Quant & LR', 'Surface read', 'You took the first figure that looked relevant, not the one the question asked for.', 490)
 on conflict (tag) do update set area = excluded.area, label = excluded.label,
   explanation = excluded.explanation, sort = excluded.sort;
 
