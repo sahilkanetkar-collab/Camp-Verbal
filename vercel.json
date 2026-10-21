@@ -1,15 +1,45 @@
 {
   "redirects": [
-    { "source": "/app", "destination": "/app/", "permanent": false }
+    {
+      "source": "/app",
+      "destination": "/app/",
+      "permanent": false
+    },
+    {
+      "source": "/exams",
+      "destination": "/exams/",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/app/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "same-origin" },
-        { "key": "Cache-Control", "value": "no-cache" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/exams/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     }
   ]
