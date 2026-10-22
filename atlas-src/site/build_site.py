@@ -293,7 +293,7 @@ POPULAR = ["ipmat-indore", "cuet-ug", "nmims-npat", "symbiosis-set", "ipmat-roht
            "iimb-ug-test", "mah-bba-bms-cet", "ggsipu-cet-bba", "ashoka-aptitude-assessment", "flame-feat", "jgu-jsat", "krea-kat",
            "aima-ugat", "xavier-entrance-test-mumbai", "hsnc-h-cet", "sat-digital-india", "snusat", "azim-premji-net", "jmi-entrance-ug",
            "amu-admission-test-ug", "nirma-ug-management", "pdeu-sls-aptitude-test", "kiitee-ug-management", "sjcc-smat", "sxc-kolkata-bms-test",
-           "mit-wpu-cet", "iimb-dbe-test", "ahmedabad-university-ug", "jee-iim-ug", "gujarat-ug-commerce-merit"]
+           "mit-wpu-cet", "iimb-dbe-test", "ahmedabad-university-ug", "jee-iim-ug", "gujarat-ug-commerce-merit", "isbf-imet", "presidency-kolkata-ug-test", "mse-ima-entrance", "upes-upesmet-ug", "xim-university-ug"]
 def pop_rank(eid):
     return POPULAR.index(eid) if eid in POPULAR else 99
 

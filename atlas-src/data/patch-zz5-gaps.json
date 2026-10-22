@@ -1,0 +1,69 @@
+[
+  {
+    "id": "jee-iim-ug",
+    "set": {
+      "name": "JEE Main / Advanced (IIM & IIT UG routes)",
+      "full_name": "Joint Entrance Examination — used by some IIM undergraduate programmes and by IIT Economics degrees (via JoSAA)",
+      "conducted_by": "NTA (JEE Main) / IITs (JEE Advanced); used by IIM Mumbai, IIM Lucknow, IIM Sambalpur, and for Economics degrees at IIT Kanpur, IIT Kharagpur and IIT Roorkee through JoSAA",
+      "programme_types": ["BBA", "Economics"],
+      "selection_process": "IIM Mumbai: JEE Main 70% + PI 30%. IIM Sambalpur (BS DS & AI): JEE Main shortlist → PI. IIM Lucknow: JEE Advanced qualification; weightages not published. IIT Kanpur / Kharagpur / Roorkee Economics: JEE Advanced rank → JoSAA counselling seat allotment (no interview).",
+      "notes": "Two very different routes sit under JEE. (1) Tech/data-focused BS degrees at IIMs, open only to JEE takers (in practice PCM students). (2) Economics degrees at IITs — BS Economics at IIT Kanpur and IIT Kharagpur, and a 5-year BS-MS Economics at IIT Roorkee — allotted through JoSAA on JEE Advanced rank like any B.Tech seat. Commerce/humanities students should look at IPMAT, JIPMAT, IIMK BMS AT or IIMB tests instead."
+    },
+    "add_colleges": [
+      {
+        "name": "IIT Kanpur",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh",
+        "type": "IIT",
+        "programmes": ["BS Economics — 4-yr (Department of Economic Sciences)"],
+        "seats": "52 (Careers360)",
+        "fees": "About ₹9.04 L for the full 4 years, Gen category (Careers360 estimate); standard IIT UG fee structure",
+        "cutoff": {
+          "value": "JoSAA 2026 Round 2 closing rank 3,607 (OPEN, gender-neutral); opening rank 2,549",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Source: Cracku summary of JoSAA 2026 Round 2 data; later rounds may differ — check josaa.nic.in"
+        },
+        "selection": "JEE Advanced rank → JoSAA choice filling → seat allotment. No interview.",
+        "placements": "",
+        "url": "https://www.iitk.ac.in/eco/"
+      },
+      {
+        "name": "IIT Kharagpur",
+        "city": "Kharagpur",
+        "state": "West Bengal",
+        "type": "IIT",
+        "programmes": ["BS Economics — 4-yr"],
+        "seats": "Not published",
+        "fees": "Standard IIT UG fee structure; not published here",
+        "cutoff": {
+          "value": "JoSAA 2025 closing rank 6,063 (OPEN, gender-neutral); 2026 figure not found",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: exammint.in aggregator of JoSAA data; check josaa.nic.in"
+        },
+        "selection": "JEE Advanced rank → JoSAA seat allotment. No interview.",
+        "placements": "",
+        "url": "https://www.iitkgp.ac.in/"
+      },
+      {
+        "name": "IIT Roorkee",
+        "city": "Roorkee",
+        "state": "Uttarakhand",
+        "type": "IIT",
+        "programmes": ["BS-MS Economics — 5-yr dual degree"],
+        "seats": "Not published",
+        "fees": "Standard IIT UG fee structure; not published here",
+        "cutoff": {
+          "value": "JoSAA 2025 closing rank 5,938 (OPEN, gender-neutral); 2026 figure not found",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: exammint.in aggregator of JoSAA data; check josaa.nic.in"
+        },
+        "selection": "JEE Advanced rank → JoSAA seat allotment. No interview.",
+        "placements": "",
+        "url": "https://www.iitr.ac.in/"
+      }
+    ]
+  }
+]

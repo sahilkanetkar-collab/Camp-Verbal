@@ -1,0 +1,495 @@
+[
+  {
+    "id": "upes-upesmet-ug",
+    "name": "UPESMET-UG (UPES Dehradun)",
+    "full_name": "UPES Management Entrance Test — Undergraduate (BBA / Integrated BBA-MBA)",
+    "conducted_by": "UPES, Dehradun",
+    "category": "Private university",
+    "programme_types": ["BBA", "BCom", "Liberal Arts"],
+    "mode": "Online, remote-proctored from home",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Phase-wise, roughly Oct 2025 – Jun 2026 (Phase 1 closed 28 Feb 2026, per Collegedunia)",
+      "exam_date": "Phase-wise Saturday slots, Mar–Jun 2026 (Phase 1: 1–2 Mar 2026, per Collegedunia)",
+      "result": "Phase-wise; not published",
+      "fee": "₹1,350 application (2025 cycle, per Careers360); 2026 reported ₹1,350–1,750"
+    },
+    "cycle_2027": "Announced: applications open for 2027 (BBA, Integrated BBA-MBA, B.Com, BA); UPESMET-UG test dates and demo test still TBA on the official page",
+    "eligibility": "Min 50% in Class X and XII (any stream) for the UPESMET-UG route. Board-merit (no-test) route: 60% in X and XII for BBA, 75% for Integrated BBA-MBA",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 120,
+      "sections": [
+        {"name": "General English (RC, verbal reasoning, verbal ability)", "questions": 30, "time_min": null, "notes": ""},
+        {"name": "Quantitative (data interpretation, data sufficiency)", "questions": 30, "time_min": null, "notes": ""},
+        {"name": "General Awareness (GK, current affairs, business)", "questions": 30, "time_min": null, "notes": ""},
+        {"name": "Analytical & Logical Reasoning", "questions": 30, "time_min": null, "notes": ""}
+      ],
+      "marking": "No negative marking (candidate guide); marks per question not published",
+      "sectional_timing": false,
+      "notes": "Taken from home on a laptop/desktop with webcam. Log in any time between 10 am and 2 pm on your test day; the 90-minute timer starts at login. Passkey is sent by email/SMS a day before."
+    },
+    "selection_process": "UPESMET-UG score (or a valid UGAT / CUET-UG score, or Board Merit) → Personal Interview → offer. B.Com (Hons) and BA (Hons) do not use UPESMET-UG: they admit on PI / CUET.",
+    "verbal_weight": "30 of 120 questions are General English",
+    "official_url": "https://www.upes.ac.in/admissions/admission-alerts/upesmet-ug",
+    "colleges": [
+      {
+        "name": "UPES School of Business",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "type": "Private univ",
+        "programmes": ["BBA (many specialisations incl. Finance, Marketing, HR, Analytics, Aviation, Logistics)", "Integrated BBA-MBA", "B.Com (Hons) 3+1 (E-Commerce / Banking & Insurance)"],
+        "seats": "Not published",
+        "fees": "BBA 2025-26: ₹3.32 L (yr 1), ₹3.52 L (yr 2), ₹3.77 L (yr 3) per Careers360; 2026-27 figures on the UPES fee page (filter by programme)",
+        "cutoff": {
+          "value": "Not published (UPES does not release a UPESMET-UG cutoff)",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "BBA / BBA-MBA: UPESMET-UG or UGAT or CUET-UG or Board Merit → PI. B.Com (Hons): PI / CUET.",
+        "placements": "",
+        "url": "https://www.upes.ac.in/school-of-business/bba"
+      },
+      {
+        "name": "UPES School of Liberal Studies and Media",
+        "city": "Dehradun",
+        "state": "Uttarakhand",
+        "type": "Private univ",
+        "programmes": ["BA (Hons) — History, Political Science, English, Sociology, Philosophy, Diplomacy & Foreign Policy, Environmental & Sustainability Studies, Governance & Public Administration"],
+        "seats": "Not published",
+        "fees": "Not published (see UPES fee page)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Personal Interview / CUET; no UPESMET-UG. No BA Economics is offered.",
+        "placements": "",
+        "url": "https://www.upes.ac.in/school-of-liberal-studies-and-media/ba-hons"
+      }
+    ],
+    "sources": [
+      "https://www.upes.ac.in/admissions/admission-alerts/upesmet-ug",
+      "https://www.upes.ac.in/admissions/important-dates",
+      "https://www.upes.ac.in/school-of-business/bba",
+      "https://www.upes.ac.in/school-of-business/bcom-hons",
+      "https://upeswebsitecdn-prod-hphqfhc0b8h2ffhf.a02.azurefd.net/drupal-data/2026-01/Candidate-Guide-UPESMET-UG-BBA-PPT-AY-2026.pdf",
+      "https://bschool.careers360.com/articles/upes-dehradun-bba-admission",
+      "https://collegedunia.com/exams/upesmet"
+    ],
+    "notes": "UPESMET-UG is only for BBA and Integrated BBA-MBA. Students with 60% (BBA) or 75% (BBA-MBA) in both X and XII can skip the test through the Board Merit route; UGAT and CUET-UG scores also get an exemption. B.Com and BA admit on interview or CUET. UPES does not offer BA Economics. UPES has run the test in several phases through the year, so a missed phase is not fatal.",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "open",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Applications for 2027 are open; test dates TBA. Based on 2026: Phase 1 closes late Feb and Saturday test slots run Mar–Jun",
+      "url": "https://www.upes.ac.in/admissions/admission-alerts/upesmet-ug",
+      "source_status": "official"
+    },
+    "elig": {
+      "min_12_pct": 50,
+      "min_10_pct": 50,
+      "streams": ["Any"],
+      "maths_required": false,
+      "max_age": null,
+      "age_note": "",
+      "note": "50% in X and XII for the test route. Board Merit route needs 60% (BBA) or 75% (BBA-MBA) in both X and XII."
+    },
+    "papers": []
+  },
+  {
+    "id": "isbf-imet",
+    "name": "ISBF iMET (Delhi)",
+    "full_name": "ISBF Management Entrance Test — for University of London BSc (Hons) degrees taught at ISBF",
+    "conducted_by": "Indian School of Business & Finance (ISBF), New Delhi",
+    "category": "Private university",
+    "programme_types": ["Economics", "Finance", "BBA"],
+    "mode": "Online test; personal interview on campus",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Rounds-based rolling admissions; final round closed 1 Aug 2026",
+      "exam_date": "Final round: iMET 4 Aug 2026, PI 7 Aug 2026",
+      "result": "Final round results 13 Aug 2026",
+      "fee": "Application fee not published"
+    },
+    "cycle_2027": "Not announced yet (site still shows 2026 intake)",
+    "eligibility": "Class XII, any stream. Economics and Economics & Finance need Maths in XII (min 50% in Maths). Economics & Management, Accounting & Finance and Business & Management need Maths only up to Class X",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [
+        {"name": "Logical Reasoning", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Reading Comprehension (multiple sources)", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Mathematics (Class X level)", "questions": null, "time_min": null, "notes": ""}
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Number of questions and duration are not published. Exempt from iMET with a composite SAT of about 1280–1300+, or CUET / IPMAT at roughly the 85th–90th percentile (ISBF's pages give slightly different thresholds). ECA/CCA/Sports-category applicants with valid certificates skip the test and go straight to the interview."
+    },
+    "selection_process": "Online application → iMET (unless exempt via SAT / CUET / IPMAT) → personal interview at the Delhi campus → holistic assessment (academics + test + interview + profile) → offer of admission.",
+    "verbal_weight": "Reading comprehension is one of three test areas; exact split not published",
+    "official_url": "https://www.isbf.edu.in/ug-admission.php",
+    "colleges": [
+      {
+        "name": "Indian School of Business & Finance (ISBF)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Private institute (University of London teaching centre)",
+        "programmes": ["BSc (Hons) Economics", "BSc (Hons) Economics & Finance", "BSc (Hons) Accounting & Finance", "BSc (Hons) Business & Management", "BSc (Hons) Economics & Management"],
+        "seats": "60 across all UG degree programmes (ISBF)",
+        "fees": "2026-27 (year 1): ₹6.74 L to ISBF (incl. 18% GST, ₹10,000 refundable deposit) + University of London fee £2,640 (~₹3.18 L at Dec 2025 rate) ≈ ₹9.9 L",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.isbf.edu.in/bsc-economics-honours"
+      }
+    ],
+    "sources": [
+      "https://www.isbf.edu.in/ug-admission.php",
+      "https://www.isbf.edu.in/bsc-economics-honours",
+      "https://www.isbf.edu.in/pdf/Fee-Structure-2026-27.pdf",
+      "https://www.isbf.edu.in/pdf/UG-Admissions-deadline.pdf",
+      "https://www.careers360.com/colleges/indian-school-of-business-and-finance-new-delhi/admission"
+    ],
+    "notes": "The degree is awarded by the University of London (academic direction from LSE), not by an Indian university, so it sits outside UGC; ISBF suggests enrolling in parallel with Delhi University's School of Open Learning if you want a UGC-recognised degree too. Top performers can transfer to LSE in year 2. Scholarships of up to 50% of tuition are advertised. Fees above are for year 1 only; University of London fees are in pounds and change with the exchange rate.",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Rolling rounds through the year; in 2026 the final round closed 1 Aug with the test on 4 Aug. 2027 rounds not yet posted",
+      "url": "https://www.isbf.edu.in/ug-admission.php",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": null,
+      "min_10_pct": null,
+      "streams": ["Any"],
+      "maths_required": null,
+      "max_age": null,
+      "age_note": "",
+      "note": "Maths in XII (50%+) needed for Economics and Economics & Finance; Class X Maths is enough for the other three programmes. No overall XII % published."
+    },
+    "papers": []
+  },
+  {
+    "id": "presidency-kolkata-ug-test",
+    "name": "Presidency Kolkata UG Test",
+    "full_name": "Presidency University (Kolkata) Undergraduate Admission Test — replaces WBJEEB's PUBDET from 2026",
+    "conducted_by": "Presidency University, Kolkata",
+    "category": "State & other",
+    "programme_types": ["Economics"],
+    "mode": "Pen-and-paper (offline), on campus at College Street, Kolkata",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "19 May – 1 Jun 2026",
+      "exam_date": "Economics test 12 Jun 2026, 11 am – 1 pm (tests for other subjects 12–14 Jun)",
+      "result": "Provisional merit list 24 Jun 2026",
+      "fee": "₹500 per application"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII passed in 2025 or 2026 with at least five subjects of 100 marks each, including English. Economics needs 70% aggregate of best four subjects (Gen); 63% OBC; 66.5% PwD; 52.5% SC/ST",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 50,
+      "sections": [
+        {"name": "Mathematics", "questions": 35, "time_min": null, "notes": ""},
+        {"name": "English", "questions": 15, "time_min": null, "notes": ""}
+      ],
+      "marking": "+2 correct / −0.5 wrong / 0 unattempted (100 marks)",
+      "sectional_timing": false,
+      "notes": "Economics paper only (other subjects have their own papers). The brochure lists the slot as 11 am – 1 pm. Merit (General Merit Rank) comes from the test score alone; Class XII marks only decide eligibility."
+    },
+    "selection_process": "Own admission test → General Merit Rank from test score → seat allotment by rank. Until 2025 Presidency used PUBDET run by WBJEEB; from 2026 it conducts its own test for 6 subjects (History, Political Science, Chemistry, Economics, Life Sciences, Statistics) and admits 11 other subjects on Class XII marks.",
+    "verbal_weight": "15 of 50 questions are English (Economics paper)",
+    "official_url": "https://www.presiuniv.ac.in/web/admission.php",
+    "colleges": [
+      {
+        "name": "Presidency University, Kolkata",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "type": "State univ",
+        "programmes": ["BSc (Hons with Research) Economics — 4-yr"],
+        "seats": "58",
+        "fees": "Not published in the 2026 brochure",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.presiuniv.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://www.presiuniv.ac.in/web/UG%20Admission%20Information%20Brochure%202026_final.pdf",
+      "https://www.presiuniv.ac.in/web/UG%20Admission%20Notification26ru.pdf",
+      "https://news.careers360.com/presidency-university-exits-10-year-tie-up-wbjee-conduct-own-ug-entrance-test-admission-through-class-12-marks-16-departments/amp",
+      "https://collegedunia.com/exams/pubdet"
+    ],
+    "notes": "Economics at Presidency is a BSc, not a BA, and 35 of the 50 test questions are Maths — so this suits students comfortable with Class XII-level maths even though Maths is not a formal eligibility requirement. The test is held only at the Kolkata campus. Many coaching sites still describe this as 'PUBDET'; the 2026 brochure does not mention WBJEEB at all. The application window is very short (about two weeks in late May).",
+    "confidence": "high",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Based on 2026: applications open mid-May and close early June, test in mid-June, merit list late June",
+      "url": "https://www.presiuniv.ac.in/web/admission.php",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": 70,
+      "min_10_pct": null,
+      "streams": ["Any"],
+      "maths_required": false,
+      "max_age": null,
+      "age_note": "",
+      "note": "Aggregate = best four subjects incl. English, from five 100-mark subjects. 52.5% SC/ST, 63% OBC, 66.5% PwD. XII must be passed in 2025 or later (for 2026 entry)."
+    },
+    "papers": []
+  },
+  {
+    "id": "xim-university-ug",
+    "name": "XIM University UG (merit + PI)",
+    "full_name": "XIM University undergraduate admission — Class X/XII merit and personal interview (no entrance test)",
+    "conducted_by": "XIM University, Bhubaneswar",
+    "category": "Private university",
+    "programme_types": ["BBA", "BCom", "Economics"],
+    "mode": "No entrance test; online application + personal interview",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Online applications till 31 Jul 2026",
+      "exam_date": "No test; personal interview after application",
+      "result": "Rolling offers by email; classes from the third week of Jul 2026",
+      "fee": "Application fee not published on the programme pages"
+    },
+    "cycle_2027": "Not announced yet (UG pages still show 2026; PG 2027 admissions are open)",
+    "eligibility": "Class XII in any discipline with at least 60% aggregate; students appearing in 2026 can apply and get a provisional offer (must complete by 15 Jul)",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "No entrance test",
+      "sectional_timing": false,
+      "notes": "Selection is on Class X and XII marks plus a personal interview; weightages are not published."
+    },
+    "selection_process": "Online application at xim.edu.in → merit on Class X and XII marks → personal interview → offer. 85%+ in XII earns a 50% tuition waiver (kept if CGPA ≥ 8.0 each year).",
+    "verbal_weight": "None (no written test)",
+    "official_url": "https://xim.edu.in/admission/b-com-bbm-hons/",
+    "colleges": [
+      {
+        "name": "XIM University (School of Commerce / School of Economics)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "type": "Private univ",
+        "programmes": ["BBM (Hons) — HR / Marketing", "B.Com (Hons) — Accounting / Finance", "BSc Economics (Hons)"],
+        "seats": "Not published",
+        "fees": "2026: tuition ₹1.60 L (yr 1), ₹1.68 L (yr 2), ₹1.74 L (yrs 3–4) + ₹34,000/yr other charges; hostel ₹70,000/yr (optional)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Class X & XII merit + PI. 85%+ in XII: 50% tuition waiver.",
+        "placements": "",
+        "url": "https://xim.edu.in/admission/"
+      }
+    ],
+    "sources": [
+      "https://xim.edu.in/admission/",
+      "https://xim.edu.in/admission/b-com-bbm-hons/",
+      "https://xim.edu.in/admission/b-sc-economics-hons/",
+      "https://xim.edu.in/admission/fee-structure-ug-programs/"
+    ],
+    "notes": "XIM University (formerly Xavier University, Bhubaneswar) is the parent of XIMB; its UG campus is at Harirajpur, Puri district, about 25 km from Bhubaneswar. There is no entrance test for BBM / B.Com / BSc Economics — good marks in XII plus the interview are what count. The programme page describes a 3-year, 6-semester course while the fee table lists four years; confirm the duration with admissions (0674-6647766).",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Based on 2026: applications run through the first half of the year and close 31 Jul; interviews are rolling",
+      "url": "https://xim.edu.in/admission/",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": 60,
+      "min_10_pct": null,
+      "streams": ["Any"],
+      "maths_required": false,
+      "max_age": null,
+      "age_note": "",
+      "note": "Appearing students get provisional offers; relaxation for reserved categories not published"
+    },
+    "papers": []
+  },
+  {
+    "id": "mse-ima-entrance",
+    "name": "MSE Integrated MA Economics Test",
+    "full_name": "Madras School of Economics entrance test for the 5-year Integrated MA in Economics (exit with BA Hons after 3 or 4 years)",
+    "conducted_by": "Madras School of Economics, Chennai (applications handled via IBPS)",
+    "category": "State & other",
+    "programme_types": ["Economics"],
+    "mode": "Offline test at designated centres in India",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "10 Apr – 11 May 2026",
+      "exam_date": "31 May 2026",
+      "result": "17–18 Jun 2026; merit list and counselling 26 Jun – 4 Jul; classes from 15 Jul",
+      "fee": "₹1,200 (Gen); ₹1,000 (SC/ST)"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII (passed in first attempt, or appearing) with Mathematics (Standard / Applied / Business); 65% Gen, 60% OBC-NCL, 50% SC/ST/PwD; under 22 years on 1 Jul of the admission year",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Pattern not published. MSE posts an entrance syllabus PDF (https://mse.ac.in/wp-content/uploads/2026/04/Entrance-Syllabus-1.pdf); the programme itself is heavy on statistics, mathematical methods and econometrics."
+    },
+    "selection_process": "Entrance test → merit list (ties broken by XII percentage, then age) → counselling → document verification and orientation at MSE. 35% of seats are reserved for Tamil Nadu residents; central reservation also applies.",
+    "verbal_weight": "Not published",
+    "official_url": "https://mse.ac.in/5-year-integrated-ma/",
+    "colleges": [
+      {
+        "name": "Madras School of Economics (MSE)",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "type": "Autonomous institute (MSE Act 2020, awards its own degrees)",
+        "programmes": ["Integrated MA Economics — 5-yr (exit: BA (Hons) after 3 yrs or BA (Hons with Research) after 4 yrs)"],
+        "seats": "80 (35% for Tamil Nadu residents)",
+        "fees": "₹72,600 per semester (tuition + exam) + ₹30,000 infrastructure fee + ₹5,000 one-time admission fee (2026 brochure); SC/ST get 20% off semester fee",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://mse.ac.in/5-year-integrated-ma/"
+      }
+    ],
+    "sources": [
+      "https://mse.ac.in/5-year-integrated-ma/",
+      "https://mse.ac.in/wp-content/uploads/2026/04/MSE-IMA_Advertisement-2026.pdf",
+      "https://mse.ac.in/wp-content/uploads/2026/04/IMA-2026-Broucher.pdf"
+    ],
+    "notes": "One of the few serious economics-only institutes you can join straight after Class XII, at fees far below private universities. Maths in XII is compulsory and the XII exam must be cleared in the first attempt. The integrated MA is new (first batches only recently graduated), so there is no placement record yet; MSE's reputation rests on its MA/PGDM placements. Hostels exist on campus; charges not published.",
+    "confidence": "high",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Based on 2026: applications Apr to mid-May, test at the end of May, results mid-June",
+      "url": "https://mse.ac.in/5-year-integrated-ma/",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": 65,
+      "min_10_pct": null,
+      "streams": ["Any"],
+      "maths_required": true,
+      "max_age": 22,
+      "age_note": "must not have completed 22 years on 1 Jul of the admission year",
+      "note": "60% OBC-NCL; 50% SC/ST/PwD. Maths (Standard, Applied or Business) in XII is compulsory; XII must be passed in the first attempt."
+    },
+    "papers": []
+  },
+  {
+    "id": "chandigarh-cucet",
+    "name": "CUCET (Chandigarh University)",
+    "full_name": "Chandigarh University Common Entrance Test — admission-cum-scholarship test",
+    "conducted_by": "Chandigarh University, Mohali",
+    "category": "Private university",
+    "programme_types": ["BBA", "BCom"],
+    "mode": "Online, home-proctored (laptop/desktop with camera)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Phase 1 ran from autumn 2025 with deadlines extended several times (aggregators show dates between late Feb and mid-May 2026); Phase 2 till 10 Aug 2026",
+      "exam_date": "Phase 1: 1–16 May 2026; Phase 2: 11 Aug 2026 (Careers360)",
+      "result": "Declared online the same day as the test",
+      "fee": "₹1,000"
+    },
+    "cycle_2027": "Announced: CUCET 2027 registration open (Phase 1 from about mid-Oct 2026 to May 2027; Phase 2 from Jul 2027). Test slot is chosen at registration",
+    "eligibility": "Class XII with 50% aggregate from a recognised board (UG). Students with more than 90% in XII are exempt from the test",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 100,
+      "sections": [
+        {"name": "Economics (Commerce paper)", "questions": 30, "time_min": null, "notes": ""},
+        {"name": "Accounts (Commerce paper)", "questions": 30, "time_min": null, "notes": ""},
+        {"name": "Business Studies (Commerce paper)", "questions": 30, "time_min": null, "notes": ""},
+        {"name": "English", "questions": 10, "time_min": null, "notes": ""}
+      ],
+      "marking": "+1 per correct; no negative marking",
+      "sectional_timing": false,
+      "notes": "Stream-based papers. Commerce students get Economics / Accounts / Business Studies + English (shown above). Arts students choose two of Political Science, Sociology, Economics, History, plus General Science (10) and English. Science students get PCM/PCB + English. Pattern from Collegedunia's CUCET 2026 page; the official portal blocks automated access."
+    },
+    "selection_process": "Register → book a slot → take the online test → score decides admission (30% minimum) and the scholarship slab (Phase I: 90.1–100% → 100% scholarship, 80–90% → 50%, 70–79.99% → 40%, 60–69.99% → 30%, 50–59.99% → 25%, 40–49.99% → 15%; Phase II slabs are lower) → pay 30% of the admission fee within 15 days.",
+    "verbal_weight": "10 of 100 questions are English (Commerce paper)",
+    "official_url": "https://www.cucet.cuchd.in/",
+    "colleges": [
+      {
+        "name": "University School of Business, Chandigarh University",
+        "city": "Mohali (Gharuan)",
+        "state": "Punjab",
+        "type": "Private univ",
+        "programmes": ["BBA (several specialisations)", "B.Com (Hons)"],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Minimum 30% in CUCET to qualify for admission; scholarship slab depends on score",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Source: Collegedunia CUCET page"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.cuchd.in/"
+      }
+    ],
+    "sources": [
+      "https://www.cuchd.in/admissions/cucet/",
+      "https://collegedunia.com/exams/chandigarh-university-entrance-test",
+      "https://university.careers360.com/articles/cucet-2026"
+    ],
+    "notes": "CUCET is mainly a scholarship test: getting in is easy (30% qualifies), and the score sets your fee waiver, which is bigger in Phase I than Phase II. Chandigarh University also has a Lucknow (Uttar Pradesh) campus. Dates and pattern here come from aggregator sites because cucet.cuchd.in could not be read directly — confirm on the portal before relying on them. Not to be confused with the national CUET-UG.",
+    "confidence": "low",
+    "next_cycle": {
+      "status": "open",
+      "apply_open": "2026-10-13",
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Phase 1 registration Oct 2026 – May 2027 with self-booked test slots; Phase 2 from Jul 2027",
+      "url": "https://www.cucet.cuchd.in/",
+      "source_status": "reported"
+    },
+    "elig": {
+      "min_12_pct": 50,
+      "min_10_pct": null,
+      "streams": ["Any"],
+      "maths_required": false,
+      "max_age": null,
+      "age_note": "",
+      "note": "More than 90% in XII exempts you from the test (Collegedunia)"
+    },
+    "papers": []
+  }
+]
