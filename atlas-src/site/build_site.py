@@ -209,9 +209,39 @@ ALIAS = {
     "IIM Bangalore – BBA DBE (online)": "IIM Bangalore",
     "IIM Bangalore – Dorabji Tata School of Undergraduate Studies": "IIM Bangalore",
     "NMIMS (Deemed University)": "NMIMS (all campuses)",
+    "AMU Centres Malappuram and Murshidabad": "Aligarh Muslim University (AMU)",
+    "AMU Department of Economics (Faculty of Social Sciences)": "Aligarh Muslim University (AMU)",
+    "AMU Faculty of Commerce": "Aligarh Muslim University (AMU)",
+    "JMI Department of Commerce & Business Studies": "Jamia Millia Islamia (JMI)",
+    "JMI Department of Economics": "Jamia Millia Islamia (JMI)",
+    "MAHE Bengaluru — Department of Commerce": "Manipal Academy of Higher Education (MAHE)",
+    "MAHE Department of Commerce, Manipal": "Manipal Academy of Higher Education (MAHE)",
+    "Unitedworld School of Business, Karnavati University": "Karnavati University",
+    "Unitedworld School of Liberal Arts & Mass Communication, Karnavati University": "Karnavati University",
+    "Department of Management Studies, NALSAR University of Law": "NALSAR University of Law",
+    "School of Liberal Studies, PDEU": "PDEU (Pandit Deendayal Energy University)",
+    "Amity University (Noida and other campuses)": "Amity University",
+    "IIM Kozhikode (Kochi campus)": "IIM Kozhikode",
+    "TAPMI (Manipal and Bengaluru)": "TAPMI",
+    "M.S. University of Baroda – Faculty of Commerce / Faculty of Arts (Economics)": "M.S. University of Baroda",
+    "Parul University – Parul Institute of Commerce / Business Administration": "Parul University",
+    "Navrachana University – School of Business & Law": "Navrachana University",
+    "GITAM (Deemed to be) University": "GITAM University",
+    "JAIN (Deemed-to-be University)": "Jain University",
+    "Mount Carmel College (Autonomous)": "Mount Carmel College",
+    "Bhavan's College (autonomous)": "Bhavan's College",
+    "IIFT Kakinada (Indian Institute of Foreign Trade)": "IIFT Kakinada",
+    "LM Thapar School of Management, Thapar Institute (TIET)": "Thapar Institute (TIET)",
+    "St. Xavier's College (Autonomous), Ahmedabad": "St. Xavier's College, Ahmedabad",
+    "H.L. College of Commerce (Gujarat University)": "H.L. College of Commerce",
+    "SVKM's Narsee Monjee College of Commerce & Economics": "Narsee Monjee College of Commerce & Economics (NM College)",
+    "SVKM's Usha Pravin Gandhi College": "Usha Pravin Gandhi College (UPG)",
+    "K.C. College (Kishinchand Chellaram)": "K.C. College",
 }
+NO_PAGE = {"Jagannath Institute of Management Sciences / New Delhi Institute of Management"}
 def is_group(name):
     if name in ALIAS: return False
+    if name in NO_PAGE: return True
     return bool(re.search(r";|affiliated colleges|institutes:|and others", name, re.I))
 
 def canon(c):
@@ -219,6 +249,53 @@ def canon(c):
     if n == "St. Xavier's College (Autonomous)":
         return f"St. Xavier's College, {c.get('city') or 'India'}"
     return ALIAS.get(n, n)
+
+EMPTY = {"", "—", "Not published", "Not published here", None}
+CUT_RANK = {"official": 0, "unofficial": 1, "not_published": 2}
+def merge_routes(routes):
+    """Several source entries for the same college + exam become one route. Conflicting
+    figures are kept side by side, labelled by programme, so nothing is lost."""
+    by = collections.OrderedDict()
+    for e, c in routes:
+        by.setdefault(e["id"], []).append((e, c))
+    out = []
+    for eid, grp in by.items():
+        if len(grp) == 1:
+            out.append(grp[0]); continue
+        e = grp[0][0]
+        def lab(c):
+            return ", ".join(re.sub(r"\s*\(.*?\)", "", p) for p in c.get("programmes", [])[:2]) or c.get("name", "")
+        def item(l, v):  # values that already itemise by programme get no extra label
+            return v if (";" in str(v) or ":" in str(v)) else f"{l}: {v}"
+        m = {"name": grp[0][1].get("name"), "city": "", "state": "", "type": "", "url": "", "programmes": [], "_slug": grp[0][1].get("_slug")}
+        for _, c in grp:
+            for k in ("city", "state", "type", "url"):
+                if not m[k] and c.get(k): m[k] = c[k]
+            for p in c.get("programmes", []):
+                if p not in m["programmes"]: m["programmes"].append(p)
+        for k in ("seats", "fees", "selection", "placements"):
+            vals = [(lab(c), c.get(k)) for _, c in grp if c.get(k) not in EMPTY]
+            distinct = list(dict.fromkeys(v for _, v in vals))
+            m[k] = distinct[0] if len(distinct) <= 1 and distinct else (" · ".join(item(l, v) for l, v in vals) if distinct else "")
+        cuts = [(lab(c), c.get("cutoff") or {}) for _, c in grp if (c.get("cutoff") or {}).get("value") not in EMPTY]
+        if not cuts:
+            m["cutoff"] = {"value": "Not published", "status": "not_published", "year": None, "note": ""}
+        elif len({ct.get("value") for _, ct in cuts}) == 1:
+            m["cutoff"] = cuts[0][1]
+        else:
+            best = min(cuts, key=lambda x: CUT_RANK.get(x[1].get("status"), 2))[1]
+            m["cutoff"] = {"value": " · ".join(item(l, ct.get("value")) for l, ct in cuts), "status": best.get("status"), "year": best.get("year"),
+                           "note": "; ".join(dict.fromkeys(ct.get("note") for _, ct in cuts if ct.get("note") not in EMPTY))}
+        out.append((e, m))
+    return out
+
+POPULAR = ["ipmat-indore", "cuet-ug", "nmims-npat", "symbiosis-set", "ipmat-rohtak", "jipmat", "christ-university-et", "iimk-bms-at",
+           "iimb-ug-test", "mah-bba-bms-cet", "ggsipu-cet-bba", "ashoka-aptitude-assessment", "flame-feat", "jgu-jsat", "krea-kat",
+           "aima-ugat", "xavier-entrance-test-mumbai", "hsnc-h-cet", "sat-digital-india", "snusat", "azim-premji-net", "jmi-entrance-ug",
+           "amu-admission-test-ug", "nirma-ug-management", "pdeu-sls-aptitude-test", "kiitee-ug-management", "sjcc-smat", "sxc-kolkata-bms-test",
+           "mit-wpu-cet", "iimb-dbe-test", "ahmedabad-university-ug", "jee-iim-ug", "gujarat-ug-commerce-merit"]
+def pop_rank(eid):
+    return POPULAR.index(eid) if eid in POPULAR else 99
 
 def prepare():
     with contextlib.redirect_stdout(io.StringIO()):
@@ -243,6 +320,7 @@ def prepare():
                 if not C[k] and c.get(k): C[k] = c[k]
             C["routes"].append((e, c))
     for C in cols.values():
+        C["routes"] = merge_routes(C["routes"])
         C["mono"] = mono_college(C["name"])
         C["exam_ids"] = list(dict.fromkeys(e["id"] for e, _ in C["routes"]))
         C["programmes"] = list(dict.fromkeys(p for _, c in C["routes"] for p in c.get("programmes", [])))
@@ -365,7 +443,7 @@ def lcard(x, e):
     search = " ".join([e["name"], e.get("full_name", ""), e.get("conducted_by", "")] + [c["name"] + " " + (c.get("city") or "") for c in e["colleges"]]).lower()
     lvl = e.get("level") or ""
     lvl_tok = "national" if "national" in lvl.lower() else "state" if "state" in lvl.lower() else "university"
-    return f'''<article class="lcard js-card" data-id="{e['id']}" data-name="{H(e['name'].lower())}" data-cols="{len(e['colleges'])}" data-va="{e['va_share'] if e.get('va_share') is not None else ''}" data-prog="{'|'.join(e['programme_types'])}" data-cat="{e['_tok']}" data-level="{lvl_tok}" data-status="" data-search="{H(search)}">
+    return f'''<article class="lcard js-card" data-id="{e['id']}" data-name="{H(e['name'].lower())}" data-cols="{len(e['colleges'])}" data-va="{e['va_share'] if e.get('va_share') is not None else ''}" data-prog="{'|'.join(e['programme_types'])}" data-cat="{e['_tok']}" data-level="{lvl_tok}" data-status="" data-pop="{pop_rank(e['id'])}" data-search="{H(search)}">
   <span class="mono {e['_cc']}">{H(e['_mono'])}</span>
   <div style="min-width:0">
     <div class="t1"><h3><a href="{x.ex(e['id'])}">{H(e['name'])}</a></h3>{pill(e)}</div>
@@ -427,7 +505,7 @@ def crumbs(x, items):
 EXAMS_BY_ID = {}
 
 def page_home(x, exams, cols, ver):
-    popular = [i for i in ["ipmat-indore", "ipmat-rohtak", "jipmat", "cuet-ug", "nmims-npat", "symbiosis-set"] if i in EXAMS_BY_ID]
+    popular = [i for i in POPULAR[:6] if i in EXAMS_BY_ID]
     rail = [e for e in exams if (e.get("next_cycle") or {}).get("apply_close") or (e.get("next_cycle") or {}).get("apply_open") or (e.get("next_cycle") or {}).get("exam_dates") or (e.get("next_cycle") or {}).get("rounds") or (e.get("next_cycle") or {}).get("status") == "open"]
     rail.sort(key=lambda e: (status(e)["key"] != "open", e["name"]))
     prog_icons = {"IPM": "cap", "BBA": "brief", "BMS": "bars", "BCom": "ledger", "Economics": "trend", "Finance": "coins", "Liberal Arts": "feather"}
@@ -539,7 +617,7 @@ def page_all(x, exams, ver):
   <div style="min-width:0">
     <div class="results-head"><p class="count"><b class="js-count">{len(exams)}</b> exams</p>
       <div class="results-tools"><button class="btn sm flt-btn" type="button">{ic("filter")} Filters <span class="js-fcount"></span></button>
-      <label class="sr" for="sort">Sort</label><select id="sort" class="js-sort"><option value="dl">Next deadline first</option><option value="name">Name A–Z</option><option value="cols">Most colleges</option><option value="va">Most English</option></select></div></div>
+      <label class="sr" for="sort">Sort</label><select id="sort" class="js-sort"><option value="rec">Recommended</option><option value="dl">Next deadline first</option><option value="name">Name A–Z</option><option value="cols">Most colleges</option><option value="va">Most English</option></select></div></div>
     <div class="list js-results">{"".join(lcard(x, e) for e in exams)}</div>
     <div class="empty js-empty" hidden>No exam matches these filters. <button class="btn sm js-clear" type="button" style="margin-left:8px">Clear filters</button></div>
   </div>

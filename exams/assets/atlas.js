@@ -215,7 +215,8 @@ function initDirectory(){
   }
   function doSort(){
     if(!sort) return; const k = sort.value;
-    const v = c => k === "dl" ? +c.dataset.sortdl : k === "cols" ? -(+c.dataset.cols) : k === "va" ? -(+c.dataset.va || -1) : k === "exams" ? -(+c.dataset.nex) : (c.dataset.name || "");
+    const SR = {open:0, soon:1, exam:2, na:3, closed:4};
+    const v = c => k === "rec" ? (SR[c.dataset.status] ?? 3) * 1000 + (+c.dataset.pop || 99) : k === "dl" ? +c.dataset.sortdl : k === "cols" ? -(+c.dataset.cols) : k === "va" ? -(+c.dataset.va || -1) : k === "exams" ? -(+c.dataset.nex) : (c.dataset.name || "");
     const arr = [...cards].sort((a,b) => { const x = v(a), y = v(b); return typeof x === "number" ? x - y || (a.dataset.name > b.dataset.name ? 1 : -1) : String(x).localeCompare(String(y)) });
     arr.forEach(c => list.appendChild(c));
   }

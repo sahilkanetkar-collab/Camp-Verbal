@@ -9,6 +9,306 @@
       "source": "/exams",
       "destination": "/exams/",
       "permanent": true
+    },
+    {
+      "source": "/exams/colleges/iim-kozhikode-kochi-campus",
+      "destination": "/exams/colleges/iim-kozhikode/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/iim-kozhikode-kochi-campus/",
+      "destination": "/exams/colleges/iim-kozhikode/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/iift-kakinada-indian-institute-of-foreign-trade",
+      "destination": "/exams/colleges/iift-kakinada/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/iift-kakinada-indian-institute-of-foreign-trade/",
+      "destination": "/exams/colleges/iift-kakinada/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/lm-thapar-school-of-management-thapar-institute-tiet",
+      "destination": "/exams/colleges/thapar-institute-tiet/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/lm-thapar-school-of-management-thapar-institute-tiet/",
+      "destination": "/exams/colleges/thapar-institute-tiet/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/department-of-management-studies-nalsar-university-of-law",
+      "destination": "/exams/colleges/nalsar-university-of-law/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/department-of-management-studies-nalsar-university-of-law/",
+      "destination": "/exams/colleges/nalsar-university-of-law/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/tapmi-manipal-and-bengaluru",
+      "destination": "/exams/colleges/tapmi/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/tapmi-manipal-and-bengaluru/",
+      "destination": "/exams/colleges/tapmi/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amity-university-noida-and-other-campuses",
+      "destination": "/exams/colleges/amity-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amity-university-noida-and-other-campuses/",
+      "destination": "/exams/colleges/amity-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jain-deemed-to-be-university",
+      "destination": "/exams/colleges/jain-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jain-deemed-to-be-university/",
+      "destination": "/exams/colleges/jain-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/unitedworld-school-of-business-karnavati-university",
+      "destination": "/exams/colleges/karnavati-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/unitedworld-school-of-business-karnavati-university/",
+      "destination": "/exams/colleges/karnavati-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/unitedworld-school-of-liberal-arts-mass-communication-karnavati",
+      "destination": "/exams/colleges/karnavati-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/unitedworld-school-of-liberal-arts-mass-communication-karnavati/",
+      "destination": "/exams/colleges/karnavati-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/mahe-department-of-commerce-manipal",
+      "destination": "/exams/colleges/manipal-academy-of-higher-education-mahe/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/mahe-department-of-commerce-manipal/",
+      "destination": "/exams/colleges/manipal-academy-of-higher-education-mahe/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/mahe-bengaluru-department-of-commerce",
+      "destination": "/exams/colleges/manipal-academy-of-higher-education-mahe/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/mahe-bengaluru-department-of-commerce/",
+      "destination": "/exams/colleges/manipal-academy-of-higher-education-mahe/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amu-faculty-of-commerce",
+      "destination": "/exams/colleges/aligarh-muslim-university-amu/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amu-faculty-of-commerce/",
+      "destination": "/exams/colleges/aligarh-muslim-university-amu/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amu-department-of-economics-faculty-of-social-sciences",
+      "destination": "/exams/colleges/aligarh-muslim-university-amu/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amu-department-of-economics-faculty-of-social-sciences/",
+      "destination": "/exams/colleges/aligarh-muslim-university-amu/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amu-centres-malappuram-and-murshidabad",
+      "destination": "/exams/colleges/aligarh-muslim-university-amu/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/amu-centres-malappuram-and-murshidabad/",
+      "destination": "/exams/colleges/aligarh-muslim-university-amu/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jmi-department-of-commerce-business-studies",
+      "destination": "/exams/colleges/jamia-millia-islamia-jmi/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jmi-department-of-commerce-business-studies/",
+      "destination": "/exams/colleges/jamia-millia-islamia-jmi/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jmi-department-of-economics",
+      "destination": "/exams/colleges/jamia-millia-islamia-jmi/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jmi-department-of-economics/",
+      "destination": "/exams/colleges/jamia-millia-islamia-jmi/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/gitam-deemed-to-be-university",
+      "destination": "/exams/colleges/gitam-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/gitam-deemed-to-be-university/",
+      "destination": "/exams/colleges/gitam-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jagannath-institute-of-management-sciences-new-delhi-institute-o",
+      "destination": "/exams/colleges/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/jagannath-institute-of-management-sciences-new-delhi-institute-o/",
+      "destination": "/exams/colleges/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/hl-college-of-commerce-gujarat-university",
+      "destination": "/exams/colleges/hl-college-of-commerce/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/hl-college-of-commerce-gujarat-university/",
+      "destination": "/exams/colleges/hl-college-of-commerce/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/st-xaviers-college-autonomous-ahmedabad",
+      "destination": "/exams/colleges/st-xaviers-college-ahmedabad/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/st-xaviers-college-autonomous-ahmedabad/",
+      "destination": "/exams/colleges/st-xaviers-college-ahmedabad/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/ms-university-of-baroda-faculty-of-commerce-faculty-of-arts-econ",
+      "destination": "/exams/colleges/ms-university-of-baroda/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/ms-university-of-baroda-faculty-of-commerce-faculty-of-arts-econ/",
+      "destination": "/exams/colleges/ms-university-of-baroda/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/parul-university-parul-institute-of-commerce-business-administra",
+      "destination": "/exams/colleges/parul-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/parul-university-parul-institute-of-commerce-business-administra/",
+      "destination": "/exams/colleges/parul-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/kc-college-kishinchand-chellaram",
+      "destination": "/exams/colleges/kc-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/kc-college-kishinchand-chellaram/",
+      "destination": "/exams/colleges/kc-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/svkms-narsee-monjee-college-of-commerce-economics",
+      "destination": "/exams/colleges/narsee-monjee-college-of-commerce-economics-nm-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/svkms-narsee-monjee-college-of-commerce-economics/",
+      "destination": "/exams/colleges/narsee-monjee-college-of-commerce-economics-nm-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/svkms-usha-pravin-gandhi-college",
+      "destination": "/exams/colleges/usha-pravin-gandhi-college-upg/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/svkms-usha-pravin-gandhi-college/",
+      "destination": "/exams/colleges/usha-pravin-gandhi-college-upg/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/bhavans-college-autonomous",
+      "destination": "/exams/colleges/bhavans-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/bhavans-college-autonomous/",
+      "destination": "/exams/colleges/bhavans-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/mount-carmel-college-autonomous",
+      "destination": "/exams/colleges/mount-carmel-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/mount-carmel-college-autonomous/",
+      "destination": "/exams/colleges/mount-carmel-college/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/navrachana-university-school-of-business-law",
+      "destination": "/exams/colleges/navrachana-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/navrachana-university-school-of-business-law/",
+      "destination": "/exams/colleges/navrachana-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/school-of-liberal-studies-pdeu",
+      "destination": "/exams/colleges/pdeu-pandit-deendayal-energy-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/colleges/school-of-liberal-studies-pdeu/",
+      "destination": "/exams/colleges/pdeu-pandit-deendayal-energy-university/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/mount-carmel-mcmat",
+      "destination": "/exams/mount-carmel-admission/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/mount-carmel-mcmat/",
+      "destination": "/exams/mount-carmel-admission/",
+      "permanent": true
     }
   ],
   "headers": [

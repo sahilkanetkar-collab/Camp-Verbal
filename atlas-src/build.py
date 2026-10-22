@@ -118,6 +118,11 @@ def collect():
                 obj[parts[-1]] = v
             if pt.get("add_colleges"):
                 e["colleges"] = merge_colleges(e.get("colleges", []), pt["add_colleges"])
+    # id renames (old URLs get a redirect in vercel.json)
+    ID_RENAME = {"mount-carmel-mcmat": "mount-carmel-admission"}
+    for e in exams:
+        if e["id"] in ID_RENAME:
+            e["id"] = ID_RENAME[e["id"]]
     # normalise
     for e in exams:
         e["sources"] = [s for s in e.get("sources", []) if not BANNED_SOURCE.search(s)]
