@@ -1,0 +1,295 @@
+[
+ {
+  "id": "iim-udaipur-bba",
+  "setp": {
+   "official_url": "https://bba.iimu.ac.in/",
+   "cycle_2026.application_window": "4 Mar – 30 Jun 2026 (late window 1–31 Jul 2026)",
+   "cycle_2026.fee": "Application ₹1,000 (₹5,000 in the late window)",
+   "eligibility": "Class XII or equivalent from a recognised board (NIOS accepted), any stream; Indian nationals only; no minimum marks or age limit stated.",
+   "selection_process": "No entrance test or interview: admission on Class XII completion and document verification.",
+   "colleges[IIM Udaipur].fees": "₹50,000 (Yr 1), ₹1 L (Yr 2), ₹1.5 L (Yr 3), ₹2 L (Yr 4 Hons): ₹3 L for the 3-yr BBA, ₹5 L with Hons (official; subject to change). Merit scholarship (top 25%, from Yr 2) and means-based scholarship each cut that year's tuition by 50%.",
+   "colleges[IIM Udaipur].url": "https://bba.iimu.ac.in/admissions.html",
+   "next_cycle.expected": "2026 applications ran 4 Mar – 30 Jun (late window to 31 Jul), classes from 6 Jul; 2027 dates not announced; no entrance test",
+   "next_cycle.url": "https://bba.iimu.ac.in/admissions.html",
+   "elig.note": "Class XII or equivalent from a recognised board (NIOS accepted); Indian nationals only (overseas Indians must sit mid/end-semester exams in India).",
+   "months.apply": [
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "sources": [
+    "https://bba.iimu.ac.in/admissions.html",
+    "https://bba.iimu.ac.in/templates/academics.html",
+    "https://news.iimu.ac.in/iim-udaipur-launches-bba-program-with-bilingual-learning-support-applications-open-for-2026-cohort/"
+   ],
+   "confidence": "high"
+  },
+  "why": "Official IIM Udaipur BBA site: regular window 4 Mar–30 Jun 2026 (not 31 May), late window Jul with ₹5,000 fee, application fee ₹1,000, year-wise fees ₹50k/₹1L/₹1.5L/₹2L and scholarship rules. https://bba.iimu.ac.in/admissions.html ; https://bba.iimu.ac.in/templates/academics.html"
+ },
+ {
+  "id": "iimb-dbe-test",
+  "setp": {
+   "selection_process": "Shortlist on the IIMB test, CUET (UG) General Test (Section III) or JEE Main score (2024–2026 scores accepted; best score counts) against category cutoffs. 2026 Gen cutoffs: 50% (IIMB test), 70th percentile (CUET), 50th percentile (JEE Main).",
+   "colleges[IIM Bangalore – BBA DBE (online)].cutoff": {
+    "value": "2026 minimum qualifying cutoff (Gen): 50% in IIMB test / 70th percentile in CUET (UG) General Test Sec. III / 50th percentile in JEE Main; NC-OBC & EWS 45% / 65th / 45th; SC/ST/PwD 40% / 60th / 40th",
+    "year": 2026,
+    "status": "official",
+    "note": "Official: IIMB DBE admissions page (2026 cycle)."
+   },
+   "sources": [
+    "https://dbe.iimb.ac.in/admissions",
+    "https://dbe.iimb.ac.in/admission-process-document-2026-29/"
+   ]
+  },
+  "why": "IIMB DBE admissions page lists these as the 2026-cycle minimum cutoffs (not a previous cycle); 2026 applications closed, no 2027 notice yet. https://dbe.iimb.ac.in/admissions"
+ },
+ {
+  "id": "jee-iim-ug",
+  "setp": {
+   "eligibility": "IIM Mumbai: 60% in XII (55% SC/ST/PwD) with Maths and Physics; born on/after 1 Aug 2006 (2026 cycle); JEE Main 2026 Paper 1. IIM Sambalpur: 60% in X and XII (55% reserved) with English and Maths; max age 20 on 31 Jul 2026; JEE Main 2026. IIM Lucknow: PCM in XII, JEE Advanced qualified, age ≤ 21 on 31 Jul 2026. Indian nationals.",
+   "cycle_2026.application_window": "IIM Sambalpur: 15 Apr – 31 May 2026 (PI 10–30 Jun, classes Aug); IIM Mumbai and IIM Lucknow: own windows after JEE results (May–Jun 2026)",
+   "cycle_2026.fee": "IIM Sambalpur ₹2,000 + taxes (₹1,000 reserved categories); IIM Lucknow ₹1,000 (₹500 SC/ST/PwD/women); IIM Mumbai: as notified",
+   "selection_process": "IIM Mumbai: shortlist on JEE Main Paper 1 (category cutoffs) → PI → composite of JEE Main + PI (weights not published; coaching sites report 70:30). IIM Sambalpur: shortlist on JEE Main → online PI → merit on JEE Main + PI (weights not published). IIM Lucknow: JEE Advanced qualification; weightages not published.",
+   "colleges[IIM Mumbai].selection": "Shortlist on JEE Main 2026 Paper 1 (category cutoffs) → PI → composite score; 4-yr residential BS.",
+   "colleges[IIM Mumbai].url": "https://iimmumbai.ac.in/ug-eligibility-criteria",
+   "colleges[IIM Sambalpur].seats": "90 (incl. reserved categories)",
+   "colleges[IIM Sambalpur].fees": "Semester-wise, hostel included; ₹1 L offer-acceptance fee adjusted against Sem I; tuition amount in a separate PDF on the IIM Sambalpur site",
+   "colleges[IIM Sambalpur].selection": "JEE Main 2026 score (mandatory; IPMAT/SAT/JEE Advanced not accepted) → online PI → merit on JEE Main + PI. (Its BS Management & Public Policy uses IPMAT Indore.)",
+   "colleges[IIM Sambalpur].url": "https://iimsambalpur.ac.in/bachelor-of-science-b-s-in-data-science-artificial-intelligence/",
+   "elig": {
+    "min_12_pct": 60,
+    "min_10_pct": null,
+    "streams": [
+     "Science"
+    ],
+    "maths_required": true,
+    "max_age": 20,
+    "age_note": "IIM Mumbai: born on/after 1 Aug 2006 (2026 cycle; 5-yr relaxation SC/ST/PwD). IIM Sambalpur: max 20 on 31 Jul 2026. IIM Lucknow: ≤ 21 on 31 Jul of admission year",
+    "note": "IIM Mumbai: Maths + Physics in XII, 60% (55% SC/ST/PwD). IIM Sambalpur: English + Maths in X and XII, 60% in both (55% reserved). IIM Lucknow: PCM + JEE Advanced. Indian nationals only."
+   },
+   "sources": [
+    "https://iimmumbai.ac.in/ug-eligibility-criteria",
+    "https://iimmumbai.ac.in/ug-admission-process",
+    "https://iimsambalpur.ac.in/bachelor-of-science-b-s-in-data-science-artificial-intelligence/",
+    "https://registration.iimsambalpur.ac.in/portal/public/FAQ-BS-DSAI-2026.pdf",
+    "https://www.iiml.ac.in/sites/default/files/2026-05/Admission%20Policy%202026-27.pdf",
+    "https://www.businesstoday.in/education/story/no-mba-wait-needed-iim-bangalore-mumbai-lucknow-open-doors-to-class-12-students-via-jee-544359-2026-07-22"
+   ],
+   "confidence": "medium"
+  },
+  "why": "Official IIM Mumbai pages give 60% XII, Maths+Physics, DOB on/after 1 Aug 2006, JEE Main Paper 1 shortlist → PI (no published 70:30); official IIM Sambalpur page/FAQ give 60% X & XII, max age 20 on 31 Jul 2026, 90 seats, ₹2,000 fee, 15 Apr–31 May 2026 window. https://iimmumbai.ac.in/ug-eligibility-criteria ; https://iimsambalpur.ac.in/bachelor-of-science-b-s-in-data-science-artificial-intelligence/"
+ },
+ {
+  "id": "alliance-ausat",
+  "setp": {
+   "name": "Alliance AUMAT",
+   "full_name": "Alliance Undergraduate Management Aptitude Test (AUMAT; AUSAT score bands are used for scholarships)",
+   "cycle_2026.application_window": "Rolling; admissions for 2027-28 open (official BBA page)",
+   "pattern.notes": "Per-section counts not published; the 5-section / 100-question / 90-minute pattern is from third-party sites, not Alliance.",
+   "next_cycle.expected": "Admissions for 2027-28 open on a rolling basis; AUMAT test dates not published (first fee instalment due by 15 May 2027)",
+   "notes": "Alliance's official BBA (Hons) page names the admission test AUMAT (Alliance Undergraduate Management Aptitude Test); AUSAT appears only in its scholarship table, and older sites call it AUAT/AUSAT. Accepted instead of AUMAT: CUET, IPMAT, AIMA UGAT, SAT. The section pattern is from third-party sites."
+  },
+  "why": "Official Alliance BBA (Hons) admission page: step 3 is 'Appear for AUMAT – Alliance Undergraduate Management Aptitude Test'; AUSAT only in scholarship bands; 2027-28 admissions open, fee instalments from 15 May 2027. https://www.alliance.edu.in/programmes/bba-honours/admission-process"
+ },
+ {
+  "id": "jain-jet",
+  "setp": {
+   "full_name": "JAIN Entrance Test – Undergraduate (JET-UG)",
+   "mode": "Online, remote-proctored (webcam and mic on; desktop/laptop only)",
+   "official_url": "https://www.jainuniversity.ac.in/jet-ug",
+   "cycle_2026.fee": "Not published",
+   "eligibility": "Pass in Class XII (Science/Commerce/Arts) from PUC/ISC/CBSE or an equivalent board; no minimum % stated on JAIN's UG eligibility page",
+   "pattern.marking": "+1 per correct (100 marks); no negative marking; all questions compulsory",
+   "pattern.notes": "Official JET-UG pattern (JAIN website): the same 100-question, 120-minute paper is used for BBA, BMS and B.Com.",
+   "selection_process": "JET-UG online proctored test → extempore (pick-and-speak) → personal interview; admission on merit/rank in JET (official)",
+   "elig.note": "Pass in Class XII (Science/Commerce/Arts) from PUC/ISC/CBSE or an equivalent board; no minimum % stated officially.",
+   "papers": [
+    {
+     "label": "JET mock test paper (official)",
+     "url": "https://www.jainuniversity.ac.in/pdf/JET-Mock-test-paper.pdf"
+    }
+   ],
+   "next_cycle.expected": "2027 UG application portal is live; JET and interview dates are not yet listed on the JET-UG page. The 2026 BBA test was 9–10 Apr",
+   "notes": "Test pattern and selection steps are from JAIN's official JET-UG and eligibility pages; fees and 2027 test dates are not published there yet.",
+   "sources": [
+    "https://www.jainuniversity.ac.in/jet-ug",
+    "https://www.jainuniversity.ac.in/admission/eligibility-criteria-for-UG-admissions",
+    "https://applyug.jainuniversity.ac.in/juug-2027/",
+    "https://bschool.careers360.com/articles/jain-university-bba-admission"
+   ],
+   "confidence": "medium"
+  },
+  "why": "Official JET-UG page confirms RC 20 / Subject 20 / Basic Maths 20 / GK 40, 120 min, 100 marks, no negative marking, proctored online; official eligibility page gives test → extempore → PI (no GD) and no minimum %. https://www.jainuniversity.ac.in/jet-ug ; https://www.jainuniversity.ac.in/admission/eligibility-criteria-for-UG-admissions"
+ },
+ {
+  "id": "kiitee-ug-management",
+  "setp": {
+   "pattern.duration_min": 150,
+   "pattern.notes": "Official KIITEE 2026 brochure: one common paper for BBA, B.Com (Hons), BA Economics and BSc Economics & Data Analytics — 120 questions, 150 minutes, +4 / −1.",
+   "verbal_weight": "40 of 120 questions are Verbal Ability (official 2026 brochure)",
+   "cycle_2026.fee": "No application or exam fee for KIITEE 2026 (KIIT notice)",
+   "next_cycle.expected": "KIITEE 2027 not yet notified. 2026 forms opened 10 Nov 2025 with Phase 1 exam 16–20 Apr 2026, so expect forms around Nov 2026 and a Phase 1 exam around Apr 2027, with more phases through summer",
+   "sources": [
+    "https://kiitee.kiit.ac.in/",
+    "https://kiitee.kiit.ac.in/wp-content/uploads/2025/11/kiitee-Information-Brochure-2026.pdf",
+    "https://kiitee.kiit.ac.in/courses-available/",
+    "https://kiitee.kiit.ac.in/eligibility-criteria/",
+    "https://www.careers360.com/mba/articles/kiitee-bba"
+   ]
+  },
+  "why": "Official KIITEE 2026 brochure: test closes after 150 minutes (not 180), 120 Qs, +4/−1, same paper for BBA/B.Com/BA Econ/BSc Econ & DA; 2027 not yet on kiitee.kiit.ac.in. https://kiitee.kiit.ac.in/wp-content/uploads/2025/11/kiitee-Information-Brochure-2026.pdf"
+ },
+ {
+  "id": "lpunest",
+  "setp": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": "2026-09-29",
+    "apply_close": "2027-01-15",
+    "rounds": [
+     {
+      "label": "Phase 1",
+      "apply_close": "2027-01-15",
+      "exam_date": null
+     }
+    ],
+    "exam_dates": [],
+    "expected": "Phase 1 (schedule announced for B.Tech; other programmes usually follow the same phases): slot booking from 10 Dec 2026, apply and book by 15 Jan 2027, remote-proctored test 10 Jan – 5 Feb 2027, test-centre 20 Jan – 5 Feb 2027, result 8 Feb 2027; later phases till about Apr 2027",
+    "url": "https://www.lpu.in/nest/",
+    "source_status": "reported"
+   }
+  },
+  "why": "LPUNEST 2027 schedule (registration from 29 Sep 2026, slot booking 10 Dec, last date 15 Jan 2027, test 10 Jan–5 Feb / centres 20 Jan–5 Feb, result 8 Feb) per Careers360 report of LPU's notice; LPU BBA page already says 'Admission 2027'. https://news.careers360.com/lpunest-2027-exam-date-out-btech-admissions-lpu-in-counselling-registration-schedule"
+ },
+ {
+  "id": "mahe-bba-bcom",
+  "setp": {
+   "name": "Manipal (MAHE) BBA / B.Com (no entrance test)",
+   "full_name": "Manipal Academy of Higher Education — BBA and B.Com admission by personal interview (no entrance test)",
+   "mode": "No entrance test; online application + personal interview",
+   "official_url": "https://admissions.manipal.edu/manipal/bba-bcom/",
+   "cycle_2026": {
+    "application_window": "Early 2026 to 31 May 2026 (last date on the official BBA page)",
+    "exam_date": "No entrance test; personal interview",
+    "result": "Merit list based on the interview; provisional offers to shortlisted candidates",
+    "fee": "Application fee not published"
+   },
+   "cycle_2027": "Applications for 2027 open on apply.manipal.edu (portal opened around 19 Oct 2026); BBA / B.Com deadline not published; 2027 fees to be updated",
+   "eligibility": "Class XII (10+2) from a recognised board with at least 50% aggregate; A-Level and IB equivalents accepted. (Official MAHE admissions page)",
+   "pattern": {
+    "duration_min": null,
+    "total_questions": null,
+    "sections": [],
+    "marking": "No test",
+    "sectional_timing": false,
+    "notes": "No entrance test for BBA or B.Com at MAHE Manipal: selection is by personal interview (official 2026 pages). MET is not used for these programmes."
+   },
+   "selection_process": "Apply online → personal interview (online for Indian students) → merit list based on the interview → provisional admission offer → admission formalities. Same process for BBA (all specialisations) and B.Com at MAHE Manipal and MAHE Bengaluru.",
+   "verbal_weight": "None (no written test; personal interview)",
+   "colleges[MAHE Department of Commerce, Manipal].programmes": [
+    "BBA (11 specialisations incl. Banking, Business Analytics, Economic Studies, Financial Markets, Marketing, Sports Management)",
+    "B.Com (Professional, with ACCA)",
+    "B.Com (Business Process Management, with TCS)"
+   ],
+   "colleges[MAHE Department of Commerce, Manipal].fees": "BBA (2026 admissions): ₹8.71 L total for 3 years, ₹11.58 L for the 4-yr Hons, incl. ₹10,000 refundable deposit (official); 2027 fee to be updated. B.Com not published",
+   "colleges[MAHE Department of Commerce, Manipal].selection": "Personal interview → merit list (no entrance test)",
+   "colleges[MAHE Department of Commerce, Manipal].url": "https://admissions.manipal.edu/manipal/bba-bcom/",
+   "next_cycle": {
+    "status": "open",
+    "apply_open": "2026-10-19",
+    "apply_close": null,
+    "rounds": [],
+    "exam_dates": [],
+    "expected": "No entrance test: apply on apply.manipal.edu and attend an online interview. The 2026 last date was 31 May; the 2027 deadline is not published yet",
+    "url": "https://admissions.manipal.edu/manipal/bba-bcom/",
+    "source_status": "reported"
+   },
+   "elig": {
+    "min_12_pct": 50,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "No age limit stated",
+    "note": "50% aggregate in XII from a recognised board; A-Level and IB equivalents accepted (official)."
+   },
+   "months": {
+    "apply": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "exam": []
+   },
+   "notes": "BBA and B.Com at MAHE Manipal are interview-based with no entrance test (official 2026 pages); the older 50% MET + 50% Class XII rule for BBA no longer appears. TAPMI's BBA (Hons) Bengaluru has a separate route (IPMAT/JIPMAT/SAT/MET + PI), listed under TAPMI. Manipal University Jaipur is a different university.",
+   "sources": [
+    "https://admissions.manipal.edu/manipal/bba-bcom/",
+    "https://www.manipal.edu/doc/program-list/bba.html",
+    "https://www.manipal.edu/academics/programs/bba-administration-professional-msce-manipal",
+    "https://engineering.careers360.com/articles/met-2027"
+   ],
+   "confidence": "medium"
+  },
+  "why": "Three official MAHE pages (admissions.manipal.edu BBA/B.Com page, BBA programme page, MSCE BBA page) say admission is Apply online → Personal Interview → merit list on PI, 'no BBA course entrance exam required', 50% in XII, last date 31 May 2026, BBA fee ₹8.71 L / ₹11.58 L (Hons) for 2026; MET-based rule came from the 2024 document. https://admissions.manipal.edu/manipal/bba-bcom/ ; https://www.manipal.edu/doc/program-list/bba.html"
+ },
+ {
+  "id": "mit-wpu-cet",
+  "setp": {
+   "pattern": {
+    "duration_min": 60,
+    "total_questions": null,
+    "sections": [
+     {
+      "name": "General Knowledge",
+      "questions": null,
+      "time_min": null,
+      "notes": "25 marks"
+     },
+     {
+      "name": "Logical Reasoning",
+      "questions": null,
+      "time_min": null,
+      "notes": "20 marks"
+     },
+     {
+      "name": "Basic Mathematics",
+      "questions": null,
+      "time_min": null,
+      "notes": "20 marks"
+     },
+     {
+      "name": "Basic English",
+      "questions": null,
+      "time_min": null,
+      "notes": "25 marks"
+     },
+     {
+      "name": "Computer Fundamentals",
+      "questions": null,
+      "time_min": null,
+      "notes": "10 marks"
+     }
+    ],
+    "marking": "CBT 100 marks (GK 25, LR 20, Maths 20, English 25, Computer 10) + Personal Interaction 50 marks = 150",
+    "sectional_timing": false,
+    "notes": "Official MIT-WPU CET 2027 page (General UG paper for BBA / B.Com / BSc Economics). Question counts not published. CBT is taken online on your own device (login 10:00–11:00, 60 min); PI is a 15-minute online slot."
+   },
+   "verbal_weight": "Basic English is 25 of 100 CBT marks (official)",
+   "va_share": 0.25,
+   "next_cycle.expected": "Round 1 for 2027 is open: apply by 4 Dec 2026; CBT and PI dates appear on the student dashboard after registration; later rounds usually follow in spring",
+   "sources": [
+    "https://mitwpu.edu.in/mit-wpu-cet-2027",
+    "https://mitwpu.edu.in/uploads/school/brochure/School-of-Business-brochure-2026-27.pdf",
+    "https://collegedunia.com/news/mit-wpu-cet-2026-round-2-schedule-out-ug-exam-may-11-pg-may-18-alertid-150562"
+   ],
+   "confidence": "medium"
+  },
+  "why": "Official MIT-WPU CET 2027 page gives the General UG section marks (GK 25, LR 20, Basic Maths 20, Basic English 25, Computer Fundamentals 10; PI 50), 60-min CBT, and last date 4 Dec 2026. https://mitwpu.edu.in/mit-wpu-cet-2027"
+ }
+]

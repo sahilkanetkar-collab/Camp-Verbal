@@ -309,6 +309,16 @@
       "source": "/exams/mount-carmel-mcmat/",
       "destination": "/exams/mount-carmel-admission/",
       "permanent": true
+    },
+    {
+      "source": "/exams/alliance-ausat",
+      "destination": "/exams/alliance-aumat/",
+      "permanent": true
+    },
+    {
+      "source": "/exams/alliance-ausat/",
+      "destination": "/exams/alliance-aumat/",
+      "permanent": true
     }
   ],
   "headers": [

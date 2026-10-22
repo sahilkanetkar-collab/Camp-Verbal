@@ -242,7 +242,7 @@ NO_PAGE = {"Jagannath Institute of Management Sciences / New Delhi Institute of 
 def is_group(name):
     if name in ALIAS: return False
     if name in NO_PAGE: return True
-    return bool(re.search(r";|affiliated colleges|institutes:|and others", name, re.I))
+    return bool(re.search(r";|affiliated colleges|institutes:|campuses:|and others", name, re.I))
 
 def canon(c):
     n = c.get("name", "").strip()

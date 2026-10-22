@@ -56,6 +56,8 @@ def norm_progs(e):
 def va_share(e):
     if e["id"] in VA_OVR:
         return VA_OVR[e["id"]]
+    if isinstance(e.get("va_share"), (int, float)):  # set by a patch
+        return e["va_share"]
     secs = (e.get("pattern") or {}).get("sections") or []
     nums = [s for s in secs if isinstance(s.get("questions"), (int, float)) and s.get("questions")]
     tot = sum(s["questions"] for s in nums)
@@ -63,6 +65,20 @@ def va_share(e):
         return None
     va = sum(s["questions"] for s in nums if VERBAL_RE.search(s.get("name", "")))
     return round(va / tot, 3)
+
+
+def split_path(path):
+    """Split "a.b[Name.With.Dots].c" on dots that are outside square brackets."""
+    parts, cur, depth = [], "", 0
+    for ch in path:
+        if ch == "[": depth += 1
+        elif ch == "]": depth -= 1
+        if ch == "." and depth == 0:
+            parts.append(cur); cur = ""
+        else:
+            cur += ch
+    parts.append(cur)
+    return parts
 
 
 def merge_colleges(old, new):
@@ -104,7 +120,7 @@ def collect():
                 else:
                     e[k] = v
             for path, v in (pt.get("setp") or {}).items():  # dotted path, e.g. "pattern.notes" or "colleges[IIM Indore].fees"
-                obj, parts = e, path.split(".")
+                obj, parts = e, split_path(path)
                 for part in parts[:-1]:
                     m = re.match(r"(\w+)\[(.+)\]$", part)
                     if m:
@@ -119,7 +135,7 @@ def collect():
             if pt.get("add_colleges"):
                 e["colleges"] = merge_colleges(e.get("colleges", []), pt["add_colleges"])
     # id renames (old URLs get a redirect in vercel.json)
-    ID_RENAME = {"mount-carmel-mcmat": "mount-carmel-admission"}
+    ID_RENAME = {"mount-carmel-mcmat": "mount-carmel-admission", "alliance-ausat": "alliance-aumat"}
     for e in exams:
         if e["id"] in ID_RENAME:
             e["id"] = ID_RENAME[e["id"]]
@@ -136,7 +152,10 @@ def collect():
         e["papers"] = [p for p in e.get("papers", []) if p.get("url") and not BANNED_SOURCE.search(p["url"])]
         e["programme_types"] = norm_progs(e)
         mo = MONTHS_OVR.get(e["id"])
-        e["months"] = {"apply": mo[0], "exam": mo[1]} if mo else None
+        if mo:
+            e["months"] = {"apply": mo[0], "exam": mo[1]}
+        elif not isinstance(e.get("months"), dict):
+            e["months"] = None
         e["va_share"] = va_share(e)
         uniq, cs = [], set()
         for c in e.get("colleges", []):

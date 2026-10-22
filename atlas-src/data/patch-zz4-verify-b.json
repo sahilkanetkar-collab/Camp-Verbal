@@ -1,0 +1,147 @@
+[
+  {
+    "id": "bumat",
+    "setp": {
+      "mode": "Computer-based, centre (67 centres across India)",
+      "cycle_2026.application_window": "Until 5 Jun 2026 (official BVDU CET UG schedule)",
+      "cycle_2026.exam_date": "13 Jun 2026",
+      "cycle_2026.result": "20 Jun 2026; counselling 29–30 Jun 2026",
+      "cycle_2026.fee": "₹1,500 entrance test fee (non-refundable; bank charges extra)",
+      "eligibility": "Passed Class XII (HSC) or equivalent from a recognised board; appearing students can apply. Indian nationals only. The official 2026 brochure sets no minimum % (coaching sites mention 45%). No age limit.",
+      "pattern.sections": [
+        {"name": "Numerical Aptitude", "questions": 60, "time_min": 0, "notes": "60 marks"},
+        {"name": "Reasoning / Logical Aptitude", "questions": 60, "time_min": 0, "notes": "60 marks"},
+        {"name": "Verbal Ability", "questions": 60, "time_min": 0, "notes": "60 marks"},
+        {"name": "Reading Comprehension", "questions": 20, "time_min": 0, "notes": "20 marks"}
+      ],
+      "pattern.marking": "+1 per question (200 marks); no negative marking",
+      "pattern.notes": "Section split from the official BUMAT 2026 brochure. One question at a time on screen; four options each.",
+      "verbal_weight": "80 of 200 questions are Verbal Ability (60) + Reading Comprehension (20)",
+      "va_share": 0.4,
+      "official_url": "https://www.bvuniversity.edu.in/entrance-exam",
+      "colleges": [
+        {
+          "name": "IMED, Pune (Institute of Management & Entrepreneurship Development)",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "type": "Deemed univ",
+          "programmes": ["BBA"],
+          "seats": "120 (BUMAT 2026 brochure)",
+          "fees": "₹2.5 L/yr regular merit; ₹3.5 L/yr institutional quota (may rise 5%/yr)",
+          "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+          "selection": "",
+          "placements": "",
+          "url": "https://www.bvuniversity.edu.in/entrance-exam"
+        },
+        {
+          "name": "BVIMR, New Delhi (Institute of Management & Research)",
+          "city": "New Delhi",
+          "state": "Delhi",
+          "type": "Deemed univ",
+          "programmes": ["BBA"],
+          "seats": "360 (two shifts of 180)",
+          "fees": "₹2.5 L/yr regular merit; ₹3.5 L/yr institutional quota",
+          "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+          "selection": "",
+          "placements": "",
+          "url": "https://www.bvuniversity.edu.in/entrance-exam"
+        },
+        {
+          "name": "BVDMS, Navi Mumbai (Dept of Management Studies)",
+          "city": "Navi Mumbai",
+          "state": "Maharashtra",
+          "type": "Deemed univ",
+          "programmes": ["BBA"],
+          "seats": "120",
+          "fees": "₹2.5 L/yr regular merit; ₹3.5 L/yr institutional quota",
+          "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+          "selection": "",
+          "placements": "",
+          "url": "https://www.bvuniversity.edu.in/entrance-exam"
+        },
+        {
+          "name": "BVDU smaller campuses: IM Kolhapur, YMIM Karad, IMRDA Sangli, AKIMSS Solapur",
+          "city": "Kolhapur / Karad / Sangli / Solapur",
+          "state": "Maharashtra",
+          "type": "Deemed univ",
+          "programmes": ["BBA"],
+          "seats": "Kolhapur 120; Karad 60; Sangli 60; Solapur 60",
+          "fees": "₹47,500/yr regular merit; ₹66,500/yr institutional quota",
+          "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+          "selection": "",
+          "placements": "",
+          "url": "https://www.bvuniversity.edu.in/entrance-exam"
+        }
+      ],
+      "sources": [
+        "https://www.bvuniversity.edu.in/entrance-exam",
+        "https://www.bvuniversity.edu.in/Uploads/moduleimg/15566imguf_InformationBrochureBVDU-BBABCA-BUMAT-2026FINAL_14thMay2026.pdf",
+        "https://www.bvuniversity.edu.in/Uploads/moduleimg/16323imguf_BVDU_CET_UG_SCHEDULE_2026_90726.pdf",
+        "https://bschool.careers360.com/articles/bvp-b-umat-2014"
+      ],
+      "notes": "Official name on BVDU's 2026 schedule is BUMAT-2026 (BBA/BCA). Apply at bvducet.bharatividyapeeth.edu. BVDU also runs a separate BV-BCom test for B.Com/B.Com (Hons) on the same June dates. No donation/capitation fee. 2027 forms are expected around Nov 2026 (based on 2026; not official).",
+      "next_cycle.expected": "2026 forms opened Nov 2025, closed 5 Jun; test 13 Jun. Expect 2027 forms from Nov 2026 and a mid-June 2027 test",
+      "next_cycle.url": "https://www.bvuniversity.edu.in/entrance-exam",
+      "elig.min_12_pct": null,
+      "elig.note": "Official 2026 brochure asks only for a pass in Class XII (any stream); coaching sites quote 45%. Indian nationals only; no age limit",
+      "confidence": "high"
+    },
+    "why": "Official BUMAT 2026 brochure (14 May 2026) gives test fee ₹1,500, section split 60/60/60/20, computer-based at 67 centres, per-institute BBA intake and fees; BVDU CET UG schedule confirms 5 Jun / 13 Jun / 20 Jun / 29–30 Jun dates. https://www.bvuniversity.edu.in/Uploads/moduleimg/15566imguf_InformationBrochureBVDU-BBABCA-BUMAT-2026FINAL_14thMay2026.pdf"
+  },
+  {
+    "id": "mount-carmel-mcmat",
+    "setp": {
+      "colleges[Mount Carmel College (Autonomous)].selection": "Co-educational: all programmes admit men and women (official 2026-27 prospectus; men admitted since 2024).",
+      "notes": "Name 'MCMAT' kept for search, but the official 2026-27 prospectus shows interview-based selection with no entrance test. The college is now co-educational at UG (it admitted only women until 2023-24). 50% of seats reserved for Roman Catholic students.",
+      "selection_process": "Online application → shortlisting → Personal Interview. Programme fee is communicated after shortlisting. 50% of intake reserved for the Roman Catholic community. Co-educational.",
+      "confidence": "medium"
+    },
+    "why": "Prospectus 2026-27 states 'ALL PROGRAMS ARE CO-EDUCATIONAL'; the data wrongly called it women-only. https://mccblr.edu.in/wp-content/uploads/2025/12/Admission-Prospectus-2026-27.pdf (news: https://educationworld.in/mount-carmel-college-bengaluru-to-admit-male-students-from-2024/). No 2027-28 notice on mccblr.edu.in as of 22 Oct 2026."
+  },
+  {
+    "id": "sjcc-smat",
+    "setp": {
+      "full_name": "St. Joseph's Management Aptitude Test (SMAT) – St. Joseph's College of Commerce, Bengaluru",
+      "eligibility": "Pass in Class XII (any stream) from a recognised Indian or foreign board; no minimum % or subject rule stated on the official BBA page",
+      "elig.note": "Pass in Class XII, any stream; no minimum % stated (official BBA page). Official name of the test is SMAT",
+      "cycle_2026.fee": "₹800 application (non-refundable); NRI online test +₹1,500; ₹5,000 admission registration fee on selection",
+      "colleges[St. Joseph's College of Commerce].fees": "BBA yr 1 (2027-28): ₹2.10 L (Karnataka PU), ₹2.47 L (other boards/CBSE/ISC), ₹3.65 L (international boards/NRI); yr 2 ~₹2.26 L, yr 3 ~₹2.44 L",
+      "next_cycle.expected": "Phase I closes 6 Dec 2026; e-admit cards 7 Dec 2026 (test date and round timings on the admit card). Phase II opens 21 Dec 2026",
+      "confidence": "high"
+    },
+    "why": "Official BBA admission page (checked 22 Oct 2026) confirms Phase I close Sun 6 Dec 2026, admit card 7 Dec, Phase II opens 21 Dec, ₹800 fee, 60-Q/60-min SMAT with 4×15 sections, no negative marking, 2027-28 fees. https://www.sjcc.edu.in/bba_admission_procedure.php"
+  },
+  {
+    "id": "amu-admission-test-ug",
+    "setp": {
+      "notes": "Test centres for B.Com (Hons)/BBA in 2026: Aligarh, Lucknow, Kolkata, Srinagar, Patna, Kozhikode. AMU has internal/external quotas; read the Guide to Admissions before applying. Pattern figures are from Careers360 (unofficial). Late round: AMU issued a fresh BBA application form for its Malappuram and Murshidabad centres on 24 Sep 2026 (2026-27 session), last date extended on 13 Oct 2026 — watch amucontrollerexams.com for such late notices. Age limits are counted on 1 July of the admission year (Guide to Admissions).",
+      "colleges[AMU Centres Malappuram and Murshidabad].selection": "BBA listed at these centres in AMU Guide to Admissions 2026-27. Separate late application round opened 24 Sep 2026 (deadline extended 13 Oct 2026)."
+    },
+    "why": "amucontrollerexams.com notices dated 24 Sep 2026 (BBA form for Malappuram/Murshidabad centres, 2026-27) and 13 Oct 2026 (extension of last date); Guide to Admissions 2026-27 p.15 on age reckoning. https://amucontrollerexams.com/notices . No 2027-28 guide published yet."
+  },
+  {
+    "id": "gujarat-ug-commerce-merit",
+    "setp": {
+      "colleges[Nirma University – Institute of Commerce].selection": "Class XII merit (all subjects), min 60%; XII must include English plus one of Accountancy / Business Administration / Economics / Statistics / Maths. Tie broken by English marks. Form from 16 Jan 2026; application ₹1,000.",
+      "colleges[Nirma University – Institute of Management (Integrated BBA-MBA)].selection": "Gujarat quota (48 seats): Class XII ≥90% (Gujarat school), merit 70% + PI 30%, no test. All India quota (156): Class XII ≥60% + IPMAT; IPMAT 50% + PI 30% + Class XII 20%. Application ₹1,500 (+₹350 to add Gujarat quota). 2026: Gujarat deadline 25 May, All India 31 May.",
+      "colleges[Nirma University – Institute of Management (Integrated BBA-MBA)].fees": "₹3.89 L/yr tuition + ₹7,000 exam fee in BBA phase (2026-27); MBA-phase fees apply later",
+      "cycle_2026.result": "GCAS offer rounds Jun 2026: offer 1 on 29 May–1 Jun, confirmation 2–6 Jun; offer 2 on 8 Jun; offer 4 on 22 Jun; special round after",
+      "confidence": "medium"
+    },
+    "why": "Nirma B.Com (Hons) and BBA-MBA 2026-27 admission pages (seats, 60%/90% rules, subject rule, fees, application fee, dates); GCAS 2026 schedule (7–28 May registration, ₹300/₹150, offer rounds) per Careers360 news report of the GSEB notification. https://commerce.nirmauni.ac.in/admission-aid/under-graduate/b-com-hons/ ; https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/"
+  },
+  {
+    "id": "xavier-entrance-test-mumbai",
+    "setp": {
+      "colleges[St. Xavier's College (Autonomous)].cutoff": {
+        "value": "Round 1 2026 cut-off score, General: 82 (Maharashtra HSC) / 87.52 (other boards); Christian minority 71.07 / 77.72",
+        "year": 2026,
+        "status": "unofficial",
+        "note": "Source: Careers360; score combines XET (60%) and Class XII (40%)"
+      },
+      "cycle_2026.exam_date": "2–3 May 2026 (all-India centres: Delhi, Jaipur, Kolkata, Guwahati, Cochin, Pune, Hyderabad, Bangalore); 6–8 May 2026 (Mumbai, St. Xavier's College) — official XET 2026 notice",
+      "next_cycle.expected": "2026 applications opened first week of Feb; XET 2–8 May. Expect applications Feb 2027, test early May 2027 (no official 2027 notice yet)"
+    },
+    "why": "Official XET 2026 notice confirms programmes, dates and centres; Careers360 labels cutoffs as 'Cut-off Score' (not 'composite') and adds Christian-minority figures. https://xaviers.edu/files/Xavier_Entrance_Test_2026.pdf ; https://www.careers360.com/mba/articles/st-xaviers-bms-entrance-test"
+  }
+]
