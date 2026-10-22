@@ -176,7 +176,7 @@ function initSearch(){
       box.innerHTML = h || `<div class="none">No exam or college matches “${esc(q)}”. Try a shorter word, like a city or “BBA”.</div>`;
       box.hidden = false; inp.setAttribute("aria-expanded","true");
     };
-    const move = d => { if(!items.length) return; sel = (sel + d + items.length) % items.length; $$("a", box).forEach((a,i) => a.setAttribute("aria-selected", i === sel)); const a = $$("a", box)[sel]; a && a.scrollIntoView({block:"nearest"}); inp.setAttribute("aria-activedescendant", box.id + "-" + sel) };
+    const move = d => { if(!items.length) return; sel = (sel + d + items.length) % items.length; $$("a", box).forEach((a,i) => a.setAttribute("aria-selected", i === sel)); const a = $$("a", box)[sel]; if(a){ const t = a.offsetTop - box.clientHeight/2; box.scrollTop = Math.max(0, t) } inp.setAttribute("aria-activedescendant", box.id + "-" + sel) };
     inp.addEventListener("input", render);
     inp.addEventListener("focus", () => { if(inp.value.trim()) render() });
     inp.addEventListener("keydown", ev => {
@@ -272,7 +272,11 @@ function initProfile(){
   const links = $$(".secnav a[href^='#']"); if(!links.length || !("IntersectionObserver" in window)) return;
   const map = new Map(links.map(a => [a.getAttribute("href").slice(1), a]));
   const io = new IntersectionObserver(ents => {
-    ents.forEach(en => { if(en.isIntersecting){ links.forEach(a => a.classList.remove("on")); const a = map.get(en.target.id); if(a){ a.classList.add("on"); a.scrollIntoView({block:"nearest", inline:"nearest"}) } } });
+    // Never call scrollIntoView here: on iOS Safari it scrolls the page back to where the sticky bar
+    // originally sat. Only the tab strip itself moves, horizontally.
+    let current = null;
+    ents.forEach(en => { if(en.isIntersecting && en.target.id !== current){ current = en.target.id; links.forEach(a => a.classList.remove("on")); const a = map.get(en.target.id);
+      if(a){ a.classList.add("on"); const ul = a.closest("ul"); if(ul){ const left = a.getBoundingClientRect().left - ul.getBoundingClientRect().left + ul.scrollLeft - 12; if(Math.abs(ul.scrollLeft - left) > 4) ul.scrollTo({left: Math.max(0, left), behavior: "smooth"}) } } } });
   }, {rootMargin:"-30% 0px -60% 0px"});
   map.forEach((a,id) => { const s = document.getElementById(id); if(s) io.observe(s) });
 }
