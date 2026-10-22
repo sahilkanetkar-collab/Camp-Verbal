@@ -1,0 +1,841 @@
+[
+  {
+    "id": "cuet-ug",
+    "name": "CUET-UG",
+    "full_name": "Common University Entrance Test (Undergraduate)",
+    "conducted_by": "National Testing Agency (NTA)",
+    "category": "CUET & central universities",
+    "programme_types": [
+      "BBA",
+      "BMS",
+      "BCom",
+      "Economics",
+      "Finance",
+      "Liberal Arts"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "3–30 Jan 2026 (fee till 31 Jan; correction 2–4 Feb)",
+      "exam_date": "11–31 May 2026 (some re-tests 6–7 Jun 2026)",
+      "result": "23 Jun 2026 (15.69 L registered, 11.64 L appeared)",
+      "fee": "Up to 3 subjects: ₹1,000 (Gen), ₹900 (OBC-NCL/EWS), ₹800 (SC/ST/PwBD/Third gender), ₹4,500 (outside India); each extra subject ₹400 / ₹375 / ₹350 / ₹1,800"
+    },
+    "cycle_2027": "Not announced yet (2026 notice came out 3 Jan 2026, so expect early Jan 2027)",
+    "eligibility": "Class XII passed or appearing in 2026; no age limit for CUET. Each university sets its own programme eligibility (e.g. DU requires CUET subjects you studied in Class XII; BMS/BBA FIA need Maths in XII).",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": 50,
+      "sections": [
+        {
+          "name": "Languages (13 options, e.g. English, Hindi)",
+          "questions": 50,
+          "time_min": 60,
+          "notes": "Reading comprehension (factual, literary, narrative passages), literary aptitude, vocabulary"
+        },
+        {
+          "name": "Domain subjects (23 options, e.g. Mathematics/Applied Maths, Accountancy, Business Studies, Economics)",
+          "questions": 50,
+          "time_min": 60,
+          "notes": "Based on NCERT Class XII syllabus"
+        },
+        {
+          "name": "General Aptitude Test",
+          "questions": 50,
+          "time_min": 60,
+          "notes": "GK, current affairs, mental ability, numerical ability, quant reasoning (arithmetic, algebra, geometry, mensuration, statistics), logical and analytical reasoning"
+        }
+      ],
+      "marking": "+5 / −1; unanswered 0 (each paper out of 250)",
+      "sectional_timing": true,
+      "notes": "Since 2025: 37 subjects in total (13 languages + 23 domain + 1 General Aptitude Test); old Section IA/IB/II/III labels dropped and no optional questions. Pick up to 5 subjects. Each paper is a separate 60-min test with 50 compulsory questions. Multi-shift papers are normalised into NTA scores."
+    },
+    "selection_process": "No single CUET merit list. Each university decides which CUET subject combination counts for each programme and runs its own counselling (DU: CSAS; BHU, AU, UoH etc.: own portals). DU (2026): BMS / BBA (FIA) = one language + Maths/Applied Maths + one List B subject + General Aptitude Test (SSCBS FAQ). B.Com (Hons) = one language + Maths/Applied Maths or Accountancy + two subjects, best combination counts. BA (Hons) Economics = one language + Maths/Applied Maths + two subjects. B.Com (pass) = language + 3 subjects OR language + 1 subject + General Aptitude Test. Class XII marks are used only for tie-breaks at DU. St. Stephen's minority seats add an interview (85% CUET + 15% interview).",
+    "verbal_weight": "Language paper (usually English) = 1 of the 3–4 papers most universities count (e.g. 250 of ~1,000 marks for DU BMS); General Aptitude Test has no separate English section",
+    "official_url": "https://cuet.nta.nic.in/",
+    "colleges": [
+      {
+        "name": "Shri Ram College of Commerce (SRCC)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "Not published (seat matrix row not readable)",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 ~924, R2 923.84; BA (Hons) Eco R1 ~897, R2 892.56",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "R1 rounded figures: PW (pw.live); R2: Careers360. 2025 min UR: B.Com (Hons) 917.43, BA Eco 908.90"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.srcc.edu/"
+      },
+      {
+        "name": "Hindu College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 32, BA Eco 28 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 919.87, R2 919.22; BA (Hons) Eco R1 880.77, R2 877.84",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://hinducollege.ac.in/"
+      },
+      {
+        "name": "Hansraj College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 105, BA Eco 55 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 907.50, R2 906.30; BA (Hons) Eco R1 849.24, R2 846.25",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.hansrajcollege.ac.in/"
+      },
+      {
+        "name": "Lady Shri Ram College for Women (LSR)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 27, BA Eco 43 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R2 910.28; BA (Hons) Eco R2 848.31",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list). 2025 min UR: 906.37 / 874.39"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://lsr.edu.in/"
+      },
+      {
+        "name": "Kirori Mal College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 43, BA Eco 31 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 902.16; B.Com 887.60; BA (Hons) Eco 833.16",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://kmc.du.ac.in/"
+      },
+      {
+        "name": "St. Stephen's College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BA (Hons) Economics"
+        ],
+        "seats": "~56 (approx., unofficial: Career Launcher)",
+        "fees": "~₹75,740/yr (approx., unofficial: Career Launcher)",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: BA (Hons) Eco 885.77",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list). 2025 min UR: 904.62"
+        },
+        "selection": "Non-minority seats: CUET score via CSAS only, no interview. Christian minority seats (~50% of college intake): 85% CUET + 15% college interview (unofficial: Career Launcher).",
+        "placements": "",
+        "url": "https://www.ststephens.edu/"
+      },
+      {
+        "name": "Miranda House (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: BA Eco 31 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: BA (Hons) Eco 831.26",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list). 2025 min UR: 850.31"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.mirandahouse.ac.in/"
+      },
+      {
+        "name": "Ramjas College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "Not published (seat matrix row not readable)",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 893.91; B.Com 880.78; BA (Hons) Eco 820.78",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ramjas.du.ac.in/"
+      },
+      {
+        "name": "Sri Venkateswara College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "Not published (seat matrix row not readable)",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 889.12; B.Com 874.81; BA (Hons) Eco 820.76",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.svc.ac.in/"
+      },
+      {
+        "name": "Shaheed Sukhdev College of Business Studies (SSCBS)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "BBA (Financial Investment Analysis)"
+        ],
+        "seats": "See college seat matrix PDF (not readable)",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 783.39, R2 779.92; BBA (FIA) R1 806.46, R2 805.06",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 / iQuanta, from DU CSAS lists. 2025 min UR: BMS 554.99, BBA FIA 577.20 (as reported; the big year-on-year jump is unexplained, so compare within one year only)"
+        },
+        "selection": "CUET combo: one language (List A) + Maths/Applied Maths + one List B subject + General Aptitude Test. Class XII must include Maths. Class XII marks only for tie-break.",
+        "placements": "",
+        "url": "https://sscbs.du.ac.in/"
+      },
+      {
+        "name": "Keshav Mahavidyalaya",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "B.Com (Hons)"
+        ],
+        "seats": "UR: BMS 24, B.Com (Hons) 77 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 715.71, R2 705.16",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 (from DU CSAS lists)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://keshav.du.ac.in/"
+      },
+      {
+        "name": "Deen Dayal Upadhyaya College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "B.Com (Hons)"
+        ],
+        "seats": "UR: BMS 24, B.Com (Hons) 62 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 730.28, R2 715.23; B.Com (Hons) R1 783.72, R2 763.28",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://dducollegedu.ac.in/"
+      },
+      {
+        "name": "Delhi College of Arts and Commerce (DCAC)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 46, BA Eco 24 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 828.11, R2 818.63; B.Com R1 806.03, R2 790.22; BA (Hons) Eco R1 762.13, R2 755.38",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://dcac.du.ac.in/"
+      },
+      {
+        "name": "Maitreyi College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 31, BA Eco 23 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 802.54",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list); BA Eco figure not found"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://maitreyi.ac.in/"
+      },
+      {
+        "name": "Gargi College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics",
+          "BA (Hons) Business Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 63, BA Eco 24 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 831.16, R2 820.21; B.Com R1 798.92; BA (Hons) Eco R1 780.35, R2 773.26; BA (Hons) Business Eco R1 689.00",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://gargicollege.in/"
+      },
+      {
+        "name": "Jesus and Mary College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 50, BA Eco 25 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 847.15; B.Com 813.75; BA (Hons) Eco 796.06",
+          "year": 2026,
+          "status": "official",
+          "note": "DU official CSAS Round 2 minimum allocation score PDF"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.jmc.ac.in/"
+      },
+      {
+        "name": "Indraprastha College for Women (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 57, BA Eco 26 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 827.70, R2 815.17; BA (Hons) Eco R1 766.42, R2 757.09",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ipcollege.ac.in/"
+      },
+      {
+        "name": "Daulat Ram College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 56, BA Eco 47 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 856.36, R2 852.01; B.Com R1 834.44, R2 822.01; BA (Hons) Eco R1 776.93, R2 771.07",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://dr.du.ac.in/"
+      },
+      {
+        "name": "Kamala Nehru College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 27, BA Eco 23 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 790.30",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list); BA Eco figure not found"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.knc.edu.in/"
+      },
+      {
+        "name": "Sri Guru Tegh Bahadur Khalsa College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "Not published (seat matrix row not readable)",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 865.43; B.Com 848.24; BA (Hons) Eco 807.10",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.sgtbkhalsadu.ac.in/"
+      },
+      {
+        "name": "Sri Guru Gobind Singh College of Commerce (SGGSCC)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics",
+          "BMS"
+        ],
+        "seats": "Not published (seat matrix row not readable)",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R2 861.12; B.Com R2 834.00; BA (Hons) Eco R2 785.53; BMS R1 770.10, R2 764.04",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 (from DU CSAS lists)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.sggscc.ac.in/"
+      },
+      {
+        "name": "Atma Ram Sanatan Dharma College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 71, BA Eco 38 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 854.48, R2 847.89; B.Com R1 826.34, R2 817.06; BA (Hons) Eco R1 780.46, R2 768.05",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.arsdcollege.ac.in/"
+      },
+      {
+        "name": "Shaheed Bhagat Singh College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR), Round 2: B.Com (Hons) 827.31; B.Com 809.85; BA (Hons) Eco 766.11",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.sbsc.in/"
+      },
+      {
+        "name": "College of Vocational Studies",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 705.16, R2 685.49",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 (from DU CSAS lists)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.cvs.edu.in/"
+      },
+      {
+        "name": "Aryabhatta College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 21, BA Eco 21 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 672.95, R2 657.30; B.Com (Hons) R2 789.21; B.Com R2 754.48; BA (Hons) Eco R2 710.15",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 news (R2) and Careers360 BMS article; one Careers360 table lists B.Com R2 as 789.22, which conflicts"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://aryabhattacollege.ac.in/"
+      },
+      {
+        "name": "Ramanujan College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 686.26, R2 675.38",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 (from DU CSAS lists)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ramanujancollege.ac.in/"
+      },
+      {
+        "name": "Shaheed Rajguru College of Applied Sciences for Women (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "BBA (FIA)"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BBA (FIA) R1 655.96, R2 636.85; BMS R1 642.22, R2 624.10",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 (from DU CSAS lists)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://rajgurucollege.com/"
+      },
+      {
+        "name": "Banaras Hindu University (BHU)",
+        "city": "Varanasi",
+        "state": "Uttar Pradesh",
+        "type": "Central univ",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com (Hons) Financial Markets Management",
+          "BA (Hons) Economics (Faculty of Social Sciences)"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "CUET cutoff (UR), 2026 'first cutoff': B.Com (Hons) 563.09; B.Com FMM 559.65; BA (Hons) Eco (minor Psychology) 379.98, (minor Geography) 368.38",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360; round label unclear. 2025 UR: B.Com (Hons) 548.99, FMM 545.97. BHU uses its own score total, not comparable with DU"
+        },
+        "selection": "CUET (UG) → BHU UG admission portal; programme-wise CUET subject combination",
+        "placements": "",
+        "url": "https://www.bhu.ac.in/"
+      },
+      {
+        "name": "University of Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "type": "Central univ",
+        "programmes": [
+          "Integrated MA Economics (5-yr)"
+        ],
+        "seats": "17 (unofficial: Careers360)",
+        "fees": "~₹54,900 total (approx., unofficial: Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "CUET (UG) 2026 score; apply on UoH portal (deadline 21 Jul 2026; counselling list 3 Aug 2026). 60% in Class XII (Careers360).",
+        "placements": "",
+        "url": "https://uohyd.ac.in/"
+      },
+      {
+        "name": "University of Allahabad",
+        "city": "Prayagraj",
+        "state": "Uttar Pradesh",
+        "type": "Central univ",
+        "programmes": [
+          "B.Com",
+          "BBA-MBA (5-yr integrated)",
+          "BA"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "B.Com 1st cutoff (UR): 493 and above; BA (UR): 515 and above (computed CUET marks)",
+          "year": 2026,
+          "status": "official",
+          "note": "B.Com: official AU cutoff PDF (Language + one domain + General Aptitude Test). BA: Careers360 report"
+        },
+        "selection": "CUET (UG) → AU portal; many rolling cutoff rounds (B.Com 22 rounds, BBA-MBA 27 rounds in 2026)",
+        "placements": "",
+        "url": "https://allduniv.ac.in/"
+      },
+      {
+        "name": "Dr. B.R. Ambedkar University Delhi (AUD)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "State univ",
+        "programmes": [
+          "BBA",
+          "BA (Hons) Economics",
+          "BA (Hons) Social Sciences & Humanities (liberal arts)"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "BBA: English + any 3 domain subjects, OR English + General Aptitude Test (better counts). BA Eco: one language + best 3 domain subjects; Class XII Maths pass needed. 50% in XII. (AUD official notice)",
+        "placements": "",
+        "url": "https://aud.delhi.gov.in/"
+      },
+      {
+        "name": "Gokhale Institute of Politics and Economics (GIPE)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BSc Economics",
+          "BSc Economics (Data Science)"
+        ],
+        "seats": "150 (BSc Eco); 60 (Data Science)",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "CUET (UG): English + General Aptitude Test, OR GIPE's own GCET. 60% in XII (50% SC/ST). (GIPE official)",
+        "placements": "",
+        "url": "https://gipe.ac.in/admissions-2026-27/"
+      },
+      {
+        "name": "Tata Institute of Social Sciences (TISS)",
+        "city": "Tuljapur / Guwahati",
+        "state": "Maharashtra / Assam",
+        "type": "Deemed univ",
+        "programmes": [
+          "BA Social Sciences (Tuljapur, Guwahati)"
+        ],
+        "seats": "Tuljapur 40; Guwahati 50",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "CUET (UG) 2026 score; apply on TISS Samarth portal (deadline 16 Jul 2026). Application fee ₹900 Gen. (Careers360)",
+        "placements": "",
+        "url": "https://admissions.tiss.ac.in/"
+      },
+      {
+        "name": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "State univ",
+        "programmes": [
+          "BBA (affiliated colleges)"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Seats filled first via IPU CET; vacant BBA seats filled using CUET (English + Business Studies + General Aptitude Test) (Careers360)",
+        "placements": "",
+        "url": "http://www.ipu.ac.in/"
+      },
+      {
+        "name": "Central University of Rajasthan",
+        "city": "Ajmer",
+        "state": "Rajasthan",
+        "type": "Central univ",
+        "programmes": [
+          "BSc Economics (4-yr)"
+        ],
+        "seats": "Not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "CUET (UG) 2026 (collegeadmission.in listing; verify on curaj.ac.in)",
+        "placements": "",
+        "url": "https://www.curaj.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://cuet.nta.nic.in/",
+      "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/01/202601031633478370.pdf",
+      "https://ianslive.in/cuet-ug-2026-results-announced-for-over-116-lakh-students--20260623151337",
+      "https://news.careers360.com/cuet-ug-2026-exam-date-registration-begins-nta-hold-exams-from-may-11-31-admission-central-state-universities-cbt-link/amp",
+      "https://admission.uod.ac.in/",
+      "https://admission.uod.ac.in/userfiles/17072026-CutOff_UG_Round_One_compressed.pdf",
+      "https://admission.uod.ac.in/userfiles/downloads/2026/25072026_CutOff_UG_Round_Two_compressed.pdf",
+      "https://admission.uod.ac.in/userfiles/downloads/03-07-2026-UGSeatMatrix2026.pdf",
+      "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
+      "https://sscbs.du.ac.in/faqs-for-bms-bba-fia-b-sc-c-s-admissions-2026/",
+      "https://university.careers360.com/articles/du-bcom-colleges-second-cutoff-analysis-2026-vs-2025",
+      "https://university.careers360.com/articles/top-20-du-economics-colleges-round-2-cutoff-2026-vs-2025",
+      "https://bschool.careers360.com/articles/du-bba-cutoff-2026",
+      "https://www.pw.live/news/du-ug-admission-2026-csas-cutoff-released-round-1-seat-allotment-pdf-download-link",
+      "https://university.careers360.com/articles/sscbs-cuet-cut-off-2026",
+      "https://cuet.hitbullseye.com/du-undergraduate-commerce-eligibility-criteria-for-cuet.php?amp=1",
+      "https://www.pw.live/cuet/exams/du-cuet-subject-combinations",
+      "https://www.careerlauncher.com/cucet/how-to-get-into-st-stephens-college/",
+      "https://university.careers360.com/articles/bhu-ug-cut-off-2026",
+      "https://www.siasat.com/university-of-hyderabad-opens-admissions-for-academic-year-2026-27-3503202/amp/",
+      "https://www.careers360.com/university/university-of-hyderabad-hyderabad/ma-economics-integrated-course",
+      "https://allduniv.ac.in/upload/file_collection/BCOM%202026%201ST.pdf",
+      "https://allduniv.ac.in/p/711/ug-admission-2026-commerce-faculty",
+      "https://aud.delhi.gov.in/sites/default/files/2026-01/cuet_ug_admission_2026_27_formatted-1.pdf",
+      "https://gipe.ac.in/admissions-2026-27/",
+      "https://news.careers360.com/tiss-ug-admission-2026-cuet-nta-5-course-ba-bsc-seat-apply-tisscuet-samarth-edu-in-deadline-july-16-fee-eligiblity-mumbai-guwahati/amp",
+      "https://bschool.careers360.com/articles/ipu-bba-admission-through-cuet",
+      "https://university.careers360.com/exams/jmi-entrance-exam",
+      "https://university.careers360.com/articles/amu-admission-test-2026",
+      "https://news.careers360.com/jnu-ug-cop-admissions-2026-registration-courses-begin-jnuee-jnu-ac-in-cuet-scores-jee-main-josaa-counselling-ba-hons-bsc-btech/amp",
+      "https://cuet.nta.nic.in/participating-universities/private-universities/",
+      "https://cuet.nta.nic.in/participating-universities/deemed-universities/",
+      "https://cuet.nta.nic.in/participating-universities/state-universities/"
+    ],
+    "notes": "185 universities used CUET-UG 2026 (48 central, 33 state, 23 deemed, 76 private, 5 other). DU CSAS 2026: 71,624 UG seats, 2.18 L registrations; Round 1 on 16–17 Jul, Round 2 on 25 Jul, Round 3 on 8 Aug, then spot rounds. DU scores here are 'minimum allocation scores' (the last score admitted in that round). They usually fall in later rounds. Compare only within the same year and programme, because the number of papers counted differs between programmes. NOT via CUET: Jamia Millia Islamia (B.Com Hons, BBA, BA Hons Eco use JMI's own entrance test), AMU (B.Com Hons via AMU admission test), JNU (no BBA/BCom/Eco UG; CUET only for BA foreign languages). Private and deemed universities on NTA's 2026 CUET list that offer in-scope programmes include Bennett, Azim Premji, BML Munjal, Mahindra, Alliance, Chanakya, Rishihood, UPES, Manipal Jaipur, Amity, Sharda, Galgotias, Jamia Hamdard, TERI SAS, ICFAI Hyderabad, and Dr. B.R. Ambedkar School of Economics University Bengaluru. Shiv Nadar, Christ and Symbiosis are not on NTA's list (they run their own tests). Check each university's own CUET subject rule before choosing your 5 subjects.",
+    "confidence": "medium"
+  }
+]

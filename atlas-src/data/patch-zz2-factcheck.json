@@ -1,0 +1,8 @@
+[
+  {"id": "jipmat",
+   "setp": {"cycle_2026.fee": "₹2,200 (Gen/OBC-NCL); ₹1,100 (EWS/SC/ST/PwD/Transgender); ₹11,000 outside India; processing charges + GST extra"},
+   "why": "NTA JIPMAT 2026 Information Bulletin puts EWS in the ₹1,100 group, not ₹2,200: https://cdnbbsr.s3waas.gov.in/s388a839f2f6f1427879fc33ee4acf4f66/uploads/2026/04/20260416666062493.pdf"},
+  {"id": "aima-ugat",
+   "setp": {"pattern.total_questions": 130, "verbal_weight": "40 of 130 questions are English Language"},
+   "why": "AIMA UGAT 2026 prospectus test-structure table: 40+30+30+30 = 130 questions in the 2-hour slot (180 with BHM sections): https://apps.aima.in/UGAT2026/Prospectus2026.pdf"}
+]

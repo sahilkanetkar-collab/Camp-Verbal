@@ -1,0 +1,1576 @@
+[
+  {
+    "id": "nmims-npat",
+    "name": "NMIMS NPAT",
+    "full_name": "NMIMS Programs After Twelfth (NPAT)",
+    "conducted_by": "SVKM's NMIMS (Deemed-to-be University); test delivered by Pearson VUE",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Finance",
+      "Economics",
+      "Liberal Arts",
+      "IPM"
+    ],
+    "mode": "Computer-based, at test centres",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Phase 1: 28 Jan – 22 Mar 2026; Phase 2: 23 Mar – 26 May 2026",
+      "exam_date": "Phase 1: 10 Feb – 31 Mar 2026; Phase 2: 1 Apr – 1 Jun 2026 (candidate picks slot)",
+      "result": "Phase 1 merit: 16 Apr 2026; Phase 2: first week of June 2026. Commerce school 1st merit list (Mumbai): 22 Jun 2026",
+      "fee": "₹2,000 for 1 school, +₹1,000 per extra school (6 schools ₹7,000); same fee for each retake"
+    },
+    "cycle_2027": "Not announced yet (2026 registration opened late Jan 2026; expect similar Jan 2027 start)",
+    "eligibility": "Class XII passed/appearing; 50% aggregate for most programmes (60% reported for BBA International Business and BSc Economics Mumbai); Maths/Stats in XII needed for BBA, BCom, BSc Finance, BSc Economics, BBA FinTech, BBA Finance, Integrated BBA-MBA; age ≤ 25. Check school-wise rules in the NPAT handbook.",
+    "pattern": {
+      "duration_min": 100,
+      "total_questions": 120,
+      "sections": [
+        {
+          "name": "Quantitative & Numerical Ability",
+          "questions": 40,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning & General Intelligence",
+          "questions": 40,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Verbal Reasoning (English)",
+          "questions": 40,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 per correct; no negative marking",
+      "sectional_timing": false,
+      "notes": "1 main attempt + up to 2 retakes; best score counts. SAT/ACT scores can also be used to apply."
+    },
+    "selection_process": "Merit list on NPAT score only (no interview/WAT). Common registration with campus preferences; Phase 1 admits can upgrade campus in Phase 2 by merit number and seat availability.",
+    "verbal_weight": "40 of 120 questions (one-third) are Verbal Reasoning",
+    "official_url": "https://npat.nmims.edu/",
+    "colleges": [
+      {
+        "name": "NMIMS Anil Surendra Modi School of Commerce (ASMSOC)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom (Hons)",
+          "BSc Finance",
+          "BBA (FinTech)",
+          "Integrated BBA-MBA"
+        ],
+        "seats": "BBA 720; BBA FinTech 60 (Careers360)",
+        "fees": "BBA ~₹4 L/yr; BBA FinTech ~₹4 L/yr (Careers360, latest listed)",
+        "cutoff": {
+          "value": "Mumbai BBA approx. closing 94–103/120 (2025); BCom (Hons) 89–99; BSc Finance 87–97",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Unofficial. Collegedunia gives approx. closing marks out of 120; Careers360 gives much lower expected ranges. Sources conflict; NMIMS publishes merit numbers to candidates, not public cutoff marks. Careers360 expects Mumbai BBA 72–76."
+        },
+        "selection": "",
+        "placements": "2024-25 (official report): BBA avg ₹6.66 L, highest ₹24.30 L; BCom (Hons) avg ₹7.31 L; BSc Finance avg ₹8.76 L",
+        "url": "https://commerce.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Sarla Anil Modi School of Economics (SAMSOE)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BSc Economics (Hons)"
+        ],
+        "seats": "",
+        "fees": "~₹11.1 L total for course (Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Merit on NPAT; Maths/Stats in XII required; 60% in XII reported",
+        "placements": "",
+        "url": "https://economics.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Jyoti Dalal School of Liberal Arts",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BA (Hons) Liberal Arts"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Pravin Dalal School of Entrepreneurship & Family Business Management",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Finance)"
+        ],
+        "seats": "60 (Careers360)",
+        "fees": "~₹8.25 L/yr (Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS School of Branding & Advertising",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Branding & Advertising)"
+        ],
+        "seats": "240 (Careers360)",
+        "fees": "~₹5.5 L/yr (Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Centre for International Studies",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (International Business) with Kingston University"
+        ],
+        "seats": "",
+        "fees": "~₹5.06 L/yr (Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "60% in XII reported",
+        "placements": "",
+        "url": "https://cis.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Navi Mumbai campus",
+        "city": "Navi Mumbai",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom (Hons)",
+          "BSc Finance",
+          "BSc Economics"
+        ],
+        "seats": "BBA 180 (Careers360)",
+        "fees": "BBA ~₹3.25 L/yr (Careers360)",
+        "cutoff": {
+          "value": "BBA approx. closing 78–88/120 (2025)",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Unofficial. Collegedunia gives approx. closing marks out of 120; Careers360 gives much lower expected ranges. Sources conflict; NMIMS publishes merit numbers to candidates, not public cutoff marks. Careers360 expects 65–67."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Bengaluru campus",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom (Hons)",
+          "BSc Finance",
+          "BSc Economics"
+        ],
+        "seats": "BBA 240 (Careers360)",
+        "fees": "BBA ~₹3.25 L/yr (Careers360)",
+        "cutoff": {
+          "value": "BBA approx. closing 70–80/120 (2025)",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Unofficial. Collegedunia gives approx. closing marks out of 120; Careers360 gives much lower expected ranges. Sources conflict; NMIMS publishes merit numbers to candidates, not public cutoff marks. Careers360 expects 67–70."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Hyderabad campus",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom (Hons)",
+          "BSc Finance"
+        ],
+        "seats": "BBA 120 (Careers360)",
+        "fees": "BBA ~₹3 L/yr (Careers360)",
+        "cutoff": {
+          "value": "BBA approx. closing 66–76/120 (2025)",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Unofficial. Collegedunia gives approx. closing marks out of 120; Careers360 gives much lower expected ranges. Sources conflict; NMIMS publishes merit numbers to candidates, not public cutoff marks. Careers360 expects 67–69."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Indore campus",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom (Hons)",
+          "BSc Finance"
+        ],
+        "seats": "BBA 180 (Careers360)",
+        "fees": "BBA ~₹2.75 L/yr (Careers360)",
+        "cutoff": {
+          "value": "BBA approx. closing 60–70/120 (2025)",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Unofficial. Collegedunia gives approx. closing marks out of 120; Careers360 gives much lower expected ranges. Sources conflict; NMIMS publishes merit numbers to candidates, not public cutoff marks. Careers360 expects 66–67."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Chandigarh campus",
+        "city": "Chandigarh",
+        "state": "Chandigarh",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom (Hons)",
+          "BSc Finance"
+        ],
+        "seats": "BBA 120 (Careers360)",
+        "fees": "BBA ~₹3 L/yr (Careers360)",
+        "cutoff": {
+          "value": "BBA expected 55–68/120",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Collegedunia estimate, not actual"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      },
+      {
+        "name": "NMIMS Ahmedabad campus",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Deemed univ",
+        "programmes": [
+          "UG programmes via NPAT (check handbook for list)"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Listed among the 7 NPAT campuses on npat.nmims.edu; programme list not confirmed",
+        "placements": "",
+        "url": "https://npat.nmims.edu/"
+      }
+    ],
+    "sources": [
+      "https://npat.nmims.edu/",
+      "https://news.careers360.com/nmims-npat-2026-phase-1-2-registration-bba-entrance-exam-feb-10-march-31-cet-mst-lat-dates-fees-counselling-ug-admissions",
+      "https://time4education.com/local/articlecms/page.php?id=9159",
+      "https://cracku.in/npat-2026/",
+      "https://cracku.in/npat-eligibility-criteria-2026/",
+      "https://commerce.nmims.edu/wp-content/uploads/2026/06/IMP-DATES-2026-SOC-Merit-List.pdf",
+      "https://commerce.nmims.edu/wp-content/uploads/2026/07/ASMSOC-Placement-Report-2025.pdf",
+      "https://www.careers360.com/mba/articles/nmims-bba-fees",
+      "https://collegedunia.com/articles/e-340-npat-2026-cutoff-scores-nmims-campus-wise-bba-b-com-and-bsc-finance-marks",
+      "https://www.careers360.com/mba/articles/npat-cutoff"
+    ],
+    "notes": "Up to 5 programmes per application; no management quota. Fees listed are the latest figures reported by Careers360, not confirmed 2026-27 or 2027-28 fees. No non-NMIMS institutes found that admit through NPAT. Dhule/Shirpur campuses appear in some coaching lists but are not among the 7 campuses on the official NPAT page.",
+    "confidence": "medium"
+  },
+  {
+    "id": "symbiosis-set",
+    "name": "Symbiosis SET",
+    "full_name": "Symbiosis Entrance Test (SET General)",
+    "conducted_by": "Symbiosis International (Deemed University)",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "Economics",
+      "Liberal Arts"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "12 Dec 2025 – 15 Apr 2026",
+      "exam_date": "Test 1: 2 May 2026; Test 2: 10 May 2026 (9–10 am)",
+      "result": "20 May 2026; then institute-wise PI/WAT in late May–June",
+      "fee": "₹2,250 per test (+ taxes) + ₹1,000 per programme applied"
+    },
+    "cycle_2027": "Not announced yet (2026 registration opened 12 Dec 2025; expect Dec 2026)",
+    "eligibility": "Class XII passed/appearing with 50% (45% SC/ST). Some programmes add subject rules (e.g. Maths for BSc Applied Statistics & Data Science).",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": 60,
+      "sections": [
+        {
+          "name": "General English",
+          "questions": 16,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative",
+          "questions": 16,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "General Awareness",
+          "questions": 16,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Analytical & Logical Reasoning",
+          "questions": 12,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 per correct; no negative marking",
+      "sectional_timing": false,
+      "notes": "Up to 2 attempts (two test dates); higher score counts."
+    },
+    "selection_process": "SET score → institute-wise shortlist → Personal Interaction (some institutes add WAT) → merit list. SCMS Pune (official): PI out of 30 marks (30%), so SET ≈70%. Weightage varies by institute; must register separately with each institute (₹1,000) to get a PI call.",
+    "verbal_weight": "16 of 60 questions are General English (plus a WAT at some institutes)",
+    "official_url": "https://www.set-test.org/",
+    "colleges": [
+      {
+        "name": "Symbiosis Centre for Management Studies (SCMS) Pune",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons / Hons with Research)",
+          "BBA Global Dual Degree (Deakin)"
+        ],
+        "seats": "300 (240 Indian + 60 international)",
+        "fees": "Academic fee ~₹1.92 L/yr + ₹20,000 deposit (Careers360, year unclear); official 2026-27 fee PDF exists on scmspune.ac.in",
+        "cutoff": {
+          "value": "Expected shortlist 36–40/60 (General)",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Unofficial expected range (raw SET score out of 60) from Cracku; Symbiosis does not publish shortlist cutoffs."
+        },
+        "selection": "SET + online PI (PI max 30 marks / 30%)",
+        "placements": "",
+        "url": "https://scmspune.ac.in/how-to-apply"
+      },
+      {
+        "name": "Symbiosis Centre for Management Studies (SCMS) Noida",
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons)",
+          "BBA Global Dual Degree (Deakin)"
+        ],
+        "seats": "300 (Cracku)",
+        "fees": "Academic fee ~₹1.85 L/yr + ₹20,000 deposit (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Expected shortlist 42–47/60 (General)",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Unofficial expected range (raw SET score out of 60) from Cracku; Symbiosis does not publish shortlist cutoffs."
+        },
+        "selection": "SET + online PI (Cracku says 50:50; not confirmed officially)",
+        "placements": "",
+        "url": "https://www.set-test.org/"
+      },
+      {
+        "name": "Symbiosis Centre for Management Studies (SCMS) Bengaluru",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons)",
+          "BBA Dual Degree (Deakin)"
+        ],
+        "seats": "",
+        "fees": "Academic fee ~₹1.75 L/yr + ₹20,000 deposit (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.set-test.org/"
+      },
+      {
+        "name": "Symbiosis Centre for Management Studies (SCMS) Nagpur",
+        "city": "Nagpur",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons)"
+        ],
+        "seats": "",
+        "fees": "Academic fee ~₹1.84 L/yr (₹1.56 L Nagpur domicile) + ₹20,000 deposit (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.set-test.org/"
+      },
+      {
+        "name": "Symbiosis Centre for Management Studies (SCMS) Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons)"
+        ],
+        "seats": "",
+        "fees": "Year 1 ~₹3.7 L incl. deposit (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.set-test.org/"
+      },
+      {
+        "name": "Symbiosis Institute of Computer Studies & Research (SICSR)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (IT)",
+          "BCA"
+        ],
+        "seats": "",
+        "fees": "BBA (IT) academic fee ~₹1.09 L/yr + ₹20,000 deposit (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.set-test.org/"
+      },
+      {
+        "name": "Symbiosis Centre for Media & Communication (SCMC)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Media Management)",
+          "BA (Mass Communication)"
+        ],
+        "seats": "",
+        "fees": "BBA (Media Mgmt) academic fee ~₹1.75 L/yr + ₹20,000 deposit (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.scmc.edu.in/"
+      },
+      {
+        "name": "Symbiosis School of Economics (SSE)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BSc Economics (Hons / Hons with Research)"
+        ],
+        "seats": "150 (official)",
+        "fees": "~₹10.96 L total for 4 yrs (Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "SET + Personal Interaction for shortlisted candidates; weightage not published",
+        "placements": "",
+        "url": "https://sse.ac.in/bsc-admission-procedure"
+      },
+      {
+        "name": "Symbiosis School for Liberal Arts (SSLA)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BA (Liberal Arts) (Hons / Hons with Research)",
+          "BSc (Liberal Arts) (Hons / Hons with Research)"
+        ],
+        "seats": "",
+        "fees": "₹5.10 L/yr academic fee (2026-27, official)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "SET General or SAT (converted to SET-equivalent) → online WAT + PI; merit combines both; weightage not published",
+        "placements": "",
+        "url": "https://www.ssla.edu.in/indianstd"
+      },
+      {
+        "name": "Symbiosis Artificial Intelligence Institute (SAII)",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Artificial Intelligence)",
+          "BSc (Artificial Intelligence)"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "PI 50%; SET applicable (Careers360)",
+        "placements": "",
+        "url": "https://www.set-test.org/"
+      }
+    ],
+    "sources": [
+      "https://www.set-test.org/",
+      "https://www.set-test.org/eligiblity.html",
+      "https://time4education.com/local/articlecms/page.php?id=9040",
+      "https://scmspune.ac.in/how-to-apply",
+      "https://sse.ac.in/bsc-admission-procedure",
+      "https://www.ssla.edu.in/indianstd",
+      "https://www.ssla.edu.in/financials3",
+      "https://bschool.careers360.com/articles/set-bba-participating-institutes",
+      "https://www.careers360.com/mba/articles/symbiosis-bba-fee",
+      "https://cracku.in/scms-pune-bba-selection-criteria-2026/",
+      "https://cracku.in/scms-noida-bba-selection-criteria-2026/"
+    ],
+    "notes": "All SET programmes are 4-year Honours / Honours with Research. Symbiosis does not run BCom through SET (no BCom in the 2026 participating list). Weightages differ by institute and sources disagree (Careers360 once listed 50:50 for SCMS Pune; the official SCMS Pune page gives PI 30 marks). Other SET programmes (BSc Applied Statistics & Data Science, BSc Sport & Exercise Science, BBA Hospitality & Culinary Mgmt) are outside this site's scope.",
+    "confidence": "medium"
+  },
+  {
+    "id": "christ-university-et",
+    "name": "Christ University Entrance Test",
+    "full_name": "CHRIST (Deemed to be University) Entrance Test (often called CHRIST-CUET / ET-CU; not the NTA CUET)",
+    "conducted_by": "CHRIST (Deemed to be University), Bengaluru",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Economics",
+      "Finance",
+      "IPM"
+    ],
+    "mode": "Online, remote-proctored test; SA/MP/PI in person at campus",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Multiple sessions: Session 1 closed 1 Dec 2025; Session 2 30 Mar 2026; Session 3 3 May 2026; Session 4 24 May 2026; Session 5 26 May – 7 Jun 2026",
+      "exam_date": "Session 1: 7 Dec 2025; S2: 6 Apr 2026; S3: 7 May 2026; S4: 27 May 2026; S5: 10 Jun 2026",
+      "result": "S1: 18 Dec 2025; S2: 14 Apr 2026; S3: 15 May 2026",
+      "fee": "Reported differently: Careers360 says ₹8,000 (2026); reports for the 2027 cycle say ₹1,800 per programme. Confirm on the portal."
+    },
+    "cycle_2027": "Announced: applications opened 15 Oct 2026 (official NRI notice; news reports for UG). Session 1 test ~5 Dec 2026, SA/MP/PI 11–13 Dec 2026, final list 21 Dec 2026 (news reports; dates are on admit cards).",
+    "eligibility": "Class XII (any stream) passed/appearing from a recognised board; no upper age limit. Some programmes add subject rules.",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 120,
+      "sections": [
+        {
+          "name": "BBA paper: English",
+          "questions": 25,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "BBA paper: Reasoning",
+          "questions": 25,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "BBA paper: Mathematics",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "BBA paper: Data Analysis & Interpretation",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "BBA paper: General Knowledge",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "BBA paper: Fundamental Accounting",
+          "questions": 10,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 per correct; −0.25 per wrong",
+      "sectional_timing": false,
+      "notes": "Paper differs by programme group. BCom group: Fundamental Accounting, Maths, DI, Reasoning, GK, English — 20 each. Economics group: English 20, GK 15, Current Affairs 10, Reasoning 20, Maths 15, DI 15, Economics 25. Section split is from the university's older official test-details page; recheck the 2027 'CHRIST-CUET Guidelines & Test Pattern' PDF."
+    },
+    "selection_process": "Entrance Test (shortlist) → Skill Assessment (10-min written piece on one A4 sheet) → Micro Presentation (90 seconds on a topic) → Personal Interview (10 min). Class X/XI/XII marks are checked. Weightages are not published.",
+    "verbal_weight": "BBA paper: 25 of 120 questions English; BCom paper: 20 of 120; plus a written Skill Assessment and spoken Micro Presentation",
+    "official_url": "https://christuniversity.in/admission/2027-ugpgsp",
+    "colleges": [
+      {
+        "name": "CHRIST Bangalore Central Campus",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (General, Decision Science)",
+          "BCom (General, Accountancy & Taxation, Applied Finance & Analytics, Finance & Investment, International Finance, Strategic Finance, etc.)",
+          "BCom (International Accountancy & Finance)",
+          "BSc Economics/Maths/Statistics",
+          "iMBA (Integrated)"
+        ],
+        "seats": "",
+        "fees": "BBA (Hons) ~₹2.75 L/yr other states (₹2.55 L Karnataka); BCom (IAF) ~₹3.43 L/yr other states (Careers360, year unclear); BCom General ~₹90,000/yr other states (Collegedunia, older)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://christuniversity.in/"
+      },
+      {
+        "name": "CHRIST Bannerghatta Road Campus",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Finance & International Business)",
+          "BBA (Strategy & Business Analytics)",
+          "BBA (Finance & Economics)",
+          "BBA (Marketing & Tourism)"
+        ],
+        "seats": "",
+        "fees": "~₹2.49–2.66 L/yr for years 1–3, other states (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://christuniversity.in/"
+      },
+      {
+        "name": "CHRIST Kengeri Campus",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons / Hons with Research)"
+        ],
+        "seats": "",
+        "fees": "~₹2.6 L/yr years 1–3, ₹3.3 L year 4, other states (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://christuniversity.in/"
+      },
+      {
+        "name": "CHRIST Yeshwanthpur Campus",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (several specialisations)",
+          "BCom (International Accountancy & Finance)"
+        ],
+        "seats": "",
+        "fees": "BBA ~₹2.75–2.87 L/yr; BCom (IAF) ~₹3.43 L/yr, other states (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://christuniversity.in/"
+      },
+      {
+        "name": "CHRIST Delhi NCR Campus",
+        "city": "Ghaziabad",
+        "state": "Uttar Pradesh",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons)",
+          "BBA (FinTech)",
+          "BBA (Finance & Marketing Analytics)",
+          "BBA (Strategy & Business Analytics)"
+        ],
+        "seats": "",
+        "fees": "~₹2.7–2.95 L/yr (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ncr.christuniversity.in/"
+      },
+      {
+        "name": "CHRIST Pune Lavasa Campus",
+        "city": "Pune (Lavasa)",
+        "state": "Maharashtra",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (Hons)",
+          "BBA (Business Analytics)"
+        ],
+        "seats": "",
+        "fees": "~₹2.57–2.58 L/yr years 1–3, all-India (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://christuniversity.in/"
+      }
+    ],
+    "sources": [
+      "https://christuniversity.in/admission/2027-ugpgsp",
+      "https://christuniversity.in/entrance-test-details",
+      "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BCC/04-02-26/BCC%20ET%20SP%202026.pdf",
+      "https://christuniversity.in/uploads/userfiles/file/ADMISSIONS/NEW/BKC/BKC%20UG%20ET%20PROGRAMMES%202026.pdf",
+      "https://bschool.careers360.com/articles/christ-university-bba",
+      "https://bschool.careers360.com/articles/christ-university-bba-fee",
+      "https://news.kollegeapply.com/news/christ-university-entrance-test-2027-registration-and-dates",
+      "https://matchtocollege.com/news-and-updates/christ-university-ug-pg-admissions-2027-28-open"
+    ],
+    "notes": "Several sessions each year; apply early because seats fill from Session 1. Test dates are system-assigned and cannot be changed. No cutoffs or seat counts are published. 'CUET' here means Christ's own test, not NTA CUET-UG.",
+    "confidence": "medium"
+  },
+  {
+    "id": "nirma-ug-management",
+    "name": "Nirma University UG (IPMAT / Class XII route)",
+    "full_name": "Nirma University UG management & commerce admissions (no own test)",
+    "conducted_by": "Nirma University, Ahmedabad",
+    "category": "Private university",
+    "programme_types": [
+      "IPM",
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Uses IPMAT Indore score + PI (All India); Class XII merit (Gujarat / BCom)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Integrated BBA-MBA: 4 Feb – 31 May 2026 (All India, extended); Gujarat seats till 25 May 2026. BCom (Hons): opened 16 Jan 2026, closed by May 2026",
+      "exam_date": "IPMAT Indore: 4 May 2026 (no Nirma test)",
+      "result": "Interviews from June 2026; merit lists on the admissions portal",
+      "fee": "Application ₹1,500 + taxes (BBA-MBA); ₹1,000 (BCom Hons)"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Integrated BBA-MBA (All India): 60% in XII + IPMAT score of that year. Gujarat seats: 90% in XII from a Gujarat school. BCom (Hons): 60% in XII with English + one of Accountancy/Business/Economics/Stats/Maths.",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "No Nirma test. See the IPMAT Indore entry for the test pattern."
+    },
+    "selection_process": "Integrated BBA-MBA (All India & NRI-sponsored): IPMAT 50% + PI 30% + Class XII 20%. Gujarat seats: XII marks 70% + PI 30%. BCom (Hons): XII total marks only (tie-break on English).",
+    "verbal_weight": "Via IPMAT (Verbal section); no Nirma-specific test",
+    "official_url": "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/",
+    "colleges": [
+      {
+        "name": "Institute of Management, Nirma University",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "Integrated BBA-MBA (5 yr)"
+        ],
+        "seats": "240 (All India 156, Gujarat 48, NRI 36)",
+        "fees": "₹3.89 L/yr tuition + ₹7,000 exam fee (BBA phase, 2026-27)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/"
+      },
+      {
+        "name": "Institute of Commerce, Nirma University",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "BCom (Hons)"
+        ],
+        "seats": "180 (153 general + 27 NRI)",
+        "fees": "₹2.25 L/yr tuition + other charges (2026-27)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Class XII merit only; no entrance test",
+        "placements": "",
+        "url": "https://admissions.nirmauni.ac.in/bcomhons.html"
+      }
+    ],
+    "sources": [
+      "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/",
+      "https://admissions.nirmauni.ac.in/bcomhons.html",
+      "https://collegedunia.com/news/nirma-university-admission-2026-open-alertid-146045"
+    ],
+    "notes": "Nirma also lists a BBA (Hons) with a 10 May 2026 deadline (Collegedunia), but its selection rules could not be confirmed from an official page.",
+    "confidence": "high"
+  },
+  {
+    "id": "ahmedabad-university-ug",
+    "name": "Ahmedabad University UG",
+    "full_name": "Ahmedabad University undergraduate admissions (application + interaction)",
+    "conducted_by": "Ahmedabad University",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Economics",
+      "Liberal Arts"
+    ],
+    "mode": "No standard entrance test for management/commerce; application + personal interaction",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Rolling rounds, Oct 2025 – Jun 2026 (e.g. Early Round 4: 1–16 Jan 2026; Regular Round 3: 1–12 Jun 2026)",
+      "exam_date": "No test (AU Aptitude Test mentioned for some programmes only)",
+      "result": "Round-wise decisions (e.g. Round 4: 5 Mar 2026; Round 3 regular: 15 Jul 2026)",
+      "fee": "Application ₹1,500"
+    },
+    "cycle_2027": "Not confirmed (rounds usually start in autumn; check undergraduateadmissions.ahduni.edu.in)",
+    "eligibility": "Class XII or equivalent from a recognised board; programme-specific minimums",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "No test for BSc Management / BCom. Personal statement + faculty interaction."
+    },
+    "selection_process": "Class XII record + personal statement + co-curriculars + personal interaction with faculty. No published weightage.",
+    "verbal_weight": "No test; English matters through the personal statement and interaction",
+    "official_url": "https://ahduni.edu.in/academics/schools-centres/undergraduate-college/admission/",
+    "colleges": [
+      {
+        "name": "Ahmedabad University (Amrut Mody School of Management / School of Arts & Sciences)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "BSc (Hons) Management",
+          "BCom (Hons)",
+          "BCom (Professional)",
+          "BA (Hons) incl. Economics",
+          "Family Business & Entrepreneurship Programme"
+        ],
+        "seats": "",
+        "fees": "~₹4.95 L/yr (2025-26)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ahduni.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://ahduni.edu.in/academics/schools-centres/undergraduate-college/admission/",
+      "https://collegedunia.com/news/ahmedabad-university-early-ug-admission-round-4-begin-alertid-144840",
+      "https://uni-admission.aglasem.com/gujarat/au-ahmedabad/"
+    ],
+    "notes": "Management degree is a BSc (Hons) Management, not a BBA. Apply early: rounds fill seats progressively.",
+    "confidence": "low"
+  },
+  {
+    "id": "mit-wpu-cet",
+    "name": "MIT-WPU CET",
+    "full_name": "MIT World Peace University Common Entrance Test",
+    "conducted_by": "MIT World Peace University, Pune",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Economics"
+    ],
+    "mode": "Online CBT (home/device) + online Personal Interaction",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Multiple rounds; Round 2 apply by 8 May 2026",
+      "exam_date": "Round 2 (general UG incl. BBA/BCom/BSc Economics): CBT 12 May 2026, PI 15 May 2026 (reports also mention 11 May)",
+      "result": "Round 2: 20 May 2026",
+      "fee": "Not found"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "BBA: 50% in XII (45% Maharashtra reserved) with English, or 60% in a 3-yr diploma",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": null,
+      "sections": [],
+      "marking": "CBT 100 marks + PI 50 marks = 150",
+      "sectional_timing": false,
+      "notes": "Section break-up not published in sources found."
+    },
+    "selection_process": "CET (100) + Personal Interaction (50) → merit rank → seat allocation by preference",
+    "verbal_weight": "Not published",
+    "official_url": "https://mitwpu.edu.in/",
+    "colleges": [
+      {
+        "name": "MIT-WPU School of Business",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Private univ",
+        "programmes": [
+          "BBA (Hons) and specialisations: Digital Marketing, Banking Finance & Insurance, Business Analytics, International Business, etc."
+        ],
+        "seats": "",
+        "fees": "₹3.3 L/yr (2026-27 brochure)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "Highest ₹16.42 LPA (brochure, year not stated)",
+        "url": "https://mitwpu.edu.in/uploads/school/brochure/School-of-Business-brochure-2026-27.pdf"
+      }
+    ],
+    "sources": [
+      "https://collegedunia.com/news/mit-wpu-cet-2026-round-2-schedule-out-ug-exam-may-11-pg-may-18-alertid-150562",
+      "https://mitwpu.edu.in/uploads/school/brochure/School-of-Business-brochure-2026-27.pdf"
+    ],
+    "notes": "BCom and BSc Economics are run by other MIT-WPU schools through the same CET.",
+    "confidence": "low"
+  },
+  {
+    "id": "jain-jet",
+    "name": "Jain University JET",
+    "full_name": "JAIN Entrance Test (JET)",
+    "conducted_by": "JAIN (Deemed-to-be University), Bengaluru",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Online, remote-proctored",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Open till notified",
+      "exam_date": "9–10 Apr 2026 (BBA)",
+      "result": "Emailed to candidates",
+      "fee": "Not confirmed"
+    },
+    "cycle_2027": "Applications reported open from 15 Oct 2026; test dates not announced",
+    "eligibility": "Class XII (Science/Commerce/Arts) from a recognised board; minimum aggregate set by the university",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "Reading Comprehension",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Subject-based",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Basic Mathematics",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "General Knowledge & Current Affairs",
+          "questions": 40,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 per correct; no negative marking",
+      "sectional_timing": false,
+      "notes": "BBA pattern per Careers360"
+    },
+    "selection_process": "JET → Group Discussion → Personal Interview; no published weightage",
+    "verbal_weight": "20 of 100 questions are Reading Comprehension",
+    "official_url": "https://www.jainuniversity.ac.in/",
+    "colleges": [
+      {
+        "name": "JAIN (Deemed-to-be University)",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA",
+          "BCom"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.jainuniversity.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://bschool.careers360.com/articles/jain-university-bba-admission",
+      "https://engineering.careers360.com/articles/jain-entrance-test"
+    ],
+    "notes": "Only third-party sources found.",
+    "confidence": "low"
+  },
+  {
+    "id": "alliance-ausat",
+    "name": "Alliance AUSAT",
+    "full_name": "Alliance University Scholastic Aptitude Test",
+    "conducted_by": "Alliance University, Bengaluru",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Economics"
+    ],
+    "mode": "Online CBT",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not found",
+      "exam_date": "Not found",
+      "result": "",
+      "fee": "₹200 reported (CollegeBatch, unverified)"
+    },
+    "cycle_2027": "Registration reported started (Careers360 headline); dates not found",
+    "eligibility": "Class XII with 50% (40% SC/ST); no age limit",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "English Language",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Language Comprehension",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Numerical Ability & Data Interpretation",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "General Awareness & Current Affairs",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Logical Reasoning & Analytical Ability",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 per correct; negative marking not stated",
+      "sectional_timing": false,
+      "notes": "Per-section counts not published"
+    },
+    "selection_process": "AUSAT + academic record + Personal Interview; scholarships on AUSAT score",
+    "verbal_weight": "Two of five sections are English / language comprehension (counts not published)",
+    "official_url": "https://www.alliance.edu.in/",
+    "colleges": [
+      {
+        "name": "Alliance University",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Private univ",
+        "programmes": [
+          "BBA (Hons)",
+          "BCom (Hons)",
+          "BA (Hons)",
+          "BSc (Hons)"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.alliance.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://www.collegebatch.com/exams/ausat",
+      "https://www.careers360.com/exams/ausat"
+    ],
+    "notes": "Previously called AUAT. Low-detail entry; only third-party sources.",
+    "confidence": "low"
+  },
+  {
+    "id": "atlas-bat",
+    "name": "ATLAS BAT",
+    "full_name": "ATLAS SkillTech University Business Aptitude Test",
+    "conducted_by": "ATLAS SkillTech University (ISME), Mumbai",
+    "category": "Private university",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Online MCQ test + online PI + on-campus group exercise",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Rolling cycles",
+      "exam_date": "Rolling",
+      "result": "",
+      "fee": "Application ₹3,500"
+    },
+    "cycle_2027": "Announced (July 2027 intake): Cycle 1 applications from 11 Sep 2026; BAT 11 Sep – 18 Nov 2026; Collaborative Accelerator 21 Nov 2026; results 2 Dec 2026",
+    "eligibility": "50% in Class XII, any stream (IB 24 points)",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [
+        {
+          "name": "Verbal Ability",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Logical Reasoning",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative Skills",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Business Communication",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Sample paper on the website"
+    },
+    "selection_process": "BAT → online Personal Interview (uses SOP and BAT) → Collaborative Accelerator (on-campus business case group exercise). No weightage published.",
+    "verbal_weight": "Verbal Ability and Business Communication are 2 of 4 areas",
+    "official_url": "https://www.atlasuniversity.edu.in/schools/isme/admissions/undergraduate/admissions-bba-bachelor-of-business-administration",
+    "colleges": [
+      {
+        "name": "ATLAS SkillTech University – ISME",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Private univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "",
+        "fees": "Year 1 ₹5.25 L + ₹50,000 enrolment fee (indicative, 2027 intake)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.atlasuniversity.edu.in/schools/isme/admissions/undergraduate/admissions-bba-bachelor-of-business-administration"
+      }
+    ],
+    "sources": [
+      "https://www.atlasuniversity.edu.in/schools/isme/admissions/undergraduate/admissions-bba-bachelor-of-business-administration"
+    ],
+    "notes": "Older coaching pages call this 'UGAT'; the official page now calls it BAT.",
+    "confidence": "medium"
+  },
+  {
+    "id": "flame-feat",
+    "name": "FLAME FEAT",
+    "full_name": "FLAME Entrance & Aptitude Test",
+    "conducted_by": "FLAME University, Pune",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "Economics",
+      "Liberal Arts"
+    ],
+    "mode": "Online test + essay + online PI",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Cycles Dec 2025 – May 2026",
+      "exam_date": "Multiple cycle windows",
+      "result": "",
+      "fee": "₹2,000 reported (QuestForSuccess, unofficial)"
+    },
+    "cycle_2027": "Announced (Class of 2027): Early Decision apply by 29 Nov 2026, FEAT 4–6 Dec 2026, PI 11–13 Dec, result 12 Jan 2027; further cycles Jan, Feb, Apr, May 2027",
+    "eligibility": "Class XII (any stream)",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": null,
+      "sections": [
+        {
+          "name": "Verbal Ability",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative Ability",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "General Awareness",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Essay",
+          "questions": 1,
+          "time_min": 20,
+          "notes": "200–250 words"
+        }
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Pattern from a coaching site; SAT/ACT takers write the essay only"
+    },
+    "selection_process": "FEAT (or SAT/ACT) + essay → online PI (~30 min). No published weightage.",
+    "verbal_weight": "Verbal section + a written essay",
+    "official_url": "https://www.flame.edu.in/admissions/ug/admission-schedule",
+    "colleges": [
+      {
+        "name": "FLAME University",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Private univ",
+        "programmes": [
+          "BBA (Hons)",
+          "BBA (Communications Mgmt)",
+          "BA/BSc (Hons) incl. Economics"
+        ],
+        "seats": "",
+        "fees": "Programme fee ₹9.15 L in year 1 (₹11.95 L incl. boarding) — Class of 2027, official",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.flame.edu.in/admissions/ug/fees"
+      }
+    ],
+    "sources": [
+      "https://www.flame.edu.in/admissions/ug/admission-schedule",
+      "https://www.flame.edu.in/admissions/ug/fees",
+      "https://www.questforsuccess.in/flame-university-entrance-test-2026/"
+    ],
+    "notes": "May overlap with the Liberal arts group's data; keep one entry when merging.",
+    "confidence": "medium"
+  },
+  {
+    "id": "amity-bba",
+    "name": "Amity BBA admission test",
+    "full_name": "Amity University BBA selection (written test + PI)",
+    "conducted_by": "Amity University",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "University written test + Personal Interview",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not found",
+      "exam_date": "Not found",
+      "result": "",
+      "fee": "Application ₹1,500 (Careers360)"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "60% in XII (55% sponsored), any stream",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "Not published; Careers360 mentions an English test set by the university"
+    },
+    "selection_process": "Written test + GD/PI; no published weightage",
+    "verbal_weight": "Not published (reported to include an English test)",
+    "official_url": "https://www.amity.edu/",
+    "colleges": [
+      {
+        "name": "Amity University (Noida and other campuses)",
+        "city": "Noida",
+        "state": "Uttar Pradesh",
+        "type": "Private univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "",
+        "fees": "Noida ~₹2.19 L/yr (Careers360, year unclear)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.amity.edu/"
+      }
+    ],
+    "sources": [
+      "https://www.careers360.com/mba/articles/bba-at-amity-university"
+    ],
+    "notes": "Amity JEE is for BTech; BBA is via the university's own process. Low detail.",
+    "confidence": "low"
+  },
+  {
+    "id": "lpunest",
+    "name": "LPUNEST",
+    "full_name": "LPU National Entrance & Scholarship Test",
+    "conducted_by": "Lovely Professional University",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Online proctored or test centre",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "From 10 Dec 2025 (phase 1 till 16 Jan 2026; later phases till Apr 2026)",
+      "exam_date": "Phase 1: 10 Jan – 5 Feb 2026",
+      "result": "Phase 1: 8 Feb 2026",
+      "fee": "₹1,000 (soft kit) / ₹1,500 (printed kit)"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "BBA: 60% in XII (LPU page lists Physics, Maths, English) + valid LPUNEST, JEE Main or CUET score",
+    "pattern": {
+      "duration_min": 150,
+      "total_questions": null,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "General UG paper: 400 marks, 4 subjects × 25 Qs × 4 marks (English is one option). BBA-specific paper not confirmed."
+    },
+    "selection_process": "LPUNEST score (or JEE Main / CUET) decides admission and scholarship band (e.g. 220/400 for top tier, tentative)",
+    "verbal_weight": "English is one of the subject options (25 of 100 questions if chosen)",
+    "official_url": "https://www.lpu.in/programmes/management/bba",
+    "colleges": [
+      {
+        "name": "Lovely Professional University",
+        "city": "Phagwara",
+        "state": "Punjab",
+        "type": "Private univ",
+        "programmes": [
+          "BBA",
+          "BCom"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.lpu.in/"
+      }
+    ],
+    "sources": [
+      "https://news.careers360.com/lpunest-2026-registration-slot-booking-begin-exam-date-question-paper-pattern-eligibility-syllabus-marking-scheme/amp",
+      "https://www.lpu.in/programmes/management/bba"
+    ],
+    "notes": "Mainly a scholarship test for most commerce/management applicants.",
+    "confidence": "low"
+  },
+  {
+    "id": "bennett-ug",
+    "name": "Bennett University UG (merit)",
+    "full_name": "Bennett University BBA admissions (Class XII merit, no test)",
+    "conducted_by": "Bennett University (Times Group), Greater Noida",
+    "category": "Private university",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "No entrance test",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not found",
+      "exam_date": "None",
+      "result": "",
+      "fee": "Application ₹1,500"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "60% in XII with English",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "No test"
+    },
+    "selection_process": "Best-of-3 subjects score in Class XII; CUET used only for scholarships",
+    "verbal_weight": "None (no test)",
+    "official_url": "https://www.bennett.edu.in/",
+    "colleges": [
+      {
+        "name": "Bennett University",
+        "city": "Greater Noida",
+        "state": "Uttar Pradesh",
+        "type": "Private univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.bennett.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://collegedunia.com/university/55776-bennett-university-greater-noida/admission"
+    ],
+    "notes": "",
+    "confidence": "low"
+  }
+]

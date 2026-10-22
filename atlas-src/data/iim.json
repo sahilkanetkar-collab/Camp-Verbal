@@ -1,0 +1,946 @@
+[
+  {
+    "id": "ipmat-indore",
+    "name": "IPMAT Indore",
+    "full_name": "IPM Aptitude Test (IPM AT), IIM Indore",
+    "conducted_by": "IIM Indore",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "IPM",
+      "BBA"
+    ],
+    "mode": "Computer-based, centre (about 39 cities)",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "2 Feb – 17 Mar 2026 (extended from 14 Mar)",
+      "exam_date": "4 May 2026, 2:00–4:00 PM",
+      "result": "PI shortlist 25 May 2026; PIs mid-June 2026; offers late Jun 2026 (tentative per IIM Indore FAQ)",
+      "fee": "₹4,130 (Gen/EWS/NC-OBC); ₹2,065 (SC/ST/PwD), incl. GST"
+    },
+    "cycle_2027": "Not announced yet (expected notification late Jan / early Feb 2027, exam around May 2027)",
+    "eligibility": "Class XII passed in 2024 or 2025, or appearing in 2026; born on or after 1 Aug 2006 (1 Aug 2001 for SC/ST/PwD). IIM Indore sets no minimum % for its own IPM, but many other institutes using the score do.",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 90,
+      "sections": [
+        {
+          "name": "Quantitative Ability (Short Answer)",
+          "questions": 15,
+          "time_min": 40,
+          "notes": "Type-in answers; no negative marking"
+        },
+        {
+          "name": "Quantitative Ability (MCQ)",
+          "questions": 30,
+          "time_min": 40,
+          "notes": ""
+        },
+        {
+          "name": "Verbal Ability (MCQ)",
+          "questions": 45,
+          "time_min": 40,
+          "notes": "Grammar, vocabulary, RC"
+        }
+      ],
+      "marking": "+4 / −1 for MCQs; short-answer +4, no negative. Max 360.",
+      "sectional_timing": true,
+      "notes": "Official procedure confirms 3 sections × 40 min and the marking. Question counts (15/30/45) are from coaching sources; IIM Indore's procedure PDF does not print them."
+    },
+    "selection_process": "Need positive raw score + category-wise minimum in all 3 sections → PI shortlist by Aptitude Test Score (ATS weights: QA MCQ 25, QA SA 25, VA 50) → Personal Interview (+ WAT) → final Composite Score = ATS 65% + PI 35%.",
+    "verbal_weight": "45 of 90 questions are Verbal Ability (VA is 50% of IIM Indore's shortlisting score)",
+    "official_url": "https://iimidr.ac.in/programmes/academic-programmes/five-year-integrated-programme-in-management-ipm/ipm-admissions-details/",
+    "colleges": [
+      {
+        "name": "IIM Indore",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr: BA Foundations of Management + MBA, dual degree; exit after 3 yrs with BA)"
+        ],
+        "seats": "150 (domestic, sanctioned) + 5 supernumerary international",
+        "fees": "₹7.04 L (Yr 1), ₹6.54 L (Yr 2), ₹6.54 L (Yr 3) = ₹20.12 L for Yrs 1–3; Yrs 4–5 at PGP fee",
+        "cutoff": {
+          "value": "PI shortlist sectional minimums (Gen): QA-SA 28, QA-MCQ 27, VA 111. EWS 16/17/79; NC-OBC 16/14/70; SC 12/10/58; ST 8/8/49; PwD 4/3/30. 838 shortlisted for PI.",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Reported by Cracku and Career Launcher from IIM Indore's shortlist notice; not verified on iimidr.ac.in. 2025 Gen: QA-SA 24, QA-MCQ 28, VA 112."
+        },
+        "selection": "ATS 65% + PI 35%",
+        "placements": "Class of 2024–26 final placements (MBA 492 + IPM dual-degree 94 combined): avg ₹27.27 L, median ₹25 L, highest ₹82.54 L",
+        "url": "https://iimidr.ac.in/programmes/academic-programmes/five-year-integrated-programme-in-management-ipm/"
+      },
+      {
+        "name": "IIM Ranchi",
+        "city": "Ranchi",
+        "state": "Jharkhand",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr: BBA + MBA; exit after 3 yrs with BBA)"
+        ],
+        "seats": "~60 (unofficial, Hitbullseye)",
+        "fees": "~₹17.25 L for Yrs 1–3, excl. deposits/mess (unofficial, Hitbullseye); Yrs 4–5 at MBA fee",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "IIM Ranchi has not published IPMAT cutoffs"
+        },
+        "selection": "Separate application to IIM Ranchi. PI shortlist on IPMAT (VA 50%, QA 50%). Final: IPMAT 65% (VA 32.5 + QA 32.5) + PI 15% + Class X/XII 20% (X 8, XII 12); +5 bonus marks for female/transgender candidates.",
+        "placements": "",
+        "url": "https://iimranchi.ac.in/media/2026/02/IPM_Admission_Criteria-2026-31.pdf"
+      },
+      {
+        "name": "IIM Shillong",
+        "city": "Shillong",
+        "state": "Meghalaya",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr integrated programme in management)"
+        ],
+        "seats": "Not published",
+        "fees": "Not published (application fee ₹2,000 Gen; ₹1,000 SC/ST/DA/EWS)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Section-wise IPMAT cutoffs set by the Admissions Committee; not published"
+        },
+        "selection": "Stricter eligibility: 70% in X and XII (65% SC/ST/DA) and Maths/Applied Maths in XI–XII. Applications 1–30 May 2026. Overall Score: Class X 10 + Class XII 10 + IPM AT 30 + PI 50. Overseas candidates may use SAT.",
+        "placements": "",
+        "url": "https://www.iimshillong.ac.in/ipm/admission-process"
+      },
+      {
+        "name": "IIM Amritsar",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr dual degree, BS + MBA)"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "IIM Amritsar does not publish IPMAT cutoffs"
+        },
+        "selection": "Applications 23 Feb – 6 Apr 2026. Eligibility: age ≤ 20 on 1 Aug 2026; 60% in X and XII (55% SC/ST/PwD); Maths compulsory in XII. Composite: ATS 70% (QA-MCQ 30, QA-SA 30, VA 40) + PI 25% + gender diversity 5%.",
+        "placements": "",
+        "url": "https://iimamritsar.ac.in/academics/ipm/admission-policy"
+      },
+      {
+        "name": "IIM Sirmaur",
+        "city": "Sirmaur (Paonta Sahib)",
+        "state": "Himachal Pradesh",
+        "type": "IIM",
+        "programmes": [
+          "BMS (4-yr Bachelor of Management Studies)"
+        ],
+        "seats": "~120 (unofficial, iQuanta)",
+        "fees": "~₹22.73 L total for 4 yrs (unofficial, iQuanta)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Age ≤ 20 on 1 Aug 2026 (5-yr relaxation SC/ST/PwD); below 60% in X or XII is ineligible. Composite /100: IPMAT ATS 50 + online interview 20 + academics 25 (X 10, XII 15) + gender diversity 5.",
+        "placements": "",
+        "url": "https://admissions.iimsirmaur.ac.in/bms-admissions-policy-2026"
+      },
+      {
+        "name": "IIM Sambalpur",
+        "city": "Sambalpur",
+        "state": "Odisha",
+        "type": "IIM",
+        "programmes": [
+          "BS in Management and Public Policy (4-yr, NEP exits after 1/2/3 yrs)"
+        ],
+        "seats": "Up to 90",
+        "fees": "Not published as an amount (semester-wise, incl. hostel and mess); application fee ₹2,000 + tax (Gen), ₹1,000 + tax (reserved)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "IPMAT 2026 is the only route (no CUET/SAT/JEE). 60% in X and XII (55% reserved); age ≤ 20 on 31 Jul 2026. IPMAT score + online PI. IIM Sambalpur's other UG programme (BS Data Science & AI) uses JEE Main; see the JEE entry.",
+        "placements": "",
+        "url": "https://registration.iimsambalpur.ac.in/portal/public/FAQ-BS-MPP-2026.pdf"
+      },
+      {
+        "name": "IIFT Kakinada (Indian Institute of Foreign Trade)",
+        "city": "Kakinada",
+        "state": "Andhra Pradesh",
+        "type": "Deemed univ",
+        "programmes": [
+          "IPM (5-yr: BBA Business Analytics + MBA International Business; exit after 3 yrs)"
+        ],
+        "seats": "60",
+        "fees": "₹4 L/yr for Yrs 1–3; ₹19.68 L for Yrs 4–5; ~₹31.68 L total (Careers360, not verified on iift.ac.in)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "No interview reported. Merit /100: IPMAT score 77 + Class X 20 + gender diversity 3 (Careers360). 60% in X and XII (55% reserved); Maths at +2 required; apply by 20 Apr 2026; application fee ₹2,000 (₹1,000 SC/ST/PwD).",
+        "placements": "",
+        "url": "https://www.iift.ac.in/"
+      },
+      {
+        "name": "Institute of Management, Nirma University",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "Integrated BBA–MBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Listed by IIM Indore as an institution using IPM AT 2026 scores; check Nirma for its own process.",
+        "placements": "",
+        "url": "https://imnu.ac.in/"
+      },
+      {
+        "name": "GLS University",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "Integrated management programme"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Listed by IIM Indore as using IPM AT 2026 scores.",
+        "placements": "",
+        "url": "https://www.glsuniversity.ac.in/"
+      },
+      {
+        "name": "Alliance University",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Private univ",
+        "programmes": [
+          "BBA / integrated management"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Listed by IIM Indore as using IPM AT 2026 scores.",
+        "placements": "",
+        "url": "https://www.alliance.edu.in/"
+      },
+      {
+        "name": "LM Thapar School of Management, Thapar Institute (TIET)",
+        "city": "Patiala / Mohali",
+        "state": "Punjab",
+        "type": "Deemed univ",
+        "programmes": [
+          "Integrated management programme"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Listed by IIM Indore as using IPM AT 2026 scores.",
+        "placements": "",
+        "url": "https://lmtsm.thapar.edu/"
+      },
+      {
+        "name": "IFMR Graduate School of Business, Krea University",
+        "city": "Sri City",
+        "state": "Andhra Pradesh",
+        "type": "Private univ",
+        "programmes": [
+          "Integrated management programme"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Listed by IIM Indore as using IPM AT 2026 scores.",
+        "placements": "",
+        "url": "https://krea.edu.in/"
+      },
+      {
+        "name": "Department of Management Studies, NALSAR University of Law",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "type": "State univ",
+        "programmes": [
+          "Integrated BBA–MBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Listed by IIM Indore as using IPM AT 2026 scores.",
+        "placements": "",
+        "url": "https://www.nalsar.ac.in/"
+      },
+      {
+        "name": "TAPMI (Manipal and Bengaluru)",
+        "city": "Manipal / Bengaluru",
+        "state": "Karnataka",
+        "type": "Private univ",
+        "programmes": [
+          "IPM (Manipal); BBA (Bengaluru)"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "Named by MBA Universe and Cracku as accepting IPMAT Indore; NOT on IIM Indore's official 2026 list. Verify with TAPMI.",
+        "placements": "",
+        "url": "https://www.tapmi.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://iimidr.ac.in/programmes/academic-programmes/five-year-integrated-programme-in-management-ipm/ipm-admissions-details/",
+      "https://iimidr.ac.in/wp-content/uploads/2026/01/AdmissionProcedure_IPM-2026-31_-Domestic-Applicants.pdf",
+      "https://iimidr.ac.in/wp-content/uploads/2026/01/FAQs-IPM.pdf",
+      "https://iimidr.ac.in/wp-content/uploads/2026/03/IPM-Fee-Structure-2026-31.pdf",
+      "https://iimidr.ac.in/wp-content/uploads/2026/08/Final-Placement-Report-2026.pdf",
+      "https://iimranchi.ac.in/media/2026/02/IPM_Admission_Criteria-2026-31.pdf",
+      "https://www.iimshillong.ac.in/wp-content/uploads/2026/04/IPM-2026-Admission-Policy-Document-2026.pdf",
+      "https://iimamritsar.ac.in/academics/ipm/admission-policy",
+      "https://admissions.iimsirmaur.ac.in/bms-admissions-policy-2026",
+      "https://registration.iimsambalpur.ac.in/portal/public/FAQ-BS-MPP-2026.pdf",
+      "https://www.careers360.com/mba/articles/iift-ipm-2026-application-form-out-last-date-eligibility-fees-and-selection-process",
+      "https://cracku.in/ipmat-indore-result-2026",
+      "https://www.careerlauncher.com/blogs/ipm/iim-indore-ipmat-cutoff/",
+      "https://www.mbauniverse.com/ipmat/registration"
+    ],
+    "notes": "Biggest IIM UG exam: one score is used by 6 IIMs (Indore, Ranchi, Shillong, Amritsar, Sirmaur, Sambalpur), IIFT and several private universities. Each institute needs its OWN separate application and uses its own weightage; some (Shillong, Amritsar, IIFT) need Maths in XII, and Shillong needs 70% in X/XII. Not the same exam as IPMAT Rohtak. NICMAR is also named by one coaching site but is not on IIM Indore's list.",
+    "confidence": "high"
+  },
+  {
+    "id": "ipmat-rohtak",
+    "name": "IPMAT Rohtak",
+    "full_name": "IPM Aptitude Test, IIM Rohtak",
+    "conducted_by": "IIM Rohtak",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "IPM",
+      "BBA"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "6 Feb – 6 Apr 2026",
+      "exam_date": "10 May 2026, 9:00–11:00 AM",
+      "result": "PI shortlist 20 May 2026; PIs June 2026; final list July 2026",
+      "fee": "₹4,937 (all categories, as reported)"
+    },
+    "cycle_2027": "Not announced yet (expected Feb 2027 notification, exam around May 2027)",
+    "eligibility": "Class XII passed / appearing in 2026; 60% in X and XII (55% SC/ST/PwD) per Careers360; max age 20 as on 30 Jun 2026 (25 for SC/ST). Sources disagree on the % rule — check IIM Rohtak's notice.",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 120,
+      "sections": [
+        {
+          "name": "Quantitative Ability",
+          "questions": 40,
+          "time_min": 40,
+          "notes": ""
+        },
+        {
+          "name": "Logical Reasoning",
+          "questions": 40,
+          "time_min": 40,
+          "notes": ""
+        },
+        {
+          "name": "Verbal Ability",
+          "questions": 40,
+          "time_min": 40,
+          "notes": ""
+        }
+      ],
+      "marking": "+4 / −1, all MCQ. Max 480.",
+      "sectional_timing": true,
+      "notes": "Most sources say 40 min per section; Careers360 says one shared 120-min window. Confirm on the admit card. IIM Rohtak's site could not be read directly."
+    },
+    "selection_process": "Single overall cutoff (no sectional cutoff) → PI shortlist → final merit: IPMAT 55% + Class XII 20% + PI 15% + Class X 10%.",
+    "verbal_weight": "40 of 120 questions are Verbal Ability",
+    "official_url": "https://www.iimrohtak.ac.in/",
+    "colleges": [
+      {
+        "name": "IIM Rohtak",
+        "city": "Rohtak",
+        "state": "Haryana",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr: BBA + MBA; exit after 3 yrs with BBA)"
+        ],
+        "seats": "198 for 2026–31 (reported by Careers360/Hitbullseye; one source says 165)",
+        "fees": "~₹35–40 L for 5 yrs (unofficial estimates)",
+        "cutoff": {
+          "value": "PI shortlist minimum total marks (/480): Gen 363, EWS 330, NC-OBC 307, SC 246, ST 168, DAP-Gen 260. ~1,030 shortlisted.",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Reported by iQuanta and Career Launcher. 2025 (Careers360): Gen 381, EWS 331, NC-OBC 297, SC 230, ST 138."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.iimrohtak.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://bschool.careers360.com/articles/ipmat-rohtak-2026-mba-after-12th-iim-entrance-exam-registration-dates-fees-eligibility-pattern-syllabus-admit-card-result-cut-off",
+      "https://bschool.careers360.com/articles/ipmat-rohtak-result-2026-out-iimrohtak-ac-in",
+      "https://www.iquanta.in/blog/ipmat-rohtak-2026-result/",
+      "https://www.careerlauncher.com/blogs/ipm/ipmat-rohtak-cutoff/",
+      "https://www.pw.live/ipmat/exams/ipmat-rohtak-exam-pattern",
+      "https://grad.hitbullseye.com/IIM-Rohtak-IPM.php"
+    ],
+    "notes": "Used only by IIM Rohtak. The same test (plus a Legal Reasoning section) is used for IIM Rohtak's Integrated Programme in Law, which is outside this site's scope. IIM Rohtak's website blocks automated reading, so all figures here come from news/coaching sites.",
+    "confidence": "medium"
+  },
+  {
+    "id": "jipmat",
+    "name": "JIPMAT",
+    "full_name": "Joint Integrated Programme in Management Admission Test",
+    "conducted_by": "National Testing Agency (NTA), for IIM Bodh Gaya and IIM Jammu",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "IPM",
+      "BBA"
+    ],
+    "mode": "Computer-based, centre (81 centres, 61 cities in 2026)",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "16 Apr – 13 May 2026 (extended from 10 May); correction 15–17 May",
+      "exam_date": "7 Jun 2026",
+      "result": "24–25 Jun 2026 (13,876 registered, 11,527 appeared)",
+      "fee": "₹2,200 (Gen/OBC/EWS); ₹1,100 (SC/ST/PwD), as reported — check NTA bulletin"
+    },
+    "cycle_2027": "Not announced yet (2026 notice came mid-April; expect a similar window)",
+    "eligibility": "Class XII passed in 2024 or 2025, or appearing in 2026; 60% in X and XII (55% SC/ST/PwD); no upper age limit.",
+    "pattern": {
+      "duration_min": 150,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "Quantitative Aptitude",
+          "questions": 33,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Data Interpretation & Logical Reasoning",
+          "questions": 33,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Verbal Ability & Reading Comprehension",
+          "questions": 34,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+4 / −1, all MCQ. Max 400.",
+      "sectional_timing": false,
+      "notes": "No sectional time limit; one 150-min window. English only."
+    },
+    "selection_process": "No interview. IIM Jammu: must clear sectional percentiles (Gen 50, EWS/NC-OBC 35, SC 30, ST/PwD 25) → merit = JIPMAT percentile 70% + Class X 15% + Class XII 15%. IIM Bodh Gaya: sectional percentile floor → merit on JIPMAT score; offers in rolling lists after an Expression of Interest.",
+    "verbal_weight": "34 of 100 questions are Verbal Ability & RC",
+    "official_url": "https://exams.nta.nic.in/jipmat/",
+    "colleges": [
+      {
+        "name": "IIM Jammu",
+        "city": "Jammu",
+        "state": "Jammu & Kashmir",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr integrated programme in management)"
+        ],
+        "seats": "~140",
+        "fees": "Not published here (offer acceptance ₹50,000, adjusted against Sem 1 fee)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "IIM Jammu publishes shortlisted application numbers, not a marks cutoff"
+        },
+        "selection": "Merit: JIPMAT percentile 70 + Class X 15 + Class XII 15.",
+        "placements": "",
+        "url": "https://iimj.ac.in/programs/ipm/ipm-admission-policy.php"
+      },
+      {
+        "name": "IIM Jammu – eBBA",
+        "city": "Jammu (online)",
+        "state": "Jammu & Kashmir",
+        "type": "IIM",
+        "programmes": [
+          "eBBA (Hons) — 4-yr online BBA"
+        ],
+        "seats": "Not published",
+        "fees": "₹3.67 L per year (2026–30)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Minimum percentile: Gen 40, EWS/NC-OBC 35, SC/ST/PwD 25"
+        },
+        "selection": "Accepts JIPMAT, JEE Main, CUET (General Test), SAT (min 700) or IIM Jammu's own eBBA test. Merit: test percentile 70 + X 15 + XII 15.",
+        "placements": "",
+        "url": "https://iimj.ac.in/programs/ebba/ebba-admission-policy.php"
+      },
+      {
+        "name": "IIM Bodh Gaya",
+        "city": "Bodh Gaya",
+        "state": "Bihar",
+        "type": "IIM",
+        "programmes": [
+          "IPM (5-yr: BBA + MBA)"
+        ],
+        "seats": "~120 (+ supernumerary seats for women)",
+        "fees": "Not published here (offer acceptance amount ₹60,000–₹90,000 reported)",
+        "cutoff": {
+          "value": "First-list JIPMAT score (/400): Gen 333+, EWS 310+, OBC-NCL 295+, SC 215+, ST 145+",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Manabadi report of 2025 first list; no official 2026 cutoff published."
+        },
+        "selection": "Merit on JIPMAT score; Class X/XII for eligibility and tie-breaks. Rolling offer lists after EoI registration.",
+        "placements": "",
+        "url": "https://iimbg.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://exams.nta.nic.in/jipmat/",
+      "https://iimj.ac.in/programs/ipm/ipm-admission-policy.php",
+      "https://iimj.ac.in/programs/ebba/ebba-admission-policy.php",
+      "https://mdp.iimbg.ac.in/wp-content/uploads/2026/04/IPM-Admission-Policy.pdf",
+      "https://www.freepressjournal.in/education/jipmat-2026-result-declared-at-examsntanicinjipmat-over-11500-candidates-appeared",
+      "https://www.careers360.com/mba/articles/jipmat-2026-notification-delayed-registration-date-exam-dates-application-form-latest-update",
+      "https://www.careers360.com/mba/articles/jipmat-exam-pattern",
+      "https://www.manabadi.co.in/entrance-exams/jipmat-counselling-2026/"
+    ],
+    "notes": "Only two IIMs use JIPMAT. No interview — the test score (plus board marks at Jammu) decides everything, so a candidate must apply separately on each IIM's portal after the result.",
+    "confidence": "medium"
+  },
+  {
+    "id": "iimk-bms-at",
+    "name": "IIMK BMS AT",
+    "full_name": "IIM Kozhikode BMS Aptitude Test",
+    "conducted_by": "IIM Kozhikode",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "20 Feb – 25 Apr 2026",
+      "exam_date": "19 May 2026, 2:00–4:00 PM",
+      "result": "Shortlist late May / early Jun 2026; interviews 3rd week of Jun 2026; classes Aug 2026",
+      "fee": "₹4,250 (Gen); ₹2,125 (SC/ST/PwD) — reported by Cracku, not seen on IIMK site"
+    },
+    "cycle_2027": "Not announced yet (2026 applications opened 20 Feb)",
+    "eligibility": "Class XII (or diploma after Class X) from a recognised board, any stream; mark sheets by 1 Jun 2026 (provisional admission if XII completes by 31 Jul 2026).",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "Verbal Ability",
+          "questions": 50,
+          "time_min": 60,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative Ability",
+          "questions": 50,
+          "time_min": 60,
+          "notes": ""
+        }
+      ],
+      "marking": "+3 / −1 (as reported). Max 300.",
+      "sectional_timing": true,
+      "notes": "IIMK confirms two sections (Verbal, Quant), MCQ, computer-based; question counts, timing and marking are from coaching sources."
+    },
+    "selection_process": "Interview shortlist by Aggregate Index Score: test percentile 40% + Class XII 30% + Class X 30% → Personal Interview → final: test percentile 70% + PI 25% + gender diversity 5%.",
+    "verbal_weight": "50 of 100 questions are Verbal Ability",
+    "official_url": "https://iimk.ac.in/academic-programmes/BMS",
+    "colleges": [
+      {
+        "name": "IIM Kozhikode (Kochi campus)",
+        "city": "Kochi",
+        "state": "Kerala",
+        "type": "IIM",
+        "programmes": [
+          "BMS (Honours with Research) — 4-yr, with minors (Economics & Public Policy, AI/ML, Psychology, Finance, Liberal Studies)"
+        ],
+        "seats": "~120 (unofficial, MBA Universe)",
+        "fees": "₹7 L per year tuition + one-time ₹10,000 admission, ₹25,000 caution deposit; hostel/mess extra",
+        "cutoff": {
+          "value": "Interview-shortlist AIS cutoff (2025): Gen 86.975, EWS 70.267, NC-OBC 64.042, PwD 45.257, ST 36.798, SC 29.987",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "MBA Universe; 2026 cutoff not published"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://iimk.ac.in/academic-programmes/BMS"
+      }
+    ],
+    "sources": [
+      "https://iimk.ac.in/academic-programmes/BMS",
+      "https://iimk.ac.in/uploads/programsmenu/BMS%20admission%20policy_26-30_20260217101614.pdf",
+      "https://iimk.ac.in/academic-programmes/BMS/bms-key-dates",
+      "https://iimk.ac.in/academic-programmes/BMS/bms-fee-structure",
+      "https://cracku.in/iim-kozhikode-bms-exam-date-2026",
+      "https://www.mbauniverse.com/iimk-bmsat",
+      "https://www.mbauniverse.com/iimk-bmsat/results"
+    ],
+    "notes": "4-year programme (not a 5-year IPM). News reports say a JEE Main score of 80+ percentile (or SAT 1300+) can waive the aptitude test — not confirmed in IIMK's policy PDF, so check before relying on it.",
+    "confidence": "medium"
+  },
+  {
+    "id": "iimb-ug-test",
+    "name": "IIMB UG Admissions Test",
+    "full_name": "IIM Bangalore UG Admissions Test (BSc Hons)",
+    "conducted_by": "IIM Bangalore (Dorabji Tata School of Undergraduate Studies)",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "Economics"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "14 Oct – 20 Nov 2025",
+      "exam_date": "13 Dec 2025",
+      "result": "Interviews Jan 2026; offers by 28 Feb 2026 (~12,000 applied, 453 interviewed, 80 admitted)",
+      "fee": "₹3,000 (Gen/EWS/NC-OBC); ₹1,500 (SC/ST/PwD)"
+    },
+    "cycle_2027": "Announced: applications 17 Aug – 17 Oct 2026 (closed); test 15 Nov 2026 (tentative); interviews Jan 2027; offers 3rd week of Feb 2027",
+    "eligibility": "Class XII with Mathematics in XI and XII; at least 60% in Class X Mathematics; age ≤ 20 on 1 Aug of the admission year.",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 60,
+      "sections": [
+        {
+          "name": "English Comprehension",
+          "questions": 15,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative & Data Interpretation",
+          "questions": 30,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Logical Reasoning",
+          "questions": 15,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "MCQ; 1/3 of the question's marks deducted for a wrong answer (reported as +3 / −1)",
+      "sectional_timing": false,
+      "notes": "Per IIMB FAQ. Careers360 reports sectional times of 30/60/30 min and a possible change to 135 min for the 2027 intake — unconfirmed."
+    },
+    "selection_process": "Test score → interview shortlist → final composite: test 60% + personal interview 40% (IIMB FAQ). Careers360 reports a more detailed split that also uses Class X marks — unconfirmed.",
+    "verbal_weight": "15 of 60 questions are English Comprehension",
+    "official_url": "https://ug.iimb.ac.in/",
+    "colleges": [
+      {
+        "name": "IIM Bangalore – Dorabji Tata School of Undergraduate Studies",
+        "city": "Bengaluru (Jigani campus planned)",
+        "state": "Karnataka",
+        "type": "IIM",
+        "programmes": [
+          "BSc (Hons) Economics (minors: Data Science, Business Studies) — 4-yr",
+          "BSc (Hons) Data Science (minors: Economics, Business Studies) — 4-yr"
+        ],
+        "seats": "80 (40 per major)",
+        "fees": "₹8.5 L/yr for Yrs 1–2 (tuition, hostel, exams); mess extra (~₹8–10k/month); need-based scholarships",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "IIMB has not published cutoffs; first batch began 2026"
+        },
+        "selection": "",
+        "placements": "No graduates yet (first batch 2026–30)",
+        "url": "https://ug.iimb.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://ug.iimb.ac.in/faq/",
+      "https://ug.iimb.ac.in/ug-admissions-2027/",
+      "https://www.iimb.ac.in/iimb-ug-programme-admissions-open-2025",
+      "https://www.iimb.ac.in/iimb-ug-applications-opens-2027",
+      "https://www.businesstoday.in/education/story/iim-bangalore-welcomes-first-batch-for-its-ug-course-in-data-sciences-economics-553128-2026-09-03",
+      "https://university.careers360.com/articles/iim-bangalore-ug-admission-2026-27"
+    ],
+    "notes": "Different calendar from other IIM UG tests: the test is held in Nov–Dec of Class XII, not in May. The 2027-intake test is on 15 Nov 2026 and applications have already closed.",
+    "confidence": "high"
+  },
+  {
+    "id": "iimb-dbe-test",
+    "name": "IIMB DBE Entrance Test",
+    "full_name": "IIM Bangalore BBA (Digital Business & Entrepreneurship) Entrance Test",
+    "conducted_by": "IIM Bangalore",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Computer-based, centre (programme itself is online)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "13 Apr – 30 Jun 2026",
+      "exam_date": "26 Jul 2026",
+      "result": "1st–2nd week of Aug 2026",
+      "fee": "₹3,000 (Gen/NC-OBC/EWS); ₹1,500 (SC/ST/PwD)"
+    },
+    "cycle_2027": "Not announced yet (2026 applications opened mid-April)",
+    "eligibility": "Indian nationals; Maths compulsory in Class X; 60% in Class XII (55% SC/ST/PwD).",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "IIMB's admission document does not give the test's sections, length or marking."
+    },
+    "selection_process": "Shortlist on the IIMB test, CUET (UG) General Test (Section III) or JEE Main score against category cutoffs. Previous-cycle Gen cutoffs: 50% (IIMB test), 70th percentile (CUET), 50th percentile (JEE Main).",
+    "verbal_weight": "Not published",
+    "official_url": "https://dbe.iimb.ac.in/admissions",
+    "colleges": [
+      {
+        "name": "IIM Bangalore – BBA DBE (online)",
+        "city": "Online",
+        "state": "Karnataka",
+        "type": "IIM",
+        "programmes": [
+          "BBA in Digital Business & Entrepreneurship — 3-yr online (up to 6 yrs), exams at centres"
+        ],
+        "seats": "Not published (one consultancy says 1,000)",
+        "fees": "₹4.5 L total (₹1.25 L + ₹1.5 L + ₹1.75 L); 50% waiver for SC/ST/PwD",
+        "cutoff": {
+          "value": "Previous-cycle Gen shortlist cutoff: 50% (IIMB test) / 70th percentile (CUET) / 50th percentile (JEE Main); NC-OBC & EWS 45%/65/45; SC/ST/PwD 40%/60/40",
+          "year": 2025,
+          "status": "official",
+          "note": "Stated in IIMB's 2026–29 admission process document"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://dbe.iimb.ac.in/admission-process-document-2026-29/"
+      }
+    ],
+    "sources": [
+      "https://dbe.iimb.ac.in/admission-process-document-2026-29/"
+    ],
+    "notes": "Online degree, not a residential campus programme. CUET or JEE Main scores can be used instead of IIMB's own test.",
+    "confidence": "medium"
+  },
+  {
+    "id": "jee-iim-ug",
+    "name": "JEE Main / Advanced (IIM UG route)",
+    "full_name": "Joint Entrance Examination — used by some IIM undergraduate programmes",
+    "conducted_by": "NTA (JEE Main) / IITs (JEE Advanced); used by IIM Mumbai, IIM Lucknow, IIM Sambalpur",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "Per NTA / JEE Advanced schedule; separate application to each IIM",
+      "exam_date": "JEE Main: Jan & Apr 2026 sessions; JEE Advanced: May 2026",
+      "result": "IIM interviews/offers in summer 2026",
+      "fee": "IIM Lucknow application ₹1,000 (Gen/OBC/EWS), ₹500 (SC/ST/PwD/women); others not published"
+    },
+    "cycle_2027": "Not announced yet for the IIM programmes",
+    "eligibility": "IIM Lucknow: PCM in XII (2025 or 2026), JEE Advanced qualified, age ≤ 21 on 31 Jul 2026. IIM Mumbai: Class XII + valid JEE Main score. IIM Sambalpur: JEE Main 2026, age < 20.",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [
+        {
+          "name": "Physics, Chemistry, Mathematics",
+          "questions": null,
+          "time_min": null,
+          "notes": "See NTA / JEE Advanced bulletins"
+        }
+      ],
+      "marking": "See NTA / JEE Advanced bulletins",
+      "sectional_timing": false,
+      "notes": "Engineering entrance test with no English/verbal section. Listed here only because three IIMs use it."
+    },
+    "selection_process": "IIM Mumbai: JEE Main 70% + PI 30%. IIM Sambalpur (BS DS & AI): JEE Main shortlist → PI. IIM Lucknow: JEE Advanced qualification; weightages not published.",
+    "verbal_weight": "None",
+    "official_url": "https://jeemain.nta.nic.in/",
+    "colleges": [
+      {
+        "name": "IIM Mumbai",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "IIM",
+        "programmes": [
+          "BS in Digital Science & Business Management — 4-yr"
+        ],
+        "seats": "70 (first batch)",
+        "fees": "Not published (coaching estimates ~₹6–7 L/yr)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "JEE Main Paper 1 70% + PI 30%.",
+        "placements": "",
+        "url": "https://iimmumbai.ac.in/"
+      },
+      {
+        "name": "IIM Lucknow",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "type": "IIM",
+        "programmes": [
+          "BS in Artificial Intelligence & Business Analytics — 4-yr residential"
+        ],
+        "seats": "Not published",
+        "fees": "Not published in admission policy (one guide says ₹5 L/yr)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "No JEE Advanced rank cutoff published"
+        },
+        "selection": "Must have qualified JEE Advanced; PCM in XII.",
+        "placements": "",
+        "url": "https://www.iiml.ac.in/sites/default/files/2026-05/Admission%20Policy%202026-27.pdf"
+      },
+      {
+        "name": "IIM Sambalpur",
+        "city": "Sambalpur",
+        "state": "Odisha",
+        "type": "IIM",
+        "programmes": [
+          "BS in Data Science & Artificial Intelligence — 4-yr"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Not published"
+        },
+        "selection": "JEE Main 2026 shortlist → PI. (Its BS Management & Public Policy uses IPMAT Indore.)",
+        "placements": "",
+        "url": "https://iimsambalpur.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://www.businesstoday.in/education/story/no-mba-wait-needed-iim-bangalore-mumbai-lucknow-open-doors-to-class-12-students-via-jee-544359-2026-07-22",
+      "https://www.iiml.ac.in/sites/default/files/2026-05/Admission%20Policy%202026-27.pdf",
+      "https://cracku.in/iim-mumbai-ug-selection-criteria-2026/",
+      "https://www.careerlauncher.com/blogs/after-12/iim-sambalpur-ug-admission-criteria-changed/"
+    ],
+    "notes": "These are tech/data-focused BS degrees from IIMs, open only to students who take JEE (in practice PCM students). Commerce/humanities students should look at IPMAT, JIPMAT, IIMK BMS AT or IIMB tests instead.",
+    "confidence": "low"
+  },
+  {
+    "id": "iim-udaipur-bba",
+    "name": "IIM Udaipur BBA (no entrance test)",
+    "full_name": "IIM Udaipur online BBA — admission on eligibility, no entrance test",
+    "conducted_by": "IIM Udaipur",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Online application; no test",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "4 Mar – 31 May 2026",
+      "exam_date": "No entrance test",
+      "result": "Programme started 6 Jul 2026",
+      "fee": "Not published"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII or equivalent from a recognised board, any stream (NIOS accepted).",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "No test",
+      "sectional_timing": false,
+      "notes": "Admission on eligibility and document verification."
+    },
+    "selection_process": "Eligibility check and document verification; no entrance test or interview reported.",
+    "verbal_weight": "None",
+    "official_url": "https://www.iimu.ac.in/",
+    "colleges": [
+      {
+        "name": "IIM Udaipur",
+        "city": "Online (Udaipur)",
+        "state": "Rajasthan",
+        "type": "IIM",
+        "programmes": [
+          "BBA — 4-yr online, Hindi-first, exits with Certificate/Diploma/BBA, BBA (Hons) after Yr 4"
+        ],
+        "seats": "Not published",
+        "fees": "From ₹50,000 in Yr 1 (tiered); a consultancy lists ₹50k / ₹1 L / ₹1.5 L / ₹2 L for Yrs 1–4; scholarships available",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "No cutoff — no test"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.iimu.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://www.prnewswire.com/in/news-releases/iim-udaipur-launches-bba-program-with-bilingual-learning-support-applications-open-for-2026-cohort-302703640.html",
+      "https://www.goalisb.com/post/iim-undergraduate-programmes"
+    ],
+    "notes": "Digital-first, Hindi-first online degree (exams at in-person centres). Very different from residential IPM programmes.",
+    "confidence": "medium"
+  }
+]

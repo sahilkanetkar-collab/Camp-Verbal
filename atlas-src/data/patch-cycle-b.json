@@ -1,0 +1,851 @@
+[
+ {
+  "id": "cuet-ug",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 notice came 3 Jan 2026 (apply 3–30 Jan, exam 11–31 May); expect a similar timeline in 2027",
+    "url": "https://cuet.nta.nic.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "No minimum % or age limit for CUET itself; each university sets its own rules (e.g. DU BMS/BBA FIA need Maths in XII)"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "mah-bba-bms-cet",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 registration ran 14 Jan–25 Mar; exam 28–30 Apr. Expect registration from mid-Jan 2027, exam late Apr",
+    "url": "https://cetcell.mahacet.org/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Any stream incl. PCM/PCB; APAAR ID needed to register"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "hsnc-h-cet",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 applications opened 2 May; H-CET sittings May–Jun. Expect a similar May–Jun 2027 window",
+    "url": "https://www.hrcollege.edu/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII passed"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "ggsipu-cet-bba",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 applications 2 Feb–11 Apr; exam 9 May. Expect applications from Feb 2027, exam May",
+    "url": "https://www.ipu.ac.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": 50,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "English must be a Class XII subject"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "aima-ugat",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 applications until 6 Jun; paper-based test 14 Jun. Expect a May–Jun 2027 test",
+    "url": "https://www.aima.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "Set by each participating institute (usually Class XII passed/appearing)"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "xavier-entrance-test-mumbai",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 applications opened early Feb; XET 2–8 May. Expect applications Feb 2027, test early May",
+    "url": "https://xaviers.edu/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII cleared in first attempt; non-Maharashtra boards need a University of Mumbai eligibility certificate"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "sxc-kolkata-bms-test",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 applications opened after board results, closed 3 Jun; test 6 Jun. Expect May–Jun 2027",
+    "url": "https://admissions.sxccal.edu/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": true,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII with English and Maths/Business Maths/Statistics (full marks ≥100); passed within last 5 years"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "pdeu-sls-aptitude-test",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 policy out 21 Jan; apply till 21 May; test 28 May. Expect a similar May 2027 test",
+    "url": "https://pdeu.ac.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "English must be a Class XII subject"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "gujarat-ug-commerce-merit",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "No exam. 2026 GCAS registration 7–28 May; expect May 2027 after Class XII results",
+    "url": "https://gcas.gujgov.edu.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII passed; merit on board marks"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "sjcc-smat",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": "2026-12-06",
+    "rounds": [
+     {
+      "label": "BBA Phase I",
+      "apply_close": "2026-12-06",
+      "exam_date": null
+     },
+     {
+      "label": "BBA Phase II",
+      "apply_open": "2026-12-21",
+      "apply_close": null,
+      "exam_date": null
+     }
+    ],
+    "exam_dates": [],
+    "expected": "Phase I e-admit cards 7 Dec 2026; test date on admit card. Phase II opens 21 Dec 2026",
+    "url": "https://www.sjcc.edu.in/bba_admission_procedure.php",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII from a recognised board; basic Maths/Statistics expected"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "sju-bengaluru-entrance",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "No 2027-28 notice on SJU site as of Oct 2026; past dates not published",
+    "url": "https://www.sju.edu.in/admissions/admissions.php",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "Karnataka PUC or equivalent; English + one other language"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "mount-carmel-mcmat",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026-27 prospectus came out Dec 2025; expect 2027-28 applications around Dec 2026",
+    "url": "https://mccblr.edu.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "No % stated in 2026-27 prospectus. B.Com needs Business Studies/Accountancy (Business Analytics: Maths/Stats/CS); BBA Strategic Finance needs Commerce. Women's college"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "bumat",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "2026 applications till 5 Jun; test 13 Jun. Expect a June 2027 test",
+    "url": "https://www.bvuniversity.edu.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": 45,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "5% relaxation for reserved categories; no age limit"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "ashoka-aptitude-assessment",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": "2026-10-07",
+    "apply_close": "2027-05-23",
+    "rounds": [
+     {
+      "label": "Round 1",
+      "apply_close": "2026-11-23",
+      "exam_date": "2026-12-06"
+     },
+     {
+      "label": "Round 2",
+      "apply_close": "2027-01-20",
+      "exam_date": "2027-01-31"
+     },
+     {
+      "label": "Round 3",
+      "apply_close": "2027-04-14",
+      "exam_date": "2027-04-25"
+     },
+     {
+      "label": "Round 4",
+      "apply_close": "2027-05-23",
+      "exam_date": "2027-05-30"
+     }
+    ],
+    "exam_dates": [
+     "2026-12-06",
+     "2027-01-31",
+     "2027-04-25",
+     "2027-05-30"
+    ],
+    "expected": "Decisions: R1 3 Feb, R2 14 Apr, R3 7 Jun, R4 30 Jun 2027. Apply in only one round",
+    "url": "https://www.ashoka.edu.in/admissions/undergraduate-students/",
+    "source_status": "reported"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "No official minimum %; Careers360 reports 50%"
+   },
+   "papers": [
+    {
+     "label": "Official sample paper (2022)",
+     "url": "https://ashoka.edu.in/wp-content/uploads/2021/11/Ashoka-Aptitude-Assessement-Sample-Paper-2022.pdf"
+    }
+   ]
+  }
+ },
+ {
+  "id": "flame-feat",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": "2027-05-02",
+    "rounds": [
+     {
+      "label": "Early Decision",
+      "apply_close": "2026-11-29",
+      "exam_date": "2026-12-04"
+     },
+     {
+      "label": "Cycle I",
+      "apply_close": "2027-01-03",
+      "exam_date": "2027-01-08"
+     },
+     {
+      "label": "Cycle II",
+      "apply_close": "2027-02-01",
+      "exam_date": "2027-02-05"
+     },
+     {
+      "label": "Cycle III",
+      "apply_close": "2027-03-28",
+      "exam_date": "2027-04-02"
+     },
+     {
+      "label": "Cycle IV",
+      "apply_close": "2027-05-02",
+      "exam_date": "2027-05-04"
+     }
+    ],
+    "exam_dates": [
+     "2026-12-04",
+     "2026-12-05",
+     "2026-12-06",
+     "2027-01-08",
+     "2027-01-09",
+     "2027-01-10",
+     "2027-02-05",
+     "2027-02-06",
+     "2027-02-07",
+     "2027-04-02",
+     "2027-04-03",
+     "2027-04-04",
+     "2027-05-04",
+     "2027-05-05",
+     "2027-05-06",
+     "2027-05-07"
+    ],
+    "expected": "FEAT windows: ED 4–6 Dec, I 8–10 Jan, II 5–7 Feb, III 2–4 Apr, IV 4–7 May (early slot 16–18 Apr). Round exam_date = first day of window",
+    "url": "https://www.flame.edu.in/admissions/ug/admission-schedule",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": 20,
+    "age_note": "under 21 on 31 Jul 2027",
+    "note": "No minimum %. Maths in XII needed for CS, Applied Maths, Data Science & Economics majors"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "krea-kat",
+  "set": {
+   "next_cycle": {
+    "status": "upcoming",
+    "apply_open": "2026-08-28",
+    "apply_close": null,
+    "rounds": [
+     {
+      "label": "Round 1",
+      "apply_close": "2026-10-25",
+      "exam_date": "2026-11-02"
+     },
+     {
+      "label": "Round 2",
+      "apply_open": "2026-12-06",
+      "exam_date": "2026-12-14"
+     },
+     {
+      "label": "Round 3",
+      "exam_date": "2027-01-25"
+     },
+     {
+      "label": "Round 4",
+      "exam_date": "2027-04-26"
+     },
+     {
+      "label": "Round 5",
+      "exam_date": "2027-06-07"
+     }
+    ],
+    "exam_dates": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-12-14",
+     "2026-12-15",
+     "2027-01-25",
+     "2027-01-27",
+     "2027-04-26",
+     "2027-04-27",
+     "2027-06-07"
+    ],
+    "expected": "Round 1 closed 25 Oct 2026; Round 2 opens 6 Dec 2026 (KAT 14–15 Dec)",
+    "url": "https://krea.edu.in/sias/admissions/ba-bsc/honours/admissions-schedule/",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII any stream; Integrated MBA has stricter rules"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "jgu-jsat",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "Non-law UG 2027 notice awaited as of Oct 2026. 2026 cycle was rolling ~Oct 2025–Jul 2026 with on-demand JSAT slots",
+    "url": "https://jgu.edu.in/jsbf/jindal-scholastic-aptitude-test",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Any stream; Maths preferred for BBA Business Analytics/Financial Markets; some schools cite ~45–50% minimum"
+   },
+   "papers": [
+    {
+     "label": "Official sample: Verbal Ability",
+     "url": "https://s3.ap-south-1.amazonaws.com/completejusticepodcast/Verbal+Ability_English.pdf"
+    },
+    {
+     "label": "Official sample: Logical Reasoning",
+     "url": "https://s3.ap-south-1.amazonaws.com/completejusticepodcast/Logical+Reasoning.pdf"
+    },
+    {
+     "label": "Official sample: Quantitative Skills",
+     "url": "https://s3.ap-south-1.amazonaws.com/completejusticepodcast/Maths_Quantitative.pdf"
+    }
+   ]
+  }
+ },
+ {
+  "id": "snusat",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": "2026-10-16",
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "Registrations open; SNUSAT 2027 dates not yet published (2026 phases tested Jan–Jun)",
+    "url": "https://ugapplications.snu.edu.in",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": 65,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "English required; Maths required for BSc Economics / Economics & Finance. IB 28/45; A-levels 65%"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "azim-premji-net",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": "2026-11-20",
+    "rounds": [
+     {
+      "label": "Round 1",
+      "apply_close": "2026-11-20",
+      "exam_date": "2026-12-20"
+     }
+    ],
+    "exam_dates": [
+     "2026-12-20"
+    ],
+    "expected": "Round 1 interviews 4–8 Jan 2027; Round 2 dates not out; external-score (CUET/SAT) window ~May–Jun 2027",
+    "url": "https://azimpremjiuniversity.edu.in/undergraduate/application-process-and-timelines",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": 21,
+    "age_note": "not above 21 on 31 Jul 2027 (exceptions possible)",
+    "note": "Any recognised board incl. NIOS/IB/A-levels"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "ahmedabad-university-ug",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "Free pre-registration for 2027 open. 2026 cycle: Early rounds from 31 Oct 2025, Regular rounds to 31 Jul 2026",
+    "url": "https://ahduni.edu.in/admission/undergraduate-admission/admission-calendar/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": 50,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "About 50% (45% SC/ST); English as a Class XII subject; programme-specific minimums"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "atlas-bat",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": "2026-09-11",
+    "apply_close": "2026-11-18",
+    "rounds": [
+     {
+      "label": "Cycle 1",
+      "apply_close": "2026-11-18",
+      "exam_date": null
+     }
+    ],
+    "exam_dates": [
+     "2026-11-21"
+    ],
+    "expected": "BAT taken any time 11 Sep–18 Nov 2026; Collaborative Accelerator 21 Nov; results 2 Dec; accept by 15 Dec 2026",
+    "url": "https://www.atlasuniversity.edu.in/schools/isme/admissions/undergraduate/admissions-bba-bachelor-of-business-administration",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": 50,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "IB 24 points; A-levels 2 subjects"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "woxsen-wat",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": null,
+    "rounds": [
+     {
+      "label": "Scholar's Round",
+      "apply_close": "2026-12-01",
+      "exam_date": null
+     }
+    ],
+    "exam_dates": [],
+    "expected": "Scholar's Round deadline 1 Dec 2026 (extra 10% scholarship); regular applications reported to run to ~May 2027; WAT rolling",
+    "url": "https://woxsen.edu.in/academics/programs/bba/eligibility",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": 55,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "BA page metadata says 60% — confirm; 25% seats for Telangana domicile"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "sai-university-saiu-cat",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "No 2027 dates published; SAIU CAT is on-demand after applying",
+    "url": "https://apply.saiuniversity.edu.in/school-of-arts-and-sciences",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Class XII passed/appearing, any board"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "mahindra-university-bba",
+  "set": {
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "No 2027 dates published; no own test (admission on Class XII marks/interview)",
+    "url": "https://www.mahindrauniversity.edu.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": 80,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Maths mandatory for BBA Applied Economics & Finance"
+   },
+   "papers": []
+  }
+ },
+ {
+  "id": "sat-digital-india",
+  "set": {
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": "2027-05-21",
+    "rounds": [
+     {
+      "label": "Nov 2026",
+      "apply_close": "2026-10-23",
+      "exam_date": "2026-11-07"
+     },
+     {
+      "label": "Dec 2026",
+      "apply_close": "2026-11-20",
+      "exam_date": "2026-12-05"
+     },
+     {
+      "label": "Mar 2027",
+      "apply_close": "2027-02-19",
+      "exam_date": "2027-03-06"
+     },
+     {
+      "label": "May 2027",
+      "apply_close": "2027-04-16",
+      "exam_date": "2027-05-01"
+     },
+     {
+      "label": "Jun 2027",
+      "apply_close": "2027-05-21",
+      "exam_date": "2027-06-05"
+     }
+    ],
+    "exam_dates": [
+     "2026-11-07",
+     "2026-12-05",
+     "2027-03-06",
+     "2027-05-01",
+     "2027-06-05"
+    ],
+    "expected": "Registration deadline = apply_close of each date",
+    "url": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "No formal eligibility; usually Class XI–XII students"
+   },
+   "papers": [
+    {
+     "label": "Official full-length practice tests (Bluebook)",
+     "url": "https://satsuite.collegeboard.org/practice/practice-tests"
+    }
+   ]
+  }
+ }
+]

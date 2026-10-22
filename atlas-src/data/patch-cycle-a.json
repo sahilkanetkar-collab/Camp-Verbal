@@ -1,0 +1,517 @@
+[
+  {
+    "id": "ipmat-indore",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Applications usually open early Feb and close mid-Mar; exam early May (2026: 2 Feb – 17 Mar, exam 4 May)",
+        "url": "https://iimidr.ac.in/programmes/academic-programmes/five-year-integrated-programme-in-management-ipm/ipm-admissions-details/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": 20,
+        "age_note": "2026 rule: born on or after 1 Aug 2006 (1 Aug 2001 for SC/ST/PwD); expect a one-year shift for 2027",
+        "note": "IIM Indore's 2026 admission procedure sets no minimum % in X or XII for its own IPM. Other institutes using the score (e.g. IIM Shillong 70%, Nirma 60%) add their own % rules."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "ipmat-rohtak",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Applications usually open early Feb and close early Apr; exam mid-May (2026: 6 Feb – 6 Apr, exam 10 May)",
+        "url": "https://www.iimrohtak.ac.in/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": 60,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": 20,
+        "age_note": "Age ≤ 20 as on 30 Jun of admission year (25 for SC/ST/PwD), as reported",
+        "note": "55% for SC/ST/PwD. Rules reported by news/coaching sites; sources disagree, so check IIM Rohtak's notice."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "jipmat",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "NTA notice usually mid-April; applications till mid-May; exam early June (2026: 16 Apr – 13 May, exam 7 Jun)",
+        "url": "https://exams.nta.nic.in/jipmat/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": 60,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No upper age limit",
+        "note": "55% for SC/ST/PwD. Class XII passed in last two years or appearing."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "iimk-bms-at",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Applications usually open late Feb and close late Apr; test mid/late May (2026: 20 Feb – 25 Apr, test 19 May)",
+        "url": "https://iimk.ac.in/academic-programmes/BMS",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "Class XII or diploma after Class X from a recognised board. X and XII marks count in shortlisting, but no minimum % is set."
+      },
+      "papers": [
+        {
+          "label": "IIMK BMS AT question paper (22 Jun 2025, Shift 2)",
+          "url": "https://iimk.ac.in/uploads/programsmenu/IIMK%20BMS%20APTITUDE%20TEST%2022nd%20June%202025%20Shift%202_20260303122946.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "iimb-ug-test",
+    "set": {
+      "next_cycle": {
+        "status": "closed",
+        "apply_open": "2026-08-17",
+        "apply_close": "2026-10-17",
+        "exam_dates": [
+          "2026-11-15"
+        ],
+        "expected": "Test date tentative. Interviews 2nd–3rd week of Jan 2027; offers 3rd week of Feb 2027",
+        "url": "https://ug.iimb.ac.in/ug-admissions-2027/",
+        "source_status": "official"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": 60,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": true,
+        "max_age": 20,
+        "age_note": "Not more than 20 years on 1 Aug 2027 (born on or after 1 Aug 2007)",
+        "note": "Mathematics required in Class XI and XII; ≥60% overall in Class X; pass in Class XII."
+      },
+      "papers": [
+        {
+          "label": "Official sample questions (Admissions 2027)",
+          "url": "https://ug.iimb.ac.in/wp-content/uploads/2026/09/Sample-Questions-Admissions-2027.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "iimb-dbe-test",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Applications usually open mid-April and close end-June; test late July (2026: 13 Apr – 30 Jun, test 26 Jul)",
+        "url": "https://dbe.iimb.ac.in/admissions",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": null,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "55% in XII for SC/ST/PwD. Indian nationals only. IIMB's pages differ on whether Maths in Class X is compulsory."
+      },
+      "papers": [
+        {
+          "label": "DBE Entrance Test question paper (10 Aug 2024)",
+          "url": "https://dbe.iimb.ac.in/wp-content/uploads/2026/03/DBE-Entrance-Test-2024-10th-Aug-2024-QP-PDF.pdf"
+        },
+        {
+          "label": "DBE Entrance Test question paper (17 Aug 2024)",
+          "url": "https://dbe.iimb.ac.in/wp-content/uploads/2026/03/DBE-Entrance-Test-2024-17th-Aug-2024-QP-PDF.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jee-iim-ug",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "JEE Main sessions usually Jan and Apr, JEE Advanced May; each IIM opens its own application after JEE results (around May–Jun)",
+        "url": "https://jeemain.nta.nic.in/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": null,
+        "streams": [
+          "Science"
+        ],
+        "maths_required": true,
+        "max_age": 21,
+        "age_note": "Varies: IIM Lucknow ≤ 21 on 31 Jul of admission year; IIM Sambalpur under 20",
+        "note": "PCM in XII needed in practice. IIM Lucknow needs JEE Advanced; IIM Mumbai and IIM Sambalpur use JEE Main."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "iim-udaipur-bba",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "2026 applications ran 4 Mar – 31 May; no entrance test",
+        "url": "https://www.iimu.ac.in/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "Class XII or equivalent from a recognised board (NIOS accepted)."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "nmims-npat",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Registration usually opens late Jan; tests in slots from Feb to early Jun (2026: opened 28 Jan)",
+        "url": "https://npat.nmims.edu/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 50,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": null,
+        "max_age": 25,
+        "age_note": "Age ≤ 25",
+        "note": "50% in XII for most programmes (60% reported for BBA International Business and BSc Economics Mumbai). Maths/Stats in XII needed for BBA, BCom, BSc Finance, BSc Economics and some other programmes."
+      },
+      "papers": [
+        {
+          "label": "Official NPAT sample paper",
+          "url": "https://npat.nmims.edu/doc/NMIMS-Sample-Paper-Web-Copy-26122023.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "symbiosis-set",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Registration usually opens mid-Dec and closes mid-Apr; two test dates in early May (2026: 12 Dec 2025 – 15 Apr, tests 2 and 10 May)",
+        "url": "https://www.set-test.org/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 50,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "45% for SC/ST. Some programmes add subject rules (e.g. Maths for BSc Applied Statistics & Data Science)."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "christ-university-et",
+    "set": {
+      "next_cycle": {
+        "status": "open",
+        "apply_open": "2026-10-15",
+        "apply_close": null,
+        "rounds": [
+          {
+            "label": "Selection Process I",
+            "apply_close": "2026-11-25",
+            "exam_date": "2026-12-05"
+          }
+        ],
+        "exam_dates": [
+          "2026-12-05"
+        ],
+        "expected": "Selection Process I shown; later sessions not yet listed. Skill Assessment/Micro Presentation/PI 11–13 Dec 2026; final list 21 Dec 2026",
+        "url": "https://christuniversity.in/admission/ugpg-selection-process-dates-2027",
+        "source_status": "official"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No upper age limit",
+        "note": "Class XII passed/appearing from a recognised board. Some programmes add subject rules."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "nirma-ug-management",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Integrated BBA-MBA applications usually Feb–May (needs IPMAT Indore score); BCom (Hons) opened mid-Jan in 2026",
+        "url": "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "Integrated BBA-MBA: 60% in XII + IPMAT score (Gujarat seats: 90% in XII from a Gujarat school). BCom (Hons): 60% with English + one of Accountancy/Business/Economics/Stats/Maths."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "mit-wpu-cet",
+    "set": {
+      "next_cycle": {
+        "status": "open",
+        "apply_open": null,
+        "apply_close": "2026-12-04",
+        "exam_dates": [],
+        "expected": "Test date shown on the student dashboard after registration; later rounds usually follow in spring",
+        "url": "https://mitwpu.edu.in/mit-wpu-cet-2027",
+        "source_status": "official"
+      },
+      "elig": {
+        "min_12_pct": 50,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "BBA: 50% in XII (45% Maharashtra reserved) with English, or 60% in a 3-yr diploma."
+      },
+      "papers": [
+        {
+          "label": "Official CET General UG sample paper",
+          "url": "https://mitwpu.edu.in/uploads/images/MIT-WPU_CET_General_UG_Sample_Paper.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jain-jet",
+    "set": {
+      "next_cycle": {
+        "status": "open",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "2027 UG application portal is live (open from about mid-Oct 2026 per reports); JET dates not announced. 2026 BBA test was 9–10 Apr",
+        "url": "https://applyug.jainuniversity.ac.in/juug-2027/",
+        "source_status": "reported"
+      },
+      "elig": {
+        "min_12_pct": null,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "Class XII (Science/Commerce/Arts) from a recognised board; minimum aggregate set by the university."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "alliance-ausat",
+    "set": {
+      "next_cycle": {
+        "status": "open",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Careers360 reports AUSAT 2027 registration has started; no dates found",
+        "url": "https://www.alliance.edu.in/",
+        "source_status": "reported"
+      },
+      "elig": {
+        "min_12_pct": 50,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit",
+        "note": "40% for SC/ST."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "amity-bba",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Past cycle dates not published",
+        "url": "https://www.amity.edu/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "55% for sponsored seats."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "lpunest",
+    "set": {
+      "next_cycle": {
+        "status": "open",
+        "apply_open": "2026-09-29",
+        "apply_close": "2027-01-15",
+        "rounds": [
+          {
+            "label": "Phase 1",
+            "apply_close": "2027-01-15",
+            "exam_date": null
+          }
+        ],
+        "exam_dates": [],
+        "expected": "Dates reported for the BTech schedule; other programmes usually follow the same phases. Phase 1 test window 10 Jan – 5 Feb 2027; result 8 Feb 2027; later phases till about Apr",
+        "url": "https://www.lpu.in/nest/",
+        "source_status": "reported"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": null,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "BBA: 60% in XII plus a valid LPUNEST, JEE Main or CUET score. LPU's BBA page lists Physics, Maths, English — subject rule unclear."
+      },
+      "papers": []
+    }
+  },
+  {
+    "id": "bennett-ug",
+    "set": {
+      "next_cycle": {
+        "status": "not_announced",
+        "apply_open": null,
+        "apply_close": null,
+        "exam_dates": [],
+        "expected": "Merit-based admission; past cycle dates not published",
+        "url": "https://www.bennett.edu.in/",
+        "source_status": "estimated"
+      },
+      "elig": {
+        "min_12_pct": 60,
+        "min_10_pct": null,
+        "streams": [
+          "Any"
+        ],
+        "maths_required": false,
+        "max_age": null,
+        "age_note": "No age limit stated",
+        "note": "English required in XII."
+      },
+      "papers": []
+    }
+  }
+]

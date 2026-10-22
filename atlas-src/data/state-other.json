@@ -1,0 +1,1566 @@
+[
+  {
+    "id": "mah-bba-bms-cet",
+    "name": "MAH BBA/BMS CET",
+    "full_name": "MAH-BHMCT/BCA/BBA/BMS/BBM Common Entrance Test",
+    "conducted_by": "State Common Entrance Test Cell, Maharashtra",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BMS"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "State",
+    "cycle_2026": {
+      "application_window": "14 Jan – 25 Mar 2026 (extended twice from 4 Mar)",
+      "exam_date": "28–30 Apr 2026",
+      "result": "11 Jun 2026; CAP Rounds I–IV Aug–Sep 2026",
+      "fee": "₹1,300 (Open / outside-Maharashtra); ₹1,000 (Maharashtra reserved categories, PwD, orphan, transgender)"
+    },
+    "cycle_2027": "Not announced yet (2026 registration opened mid-Jan; expect a similar window)",
+    "eligibility": "Class XII passed or appearing, any stream (CET Cell confirmed PCM/PCB students are eligible in 2026); APAAR ID needed to register",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "English Language",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning (Verbal & Arithmetic)",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "General Knowledge & Awareness",
+          "questions": 20,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Computer Basics",
+          "questions": 20,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 / 0; no negative marking",
+      "sectional_timing": false,
+      "notes": "2026 was the first combined CET (BHMCT/BCA/BBA/BMS/BBM), 120 min. Older 90-min versions had English 40 Q. Some coaching sites still print the old pattern, so check the 2026 brochure."
+    },
+    "selection_process": "CET score → state merit list → online CAP (4 rounds: option form, allotment) → institute-level round. Seats split into Maharashtra-State (MAH CET) and All-India (CUET-UG or MAH CET) quotas.",
+    "verbal_weight": "30 of 100 questions are English Language (plus verbal reasoning inside the 30 reasoning questions)",
+    "official_url": "https://cetcell.mahacet.org/",
+    "colleges": [
+      {
+        "name": "SVKM's Narsee Monjee College of Commerce & Economics",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "60 sanctioned (48 CAP + 12 institute-level)",
+        "fees": "₹75,800/yr total (CAP Open, 2026-27, ad-hoc)",
+        "cutoff": {
+          "value": "CAP Round I 2026, GOPENS (General, State) last merit score 99.86; All-India seat last score 180.15 (CUET-based)",
+          "year": 2026,
+          "status": "official",
+          "note": "Source: NM College CAP Round I merit list PDF"
+        },
+        "selection": "Via MAH CET CAP; All-India seats via CUET",
+        "placements": "",
+        "url": "https://nmcollege.in/"
+      },
+      {
+        "name": "Jai Hind College",
+        "city": "Mumbai (Churchgate)",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round IV 2025, State Open closing score 99.47; All-India (CUET) 127.69",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: Vision Educare blog"
+        },
+        "selection": "Via MAH CET CAP",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Mithibai College",
+        "city": "Mumbai (Vile Parle)",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round IV 2025, State Open closing score 98.63; All-India (CUET) 133.35",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: Vision Educare blog; 50% seats Gujarati linguistic minority"
+        },
+        "selection": "Via MAH CET CAP",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "SVKM's Usha Pravin Gandhi College",
+        "city": "Mumbai (Vile Parle)",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round IV 2025, State Open closing score 98.73; All-India (CUET) 119.21",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: Vision Educare blog"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "R.A. Podar College of Commerce & Economics",
+        "city": "Mumbai (Matunga)",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round IV 2025, State Open closing score 98.63",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: Vision Educare blog"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "K.P.B. Hinduja College of Commerce",
+        "city": "Mumbai (Charni Road)",
+        "state": "Maharashtra",
+        "type": "Govt-aided college",
+        "programmes": [
+          "BBA",
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round I 2026 (Maharashtra seats): BMS 96.31, BBA 95.62",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Source: Careers360 news report"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Bhavan's College (autonomous)",
+        "city": "Mumbai (Andheri)",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round II 2026 allotment list: lowest GOPENS/LOPENS merit score 87.20 (not an official cutoff)",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Read from Bhavan's CAP Round II list PDF"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://bhavans.ac.in/"
+      },
+      {
+        "name": "Wilson College",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "CAP Round IV 2025, State Open closing score 91.05",
+          "year": 2025,
+          "status": "unofficial",
+          "note": "Source: Vision Educare blog"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ],
+    "sources": [
+      "https://cetcell.mahacet.org/",
+      "https://bschool.careers360.com/articles/mah-bba-cet-2026",
+      "https://time4education.com/local/articlecms/page.php?id=9209",
+      "https://news.careers360.com/mah-cet-2026-registration-last-date-extended-to-march-25-bba-bca-bhmct-bbm-bms-cbt-exam-april-28-to-30-cetcell-mahacet-org-fees/amp",
+      "https://collegedunia.com/news/mah-bhmct-bca-bba-bms-bbm-cet-2026-result-out-at-cetcellmahacetorg-alertid-157533",
+      "https://nmcollege.in/images/Notice%20&%20Merit%20List%20(Round-1).pdf",
+      "https://nmcollege.in/docs/Notice- CAP Round-III (BMS).pdf",
+      "https://www.visioneducare.com/blog/top-10-bms-colleges-mumbai-2026",
+      "https://news.careers360.com/mht-cet-cap-2026-bba-bms-bbm-integrated-mba-round-1-allotment-out-confirm-admission-aug-12-bba2026-mahacet-org/amp",
+      "https://bhavans.ac.in/college/uploads/FY-BMS-CAP-2-Merit-List-for-AY-2026-27.pdf"
+    ],
+    "notes": "BMS in Mumbai is now an AICTE course admitted through MAH CET CAP at most colleges. Exceptions: St. Xavier's Mumbai (own XET), HR and KC College (HSNC University, own H-CET; MAH CET takers exempt). 2026: 71,067 registered, 62,300 appeared. CAP merit scores are not percentiles, so do not compare them across years without care.",
+    "confidence": "medium"
+  },
+  {
+    "id": "hsnc-h-cet",
+    "name": "HSNC H-CET (BBA/BMS/BCA)",
+    "full_name": "HSNC University Common Entrance Test for BBA/BMS/BCA",
+    "conducted_by": "HSNC University, Mumbai (HR College, KC College cluster)",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BMS"
+    ],
+    "mode": "Online, MCQ",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "From 2 May 2026 (hsncu.admissiondesk.org); H-CET via hsncu.epravesh.com",
+      "exam_date": "Multiple sittings: 5, 15, 25 May and 5, 15, 25 Jun 2026",
+      "result": "Merit lists from 19 May 2026 (HR College lists up to a 4th list)",
+      "fee": "Not published"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII passed",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "English Language",
+          "questions": 40,
+          "time_min": 0,
+          "notes": "40% weight"
+        },
+        {
+          "name": "Reasoning (Verbal & Arithmetic)",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Domain-specific knowledge",
+          "questions": 15,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Computer Basics",
+          "questions": 15,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 / 0; no negative marking",
+      "sectional_timing": false,
+      "notes": "Pattern from HSNC's published H-CET guidelines (2024 cycle); not re-confirmed for 2026."
+    },
+    "selection_process": "Merit = 75% HSC (Class XII) marks + 25% H-CET; no GD/PI (per H-CET guidelines). Students who took MAH CET for BBA/BMS are exempt from H-CET.",
+    "verbal_weight": "40 of 100 questions are English Language",
+    "official_url": "https://www.hrcollege.edu/",
+    "colleges": [
+      {
+        "name": "H.R. College of Commerce & Economics",
+        "city": "Mumbai (Churchgate)",
+        "state": "Maharashtra",
+        "type": "State univ",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "FYBMS 4th merit list 2026-27, General (Commerce): last HSC % on list 90.50",
+          "year": 2026,
+          "status": "official",
+          "note": "Source: HR College 4th merit list PDF (list shows HSC %)"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.hrcollege.edu/"
+      },
+      {
+        "name": "K.C. College (Kishinchand Chellaram)",
+        "city": "Mumbai (Churchgate)",
+        "state": "Maharashtra",
+        "type": "State univ",
+        "programmes": [
+          "BMS"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://kccollege.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://www.hrcollege.edu/wp-content/uploads/Admission-Circular-I-2026-2027.pdf",
+      "https://www.hrcollege.edu/wp-content/uploads/H-CET-Circular-and-Guidelines.pdf",
+      "https://www.hrcollege.edu/wp-content/uploads/HR_FYBMS-_4th-Merit-List-2026-27.pdf",
+      "https://kccollege.edu.in/wp-content/uploads/2026/05/CIRCULAR-I-ADMISSION-COMMENCEMENT-FOR-FIRST-YEAR-UNDERGRADUATE-DEGREE-2026-2027.pdf"
+    ],
+    "notes": "HR College BMS is NOT through MAH CET CAP; it uses HSNC University's own process. Circular names the BBA/BMS/BCA paper 'H-CET-2' in 2026; older guidelines called it H-CET-3.",
+    "confidence": "medium"
+  },
+  {
+    "id": "ggsipu-cet-bba",
+    "name": "IPU CET BBA",
+    "full_name": "GGSIPU Common Entrance Test – BBA & allied programmes (Code 125)",
+    "conducted_by": "Guru Gobind Singh Indraprastha University, Delhi",
+    "category": "State & other",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Centre-based MCQ (sources differ on CBT vs pen-paper)",
+    "level": "State",
+    "cycle_2026": {
+      "application_window": "2 Feb – 11 Apr 2026 (extended from 31 Mar)",
+      "exam_date": "9 May 2026, 10:00–12:30",
+      "result": "18 May 2026 (Common Merit List); online counselling Jun–Aug 2026",
+      "fee": "₹2,500 (includes ₹1,000 counselling charge)"
+    },
+    "cycle_2027": "Not announced yet (expected Feb 2027)",
+    "eligibility": "Class XII with ≥50% aggregate and English as a subject (core/elective/functional)",
+    "pattern": {
+      "duration_min": 150,
+      "total_questions": 100,
+      "sections": [
+        {
+          "name": "English Language & Comprehension",
+          "questions": 25,
+          "time_min": 0,
+          "notes": "25% weight"
+        },
+        {
+          "name": "Logical & Analytical Ability",
+          "questions": 25,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "General Awareness",
+          "questions": 25,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Aptitude for Management & Communication Skills",
+          "questions": 25,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+4 / −1 (400 marks)",
+      "sectional_timing": false,
+      "notes": "Sections are equal-weight (25% each) per coaching/college sites."
+    },
+    "selection_process": "CET rank → GGSIPU online counselling (choice filling, rounds, spot round). CUET-UG is used only as a second preference for seats left vacant after IPU CET counselling.",
+    "verbal_weight": "About 25 of 100 questions are English Language & Comprehension (plus communication-skills items)",
+    "official_url": "https://www.ipu.ac.in/",
+    "colleges": [
+      {
+        "name": "Maharaja Surajmal Institute",
+        "city": "New Delhi (Janakpuri)",
+        "state": "Delhi",
+        "type": "Affiliated private college",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "480 (all shifts, per Careers360 list)",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Maharaja Agrasen Institute of Management Studies",
+        "city": "New Delhi (Rohini)",
+        "state": "Delhi",
+        "type": "Affiliated private college",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "420 (all shifts)",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Jagannath International Management School, Kalkaji",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Affiliated private college",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "240",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Vivekananda Institute of Professional Studies",
+        "city": "New Delhi (Pitampura)",
+        "state": "Delhi",
+        "type": "Affiliated private college",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "360",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Institute of Information Technology & Management",
+        "city": "New Delhi (Janakpuri)",
+        "state": "Delhi",
+        "type": "Affiliated private college",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "360",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ],
+    "sources": [
+      "https://bschool.careers360.com/articles/ggsipu-cet-bba",
+      "https://bschool.careers360.com/articles/ipu-bba-admission-through-cuet",
+      "https://www.kccitm.edu.in/ipu-cet",
+      "https://www.careers360.com/mba/articles/ggsipu-bba-colleges"
+    ],
+    "notes": "Route check for 2026: IPU still runs its own CET for BBA; CUET is a fallback for vacant seats only. 40+ affiliated colleges offer BBA/BBA (B&I)/BBA (CAM). A part academic fee of ₹40,000 is paid to confirm an allotted seat. Official brochure not directly read; data from secondary sources.",
+    "confidence": "medium"
+  },
+  {
+    "id": "aima-ugat",
+    "name": "AIMA UGAT",
+    "full_name": "Under Graduate Aptitude Test",
+    "conducted_by": "All India Management Association (AIMA)",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "IPM"
+    ],
+    "mode": "Paper-based, centre",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "Until 6 Jun 2026",
+      "exam_date": "14 Jun 2026 (PBT)",
+      "result": "Not published (coaching sites: late Jun/Jul 2026)",
+      "fee": "₹850"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Set by each participating institute (typically Class XII passed/appearing)",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 120,
+      "sections": [
+        {
+          "name": "English Language",
+          "questions": 40,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Numerical & Data Analysis",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning & Intelligence",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "General Knowledge",
+          "questions": 30,
+          "time_min": 0,
+          "notes": "Bulletin lists 30; total of 4 sections given as 120 in bulletin"
+        }
+      ],
+      "marking": "+1 per question; negative marking applies (amount not stated in bulletin)",
+      "sectional_timing": false,
+      "notes": "BHM candidates take 2 extra sections (Service Aptitude, Scientific Aptitude), 3 hours. Section counts as printed in the AIMA 2026 prospectus add to 130, while the stated total is 120 — check the bulletin."
+    },
+    "selection_process": "UGAT score → each institute's own shortlisting/GD/PI/counselling",
+    "verbal_weight": "40 of about 120 questions are English Language",
+    "official_url": "https://apps.aima.in/UGAT2026/Prospectus2026.pdf",
+    "colleges": [
+      {
+        "name": "KIIT School of Management",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Alliance University",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Private univ",
+        "programmes": [
+          "BBA",
+          "BCom"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "GITAM (Deemed to be) University",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Unitedworld School of Business, Karnavati University",
+        "city": "Gandhinagar",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Jagannath Institute of Management Sciences / New Delhi Institute of Management",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Affiliated private college",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Also need IPU CET or CUET for GGSIPU seats",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "NICMAR University; ITM Skills University; Sharda University; Birla Global Univ; ASBM Univ; ISBR; ISME; and others",
+        "city": "Various",
+        "state": "Various",
+        "type": "Private univ",
+        "programmes": [
+          "BBA",
+          "BCom",
+          "IMBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "27 institutes listed in 2026 prospectus"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ],
+    "sources": [
+      "https://apps.aima.in/UGAT2026/Prospectus2026.pdf",
+      "https://www.collegedekho.com/exam/aima-ugat/exam-dates"
+    ],
+    "notes": "Low-stakes test mostly used by private universities. Ahmedabad University (Amrut Mody School) is listed as a participating institute in the 2026 prospectus. AIMA warns students to verify each institute's recognition themselves.",
+    "confidence": "medium"
+  },
+  {
+    "id": "xavier-entrance-test-mumbai",
+    "name": "XET (St. Xavier's Mumbai)",
+    "full_name": "Xavier's Entrance Test – St. Xavier's College (Autonomous), Mumbai",
+    "conducted_by": "St. Xavier's College, Mumbai",
+    "category": "State & other",
+    "programme_types": [
+      "BMS"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Opened first week of Feb 2026 (xaviers.edu)",
+      "exam_date": "2–3 May 2026 (outside Mumbai); 6–8 May 2026 (Mumbai)",
+      "result": "Merit lists in rounds from May 2026",
+      "fee": "Not published (coaching sites cite ₹3,000 for BMS/BMM)"
+    },
+    "cycle_2027": "Not announced yet (expected Feb 2027; coaching sites guess Jan–Feb 2027 application)",
+    "eligibility": "Class XII cleared in first attempt; non-Maharashtra boards need University of Mumbai eligibility certificate (per Careers360)",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 0,
+      "sections": [
+        {
+          "name": "English Language & Comprehension",
+          "questions": 0,
+          "time_min": 0,
+          "notes": "~15–20% weight"
+        },
+        {
+          "name": "Logical & Visual Reasoning",
+          "questions": 0,
+          "time_min": 0,
+          "notes": "~20–25%"
+        },
+        {
+          "name": "Mathematics & Data Interpretation",
+          "questions": 0,
+          "time_min": 0,
+          "notes": "~30% (Class X level)"
+        },
+        {
+          "name": "General Knowledge & Current Affairs",
+          "questions": 0,
+          "time_min": 0,
+          "notes": "~30%"
+        }
+      ],
+      "marking": "+1; no negative marking",
+      "sectional_timing": false,
+      "notes": "100 marks per Careers360. Weightages differ between coaching sites; question count not published."
+    },
+    "selection_process": "XET score 60% + Class XII 40% → round-wise merit lists (per Careers360)",
+    "verbal_weight": "About 15–20% of the paper is English",
+    "official_url": "https://xaviers.edu/",
+    "colleges": [
+      {
+        "name": "St. Xavier's College (Autonomous)",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Autonomous college",
+        "programmes": [
+          "B.Com in Management Studies (BMS)"
+        ],
+        "seats": "120 (Gen 42, Christian minority 50, management 18, PwD 6, special 4)",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Round 1 2026, General: 82 (Maharashtra HSC) / 87.52 (other boards) composite score",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Source: Careers360"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://xaviers.edu/"
+      }
+    ],
+    "sources": [
+      "https://xaviers.edu/files/Xavier_Entrance_Test_2026.pdf",
+      "https://www.careers360.com/mba/articles/st-xaviers-bms-entrance-test",
+      "https://manoeuvreedu.com/index.php/exam-information/stxaviers-xet"
+    ],
+    "notes": "Xavier's runs its own test, not MAH CET CAP. XET also covers B.Sc Data Science & AI, B.Sc IT and BA Mass Communication. BA Economics at Xavier's is not on the XET list for 2026.",
+    "confidence": "medium"
+  },
+  {
+    "id": "sxc-kolkata-bms-test",
+    "name": "SXC Kolkata BMS Test",
+    "full_name": "St. Xavier's College (Autonomous) Kolkata – BMS Admission Test",
+    "conducted_by": "St. Xavier's College, Kolkata",
+    "category": "State & other",
+    "programme_types": [
+      "BMS"
+    ],
+    "mode": "Offline, on campus (pen-paper MCQ)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "After Class XII board results; closed 3 Jun 2026",
+      "exam_date": "6 Jun 2026, 9:00–10:00",
+      "result": "Selection lists Jun 2026",
+      "fee": "₹1,500 application fee"
+    },
+    "cycle_2027": "Not announced yet (opens after Class XII results, ~May 2027)",
+    "eligibility": "Class XII with English and Maths/Business Maths/Statistics (full marks ≥100), passed within last 5 years",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": 50,
+      "sections": [
+        {
+          "name": "English & General Knowledge",
+          "questions": 10,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Mathematics (Class XII)",
+          "questions": 20,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning",
+          "questions": 10,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Data Analysis & Interpretation",
+          "questions": 10,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+1 per correct (50 marks)",
+      "sectional_timing": false,
+      "notes": ""
+    },
+    "selection_process": "50% Class XII + 50% entrance test → selection list",
+    "verbal_weight": "About 10 of 50 marks are English + GK combined",
+    "official_url": "https://admissions.sxccal.edu/ug2026/infoBMS.htm",
+    "colleges": [
+      {
+        "name": "St. Xavier's College (Autonomous)",
+        "city": "Kolkata",
+        "state": "West Bengal",
+        "type": "Autonomous college",
+        "programmes": [
+          "BMS (Hons), evening, AICTE"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "B.Com (Morning/Evening) and B.Sc Economics are admitted on Class XII merit only — no test (B.Com form fee ₹1,200)",
+        "placements": "",
+        "url": "https://admissions.sxccal.edu/ug2026/"
+      }
+    ],
+    "sources": [
+      "https://admissions.sxccal.edu/ug2026/infoBMS.htm",
+      "https://admissions.sxccal.edu/ug2026/infoBABSC.htm",
+      "https://admissions.sxccal.edu/ug2026/"
+    ],
+    "notes": "SXC Kolkata main campus does not offer BBA. Only BMS has a written test; B.Com and B.Sc Economics are board-marks merit.",
+    "confidence": "high"
+  },
+  {
+    "id": "pdeu-sls-aptitude-test",
+    "name": "PDEU SLS Aptitude Test",
+    "full_name": "PDEU School of Liberal Studies UG Aptitude Test (BBA/BCom/BA Hons)",
+    "conducted_by": "Pandit Deendayal Energy University, Gandhinagar",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Online",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Until 21 May 2026",
+      "exam_date": "28 May 2026; PI 30–31 May 2026",
+      "result": "Merit list 9 Jun 2026",
+      "fee": "₹1,500 (General); ₹2,500 (NRI)"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII with English as a subject",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": 60,
+      "sections": [
+        {
+          "name": "Verbal Ability, Quant, Logical Reasoning, General Knowledge (mixed)",
+          "questions": 60,
+          "time_min": 60,
+          "notes": "Split not published"
+        }
+      ],
+      "marking": "No negative marking",
+      "sectional_timing": false,
+      "notes": "IPMAT or SAT score can be submitted instead of the test."
+    },
+    "selection_process": "Aptitude test (or IPMAT/SAT) 60 + school performance 20 + PI with SOP 20 = 100",
+    "verbal_weight": "Verbal Ability is one of 4 areas in a 60-question test (split not published)",
+    "official_url": "https://pdeu.ac.in/pdeuadmission/assets/pdfs/Ba%20BBa%20Bcom%20admission%20policy.pdf",
+    "colleges": [
+      {
+        "name": "School of Liberal Studies, PDEU",
+        "city": "Gandhinagar",
+        "state": "Gujarat",
+        "type": "State univ",
+        "programmes": [
+          "BBA (Hons)",
+          "B.Com (Hons)",
+          "BA (Hons)"
+        ],
+        "seats": "BBA 400; B.Com 100; BA 100",
+        "fees": "₹1.5 L tuition per semester (General) + ₹5,000/sem exam fee",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://pdeu.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://pdeu.ac.in/pdeuadmission/assets/pdfs/Ba%20BBa%20Bcom%20admission%20policy.pdf"
+    ],
+    "notes": "Official 2026-27 policy dated 21 Jan 2026. PDEU is a Gujarat state private university.",
+    "confidence": "high"
+  },
+  {
+    "id": "gujarat-ug-commerce-merit",
+    "name": "Gujarat BBA/BCom (merit routes)",
+    "full_name": "Gujarat UG commerce & management admissions – GCAS portal and university merit (no common exam)",
+    "conducted_by": "Education Department, Govt of Gujarat (GCAS); private universities individually",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "IPM"
+    ],
+    "mode": "No exam – Class XII merit",
+    "level": "State",
+    "cycle_2026": {
+      "application_window": "GCAS UG: 7–28 May 2026",
+      "exam_date": "No exam",
+      "result": "GCAS merit rounds Jun 2026 (Round 1 confirmation 2–6 Jun); VSBC round Jul 2026",
+      "fee": "GCAS ₹300 (General/SEBC); ₹150 (SC/ST/EWS)"
+    },
+    "cycle_2027": "Not announced yet (expected May 2027 after Class XII results)",
+    "eligibility": "Class XII passed",
+    "pattern": {
+      "duration_min": 0,
+      "total_questions": 0,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "No entrance test. Merit on Class XII marks."
+    },
+    "selection_process": "Class XII % → GCAS merit lists for state/govt-aided university colleges. Private universities run their own merit-based admission.",
+    "verbal_weight": "None (no test)",
+    "official_url": "https://gcas.gujgov.edu.in/",
+    "colleges": [
+      {
+        "name": "Nirma University – Institute of Commerce",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "B.Com (Hons)"
+        ],
+        "seats": "180 (153 General + 27 NRI)",
+        "fees": "₹2.25 L/yr tuition (2026-27)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Class XII merit, min 60%; tie broken by English marks",
+        "placements": "",
+        "url": "https://commerce.nirmauni.ac.in/admission-aid/under-graduate/b-com-hons/"
+      },
+      {
+        "name": "Nirma University – Institute of Management (Integrated BBA-MBA)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "Integrated BBA-MBA (5-yr)"
+        ],
+        "seats": "240 (All India 156, Gujarat 48, NRI 36)",
+        "fees": "₹3.89 L/yr tuition in BBA phase (2026-27)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Gujarat quota: Class XII (≥90%) 70% + PI 30%, no test. All India quota: IPMAT 50% + PI 30% + Class XII 20%",
+        "placements": "",
+        "url": "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/"
+      },
+      {
+        "name": "GLS University",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": [
+          "BBA",
+          "B.Com",
+          "iMBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Merit list per institute; no entrance test mentioned (application ₹500 per programme group)",
+        "placements": "",
+        "url": "https://admission.glsuniversity.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://news.kollegeapply.com/news/gcas-2026-ug-registration-begins-today-apply-online-for-gujarat-ug-admissions",
+      "https://university.careers360.com/articles/gcas-merit-list-2026",
+      "https://commerce.nirmauni.ac.in/admission-aid/under-graduate/b-com-hons/",
+      "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/",
+      "https://admission.glsuniversity.ac.in/"
+    ],
+    "notes": "Gujarat has no state entrance test for BBA/BCom. ACPC does not handle BBA/BCom. PDEU (separate entry) is the main Gujarat exception with its own test. For Ahmedabad University see the liberal-arts group.",
+    "confidence": "medium"
+  },
+  {
+    "id": "sjcc-smat",
+    "name": "SJCC Entrance (SMAT/SCAT)",
+    "full_name": "St. Joseph's College of Commerce aptitude test (SMAT / SCAT-Eng)",
+    "conducted_by": "St. Joseph's College of Commerce (Autonomous), Bengaluru",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Offline, on campus",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Phase-wise; Phase II closed 31 Mar 2026",
+      "exam_date": "Phase II test 6 Apr 2026; subject interview 7 Apr; PI 9 Apr",
+      "result": "Not published",
+      "fee": "₹800 application (2027 BBA cycle)"
+    },
+    "cycle_2027": "Announced: BBA Phase I applications close 6 Dec 2026; e-admit card 7 Dec 2026; Phase II opens 21 Dec 2026",
+    "eligibility": "Class XII from a recognised board; basic Maths/Statistics expected",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": 60,
+      "sections": [
+        {
+          "name": "Communicative English & Grammar",
+          "questions": 15,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative Aptitude & Numerical Ability",
+          "questions": 15,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Logical Reasoning & Data Interpretation",
+          "questions": 15,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Aptitude for Business Management",
+          "questions": 15,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+1; no negative marking",
+      "sectional_timing": false,
+      "notes": "BBA pattern from SJCC's BBA admission page."
+    },
+    "selection_process": "Round 1 test → Round 2 GD + micro-presentation (or subject knowledge interview) → Round 3 PI with parent + documents. Some B.Com variants are Class XII merit-based.",
+    "verbal_weight": "15 of 60 questions are English",
+    "official_url": "https://www.sjcc.edu.in/bba_admission_procedure.php",
+    "colleges": [
+      {
+        "name": "St. Joseph's College of Commerce",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Autonomous college",
+        "programmes": [
+          "BBA",
+          "B.Com variants"
+        ],
+        "seats": "Not published",
+        "fees": "BBA yr 1 (2027-28): ₹2.10 L (Karnataka PU), ₹2.47 L (other boards/CBSE/ISC)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.sjcc.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://www.sjcc.edu.in/bba_admission_procedure.php",
+      "https://collegedunia.com/news/sjcc-begins-ug-admission-2026-phase-ii-alertid-144468"
+    ],
+    "notes": "SJCC is separate from St Joseph's University (SJU). Applications open very early (Nov–Dec of Class XII).",
+    "confidence": "medium"
+  },
+  {
+    "id": "sju-bengaluru-entrance",
+    "name": "St Joseph's University (Bengaluru) test",
+    "full_name": "St Joseph's University, Bengaluru – UG entrance test & interview",
+    "conducted_by": "St Joseph's University, Bengaluru",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Offline test + online interview",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not published",
+      "exam_date": "Not published",
+      "result": "Not published",
+      "fee": "Not published"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Karnataka PUC (2 years) or equivalent; English + one other language",
+    "pattern": {
+      "duration_min": 60,
+      "total_questions": 60,
+      "sections": [
+        {
+          "name": "Communicative English & Data Interpretation",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Quant, Logical Reasoning, Basic Accounting & Management",
+          "questions": 30,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+1; no negative marking",
+      "sectional_timing": false,
+      "notes": "Pattern is for BBA Strategic Finance (from SJU programme PDF; year not stated)."
+    },
+    "selection_process": "BBA: entrance test → online interview. B.Com: application + two interview rounds (no test mentioned).",
+    "verbal_weight": "English shares a 30-question section with Data Interpretation (of 60)",
+    "official_url": "https://www.sju.edu.in/",
+    "colleges": [
+      {
+        "name": "St Joseph's University",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "State univ",
+        "programmes": [
+          "BBA",
+          "B.Com"
+        ],
+        "seats": "Not published",
+        "fees": "B.Com main campus: ₹1.05 L/yr (Karnataka), ₹1.20 L/yr (non-Karnataka)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.sju.edu.in/school-of-business/department-of-commerce/bachelor-of-commerce"
+      }
+    ],
+    "sources": [
+      "https://sju.edu.in/uploads/userfiles/BBA%20SF.pdf",
+      "https://www.sju.edu.in/school-of-business/department-of-commerce/bachelor-of-commerce"
+    ],
+    "notes": "Dates for 2026 not found on official pages. SJU is a public-private state university (formerly St Joseph's College).",
+    "confidence": "low"
+  },
+  {
+    "id": "mount-carmel-mcmat",
+    "name": "Mount Carmel (MCMAT)",
+    "full_name": "Mount Carmel College Management Aptitude Test",
+    "conducted_by": "Mount Carmel College (Autonomous), Bengaluru",
+    "category": "State & other",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "Not published",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not published",
+      "exam_date": "Not published",
+      "result": "Not published",
+      "fee": "Not published (₹500–650 per aggregator sites)"
+    },
+    "cycle_2027": "Not announced yet (aggregator reports 2027 admissions open Oct 2026 — unconfirmed)",
+    "eligibility": "Class XII; B.Com needs Business Studies/Accountancy/Maths/Stats/CS",
+    "pattern": {
+      "duration_min": 0,
+      "total_questions": 0,
+      "sections": [],
+      "marking": "",
+      "sectional_timing": false,
+      "notes": "Pattern not published. Student reports: logical reasoning, maths, English."
+    },
+    "selection_process": "BBA: MCMAT + interview. B.Com: Class XII merit + interview (test only if below provisional merit, per student reports).",
+    "verbal_weight": "Not published",
+    "official_url": "https://mccblr.edu.in/",
+    "colleges": [
+      {
+        "name": "Mount Carmel College",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Autonomous college",
+        "programmes": [
+          "BBA",
+          "B.Com"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ],
+    "sources": [
+      "https://collegedunia.com/college/3047-mount-carmel-college-autonomous-bangalore/admission"
+    ],
+    "notes": "Only aggregator data found; official MCC admissions page not verified. Treat as low confidence. Women's college for UG.",
+    "confidence": "low"
+  },
+  {
+    "id": "bumat",
+    "name": "BUMAT",
+    "full_name": "Bharati Vidyapeeth University Management Aptitude Test (BBA)",
+    "conducted_by": "Bharati Vidyapeeth (Deemed to be University), Pune",
+    "category": "State & other",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Online",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Until 5 Jun 2026",
+      "exam_date": "13 Jun 2026",
+      "result": "20 Jun 2026; counselling 29–30 Jun 2026",
+      "fee": "Not published"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII with ≥45% (5% relaxation reserved categories); no age limit",
+    "pattern": {
+      "duration_min": 150,
+      "total_questions": 200,
+      "sections": [
+        {
+          "name": "Verbal Ability",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Numerical Aptitude",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning / Logical Ability",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Reading Comprehension",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "+1; no negative marking",
+      "sectional_timing": false,
+      "notes": "Section-wise split not published."
+    },
+    "selection_process": "Merit list on 200-mark test → counselling to BVU management institutes",
+    "verbal_weight": "2 of 4 sections are Verbal Ability and Reading Comprehension (split not published)",
+    "official_url": "https://www.bvuniversity.edu.in/",
+    "colleges": [
+      {
+        "name": "BVU institutes: IMED Pune, BVIMR New Delhi, BVIMED Navi Mumbai, IM Kolhapur, IMRDA Sangli, YMIM Karad, AKIMSS Solapur",
+        "city": "Various",
+        "state": "Maharashtra / Delhi",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ],
+    "sources": [
+      "https://bschool.careers360.com/articles/bvp-b-umat-2014",
+      "https://bschool.careers360.com/articles/bba-admission-2026-calendar"
+    ],
+    "notes": "Data from Careers360 only; official bulletin not read.",
+    "confidence": "low"
+  },
+  {
+    "id": "iimk-bms-at",
+    "name": "IIMK BMS AT",
+    "full_name": "IIM Kozhikode Bachelor of Management Studies Aptitude Test",
+    "conducted_by": "IIM Kozhikode",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "20 Feb – 15 Apr 2026",
+      "exam_date": "19 May 2026, 9:00–11:00",
+      "result": "Interviews first week of Jun 2026; classes Aug 2026",
+      "fee": "₹4,250 (Gen); ₹2,125 (SC/ST/PwD)"
+    },
+    "cycle_2027": "Not announced yet (expected Feb 2027)",
+    "eligibility": "Class XII (or diploma after Class X); originals by 1 Jun 2026",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 0,
+      "sections": [
+        {
+          "name": "Verbal Ability",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Quantitative Ability",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "JEE Main, SAT or ACT scores can replace the test."
+    },
+    "selection_process": "Aggregate Index Score (test + Class X + XII) → PI (~15 min, 7 cities) → final score (PI + test + academics); weights not published",
+    "verbal_weight": "Verbal Ability is one of 2 sections (count not published)",
+    "official_url": "https://www.iimk.ac.in/academic-programmes/BMS/bms-admission-overview",
+    "colleges": [
+      {
+        "name": "IIM Kozhikode",
+        "city": "Kozhikode",
+        "state": "Kerala",
+        "type": "IIM",
+        "programmes": [
+          "BMS (Hons with Research), 4-yr; exit after 3 yrs"
+        ],
+        "seats": "120",
+        "fees": "₹7 L/yr (₹28 L for 4 yrs) + hostel",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.iimk.ac.in/academic-programmes/BMS"
+      }
+    ],
+    "sources": [
+      "https://www.iimk.ac.in/academic-programmes/BMS/bms-admission-overview",
+      "https://time4education.com/local/articlecms/page.php?id=9192",
+      "https://www.imsindia.com/blog/bba/iim-kozhikode-bms-program/"
+    ],
+    "notes": "Discovery-sweep item. New in 2026 (first batch 2026-27). Probably belongs in the IIM group, so remove it if that group already covers it.",
+    "confidence": "medium"
+  },
+  {
+    "id": "iimb-ug-bsc",
+    "name": "IIMB UG Admission Test (BSc)",
+    "full_name": "IIM Bangalore Undergraduate Admission Test – BSc (Hons) Economics / Data Science",
+    "conducted_by": "IIM Bangalore",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "Economics"
+    ],
+    "mode": "Computer-based, centre",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "Inaugural batch (started 31 Aug 2026) admitted via Dec 2025 test; dates not officially confirmed",
+      "exam_date": "Not confirmed for inaugural batch",
+      "result": "",
+      "fee": "₹3,000 (Gen/EWS/OBC); ₹1,500 (SC/ST/PwD) per coaching site"
+    },
+    "cycle_2027": "Announced: applications 17 Aug – 15 Oct 2026; test 15 Nov 2026; PI 2nd–3rd week Jan 2027; offers ~3rd week Feb 2027",
+    "eligibility": "Class XII with Mathematics; ≥60% in Class X Maths",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 0,
+      "sections": [
+        {
+          "name": "Quantitative Aptitude",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "Logical Reasoning",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        },
+        {
+          "name": "English Language",
+          "questions": 0,
+          "time_min": 0,
+          "notes": ""
+        }
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Pattern from coaching site (Cracku); not official."
+    },
+    "selection_process": "Test shortlist → PI; final composite 60% test + 40% PI",
+    "verbal_weight": "English Language is one of 3 sections (count not published)",
+    "official_url": "https://ug.iimb.ac.in/",
+    "colleges": [
+      {
+        "name": "IIM Bangalore",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "IIM",
+        "programmes": [
+          "BSc (Hons) Economics (minors Data Science, Business)",
+          "BSc (Hons) Data Science"
+        ],
+        "seats": "80 (40 per major)",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ug.iimb.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://news.careers360.com/iim-bangalore-ug-admissions-2026-applications-begin-august-17-bsc-hons-in-economics-data-science-courses-eligibility-entrance-test",
+      "https://cracku.in/iim-bangalore-ug-registrations-count-2026",
+      "https://cracku.in/how-to-apply-for-iim-bangalore-ug-2026/",
+      "https://ug.iimb.ac.in/"
+    ],
+    "notes": "Discovery-sweep item. The test is on 15 Nov 2026, coming up soon. Media label the current cycle '2026-27' but the official site calls it 'UG Admissions 2027'. 2,622 registrations by 25 Aug 2026.",
+    "confidence": "medium"
+  },
+  {
+    "id": "iimb-bba-dbe",
+    "name": "IIMB BBA DBE Test",
+    "full_name": "IIM Bangalore BBA (Digital Business & Entrepreneurship) Entrance Test",
+    "conducted_by": "IIM Bangalore",
+    "category": "IIM & integrated management",
+    "programme_types": [
+      "BBA"
+    ],
+    "mode": "Online",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "13 Apr – 30 Jun 2026",
+      "exam_date": "26 Jul 2026",
+      "result": "Aug 2026",
+      "fee": "₹3,000 (Gen/OBC/EWS); ₹1,500 (SC/ST/PwD)"
+    },
+    "cycle_2027": "Not announced yet",
+    "eligibility": "Class XII ≥60% (55% SC/ST/PwD); Indian nationals",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 60,
+      "sections": [
+        {
+          "name": "Quant, DI, Verbal Ability, Reading Comprehension, Logical Reasoning, General Awareness (mixed)",
+          "questions": 60,
+          "time_min": 90,
+          "notes": "Split not published"
+        }
+      ],
+      "marking": "+1; no negative marking",
+      "sectional_timing": false,
+      "notes": "CUET-UG General Test (Section III) or JEE Main scores also accepted."
+    },
+    "selection_process": "Qualify on category/section cutoffs (test 50% Gen; or CUET General Test ≥70th percentile; or JEE Main ≥50th percentile) → pay fee",
+    "verbal_weight": "Verbal Ability and RC are 2 of 6 areas in a 60-question test (split not published)",
+    "official_url": "https://www.iimb.ac.in/",
+    "colleges": [
+      {
+        "name": "IIM Bangalore (online BBA DBE)",
+        "city": "Online",
+        "state": "Karnataka",
+        "type": "IIM",
+        "programmes": [
+          "BBA Digital Business & Entrepreneurship (online, 3-yr, multiple exits)"
+        ],
+        "seats": "Not published",
+        "fees": "₹1.25 L (yr 1), ₹1.5 L (yr 2), ₹1.75 L (yr 3)",
+        "cutoff": {
+          "value": "Qualifying cutoff: 50% in IIMB test (General)",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Source: Careers360"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ],
+    "sources": [
+      "https://bschool.careers360.com/articles/iim-bangalore-bba-dbe-exam",
+      "https://bschool.careers360.com/articles/bba-admission-2026-calendar"
+    ],
+    "notes": "Discovery-sweep item. Online degree programme, not campus-based. Data from Careers360; verify on iimb.ac.in.",
+    "confidence": "medium"
+  }
+]

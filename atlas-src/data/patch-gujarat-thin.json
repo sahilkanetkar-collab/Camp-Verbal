@@ -1,0 +1,789 @@
+[
+ {
+  "id": "gujarat-ug-commerce-merit",
+  "add_colleges": [
+   {
+    "name": "GLS University",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "Integrated BBA+MBA (5-yr, exit with BBA after 3 yrs)",
+     "BBA",
+     "B.Com"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "No entrance test or interview. Merit list on Class XII marks. iMBA: Class XII with English + one of Maths/Physics/Chemistry/Biology/Stats/Accountancy/Book-keeping (Commerce or Science), min 45% (40% SC/ST/SEBC/OBC), passed at first attempt. Non-Gujarat boards need a GLSU eligibility certificate.",
+    "placements": "",
+    "url": "https://glsuniversity.ac.in/imba.html"
+   },
+   {
+    "name": "Gujarat University – affiliated colleges (via GCAS)",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "State univ",
+    "programmes": [
+     "B.Com",
+     "BBA",
+     "BA Economics"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Apply on GCAS; state merit lists on Class XII marks with Gujarat reservation (SC 7%, ST 15%, SEBC 27%, EWS 10%).",
+    "placements": "",
+    "url": "https://gcas.gujgov.edu.in/"
+   },
+   {
+    "name": "H.L. College of Commerce (Gujarat University)",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "Govt college",
+    "programmes": [
+     "B.Com (Accountancy / Statistics / Computer options, English & Gujarati medium)"
+    ],
+    "seats": "Not published officially (Careers360 lists ~300–458 for the main B.Com English-medium option)",
+    "fees": "Low (grant-in-aid); ~₹4,000/yr listed by Careers360",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Class XII merit under Gujarat University rules (via GCAS). Commerce stream expected. No test.",
+    "placements": "",
+    "url": "https://www.hlcollege.edu/"
+   },
+   {
+    "name": "St. Xavier's College (Autonomous), Ahmedabad",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "Autonomous college",
+    "programmes": [
+     "BA (Economics, English, Psychology etc.)",
+     "B.Com"
+    ],
+    "seats": "Not published",
+    "fees": "Not published officially (aggregators show ~₹2–2.5 L total for BA/B.Com self-financed seats)",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Class XII merit; no entrance test. Four merit lists in Jun 2026 (1, 8, 15, 22 Jun per Careers360). No BBA offered. Affiliated to Gujarat University.",
+    "placements": "",
+    "url": "https://www.sxca.edu.in/"
+   },
+   {
+    "name": "M.S. University of Baroda – Faculty of Commerce / Faculty of Arts (Economics)",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "type": "State univ",
+    "programmes": [
+     "B.Com",
+     "BBA",
+     "BA Economics"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Through GCAS (2026: registration 7–28 May, Round 1 merit 1–6 Jun). Class XII merit; no university test reported.",
+    "placements": "",
+    "url": "https://www.msubaroda.ac.in/"
+   },
+   {
+    "name": "Sardar Patel University – affiliated colleges (incl. Anand/Vallabh Vidyanagar BBA colleges)",
+    "city": "Vallabh Vidyanagar / Anand",
+    "state": "Gujarat",
+    "type": "State univ",
+    "programmes": [
+     "BBA",
+     "B.Com"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Through GCAS merit rounds (SPU mop-up round notified on GCAS, Sep 2026).",
+    "placements": "",
+    "url": "https://gcas.gujgov.edu.in/"
+   },
+   {
+    "name": "SEMCOM (CVM University)",
+    "city": "Vallabh Vidyanagar",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BBA (Hons)",
+     "B.Com (Hons)"
+    ],
+    "seats": "BBA (Hons) 120 (Careers360)",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Class XII merit; no entrance test found. Careers360 still lists it under Sardar Patel University; CVM University's 2026-27 admissions page lists SEMCOM under its Faculty of Commerce, Management & Law — confirm with the college.",
+    "placements": "",
+    "url": "https://www.cvmu.edu.in/"
+   },
+   {
+    "name": "Parul University – Parul Institute of Commerce / Business Administration",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BBA",
+     "B.Com"
+    ],
+    "seats": "Not published",
+    "fees": "B.Com ~₹56,000/yr (Careers360)",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Mainly Class XII merit (Careers360); application ₹500. No own test confirmed.",
+    "placements": "",
+    "url": "https://paruluniversity.ac.in/"
+   },
+   {
+    "name": "Silver Oak University",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BBA",
+     "B.Com (Hons)"
+    ],
+    "seats": "Not published",
+    "fees": "BBA ₹55,000/yr; B.Com (Hons) ₹45,000/yr (Careers360)",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Listed as a GCAS participating private university. Careers360 mentions a university test + PI for some programmes — not confirmed for BBA/B.Com.",
+    "placements": "",
+    "url": "https://silveroakuni.ac.in/"
+   }
+  ],
+  "set": {
+   "sources": [
+    "https://gcas.gujgov.edu.in/",
+    "https://university.careers360.com/articles/gcas-merit-list-2026",
+    "https://news.kollegeapply.com/news/gcas-2026-ug-registration-begins-today-apply-online-for-gujarat-ug-admissions",
+    "https://commerce.nirmauni.ac.in/admission-aid/under-graduate/b-com-hons/",
+    "https://management.nirmauni.ac.in/admission-aid/undergraduate/bba-mba-five-year-integrated/",
+    "https://admission.glsuniversity.ac.in/",
+    "https://glsuniversity.ac.in/imba.html",
+    "https://university.careers360.com/articles/st-xaviers-ahmedabad-merit-list-2026",
+    "https://www.careers360.com/colleges/hl-college-of-commerce-ahmedabad/admission",
+    "https://uni-admission.aglasem.com/gujarat/msu-baroda/",
+    "https://www.careers360.com/colleges/semcom-anand/bba-hons-course",
+    "https://university.careers360.com/articles/parul-university-vadodara-admissions-2026-open",
+    "https://university.careers360.com/articles/silver-oak-university-admissions-open-2026"
+   ],
+   "notes": "Gujarat has no state entrance test for BBA/BCom/BA. GCAS (gcas.gujgov.edu.in) covers 15 state universities (Gujarat Univ, MSU Baroda, Sardar Patel Univ, Saurashtra, VNSGU etc.) and ~26 private universities (incl. Silver Oak, LJ, CHARUSAT). Big private universities (Nirma, GLS, Ahmedabad Univ) run their own merit process. Exceptions with own tests: PDEU (separate entry), Karnavati KUAT, Navrachana BBA-NUVET (separate entries). Nirma's All-India BBA-MBA seats need IPMAT. Not in scope / no UG route: IIM Ahmedabad, MICA (PG only), CEPT (design/architecture). Adani University and Indus University: no BBA admission route confirmed.",
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "GCAS UG registration usually opens in May after Class XII results (2026: 7–28 May); merit rounds through June. Private universities (Nirma, GLS) open from Jan–Feb.",
+    "url": "https://gcas.gujgov.edu.in/",
+    "source_status": "estimated"
+   },
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Varies by college; B.Com usually expects Commerce (some accept Science). GLS iMBA min 45%; Nirma B.Com 60%; Nirma Gujarat BBA-MBA quota 90%."
+   },
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "aima-ugat",
+  "add_colleges": [
+   {
+    "name": "Unitedworld School of Business, Karnavati University",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BBA (Hons) – Finance / Marketing / Entrepreneurship & Innovation"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "Karnavati accepts AIMA UGAT, IPMAT or its own KUAT for BBA, then PI (see KUAT entry).",
+    "placements": "",
+    "url": "https://karnavatiuniversity.edu.in/apply/"
+   }
+  ]
+ },
+ {
+  "id": "mount-carmel-mcmat",
+  "set": {
+   "full_name": "Mount Carmel College, Bengaluru – UG admission (application + personal interview)",
+   "mode": "Online application + personal interview (no entrance test in the 2026-27 prospectus)",
+   "cycle_2026": {
+    "application_window": "2026-27 UG applications online; dates announced on mccblr.edu.in",
+    "exam_date": "No written test listed in the 2026-27 prospectus; interviews after shortlisting",
+    "result": "Not published",
+    "fee": "Application ₹650 (UG, non-refundable)"
+   },
+   "eligibility": "II PUC / Class XII (CBSE/ISC) or equivalent. Most BBA: any stream; BBA Strategic Finance: Commerce only; BBA Business Analytics: Commerce, or Science with Maths/CS. Most B.Com: must have studied Business Studies and Accountancy (B.Com Business Analytics / Fintech: Commerce or Science with Maths/Stats/CS).",
+   "pattern": {
+    "duration_min": null,
+    "total_questions": null,
+    "sections": [],
+    "marking": "Not applicable",
+    "sectional_timing": false,
+    "notes": "The official 2026-27 prospectus lists a Personal Interview for BBA and does not mention MCMAT. Older aggregator pages describe an MCMAT test (reasoning, maths, English) — treat as outdated unless MCC announces it."
+   },
+   "selection_process": "Online application → shortlisting → Personal Interview. Programme fee is communicated after shortlisting. 50% of intake reserved for the Roman Catholic community.",
+   "verbal_weight": "None (no written test); English matters in the interview",
+   "official_url": "https://mccblr.edu.in/",
+   "colleges": [
+    {
+     "name": "Mount Carmel College (Autonomous)",
+     "city": "Bengaluru",
+     "state": "Karnataka",
+     "type": "Autonomous college",
+     "programmes": [
+      "BBA (incl. Strategic Finance, Business Analytics)",
+      "B.Com (incl. Business Analytics, Fintech & Digital Banking)"
+     ],
+     "seats": "Not published",
+     "fees": "Assigned after shortlisting (not published)",
+     "cutoff": {
+      "value": "Not published",
+      "year": 2026,
+      "status": "not_published",
+      "note": ""
+     },
+     "selection": "Women's college for UG.",
+     "placements": "",
+     "url": "https://mccblr.edu.in/wp-content/uploads/2025/12/Admission-Prospectus-2026-27.pdf"
+    }
+   ],
+   "sources": [
+    "https://mccblr.edu.in/wp-content/uploads/2025/12/Admission-Prospectus-2026-27.pdf",
+    "https://collegedunia.com/college/3047-mount-carmel-college-autonomous-bangalore/admission"
+   ],
+   "notes": "Name 'MCMAT' kept for search, but the official 2026-27 prospectus shows interview-based selection with no entrance test. Women-only at UG level.",
+   "elig": {
+    "min_12_pct": null,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "Subject rules vary by programme (see eligibility)"
+   },
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "sju-bengaluru-entrance",
+  "set": {
+   "mode": "Online application → on-campus entrance test (SJUET, some programmes) → interview",
+   "cycle_2026": {
+    "application_window": "2026-27 UG admissions now closed (B.Com closed 16 Jun 2026)",
+    "exam_date": "SJUET held on campus; dates notified on sju.edu.in (not captured)",
+    "result": "Rolling selection lists",
+    "fee": "Application ₹1,000 (+₹200 for programmes with an entrance test)"
+   },
+   "eligibility": "Karnataka II PUC or equivalent; must have studied two languages, one being English",
+   "selection_process": "BBA (main): shortlist → two interview rounds (official BBA page lists no test). Programmes with SJUET (e.g. BBA Strategic Finance): test → interview. B.Com: shortlist → interviews. Selected candidates pay full fee within 3 days. NRI/foreign applicants skip the test and have separate screening.",
+   "colleges": [
+    {
+     "name": "St Joseph's University",
+     "city": "Bengaluru",
+     "state": "Karnataka",
+     "type": "State univ",
+     "programmes": [
+      "BBA",
+      "BBA Strategic Finance",
+      "B.Com"
+     ],
+     "seats": "Not published",
+     "fees": "BBA ₹75,000 / ₹78,000 / ₹81,000 (Yr 1–3, Karnataka); ₹82,000 / ₹86,000 / ₹90,000 (non-Karnataka). B.Com ₹55,000 / ₹57,000 / ₹59,000 (Karnataka); ₹60,000 / ₹63,000 / ₹65,000 (non-Karnataka). + ₹2,000 admission fee (Yr 1)",
+     "cutoff": {
+      "value": "Not published",
+      "year": 2026,
+      "status": "not_published",
+      "note": ""
+     },
+     "selection": "",
+     "placements": "",
+     "url": "https://www.sju.edu.in/school-of-business/department-of-management/bachelor-of-business-administration.php"
+    }
+   ],
+   "sources": [
+    "https://sjub.sju.edu.in/",
+    "https://www.sju.edu.in/faq.php",
+    "https://www.sju.edu.in/school-of-business/department-of-management/bachelor-of-business-administration.php",
+    "https://www.sju.edu.in/school-of-business/department-of-commerce/bachelor-of-commerce",
+    "https://sju.edu.in/uploads/userfiles/BBA%20SF.pdf"
+   ],
+   "notes": "The test pattern shown (60 Qs, no negative) is for BBA Strategic Finance. Fees are the 2026-27 official table on sjub.sju.edu.in; earlier B.Com figure of ₹1.05 L/yr was for a different stream/campus and has been replaced. Different from St Joseph's College of Commerce (SJCC, separate entry).",
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "Applications usually open after Class XII board exams (spring); check sju.edu.in",
+    "url": "https://sjub.sju.edu.in/",
+    "source_status": "estimated"
+   },
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "alliance-ausat",
+  "set": {
+   "cycle_2026": {
+    "application_window": "Rolling; 2027-28 admissions open now (official BBA page)",
+    "exam_date": "Not published",
+    "result": "",
+    "fee": "Application ₹1,000 (US$50 foreign nationals)"
+   },
+   "cycle_2027": "Admissions for 2027-28 open (official BBA page); test dates not published",
+   "eligibility": "Class XII with 50% aggregate (5% relaxation SC/ST)",
+   "selection_process": "BBA (Hons): online application + ₹1,000 fee → AUMAT (Alliance Undergraduate Management Aptitude Test) or accepted score (CUET, IPMAT, AIMA UGAT, SAT) → personal interview → overall profile. AUSAT score bands decide tuition scholarships.",
+   "colleges": [
+    {
+     "name": "Alliance University",
+     "city": "Bengaluru",
+     "state": "Karnataka",
+     "type": "Private univ",
+     "programmes": [
+      "BBA (Hons) 4-yr",
+      "B.Com (Hons)",
+      "BA (Hons)",
+      "BSc (Hons)"
+     ],
+     "seats": "Not published",
+     "fees": "BBA (Hons): ₹12 L total (₹2.75 L + 3 × ₹3 L) + ₹25,000 registration",
+     "cutoff": {
+      "value": "Not published",
+      "year": 2026,
+      "status": "not_published",
+      "note": ""
+     },
+     "selection": "",
+     "placements": "",
+     "url": "https://www.alliance.edu.in/programmes/bba-honours/admission-process"
+    }
+   ],
+   "sources": [
+    "https://www.alliance.edu.in/programmes/bba-honours/admission-process",
+    "https://www.collegebatch.com/exams/ausat",
+    "https://www.careers360.com/exams/ausat"
+   ],
+   "notes": "Alliance's own BBA page now names the test AUMAT and uses AUSAT for scholarships; older sites call it AUAT/AUSAT. Section pattern is from third-party sites only.",
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "Rolling admissions for 2027-28",
+    "url": "https://www.alliance.edu.in/programmes/bba-honours/admission-process",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": 50,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "45% for SC/ST"
+   },
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "woxsen-wat",
+  "set": {
+   "pattern": {
+    "duration_min": 120,
+    "total_questions": 100,
+    "sections": [
+     {
+      "name": "Language Proficiency (vocabulary, grammar)",
+      "questions": null,
+      "time_min": null,
+      "notes": "50 marks"
+     },
+     {
+      "name": "Quantitative Skills",
+      "questions": null,
+      "time_min": null,
+      "notes": "50 marks"
+     },
+     {
+      "name": "Logical Reasoning",
+      "questions": null,
+      "time_min": null,
+      "notes": "50 marks"
+     },
+     {
+      "name": "General Knowledge",
+      "questions": null,
+      "time_min": null,
+      "notes": "50 marks"
+     }
+    ],
+    "marking": "Total 200 marks (50 per section); negative marking not stated",
+    "sectional_timing": false,
+    "notes": "Pattern from Woxsen's own blog post, written for MBA admissions; the UG version may differ. SAT can replace WAT."
+   },
+   "eligibility": "Class XII any stream from a recognised board, 55% aggregate; good English. Appearing students can apply. 25% seats reserved for Telangana domicile.",
+   "selection_process": "Online application → WAT or SAT → personal interview (+ psychometric test) → composite score → provisional offer (accept within 7 days with commitment fee).",
+   "verbal_weight": "About 1 of 4 sections (Language Proficiency, 50 of 200 marks) — per Woxsen blog",
+   "sources": [
+    "https://woxsen.edu.in/academics/programs/bba/eligibility",
+    "https://woxsen.edu.in/academics/programs/ba-hons/eligibility/",
+    "https://woxsen.edu.in/blog/?p=456",
+    "https://www.careers360.com/mba/articles/woxsen-wat-bba-admission"
+   ],
+   "notes": "Scholar's Round (deadline 1 Dec 2026) gives an extra 10% merit scholarship.",
+   "next_cycle": {
+    "status": "open",
+    "apply_open": null,
+    "apply_close": "2026-12-01",
+    "rounds": [
+     {
+      "label": "Scholar's Round",
+      "apply_close": "2026-12-01",
+      "exam_date": null
+     }
+    ],
+    "exam_dates": [],
+    "expected": "Regular rounds continue to ~May 2027; session starts Aug 2027",
+    "url": "https://woxsen.edu.in/academics/programs/bba/eligibility",
+    "source_status": "official"
+   },
+   "elig": {
+    "min_12_pct": 55,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": false,
+    "max_age": null,
+    "age_note": "",
+    "note": "25% seats Telangana domicile"
+   },
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "mahindra-university-bba",
+  "set": {
+   "colleges": [
+    {
+     "name": "Mahindra University — School of Management",
+     "city": "Hyderabad",
+     "state": "Telangana",
+     "type": "Private univ",
+     "programmes": [
+      "BBA (general)",
+      "BBA Applied Economics & Finance",
+      "BBA Computational Business Analytics",
+      "BBA Digital Technologies",
+      "BBA Entrepreneurship & Family Business",
+      "BBA Infrastructure Management"
+     ],
+     "seats": "120 (BBA Applied Economics & Finance, per Careers360)",
+     "fees": "₹5 L/yr tuition (₹6 L for Entrepreneurship & Family Business) — Careers360",
+     "cutoff": {
+      "value": "Minimum 80% in Class XII (eligibility, not a cutoff)",
+      "year": 2026,
+      "status": "unofficial",
+      "note": "Careers360"
+     },
+     "selection": "Residential; includes a 3-week international immersion.",
+     "placements": "",
+     "url": "https://www.mahindrauniversity.edu.in/schools/school-of-management/"
+    }
+   ],
+   "eligibility": "Class XII with 80% (or equivalent grade, incl. IB); SAT scorers also considered; Maths needed for BBA Applied Economics & Finance.",
+   "official_url": "https://www.mahindrauniversity.edu.in/schools/school-of-management/",
+   "sources": [
+    "https://www.mahindrauniversity.edu.in/schools/school-of-management/",
+    "https://news.careers360.com/mahindra-university-launches-new-bba-bsc-courses-opens-ug-admission-across-six-schools",
+    "https://university.careers360.com/articles/mahindra-university-admissions-2026-open",
+    "https://www.careers360.com/university/mahindra-university-hyderabad/bba-applied-economics-and-finance-course"
+   ],
+   "notes": "Programme list confirmed on the official School of Management page; eligibility and fees from Careers360. BBA programmes designed with Cornell SC Johnson College of Business.",
+   "elig": {
+    "min_12_pct": 80,
+    "min_10_pct": null,
+    "streams": [
+     "Any"
+    ],
+    "maths_required": null,
+    "max_age": null,
+    "age_note": "",
+    "note": "Maths required for Applied Economics & Finance"
+   },
+   "confidence": "medium"
+  }
+ },
+ {
+  "id": "amity-bba",
+  "set": {
+   "eligibility": "Class XII any stream; 60% aggregate (55% sponsored) — Careers360; check the campus page",
+   "selection_process": "Online application on amity.edu (common form for all campuses) → written test (English test reported) → GD/PI. No published weightage.",
+   "sources": [
+    "https://www.careers360.com/mba/articles/bba-at-amity-university"
+   ],
+   "notes": "Amity's own site blocks automated reading, so details come from Careers360 only. Noida fee ~₹2.19 L/yr (non-sponsored) and ~₹3.28 L/yr (sponsored). Amity JEE is for BTech; BBA uses the university's own process.",
+   "confidence": "low"
+  }
+ },
+ {
+  "id": "ashoka-aptitude-assessment",
+  "remove_sources_matching": "imsindia",
+  "set": {
+   "sources": [
+    "https://www.ashoka.edu.in/admissions/undergraduate-students/",
+    "https://ashoka.edu.in/wp-content/uploads/2021/11/Ashoka-Aptitude-Assessement-Sample-Paper-2022.pdf",
+    "https://www.ashoka.edu.in/wp-content/uploads/2025/05/General-Instructions-Guidelines-For-Ashoka-University_R3.pdf",
+    "https://www.collegebatch.com/exams/ashoka-aptitude-test-syllabus",
+    "https://www.questforsuccess.in/ashoka-aptitude-test-admission-process/",
+    "https://university.careers360.com/articles/ashoka-university-admission-2026",
+    "https://university.careers360.com/articles/ashoka-university-application-form-2027",
+    "https://matchtocollege.com/news-and-updates/ashoka-university-ug-admission-2027-round-1-application-guide",
+    "https://matchtocollege.com/news-and-updates/ashoka-university-ug-fee-structure-2027-28-released"
+   ]
+  }
+ },
+ {
+  "id": "krea-kat",
+  "remove_sources_matching": "imsindia",
+  "set": {
+   "cycle_2026": {
+    "application_window": "Rolling rounds Oct 2025–Jun 2026 (R1 deadline 4 Jan 2026; R4 deadline 12 Jun 2026)",
+    "exam_date": "R1 KAT slots: 21–25 Nov 2025, 20–23 Dec 2025, 12–18 Jan 2026; R4 KAT: 15 Jun 2026",
+    "result": "R1 decision 5 Feb 2026; R4 decision 26 Jun 2026",
+    "fee": "Not confirmed on official pages"
+   },
+   "cycle_2027": "Announced (official, BA/BSc): R1 portal opened 28 Aug 2026, apply by 25 Oct 2026, KAT 2–3 Nov, KIC 10–11 Nov, PI 16–20 Nov, decision 27 Nov 2026. R2 apply by 6 Dec 2026, KAT 14–15 Dec, decision 14 Jan 2027. R3 apply by 17 Jan 2027, KAT 25 & 27 Jan, decision 19 Feb. R4 apply by 18 Apr 2027, KAT 26–27 Apr, decision 21 May. R5 apply by 30 May 2027, KAT 7 Jun, decision 23 Jun 2027. Application fee reported ₹1,500 (KollegeApply).",
+   "pattern": {
+    "duration_min": 80,
+    "total_questions": null,
+    "sections": [
+     {
+      "name": "Problem-Solving",
+      "questions": null,
+      "time_min": null,
+      "notes": ""
+     },
+     {
+      "name": "Critical Thinking & Verbal Ability",
+      "questions": null,
+      "time_min": null,
+      "notes": ""
+     },
+     {
+      "name": "Numeric Reasoning",
+      "questions": null,
+      "time_min": null,
+      "notes": ""
+     },
+     {
+      "name": "Writing Skills",
+      "questions": null,
+      "time_min": null,
+      "notes": ""
+     }
+    ],
+    "marking": "Not published",
+    "sectional_timing": false,
+    "notes": "Official: 80-minute virtual test, four sections. Question counts and marking not published; a sample test is linked on Krea's selection-process page."
+   },
+   "sources": [
+    "https://krea.edu.in/sias/admissions/ba-bsc/honours/admissions-schedule/",
+    "https://krea.edu.in/sias/sias-selection-process/",
+    "https://krea.edu.in/ifmrgsb/?p=37515",
+    "https://news.kollegeapply.com/news/ifmr-gsb-and-sias-krea-university-2027-fee-structure-mba-ba-bsc-fees",
+    "https://collegedunia.com/news/ifmr-krea-university-integrated-mba-2026-admissions-open-alertid-139302"
+   ],
+   "notes": "Name varies across Krea pages (Krea Assessment Test / Krea Aptitude Test). As of 21 Oct 2026, Round 1 for 2027 is still open (deadline 25 Oct 2026); next is Round 2 (deadline 6 Dec 2026). The 2026 application fee could not be confirmed from an official or neutral source.",
+   "next_cycle": {
+    "status": "open",
+    "apply_open": "2026-08-28",
+    "apply_close": "2027-05-30",
+    "rounds": [
+     {
+      "label": "Round 1",
+      "apply_close": "2026-10-25",
+      "exam_date": "2026-11-02"
+     },
+     {
+      "label": "Round 2",
+      "apply_close": "2026-12-06",
+      "exam_date": "2026-12-14"
+     },
+     {
+      "label": "Round 3",
+      "apply_close": "2027-01-17",
+      "exam_date": "2027-01-25"
+     },
+     {
+      "label": "Round 4",
+      "apply_close": "2027-04-18",
+      "exam_date": "2027-04-26"
+     },
+     {
+      "label": "Round 5",
+      "apply_close": "2027-05-30",
+      "exam_date": "2027-06-07"
+     }
+    ],
+    "exam_dates": [
+     "2026-11-02",
+     "2026-11-03",
+     "2026-12-14",
+     "2026-12-15",
+     "2027-01-25",
+     "2027-01-27",
+     "2027-04-26",
+     "2027-04-27",
+     "2027-06-07"
+    ],
+    "expected": "",
+    "url": "https://krea.edu.in/sias/admissions/ba-bsc/honours/admissions-schedule/",
+    "source_status": "official"
+   }
+  }
+ },
+ {
+  "id": "iimk-bms-at",
+  "remove_sources_matching": "imsindia",
+  "set": {
+   "level": "University-specific",
+   "cycle_2026": {
+    "application_window": "20 Feb – 25 Apr 2026",
+    "exam_date": "19 May 2026 (admit cards by 6 May)",
+    "result": "Interviews 3rd week of Jun 2026; classes 1st week of Aug 2026",
+    "fee": "₹4,250 (Gen); ₹2,125 (SC/ST/PwD) — reported by Cracku, not seen on IIMK site"
+   },
+   "cycle_2027": "Not announced yet (2026 applications opened 20 Feb)",
+   "eligibility": "Class XII (or diploma) from a recognised board, any stream; mark sheets by 1 Jun 2026 (provisional admission if XII completes by 31 Jul 2026).",
+   "pattern": {
+    "duration_min": 120,
+    "total_questions": 100,
+    "sections": [
+     {
+      "name": "Verbal Ability",
+      "questions": 50,
+      "time_min": 60,
+      "notes": ""
+     },
+     {
+      "name": "Quantitative Ability",
+      "questions": 50,
+      "time_min": 60,
+      "notes": ""
+     }
+    ],
+    "marking": "+3 / −1 (as reported). Max 300.",
+    "sectional_timing": true,
+    "notes": "IIMK's admission policy confirms two sections (Verbal, Quantitative); question counts, timing and marking are from coaching sources (Cracku, MBA Universe)."
+   },
+   "selection_process": "Interview shortlist by Aggregate Index Score: test percentile 40% + Class XII 30% + Class X 30% → Personal Interview → final: test percentile 70% + PI 25% + gender diversity 5%.",
+   "verbal_weight": "50 of 100 questions are Verbal Ability (reported)",
+   "official_url": "https://iimk.ac.in/academic-programmes/BMS",
+   "colleges": [
+    {
+     "name": "IIM Kozhikode (Kochi campus)",
+     "city": "Kochi",
+     "state": "Kerala",
+     "type": "IIM",
+     "programmes": [
+      "BMS (Honours with Research) — 4-yr, with minors (Economics & Public Policy, AI/ML, Psychology, Finance, Liberal Studies)"
+     ],
+     "seats": "~120 (unofficial, MBA Universe)",
+     "fees": "₹7 L per year tuition + one-time ₹10,000 admission, ₹25,000 caution deposit; hostel/mess extra",
+     "cutoff": {
+      "value": "Interview-shortlist AIS cutoff (2025): Gen 86.975, EWS 70.267, NC-OBC 64.042, PwD 45.257, ST 36.798, SC 29.987",
+      "year": 2025,
+      "status": "unofficial",
+      "note": "MBA Universe; 2026 cutoff not published"
+     },
+     "selection": "",
+     "placements": "",
+     "url": "https://iimk.ac.in/academic-programmes/BMS"
+    }
+   ],
+   "sources": [
+    "https://iimk.ac.in/academic-programmes/BMS",
+    "https://iimk.ac.in/uploads/programsmenu/BMS%20admission%20policy_26-30_20260217101614.pdf",
+    "https://iimk.ac.in/academic-programmes/BMS/bms-key-dates",
+    "https://iimk.ac.in/academic-programmes/BMS/bms-fee-structure",
+    "https://cracku.in/iim-kozhikode-bms-exam-date-2026",
+    "https://www.mbauniverse.com/iimk-bmsat",
+    "https://www.mbauniverse.com/iimk-bmsat/results",
+    "https://time4education.com/local/articlecms/page.php?id=9192"
+   ],
+   "notes": "4-year programme (not a 5-yr IPM). The JEE Main / SAT / ACT test waiver mentioned by news sites is NOT in IIMK's 2026 admission policy PDF — verify before relying on it. Duplicate entry: this id also exists in state-other.json (older, less accurate) — keep only the iim.json version.",
+   "next_cycle": {
+    "status": "not_announced",
+    "apply_open": null,
+    "apply_close": null,
+    "exam_dates": [],
+    "expected": "Applications usually open late Feb; test mid/late May (2026: 20 Feb–25 Apr, test 19 May)",
+    "url": "https://iimk.ac.in/academic-programmes/BMS/bms-key-dates",
+    "source_status": "estimated"
+   },
+   "confidence": "medium"
+  }
+ }
+]

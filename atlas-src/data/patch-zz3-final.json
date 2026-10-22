@@ -1,0 +1,7 @@
+[
+ {"id":"aima-ugat","setp":{
+   "pattern.notes":"BHM candidates take 2 extra sections (Service Aptitude, Scientific Aptitude) in 3 hours. The 2026 prospectus lists 40 + 30 + 30 + 30 = 130 questions in 2 hours.",
+   "pattern.sections":[{"name":"English Language","questions":40,"time_min":null,"notes":""},{"name":"Numerical & Data Analysis","questions":30,"time_min":null,"notes":""},{"name":"Reasoning & Intelligence","questions":30,"time_min":null,"notes":""},{"name":"General Knowledge","questions":30,"time_min":null,"notes":""}]}},
+ {"id":"jipmat","setp":{
+   "elig.note":"The NTA bulletin sets no minimum %. The 60% rule (55% for SC/ST/PwD) is reported for IIM Bodh Gaya and IIM Jammu admissions; confirm on their sites."}}
+]

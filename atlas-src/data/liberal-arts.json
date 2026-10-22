@@ -1,0 +1,833 @@
+[
+  {
+    "id": "ashoka-aptitude-assessment",
+    "name": "Ashoka Aptitude Assessment",
+    "full_name": "Ashoka Aptitude Assessment (AAA, often called AAT) + On-the-Spot Essay",
+    "conducted_by": "Ashoka University",
+    "category": "Liberal arts",
+    "programme_types": ["Liberal Arts", "Economics", "Finance"],
+    "mode": "Online, remote-proctored (laptop/desktop); some rounds have used physical centres",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Opened 13 Oct 2025; 4 rounds: R1 by 26 Nov 2025, R2 by 21 Jan 2026, R3 by 22 Apr 2026, R4 by 31 May 2026",
+      "exam_date": "R1: 7 Dec 2025; R2: 1 Feb 2026; R3: 3 May 2026; R4: 7 Jun 2026",
+      "result": "R1: 28 Jan 2026; R2: 8 Apr 2026; R3: 10 Jun 2026; R4: 3 Jul 2026",
+      "fee": "Application fee: not published on the pages we could read"
+    },
+    "cycle_2027": "Announced: applications for the 2027 intake opened 7 Oct 2026. R1 apply by 23 Nov 2026, test 6 Dec 2026, decision 3 Feb 2027; R2 apply by 20 Jan 2027, test 31 Jan 2027, decision 14 Apr 2027; R3 apply by 14 Apr 2027, test 25 Apr 2027, decision 7 Jun 2027; R4 apply by 23 May 2027, test 30 May 2027, decision 30 Jun 2027 (dates via news reports of the official schedule)",
+    "eligibility": "Class XII passed/appearing from a recognised board. Ashoka does not publish a fixed minimum % officially; Careers360 reports 50%. Apply in only one round per cycle.",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 40,
+      "sections": [
+        {"name": "Problem Solving", "questions": 20, "time_min": null, "notes": "Numerical and spatial reasoning, DI/LR-heavy (based on the Cambridge Thinking Skills Assessment style)"},
+        {"name": "Critical Thinking", "questions": 20, "time_min": null, "notes": "Argument analysis: strengthen/weaken, assumption, main idea, short RC"},
+        {"name": "On-the-Spot Essay (OSE)", "questions": 1, "time_min": 30, "notes": "Pick 1 of 2 topics; minimum 250 words; typed, no copy-paste or Grammarly"}
+      ],
+      "marking": "+1 per correct; no negative marking",
+      "sectional_timing": false,
+      "notes": "MCQs from both sections come in mixed order. Mandatory for all applicants, even with SAT/ACT."
+    },
+    "selection_process": "Online application (Class X–XII marks, personal essays, activities, optional recommendation) → Aptitude Assessment + On-the-Spot Essay → interview for shortlisted students → decision (offer / waitlist / deferral / deny). Holistic review; no weightages published.",
+    "verbal_weight": "High: 20 of 40 MCQs are Critical Thinking (verbal reasoning/RC) plus a mandatory timed essay and written application essays",
+    "official_url": "https://www.ashoka.edu.in/admissions/undergraduate-students/",
+    "colleges": [
+      {
+        "name": "Ashoka University",
+        "city": "Sonipat",
+        "state": "Haryana",
+        "type": "Private univ",
+        "programmes": ["BA/BSc (Hons) 3-yr + optional 4th year — majors incl. Economics, Economics & Finance, PPE, Psychology, English, History, Politics, Sociology, CS, Maths etc."],
+        "seats": "Not published",
+        "fees": "2026-27: ₹10.74 L tuition + ₹2.11 L residence + ₹5,400 services = ₹12.90 L first year; 2027-28 reported as ₹13.55 L first year. Meals extra. Need-based aid available.",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Ashoka does not publish AAA cut-offs; selection is holistic."
+        },
+        "selection": "",
+        "placements": "NIRF 2026 data (2024-25): UG 3-yr — 61 placed, median ₹8.75 L, avg ₹11.6 L, highest ₹35 L",
+        "url": "https://www.ashoka.edu.in/admissions/undergraduate-students/"
+      }
+    ],
+    "sources": [
+      "https://www.ashoka.edu.in/admissions/undergraduate-students/",
+      "https://ashoka.edu.in/wp-content/uploads/2021/11/Ashoka-Aptitude-Assessement-Sample-Paper-2022.pdf",
+      "https://www.ashoka.edu.in/wp-content/uploads/2025/05/General-Instructions-Guidelines-For-Ashoka-University_R3.pdf",
+      "https://university.careers360.com/articles/ashoka-university-admission-2026",
+      "https://university.careers360.com/articles/ashoka-university-application-form-2027",
+      "https://matchtocollege.com/news-and-updates/ashoka-university-ug-admission-2027-round-1-application-guide",
+      "https://matchtocollege.com/news-and-updates/ashoka-university-ug-fee-structure-2027-28-released",
+      "https://www.imsindia.com/?p=14634"
+    ],
+    "notes": "SAT (DI code 7343, superscore accepted) and ACT are optional add-ons — they do NOT replace the Aptitude Assessment. One round per cycle only. Ashoka's own site renders dates via script, so 2027 round dates here come from news reports of the official schedule — verify on apply.ashoka.edu.in.",
+    "confidence": "medium"
+  },
+  {
+    "id": "flame-feat",
+    "name": "FLAME FEAT",
+    "full_name": "FLAME Entrance Aptitude Test",
+    "conducted_by": "FLAME University",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "Economics", "Finance", "Liberal Arts"],
+    "mode": "Online, remote-proctored",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "5 cycles: Early Decision by 30 Nov 2025; Cycle I by 4 Jan 2026; II by 1 Feb 2026; III by 29 Mar 2026; IV by 3 May 2026",
+      "exam_date": "ED: 28 Nov–2 Dec 2025; I: 2–6 Jan 2026; II: 31 Jan–4 Feb 2026; III: 28 Mar–1 Apr 2026; IV: 2–6 May 2026 (early slot 20–23 Apr)",
+      "result": "ED: 6 Jan 2026; I: 5 Feb; II: 9 Mar; III: 28 Apr; IV: 4 Jun 2026",
+      "fee": "₹2,000 application fee"
+    },
+    "cycle_2027": "Announced (official): Early Decision apply by 29 Nov 2026, FEAT 4–6 Dec 2026, PI 11–13 Dec, result 12 Jan 2027; Cycle I by 3 Jan 2027 (FEAT 8–10 Jan, result 10 Feb); Cycle II by 1 Feb 2027 (FEAT 5–7 Feb, result 16 Mar); Cycle III by 28 Mar 2027 (FEAT 2–4 Apr, result 4 May); Cycle IV by 2 May 2027 (FEAT 4–7 May, result 9 Jun; early FEAT 16–18 Apr → result 25 May)",
+    "eligibility": "Class XII (any board) passed/appearing; marks sheet by 30 Sep 2027. Age under 21 on 31 Jul 2027. Maths at XII needed for CS, Applied Maths, Data Science & Economics; preferred for Economics. No minimum % stated.",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 100,
+      "sections": [
+        {"name": "Verbal Ability", "questions": 40, "time_min": null, "notes": "50 marks"},
+        {"name": "Reasoning Ability", "questions": 20, "time_min": null, "notes": "40 marks"},
+        {"name": "Quantitative Ability", "questions": 20, "time_min": null, "notes": "30 marks"},
+        {"name": "General Knowledge", "questions": 20, "time_min": null, "notes": "20 marks"}
+      ],
+      "marking": "Total 140 marks; no negative marking; no calculator",
+      "sectional_timing": false,
+      "notes": "Plus an online on-the-spot essay (200–250 words, 20 min) and an online personal interview."
+    },
+    "selection_process": "Application + SOP → FEAT (or SAT/ACT/JEE Main Paper 1 score instead) → on-the-spot essay → online personal interview. Holistic 'sliding' evaluation of test, essay, PI, Class X/XII record, extracurriculars and SOP; no weightages published.",
+    "verbal_weight": "Heavy: 40 of 100 questions (50 of 140 marks) are Verbal Ability, plus essay and SOP",
+    "official_url": "https://www.flame.edu.in/admissions/ug/admission-schedule",
+    "colleges": [
+      {
+        "name": "FLAME University",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "type": "Private univ",
+        "programmes": ["BA (Hons)", "BSc (Hons)", "BBA (Hons)", "BBA Communications Management (Hons)", "4-yr with exit after 3 yrs; majors incl. Economics, Finance, Psychology, Public Policy, Data Science & Economics"],
+        "seats": "Not published",
+        "fees": "Class of 2027: Yr 1 tuition ₹9.15 L + residential ₹1.95 L (rises to ₹10.5 L + ₹2.1 L by Yr 4)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "FLAME FAQ says it does not publish a cutoff; no guaranteed FEAT/SAT score."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.flame.edu.in/admissions/ug/admission-procedure"
+      }
+    ],
+    "sources": [
+      "https://www.flame.edu.in/admissions/ug/admission-schedule",
+      "https://2026.flame.edu.in/admissions/ug/admission-schedule",
+      "https://www.flame.edu.in/admissions/ug/admission-procedure",
+      "https://flame.edu.in/admissions/ug/minimum-eligibility",
+      "https://2026.flame.edu.in/admissions/ug/faqs",
+      "https://www.flame.edu.in/admissions/ug/fees"
+    ],
+    "notes": "SAT (code 6784), ACT (code 8974) or JEE Main Paper 1 can replace FEAT — those applicants do only the essay + interview. CUET is not listed as an accepted route. Early Decision is binding-style early round.",
+    "confidence": "high"
+  },
+  {
+    "id": "krea-kat",
+    "name": "Krea KAT",
+    "full_name": "Krea Assessment / Aptitude Test (KAT)",
+    "conducted_by": "Krea University",
+    "category": "Liberal arts",
+    "programme_types": ["Liberal Arts", "Economics", "BBA", "IPM"],
+    "mode": "Online (virtual)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Rolling rounds Oct 2025–Jun 2026 (R1 deadline 4 Jan 2026; R4 deadline 12 Jun 2026)",
+      "exam_date": "R1 KAT slots: 21–25 Nov 2025, 20–23 Dec 2025, 12–18 Jan 2026; R4 KAT: 15 Jun 2026",
+      "result": "R1 decision 5 Feb 2026; R4 decision 26 Jun 2026",
+      "fee": "₹1,000 (2026 cycle)"
+    },
+    "cycle_2027": "Announced (official, BA/BSc): R1 portal opened 28 Aug 2026, apply by 25 Oct 2026, KAT 2–3 Nov 2026, decision 27 Nov 2026; R2 opens 6 Dec 2026, KAT 14–15 Dec, decision 14 Jan 2027; R3 KAT 25 & 27 Jan 2027, decision 19 Feb; R4 KAT 26–27 Apr 2027, decision 21 May; R5 KAT 7 Jun 2027, decision 23 Jun 2027. Application fee reported ₹1,500 for 2027.",
+    "eligibility": "Class XII (any stream) passed/appearing from a recognised board. Integrated MBA has stricter rules (see college entry).",
+    "pattern": {
+      "duration_min": 80,
+      "total_questions": null,
+      "sections": [
+        {"name": "Problem-Solving", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Critical Thinking & Verbal Ability", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Numeric Reasoning", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Writing Skills", "questions": null, "time_min": null, "notes": ""}
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Question counts not published officially."
+    },
+    "selection_process": "Online application (personal story, Grade 9–12 marks, activities) → KAT → Krea Immersive Case Analysis (15-min online group case, 2 applicants) for shortlisted → 15-min Personal Interaction with faculty → decision. SAT/ACT/CUET/Ei CREST scorers can skip KAT and go straight to PI.",
+    "verbal_weight": "Significant: one of four sections is Critical Thinking & Verbal Ability and another is Writing Skills",
+    "official_url": "https://krea.edu.in/sias/admissions/ba-bsc/honours/admissions-schedule/",
+    "colleges": [
+      {
+        "name": "Krea University — School of Interwoven Arts and Sciences (SIAS)",
+        "city": "Sri City (near Chennai)",
+        "state": "Andhra Pradesh",
+        "type": "Private univ",
+        "programmes": ["BA / BA (Hons) / BSc / BSc (Hons) — majors incl. Economics, Business Studies & Finance, Politics, Psychology, Literature, History, CS, Maths etc."],
+        "seats": "Not published",
+        "fees": "2027-31 (reported): ₹8.75 L tuition + ₹2.25 L living per year; first-year total ~₹11.9 L",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Round-wise benchmarks are not disclosed."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://krea.edu.in/sias/sias-selection-process/"
+      },
+      {
+        "name": "IFMR Graduate School of Business, Krea University — Integrated MBA",
+        "city": "Sri City (near Chennai)",
+        "state": "Andhra Pradesh",
+        "type": "Private univ",
+        "programmes": ["5-yr Integrated MBA (BBA/BBA Hons + MBA); exit after 3 or 4 yrs with BBA"],
+        "seats": "Up to 80 (2026-31 batch)",
+        "fees": "Yrs 1–3: ₹5 L/yr tuition; MBA yrs: ₹7.5 L/yr; living ₹2.15 L/yr (2026)",
+        "cutoff": {
+          "value": "Minimum test requirement: KAT ≥15 in each section, or SAT 1300 with Math 600, or IPMAT ≥ IIM Indore EWS cutoff, or JEE Main ≥ IIT EWS cutoff",
+          "year": 2026,
+          "status": "official",
+          "note": "Source: Krea IFMR GSB Integrated MBA FAQ"
+        },
+        "selection": "Test score → online interview → merit list. Eligibility: born on/after 1 Jan 2007, English medium, 60% in X and XII, 60% in X Maths (or SAT Math 600). 2027 early round reported open 28 Aug–1 Dec 2026.",
+        "placements": "",
+        "url": "https://krea.edu.in/ifmrgsb/?p=37515"
+      }
+    ],
+    "sources": [
+      "https://krea.edu.in/sias/admissions/ba-bsc/honours/admissions-schedule/",
+      "https://krea.edu.in/sias/sias-selection-process/",
+      "https://krea.edu.in/ifmrgsb/?p=37515",
+      "https://www.imsindia.com/blog/bba/krea-university/",
+      "https://news.kollegeapply.com/news/ifmr-gsb-and-sias-krea-university-2027-fee-structure-mba-ba-bsc-fees",
+      "https://collegedunia.com/news/ifmr-krea-university-integrated-mba-2026-admissions-open-alertid-139302"
+    ],
+    "notes": "Name varies across Krea pages (Krea Assessment Test / Krea Aptitude Test). Round 1 for 2027 has already closed (25 Oct 2026); next is Round 2 in Dec 2026.",
+    "confidence": "medium"
+  },
+  {
+    "id": "jgu-jsat",
+    "name": "JSAT (Jindal)",
+    "full_name": "Jindal Scholastic Aptitude Test",
+    "conducted_by": "O.P. Jindal Global University (delivered by Pearson VUE)",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "BCom", "Economics", "Liberal Arts", "Finance"],
+    "mode": "Online, AI-proctored from home (Pearson VUE); book own slot after applying",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Rolling, roughly Oct 2025 – Jul 2026 (first-come, first-served)",
+      "exam_date": "On-demand slots chosen by candidate",
+      "result": "Rolling; candidates scoring 50%+ called for faculty interview",
+      "fee": "Application ₹3,000 (most UG programmes, per Collegedunia); JSAT re-attempt ₹1,020"
+    },
+    "cycle_2027": "Not announced yet for non-law UG (aggregators say 'awaiting official notice' as of mid-Oct 2026); JGU's law school has opened 2027 early admissions. Expected to open by late 2026.",
+    "eligibility": "Class XII from a recognised board (any stream; Maths preferred for BBA Business Analytics/Financial Markets). Some BA schools cite ~45–50% minimum — check per school.",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": 120,
+      "sections": [
+        {"name": "English Verbal Ability", "questions": 40, "time_min": null, "notes": ""},
+        {"name": "Logical Reasoning", "questions": 40, "time_min": null, "notes": ""},
+        {"name": "Quantitative Skills", "questions": 40, "time_min": null, "notes": ""}
+      ],
+      "marking": "No negative marking",
+      "sectional_timing": false,
+      "notes": "Qualifying mark 50% overall per programme pages."
+    },
+    "selection_process": "Application (+ personal statement; 1,000-word statement for Liberal Arts) → JSAT ≥50% OR SAT 1100+/ACT 27+/CUET-UG or UGAT 60 percentile+ → online faculty interview → offer based on X/XII marks, test, statement and interview.",
+    "verbal_weight": "40 of 120 questions are English Verbal Ability",
+    "official_url": "https://jgu.edu.in/jsbf/jindal-scholastic-aptitude-test",
+    "colleges": [
+      {
+        "name": "O.P. Jindal Global University (JGBS, JSBF, JSGP, JSLH, JSIA and other schools)",
+        "city": "Sonipat",
+        "state": "Haryana",
+        "type": "Private univ",
+        "programmes": [
+          "BBA (Hons) — Marketing/HR/Finance, Business Analytics, Financial Markets, Family Business",
+          "Integrated BBA (Hons) + MBA",
+          "BCom (Hons) — with ACCA, Capital Markets, Finance & Entrepreneurship",
+          "BA/BSc (Hons) Economics; BA (Hons) PPE",
+          "BA (Hons) Liberal Arts & Humanities",
+          "BA (Hons) Global Affairs, Political Science, Psychology, English, Journalism etc."
+        ],
+        "seats": "Not published",
+        "fees": "Tuition not on official pages we could read. Aggregator totals (full course): BBA ₹29.5 L–₹61.7 L; BA Liberal Arts ~₹34 L; BA Economics/PPE ~₹24.9 L; BCom ₹29.5–41.3 L. Residential charges ~₹3.56 L/yr (₹2.31 L stay + ₹1.25 L services).",
+        "cutoff": {
+          "value": "Qualifying: JSAT 50% overall; or SAT 1100 / ACT 27 / CUET-UG 60 percentile",
+          "year": 2026,
+          "status": "official",
+          "note": "Minimum to reach interview, from JGU programme pages as summarised by Collegedunia/CollegeChalo; not a closing rank."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.jgu.edu.in/admissions"
+      }
+    ],
+    "sources": [
+      "https://jgu.edu.in/jsbf/jindal-scholastic-aptitude-test",
+      "https://www.jgu.edu.in/admissions",
+      "https://collegedunia.com/university/25542-op-jindal-global-university-jgu-sonepat/admission",
+      "https://www.collegechalo.com/exam/jsat",
+      "https://www.careers360.com/colleges/jindal-school-of-liberal-arts-and-humanities-sonipat/admission",
+      "https://collegedunia.com/university/25542-o-p-jindal-global-university-jgu-sonepat/courses-fees"
+    ],
+    "notes": "LSAT is no longer used for JGU's non-law UG programmes (law now uses LNAT-UK). JSAT can be taken from home; apply early because seats fill first-come.",
+    "confidence": "medium"
+  },
+  {
+    "id": "snusat",
+    "name": "SNUSAT",
+    "full_name": "Shiv Nadar University Scholastic Aptitude Test",
+    "conducted_by": "Shiv Nadar University, Delhi-NCR (delivered via Pearson VUE)",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "Economics", "Finance", "Liberal Arts"],
+    "mode": "Online, home-proctored",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Several cycles Jan–Jul 2026; Early Round/Phase 1 apply 1–30 Apr 2026; Phase 2 by 31 May 2026",
+      "exam_date": "Phase 1: 10 May 2026; Phase 2: 7 Jun 2026 (plus earlier cycles from Jan 2026)",
+      "result": "Phase 1: 29 May 2026; Phase 2: 25 Jun 2026",
+      "fee": "₹2,500 entrance/application fee"
+    },
+    "cycle_2027": "Announced: UG registrations for 2027-28 opened 16 Oct 2026 at ugapplications.snu.edu.in. SNUSAT 2027 dates not yet published.",
+    "eligibility": "Class XII with 65% aggregate including English (and Maths for BSc Economics / Economics & Finance). IB: 28/45; A-levels: 65% PUM.",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": 40,
+      "sections": [
+        {"name": "Quantitative Reasoning", "questions": 20, "time_min": 45, "notes": ""},
+        {"name": "Logical Reasoning", "questions": 20, "time_min": 45, "notes": ""}
+      ],
+      "marking": "Not published for 2026 (older Pearson page: no negative marking)",
+      "sectional_timing": true,
+      "notes": "2026 version per SNU portal. Older versions had Verbal, Abstract Reasoning, Essay and Critical Writing APTs — check the 2027 pattern when released."
+    },
+    "selection_process": "Application → SNUSAT (or SAT/ACT; CUET-UG + interview for BMS/BA; JEE Main for BSc Economics) → merit/interview → offer. No weightages published.",
+    "verbal_weight": "None in the 2026 SNUSAT (Quant + Logical only); English is assessed via Class XII marks and interview",
+    "official_url": "https://ugapplications.snu.edu.in",
+    "colleges": [
+      {
+        "name": "Shiv Nadar University (Institution of Eminence), Delhi-NCR",
+        "city": "Greater Noida",
+        "state": "Uttar Pradesh",
+        "type": "Private univ",
+        "programmes": [
+          "Bachelor of Management Studies (BMS)",
+          "BSc (Research) Economics",
+          "BSc (Research) Economics and Finance",
+          "BA (Research) International Relations",
+          "BA (Research) Interdisciplinary Humanities & Social Sciences"
+        ],
+        "seats": "Not published",
+        "fees": "2026-27: tuition ₹6 L/yr (BMS, Economics, Econ & Finance, IHS); ₹4 L/yr (BA IR); living ₹2.44 L/yr. One-time ₹60,000 admission fee + ₹30,000 deposit.",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "No minimum SNUSAT/SAT/CUET score published."
+        },
+        "selection": "Top 10 admits to BA (Research) IHS get 100% tuition waiver for 4 years.",
+        "placements": "",
+        "url": "https://ugapplications.snu.edu.in"
+      }
+    ],
+    "sources": [
+      "https://ugapplications.snu.edu.in",
+      "https://www.pearsonvue.com/us/en/snu.html",
+      "https://dial4college.com/news/snusat-2026-phase-1-admission-closes-today-final-fee-payment-deadline-phase-2-schedule-fee-structure-syllabus--exam-pattern",
+      "https://articles.findmycollege.com/news/shiv-nadar-university-ug-apply-for-2027-28-admissions-starting-today/"
+    ],
+    "notes": "SNU Chennai (separate campus) uses its own SNUCEE exam for BCom/BSc Economics (Data Science) — not covered here. Retakes of SNUSAT not allowed.",
+    "confidence": "medium"
+  },
+  {
+    "id": "azim-premji-net",
+    "name": "Azim Premji NET",
+    "full_name": "Azim Premji University National Entrance Test (UG)",
+    "conducted_by": "Azim Premji University",
+    "category": "Liberal arts",
+    "programme_types": ["Liberal Arts", "Economics"],
+    "mode": "Computer-based at centres across India (~48 cities)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Round 1: apply by 14 Nov 2025 (later rounds via external scores)",
+      "exam_date": "14 Dec 2025",
+      "result": "Interviews 5–9 Jan 2026",
+      "fee": "₹500"
+    },
+    "cycle_2027": "Announced: Round 1 apply by 20 Nov 2026; NET 20 Dec 2026; interviews 4–8 Jan 2027. Round 2 dates not yet out. External-score (CUET/SAT) upload window ~May/Jun 2027.",
+    "eligibility": "Class XII (any recognised board, incl. NIOS/IB/A-levels) passed/appearing; age not above 21 on 31 Jul of entry year (exceptions possible).",
+    "pattern": {
+      "duration_min": 180,
+      "total_questions": 60,
+      "sections": [
+        {"name": "Reading Comprehension", "questions": 20, "time_min": null, "notes": "Common to all majors"},
+        {"name": "Quantitative Reasoning", "questions": 20, "time_min": null, "notes": "Common to all majors"},
+        {"name": "Domain-specific", "questions": 20, "time_min": null, "notes": "Domain 1: English/History/Social Science/Media; Domain 2: Economics/Psychology/Philosophy/PPE/Bio/Env; Domain 3: Chem/IS/Maths/Physics"}
+      ],
+      "marking": "No negative marking",
+      "sectional_timing": false,
+      "notes": "Bilingual (English/Hindi) paper for Bhopal first-preference applicants except BA English."
+    },
+    "selection_process": "Application → NET or external score (CUET-UG or SAT; JEE/NEET etc. for BSc) → online personal interview for shortlisted → offer. Admits via test+interview may have to complete a mandatory support course before semester 1.",
+    "verbal_weight": "20 of 60 questions are Reading Comprehension (more in Domain 1 for English/Humanities)",
+    "official_url": "https://azimpremjiuniversity.edu.in/undergraduate/application-process-and-timelines",
+    "colleges": [
+      {
+        "name": "Azim Premji University",
+        "city": "Bengaluru / Bhopal",
+        "state": "Karnataka / Madhya Pradesh",
+        "type": "Private univ",
+        "programmes": ["4-yr BA (Hons): Economics, English, History, Philosophy, PPE, Media & Journalism (Bengaluru); Economics, English, History, Social Science & Hindi Studies (Bhopal)", "4-yr BSc (Hons) in sciences, Psychology, Env Sci & Sustainability"],
+        "seats": "Not published",
+        "fees": "2027 batch (tentative): Bengaluru tuition ₹3.57 L in Yr 1 (₹15.16 L total over 4 yrs) + hostel ₹80,000/yr. Large need-based scholarships available.",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Admissions committee sets cut-offs internally."
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://azimpremjiuniversity.edu.in/undergraduate/fees-financial-aid"
+      }
+    ],
+    "sources": [
+      "https://azimpremjiuniversity.edu.in/undergraduate/application-process-and-timelines",
+      "https://azimpremjiuniversity.edu.in/undergraduate/fees-financial-aid",
+      "https://admission.aglasem.com/azim-premji-university-national-entrance-test/",
+      "https://matchtocollege.com/news-and-updates/azim-premji-university-ug-admissions-2027-round-1-applications",
+      "https://news.careers360.com/azim-premji-university-invites-applications-for-2026-ug-pg-programmes-apply-november-14-eligiblity-criteria"
+    ],
+    "notes": "The test is called NET (National Entrance Test), not NEST. SAT DI code 7588. Strong need-based aid — one of the most affordable options in this group.",
+    "confidence": "high"
+  },
+  {
+    "id": "ahmedabad-university-ug",
+    "name": "Ahmedabad University UG",
+    "full_name": "Ahmedabad University Undergraduate Admission (profile-based, no entrance test)",
+    "conducted_by": "Ahmedabad University",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "BCom", "Economics", "Liberal Arts"],
+    "mode": "Online application; no written test",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "11 Early rounds 31 Oct 2025 – 12 May 2026, then 7 Regular rounds to 31 Jul 2026",
+      "exam_date": "No entrance test",
+      "result": "Round-wise: Early 1 decision 16 Dec 2025 … Regular 7 decision 7 Aug 2026",
+      "fee": "Application fee not stated on the pages we could read"
+    },
+    "cycle_2027": "Pre-registration for 2027 open (no fee) as of Oct 2026; round dates not yet published.",
+    "eligibility": "Class XII any stream with ~50% aggregate (45% SC/ST); English as a Class XII subject.",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "Not applicable",
+      "sectional_timing": false,
+      "notes": "No entrance exam. SAT optional (Ahmedabad University accepts SAT and is in College Board's India Scholars Program)."
+    },
+    "selection_process": "Holistic review of Class X–XII marks, personal statement and activities; personal interaction for some programmes (portfolio for Integrated Arts). Diagnostic tests may apply for some majors.",
+    "verbal_weight": "None (no test); personal statement matters",
+    "official_url": "https://ahduni.edu.in/admission/undergraduate-admission/admission-calendar/",
+    "colleges": [
+      {
+        "name": "Ahmedabad University (Amrut Mody School of Management; School of Arts & Sciences)",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "type": "Private univ",
+        "programmes": ["BA (Hons) — incl. Economics", "BSc in Management (Hons) (formerly BBA Hons)", "BCom (Hons)", "BCom (Professional)", "Family Business & Entrepreneurship Programme (formerly Integrated MBA)", "Programme in Integrated Arts"],
+        "seats": "Not published",
+        "fees": "2026-27 tuition: ₹6 L/yr for BA, BSc Mgmt, BCom, Integrated Arts (tuition only; 6–9% annual rise)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ahduni.edu.in/admission/fees-financial-aid/"
+      }
+    ],
+    "sources": [
+      "https://ahduni.edu.in/admission/undergraduate-admission/admission-calendar/",
+      "https://ahduni.edu.in/admission/fees-financial-aid/",
+      "https://matchtocollege.com/news-and-updates/ahmedabad-university-ug-pre-registration-2027-open",
+      "https://international.collegeboard.org/students/sat/acceptance-india"
+    ],
+    "notes": "Many small rounds — applying early improves scholarship chances. Listed here for completeness even though there is no aptitude test.",
+    "confidence": "medium"
+  },
+  {
+    "id": "atlas-bat",
+    "name": "ATLAS BAT",
+    "full_name": "ATLAS SkillTech University Business Aptitude Test",
+    "conducted_by": "ATLAS SkillTech University (ISME school)",
+    "category": "Liberal arts",
+    "programme_types": ["BBA"],
+    "mode": "Online MCQ",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not captured",
+      "exam_date": "Not captured",
+      "result": "",
+      "fee": "₹3,500 (2027 cycle figure)"
+    },
+    "cycle_2027": "Announced (official): applications opened 11 Sep 2026; BAT window 11 Sep–18 Nov 2026; Collaborative Accelerator 21 Nov 2026; results 2 Dec 2026; acceptance by 15 Dec 2026. BSc (Hons) assessment+interview window to 27 Nov 2026.",
+    "eligibility": "Class XII with 50% aggregate (any stream); IB 24 points; A-levels 2 subjects.",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [
+        {"name": "Verbal Ability", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Logical Reasoning", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Quantitative Aptitude", "questions": null, "time_min": null, "notes": ""},
+        {"name": "Business Communication", "questions": null, "time_min": null, "notes": ""}
+      ],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Question count/duration not published; sample paper on official page."
+    },
+    "selection_process": "BAT → online personal interview → on-campus 'Collaborative Accelerator' group case exercise → result.",
+    "verbal_weight": "Verbal Ability and Business Communication are 2 of 4 sections (exact counts not published)",
+    "official_url": "https://www.atlasuniversity.edu.in/schools/isme/admissions/undergraduate/admissions-bba-bachelor-of-business-administration",
+    "colleges": [
+      {
+        "name": "ATLAS SkillTech University — ISME",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "type": "Private univ",
+        "programmes": ["BBA / BBA (Hons)", "BSc (Hons) (business/finance)"],
+        "seats": "Not published",
+        "fees": "BBA Yr 1 tuition ₹5.25 L + ₹50,000 enrolment fee (2027 intake, indicative)",
+        "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "",
+        "placements": "",
+        "url": "https://www.atlasuniversity.edu.in/admissions/ug-admissions"
+      }
+    ],
+    "sources": [
+      "https://www.atlasuniversity.edu.in/schools/isme/admissions/undergraduate/admissions-bba-bachelor-of-business-administration",
+      "https://www.atlasuniversity.edu.in/admissions/ug-admissions"
+    ],
+    "notes": "No BA Liberal Arts listed on current ATLAS UG pages — BBA/BSc only. Brief entry.",
+    "confidence": "medium"
+  },
+  {
+    "id": "woxsen-wat",
+    "name": "Woxsen WAT",
+    "full_name": "Woxsen Aptitude Test",
+    "conducted_by": "Woxsen University",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "Liberal Arts", "Economics"],
+    "mode": "Online",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not captured",
+      "exam_date": "Rolling",
+      "result": "",
+      "fee": "₹1,000 application fee"
+    },
+    "cycle_2027": "Open: Scholar's Round submission deadline 1 Dec 2026 (extra 10% merit scholarship; commitment fee by 4 Jan 2027). Regular applications reported to run to ~May 2027. Session starts Aug 2027.",
+    "eligibility": "Class XII any stream, 55% aggregate (BA page metadata says 60% — confirm). 25% seats reserved for Telangana domicile.",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "Not published",
+      "sectional_timing": false,
+      "notes": "Pattern not published officially."
+    },
+    "selection_process": "Application → WAT (or SAT; IPMAT also accepted for BBA) → personal interview (+ psychometric test) → composite score.",
+    "verbal_weight": "Not published",
+    "official_url": "https://woxsen.edu.in/academics/programs/bba/eligibility",
+    "colleges": [
+      {
+        "name": "Woxsen University",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "type": "Private univ",
+        "programmes": ["BBA / BBA (Hons)", "BA (Hons) Liberal Arts & Humanities — Economics, Psychology, Political Science, English, Business Studies etc."],
+        "seats": "Not published",
+        "fees": "BBA (Hons) tuition ₹3.15 L (Yr 1), ₹3.3 L (Yrs 2–4) + ₹60,000/yr learning resources (previous year's structure, via Careers360)",
+        "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "",
+        "placements": "",
+        "url": "https://woxsen.edu.in/academics/programs/ba-hons/eligibility/"
+      }
+    ],
+    "sources": [
+      "https://woxsen.edu.in/academics/programs/bba/eligibility",
+      "https://woxsen.edu.in/academics/programs/ba-hons/eligibility/",
+      "https://www.careers360.com/mba/articles/woxsen-wat-bba-admission"
+    ],
+    "notes": "Brief entry.",
+    "confidence": "low"
+  },
+  {
+    "id": "sai-university-saiu-cat",
+    "name": "SAIU CAT (Sai University)",
+    "full_name": "Sai University Common Admission Test",
+    "conducted_by": "Sai University",
+    "category": "Liberal arts",
+    "programme_types": ["Liberal Arts", "Economics"],
+    "mode": "Online, AI-proctored",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Not captured",
+      "exam_date": "On-demand",
+      "result": "",
+      "fee": "₹523 application fee"
+    },
+    "cycle_2027": "Not announced yet (no 2027 dates found)",
+    "eligibility": "Class XII passed/appearing, any board.",
+    "pattern": {
+      "duration_min": 40,
+      "total_questions": 36,
+      "sections": [
+        {"name": "Analytical Ability & Problem Solving", "questions": 7, "time_min": null, "notes": ""},
+        {"name": "Verbal Ability", "questions": 7, "time_min": null, "notes": ""},
+        {"name": "General Knowledge", "questions": 7, "time_min": null, "notes": ""},
+        {"name": "Technical & Domain Ability", "questions": 15, "time_min": null, "notes": ""}
+      ],
+      "marking": "No negative marking",
+      "sectional_timing": false,
+      "notes": "Optional — only for those without another accepted test score."
+    },
+    "selection_process": "Application → SAIU CAT or SAT/ACT/CUET/JEE/Pearson UG exam score → 'SaiU Interaction' for shortlisted → result. Scholarships 25–100%.",
+    "verbal_weight": "7 of 36 questions are Verbal Ability",
+    "official_url": "https://apply.saiuniversity.edu.in/school-of-arts-and-sciences",
+    "colleges": [
+      {
+        "name": "Sai University — School of Arts and Sciences",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "type": "Private univ",
+        "programmes": ["BA (Hons) Economics", "BA (Hons) Politics, Philosophy & Economics", "BSc (Hons) Psychology / Biological Sciences / Cognitive Neuroscience"],
+        "seats": "Not published",
+        "fees": "Careers360: ~₹8 L total course for BA Economics/PPE (data may be dated)",
+        "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "",
+        "placements": "",
+        "url": "https://apply.saiuniversity.edu.in/school-of-arts-and-sciences"
+      }
+    ],
+    "sources": [
+      "https://apply.saiuniversity.edu.in/school-of-arts-and-sciences",
+      "https://www.careers360.com/university/sai-university-chennai/fees"
+    ],
+    "notes": "Brief entry; fees unverified on the official site.",
+    "confidence": "low"
+  },
+  {
+    "id": "mahindra-university-bba",
+    "name": "Mahindra University BBA",
+    "full_name": "Mahindra University School of Management UG Admission (marks + interview; no own test)",
+    "conducted_by": "Mahindra University",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "Economics", "Finance"],
+    "mode": "Application + panel interview",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Opened for 2026; deadlines not captured",
+      "exam_date": "No own test",
+      "result": "",
+      "fee": "₹1,000 application fee"
+    },
+    "cycle_2027": "Not announced yet (no 2027 dates found)",
+    "eligibility": "Class XII with 80% (or equivalent); Maths mandatory for BBA Applied Economics & Finance.",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "Not applicable",
+      "sectional_timing": false,
+      "notes": "SAT or CUET score preferred but not mandatory."
+    },
+    "selection_process": "Shortlist on Class XII marks (and SAT/CUET if any) → panel interview → offer.",
+    "verbal_weight": "None (no test)",
+    "official_url": "https://www.mahindrauniversity.edu.in/",
+    "colleges": [
+      {
+        "name": "Mahindra University — School of Management",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "type": "Private univ",
+        "programmes": ["BBA Applied Economics & Finance", "BBA Computational Business Analytics", "BBA Digital Technologies", "BBA Entrepreneurship & Family Business"],
+        "seats": "120 (BBA Applied Economics & Finance, per Careers360)",
+        "fees": "₹5 L/yr tuition (₹6 L for Entrepreneurship & Family Business)",
+        "cutoff": {"value": "Minimum 80% in Class XII (eligibility)", "year": 2026, "status": "unofficial", "note": "Careers360"},
+        "selection": "",
+        "placements": "",
+        "url": "https://university.careers360.com/articles/mahindra-university-admissions-2026-open"
+      }
+    ],
+    "sources": [
+      "https://university.careers360.com/articles/mahindra-university-admissions-2026-open",
+      "https://www.careers360.com/university/mahindra-university-hyderabad/bba-applied-economics-and-finance-course",
+      "https://news.careers360.com/mahindra-university-launches-new-bba-bsc-courses-opens-ug-admission-across-six-schools"
+    ],
+    "notes": "Brief entry from Careers360; official page not verified.",
+    "confidence": "low"
+  },
+  {
+    "id": "sat-digital-india",
+    "name": "SAT (Digital SAT)",
+    "full_name": "Scholastic Assessment Test (Digital) — College Board",
+    "conducted_by": "College Board (USA)",
+    "category": "Liberal arts",
+    "programme_types": ["BBA", "Economics", "Finance", "Liberal Arts", "IPM", "BCom"],
+    "mode": "Digital, at test centres (Bluebook app)",
+    "level": "National",
+    "cycle_2026": {
+      "application_window": "Register ~2 weeks before each date",
+      "exam_date": "Multiple international dates per year",
+      "result": "~2 weeks after test",
+      "fee": "US$68 + US$43 international fee + tax ≈ US$131 (~₹12,400, Oct 2026 rate)"
+    },
+    "cycle_2027": "Announced: international dates 7 Nov 2026 (register by 23 Oct), 5 Dec 2026 (by 20 Nov), 6 Mar 2027 (by 19 Feb), 1 May 2027 (by 16 Apr), 5 Jun 2027 (by 21 May). Scores valid 5 years.",
+    "eligibility": "No formal eligibility; usually Class XI–XII students.",
+    "pattern": {
+      "duration_min": 134,
+      "total_questions": 98,
+      "sections": [
+        {"name": "Reading and Writing", "questions": 54, "time_min": 64, "notes": "2 adaptive modules of 27 Qs, 32 min each"},
+        {"name": "Math", "questions": 44, "time_min": 70, "notes": "2 adaptive modules of 22 Qs, 35 min each; calculator allowed"}
+      ],
+      "marking": "Scaled 400–1600 (200–800 per section); no negative marking",
+      "sectional_timing": true,
+      "notes": "Section-adaptive: module 2 difficulty depends on module 1."
+    },
+    "selection_process": "SAT score is sent to the university and used in place of (or alongside) its own test; each university then runs its own essay/interview stage.",
+    "verbal_weight": "54 of 98 questions are Reading & Writing (half the scaled score)",
+    "official_url": "https://satsuite.collegeboard.org/sat/dates-deadlines",
+    "colleges": [
+      {
+        "name": "Ashoka University",
+        "city": "Sonipat", "state": "Haryana", "type": "Private univ",
+        "programmes": ["BA/BSc (Hons)"],
+        "seats": "",
+        "fees": "",
+        "cutoff": {"value": "No minimum published; optional, does not replace Aptitude Assessment", "year": 2026, "status": "not_published", "note": "DI code 7343; superscore accepted"},
+        "selection": "",
+        "placements": "",
+        "url": "https://www.ashoka.edu.in/admissions/undergraduate-students/"
+      },
+      {
+        "name": "FLAME University",
+        "city": "Pune", "state": "Maharashtra", "type": "Private univ",
+        "programmes": ["BA, BSc, BBA, BBA Comm Mgmt"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "No minimum published; SAT replaces FEAT", "year": 2026, "status": "not_published", "note": "DI code 6784"},
+        "selection": "Essay + interview still required", "placements": "",
+        "url": "https://www.flame.edu.in/admissions/ug/admission-procedure"
+      },
+      {
+        "name": "Krea University (SIAS & IFMR GSB Integrated MBA)",
+        "city": "Sri City", "state": "Andhra Pradesh", "type": "Private univ",
+        "programmes": ["BA/BSc (Hons)", "Integrated MBA"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "Integrated MBA: SAT 1300 overall with Math 600 minimum; SIAS: 'eligible score' not specified", "year": 2026, "status": "official", "note": "Krea IMBA FAQ"},
+        "selection": "SAT holders skip KAT, go to interview", "placements": "",
+        "url": "https://krea.edu.in/ifmrgsb/?p=37515"
+      },
+      {
+        "name": "O.P. Jindal Global University",
+        "city": "Sonipat", "state": "Haryana", "type": "Private univ",
+        "programmes": ["BBA, BCom, BA/BSc Economics, BA Liberal Arts, PPE"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "SAT 1100+ (in lieu of JSAT)", "year": 2026, "status": "official", "note": "JGU programme pages via Collegedunia/CollegeChalo"},
+        "selection": "", "placements": "",
+        "url": "https://www.jgu.edu.in/admissions"
+      },
+      {
+        "name": "Shiv Nadar University, Delhi-NCR",
+        "city": "Greater Noida", "state": "Uttar Pradesh", "type": "Private univ",
+        "programmes": ["BMS, BSc Economics, BSc Econ & Finance, BA IR, BA IHS"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "No minimum published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "", "placements": "",
+        "url": "https://ugapplications.snu.edu.in"
+      },
+      {
+        "name": "Azim Premji University",
+        "city": "Bengaluru / Bhopal", "state": "Karnataka / Madhya Pradesh", "type": "Private univ",
+        "programmes": ["BA/BSc (Hons)"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "Set by admissions committee; not published", "year": 2026, "status": "not_published", "note": "DI code 7588"},
+        "selection": "", "placements": "",
+        "url": "https://azimpremjiuniversity.edu.in/undergraduate/application-process-and-timelines"
+      },
+      {
+        "name": "Ahmedabad University",
+        "city": "Ahmedabad", "state": "Gujarat", "type": "Private univ",
+        "programmes": ["BA, BSc Mgmt, BCom"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "Optional; no minimum published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "", "placements": "",
+        "url": "https://ahduni.edu.in/admission/undergraduate-admission/admission-calendar/"
+      },
+      {
+        "name": "Mahindra University",
+        "city": "Hyderabad", "state": "Telangana", "type": "Private univ",
+        "programmes": ["BBA (4 tracks)"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "Preferred, not mandatory; no minimum published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "", "placements": "",
+        "url": "https://university.careers360.com/articles/mahindra-university-admissions-2026-open"
+      },
+      {
+        "name": "Woxsen University",
+        "city": "Hyderabad", "state": "Telangana", "type": "Private univ",
+        "programmes": ["BBA, BA (Hons)"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "SAT accepted in lieu of WAT; no minimum published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "", "placements": "",
+        "url": "https://woxsen.edu.in/academics/programs/bba/eligibility"
+      },
+      {
+        "name": "Sai University",
+        "city": "Chennai", "state": "Tamil Nadu", "type": "Private univ",
+        "programmes": ["BA Economics, BA PPE"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "No minimum published", "year": 2026, "status": "not_published", "note": ""},
+        "selection": "", "placements": "",
+        "url": "https://apply.saiuniversity.edu.in/school-of-arts-and-sciences"
+      },
+      {
+        "name": "NMIMS (Deemed University)",
+        "city": "Mumbai and other campuses", "state": "Maharashtra", "type": "Deemed univ",
+        "programmes": ["UG programmes (listed by College Board as accepting SAT)"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "Not published here — check NMIMS-NPAT entry", "year": 2026, "status": "not_published", "note": "College Board India acceptance list"},
+        "selection": "", "placements": "",
+        "url": "https://international.collegeboard.org/students/sat/acceptance-india"
+      },
+      {
+        "name": "Bennett University",
+        "city": "Greater Noida", "state": "Uttar Pradesh", "type": "Private univ",
+        "programmes": ["UG programmes (listed by College Board as accepting SAT)"],
+        "seats": "", "fees": "",
+        "cutoff": {"value": "Not published", "year": 2026, "status": "not_published", "note": "College Board India acceptance list"},
+        "selection": "", "placements": "",
+        "url": "https://international.collegeboard.org/students/sat/acceptance-india"
+      }
+    ],
+    "sources": [
+      "https://satsuite.collegeboard.org/sat/dates-deadlines",
+      "https://international.collegeboard.org/students/sat/acceptance-india",
+      "https://collegedunia.com/exams/sat/sat-exam-fees",
+      "https://krea.edu.in/ifmrgsb/?p=37515",
+      "https://www.flame.edu.in/admissions/ug/admission-procedure"
+    ],
+    "notes": "College Board's India list also includes Plaksha, SRM AP, Amity and Alliance (out of scope or covered elsewhere). Woxsen also accepts IPMAT for BBA. The SAT pattern above is the standard Digital SAT format (general knowledge, not taken from an India-specific source). Remember to send scores to each university using its DI code.",
+    "confidence": "high"
+  }
+]

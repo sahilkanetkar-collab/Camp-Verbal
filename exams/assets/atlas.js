@@ -382,6 +382,7 @@ function toolMyList(el){
       <div class="field"><label for="su-wa">WhatsApp number</label><input id="su-wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile" value="${esc(f.wa || "")}"></div>
       <div class="field"><label for="su-email">Email</label><input id="su-email" type="email" autocomplete="email" value="${esc(f.email || "")}"></div>
       <div class="full" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center"><button class="btn gold" type="submit">Send me alerts</button><p class="fmsg" id="suMsg" role="status"></p></div>
+      <p class="full fmsg" style="font-size:12.5px">We use these details only to send you exam alerts. We never share or sell them. Reply "stop" to any message to opt out.</p>
     </form></section>`;
   const sel = $("#su-class"); if(sel && f.klass) sel.value = f.klass;
 }

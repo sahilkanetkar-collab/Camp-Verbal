@@ -1,0 +1,212 @@
+[
+ {
+  "id": "karnavati-kuat",
+  "name": "Karnavati KUAT",
+  "full_name": "Karnavati University Admission Test",
+  "conducted_by": "Karnavati University, Gandhinagar",
+  "category": "Private university",
+  "programme_types": [
+   "BBA",
+   "BCom",
+   "Liberal Arts"
+  ],
+  "mode": "Online, computer-based (English)",
+  "level": "University-specific",
+  "cycle_2026": {
+   "application_window": "2026-27 window open (official site banner); closing date not published",
+   "exam_date": "Reported 16 Jun 2026 (Careers360; page also shows 23 May — unconfirmed)",
+   "result": "Not published",
+   "fee": "₹1,000 (Careers360)"
+  },
+  "cycle_2027": "Not announced yet",
+  "eligibility": "Class XII (any stream) passed/appearing; 50% aggregate for BBA/BA/BCom (Careers360)",
+  "pattern": {
+   "duration_min": null,
+   "total_questions": null,
+   "sections": [],
+   "marking": "Not published",
+   "sectional_timing": false,
+   "notes": "Pattern not published. A sample paper link exists on karnavatiuniversity.edu.in."
+  },
+  "selection_process": "KUAT (or AIMA UGAT / IPMAT for BBA) → Personal Interview → final merit on test + PI → counselling & document check.",
+  "verbal_weight": "Not published",
+  "official_url": "https://karnavatiuniversity.edu.in/apply/",
+  "colleges": [
+   {
+    "name": "Unitedworld School of Business, Karnavati University",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BBA (Hons) – Finance / Marketing / Entrepreneurship & Innovation"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "BBA accepts KUAT, AIMA UGAT or IPMAT",
+    "placements": "",
+    "url": "https://karnavatiuniversity.edu.in/apply/"
+   },
+   {
+    "name": "Unitedworld School of Liberal Arts & Mass Communication, Karnavati University",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BA (Hons) Psychology",
+     "BA (Hons) Journalism & Mass Communication"
+    ],
+    "seats": "Not published",
+    "fees": "Not published",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "",
+    "placements": "",
+    "url": "https://karnavatiuniversity.edu.in/"
+   }
+  ],
+  "sources": [
+   "https://karnavatiuniversity.edu.in/apply/",
+   "https://university.careers360.com/exams/kuat",
+   "https://apps.aima.in/UGAT2026/Prospectus2026.pdf"
+  ],
+  "notes": "Official site confirms KUAT exists and 2026-27 applications are open but gives no details; most facts are from Careers360 and should be verified by phone (9667048555). Karnavati is also a participating institute in AIMA UGAT.",
+  "confidence": "low",
+  "next_cycle": {
+   "status": "not_announced",
+   "apply_open": null,
+   "apply_close": null,
+   "exam_dates": [],
+   "expected": "Applications usually open early in the year; 2026 test reported mid-June",
+   "url": "https://karnavatiuniversity.edu.in/apply/",
+   "source_status": "estimated"
+  },
+  "elig": {
+   "min_12_pct": 50,
+   "min_10_pct": null,
+   "streams": [
+    "Any"
+   ],
+   "maths_required": false,
+   "max_age": null,
+   "age_note": "",
+   "note": "Per Careers360"
+  },
+  "papers": []
+ },
+ {
+  "id": "navrachana-bba-nuvet",
+  "name": "Navrachana BBA-NUVET",
+  "full_name": "Navrachana University BBA Entrance Test",
+  "conducted_by": "Navrachana University, Vadodara",
+  "category": "State & other",
+  "programme_types": [
+   "BBA"
+  ],
+  "mode": "University test + SOP + personal interaction",
+  "level": "University-specific",
+  "cycle_2026": {
+   "application_window": "Early registration till 25 Mar 2026; last date 15 Jul 2026 (Careers360)",
+   "exam_date": "Not published",
+   "result": "Within one week of the test (by email/SMS)",
+   "fee": "Application ₹600 (Careers360)"
+  },
+  "cycle_2027": "Not announced yet",
+  "eligibility": "Class XII (HSC) or equivalent, any stream, min 50% (relaxation for SC/ST and state/national-level sports players)",
+  "pattern": {
+   "duration_min": 120,
+   "total_questions": null,
+   "sections": [
+    {
+     "name": "English Language & Comprehension",
+     "questions": null,
+     "time_min": null,
+     "notes": "25 marks"
+    },
+    {
+     "name": "Logical & Analytical Ability",
+     "questions": null,
+     "time_min": null,
+     "notes": "25 marks"
+    },
+    {
+     "name": "Numerical Ability",
+     "questions": null,
+     "time_min": null,
+     "notes": "25 marks"
+    },
+    {
+     "name": "General Awareness",
+     "questions": null,
+     "time_min": null,
+     "notes": "25 marks"
+    }
+   ],
+   "marking": "Total 100 marks; negative marking not stated",
+   "sectional_timing": false,
+   "notes": "Official sample paper linked from the BBA brochure page."
+  },
+  "selection_process": "BBA-NUVET 50% + Statement of Purpose (150–500 words) 10% + personal interaction 40% → merit list.",
+  "verbal_weight": "25 of 100 marks are English Language & Comprehension",
+  "official_url": "https://nuv.ac.in/EBrochure/BBA",
+  "colleges": [
+   {
+    "name": "Navrachana University – School of Business & Law",
+    "city": "Vadodara",
+    "state": "Gujarat",
+    "type": "Private univ",
+    "programmes": [
+     "BBA (4-yr, 8 semesters)"
+    ],
+    "seats": "Not published",
+    "fees": "₹75,250 per semester (tuition)",
+    "cutoff": {
+     "value": "Not published",
+     "year": 2026,
+     "status": "not_published",
+     "note": ""
+    },
+    "selection": "",
+    "placements": "",
+    "url": "https://nuv.ac.in/EBrochure/BBA"
+   }
+  ],
+  "sources": [
+   "https://nuv.ac.in/EBrochure/BBA",
+   "https://nuv.ac.in/wp-content/uploads/pdf/admission/Admission_policy.pdf",
+   "https://university.careers360.com/articles/navrachana-university-vadodara-admissions-2026-open"
+  ],
+  "notes": "Small private university in Vadodara with its own BBA test. B.Com/BA Economics route at NUV not confirmed.",
+  "confidence": "medium",
+  "next_cycle": {
+   "status": "not_announced",
+   "apply_open": null,
+   "apply_close": null,
+   "exam_dates": [],
+   "expected": "Early registration usually till late March; final deadline mid-July",
+   "url": "https://nuv.ac.in/EBrochure/BBA",
+   "source_status": "estimated"
+  },
+  "elig": {
+   "min_12_pct": 50,
+   "min_10_pct": null,
+   "streams": [
+    "Any"
+   ],
+   "maths_required": false,
+   "max_age": null,
+   "age_note": "",
+   "note": "Relaxation for SC/ST and sports players"
+  },
+  "papers": []
+ }
+]

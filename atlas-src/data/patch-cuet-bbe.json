@@ -1,0 +1,155 @@
+[
+  {
+    "id": "cuet-ug",
+    "set": {
+      "selection_process": "No single CUET merit list. Each university decides which CUET subject combination counts for each programme and runs its own counselling (DU: CSAS; BHU, AU, UoH etc.: own portals). DU (2026): BMS / BBA (FIA) = one language + Maths/Applied Maths + one List B subject + General Aptitude Test (SSCBS FAQ). B.Com (Hons) = one language + Maths/Applied Maths or Accountancy + two subjects, best combination counts. BA (Hons) Economics = one language + Maths/Applied Maths + two subjects. B.Com (pass) = language + 3 subjects OR language + 1 subject + General Aptitude Test. Class XII marks are used only for tie-breaks at DU. St. Stephen's minority seats add an interview (85% CUET + 15% interview). BA (Hons) Business Economics (BBE) = one language (List A) + Maths/Applied Maths + General Aptitude Test (PW 2026 table; Careers360). In 2026 BBE was offered at 5 DU colleges: Aryabhatta, College of Vocational Studies, Dr. Bhim Rao Ambedkar, Gargi (W), Lakshmibai (W) (DU seat matrix); SSCBS does not offer it.",
+      "sources": [
+        "https://cuet.nta.nic.in/",
+        "https://cdnbbsr.s3waas.gov.in/s3d1a21da7bca4abff8b0b61b87597de73/uploads/2026/01/202601031633478370.pdf",
+        "https://ianslive.in/cuet-ug-2026-results-announced-for-over-116-lakh-students--20260623151337",
+        "https://news.careers360.com/cuet-ug-2026-exam-date-registration-begins-nta-hold-exams-from-may-11-31-admission-central-state-universities-cbt-link/amp",
+        "https://admission.uod.ac.in/",
+        "https://admission.uod.ac.in/userfiles/17072026-CutOff_UG_Round_One_compressed.pdf",
+        "https://admission.uod.ac.in/userfiles/downloads/2026/25072026_CutOff_UG_Round_Two_compressed.pdf",
+        "https://admission.uod.ac.in/userfiles/downloads/03-07-2026-UGSeatMatrix2026.pdf",
+        "https://www.du.ac.in/uploads/2026/06012026_BOI_UG_2026_27_compressed.pdf",
+        "https://sscbs.du.ac.in/faqs-for-bms-bba-fia-b-sc-c-s-admissions-2026/",
+        "https://university.careers360.com/articles/du-bcom-colleges-second-cutoff-analysis-2026-vs-2025",
+        "https://university.careers360.com/articles/top-20-du-economics-colleges-round-2-cutoff-2026-vs-2025",
+        "https://bschool.careers360.com/articles/du-bba-cutoff-2026",
+        "https://www.pw.live/news/du-ug-admission-2026-csas-cutoff-released-round-1-seat-allotment-pdf-download-link",
+        "https://university.careers360.com/articles/sscbs-cuet-cut-off-2026",
+        "https://cuet.hitbullseye.com/du-undergraduate-commerce-eligibility-criteria-for-cuet.php?amp=1",
+        "https://www.pw.live/cuet/exams/du-cuet-subject-combinations",
+        "https://www.careerlauncher.com/cucet/how-to-get-into-st-stephens-college/",
+        "https://university.careers360.com/articles/bhu-ug-cut-off-2026",
+        "https://www.siasat.com/university-of-hyderabad-opens-admissions-for-academic-year-2026-27-3503202/amp/",
+        "https://www.careers360.com/university/university-of-hyderabad-hyderabad/ma-economics-integrated-course",
+        "https://allduniv.ac.in/upload/file_collection/BCOM%202026%201ST.pdf",
+        "https://allduniv.ac.in/p/711/ug-admission-2026-commerce-faculty",
+        "https://aud.delhi.gov.in/sites/default/files/2026-01/cuet_ug_admission_2026_27_formatted-1.pdf",
+        "https://gipe.ac.in/admissions-2026-27/",
+        "https://news.careers360.com/tiss-ug-admission-2026-cuet-nta-5-course-ba-bsc-seat-apply-tisscuet-samarth-edu-in-deadline-july-16-fee-eligiblity-mumbai-guwahati/amp",
+        "https://bschool.careers360.com/articles/ipu-bba-admission-through-cuet",
+        "https://university.careers360.com/exams/jmi-entrance-exam",
+        "https://university.careers360.com/articles/amu-admission-test-2026",
+        "https://news.careers360.com/jnu-ug-cop-admissions-2026-registration-courses-begin-jnuee-jnu-ac-in-cuet-scores-jee-main-josaa-counselling-ba-hons-bsc-btech/amp",
+        "https://cuet.nta.nic.in/participating-universities/private-universities/",
+        "https://cuet.nta.nic.in/participating-universities/deemed-universities/",
+        "https://cuet.nta.nic.in/participating-universities/state-universities/",
+        "https://www.pw.live/cuet/exams/du-cuet-subject-combinations",
+        "https://www.careers360.com/mba/articles/ba-hons-in-business-economics-admission-at-du"
+      ]
+    },
+    "add_colleges": [
+      {
+        "name": "Aryabhatta College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics",
+          "BA (Hons) Business Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 21, BA Eco 21, BBE 42 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 672.95, R2 657.30; B.Com (Hons) R2 789.21; B.Com R2 754.48; BA (Hons) Eco R2 710.15; BA (Hons) Business Eco R1 646.16",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 news (R2) and Careers360 BMS article; one Careers360 table lists B.Com R2 as 789.22, which conflicts; BBE R1 from DU official CSAS Round 1 PDF"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://aryabhattacollege.ac.in/"
+      },
+      {
+        "name": "College of Vocational Studies",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BMS",
+          "BA (Hons) Business Economics"
+        ],
+        "seats": "UR: BBE 31 (DU UG Seat Matrix 2026 (03-07-2026)); BMS not published",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BMS R1 705.16, R2 685.49; BA (Hons) Business Eco R1 671.22",
+          "year": 2026,
+          "status": "unofficial",
+          "note": "Careers360 (from DU CSAS lists); BBE R1 from DU official CSAS Round 1 PDF"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.cvs.edu.in/"
+      },
+      {
+        "name": "Gargi College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "B.Com (Hons)",
+          "B.Com",
+          "BA (Hons) Economics",
+          "BA (Hons) Business Economics"
+        ],
+        "seats": "UR: B.Com (Hons) 63, BA Eco 24, BBE 24 (UR seats from DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): B.Com (Hons) R1 831.16, R2 820.21; B.Com R1 798.92; BA (Hons) Eco R1 780.35, R2 773.26; BA (Hons) Business Eco R1 689.00",
+          "year": 2026,
+          "status": "official",
+          "note": "Round 1 figures from DU official CSAS Round 1 minimum allocation score PDF; Round 2 as reported by Careers360 from DU list"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://gargicollege.in/"
+      },
+      {
+        "name": "Dr. Bhim Rao Ambedkar College",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BA (Hons) Business Economics"
+        ],
+        "seats": "UR: BBE 31 (DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Min CUET allocation score (UR): BA (Hons) Business Eco R1 597.34",
+          "year": 2026,
+          "status": "official",
+          "note": "DU official CSAS Round 1 minimum allocation score PDF"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      },
+      {
+        "name": "Lakshmibai College (W)",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Govt college",
+        "programmes": [
+          "BA (Hons) Business Economics"
+        ],
+        "seats": "UR: BBE 15 (DU UG Seat Matrix 2026 (03-07-2026))",
+        "fees": "",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "No BBE row for this college in the DU Round 1 allocation-score PDF"
+        },
+        "selection": "",
+        "placements": "",
+        "url": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,747 @@
+[
+  {
+    "id": "jmi-entrance-ug",
+    "name": "JMI Entrance (BBA / B.Com / BA Eco)",
+    "full_name": "Jamia Millia Islamia University Entrance Test (UG)",
+    "conducted_by": "Jamia Millia Islamia (central university), New Delhi",
+    "category": "CUET & central universities",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Economics"
+    ],
+    "mode": "Pen-and-paper (offline), objective MCQ, multi-city",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "20 Feb – 25 Mar 2026 (form editing 1–6 Apr 2026); an extension to 2 Apr was reported by Careers360",
+      "exam_date": "BA (Hons) Economics: 2 Jun 2026; BBA / B.Com (Hons) / B.Com (Hons) SF: 3 Jun 2026 (both 12:00–1:30 pm)",
+      "result": "Not published (JMI posts results and merit lists on admission.jmi.ac.in)",
+      "fee": "₹700 application fee (JMI prospectus Table-1 rate for most faculties)"
+    },
+    "cycle_2027": "Not announced yet (2026 forms opened 20 Feb 2026, so expect Feb 2027)",
+    "eligibility": "Class XII (or equivalent) with at least 50% aggregate (reported by Careers360 for BBA, B.Com (Hons) and BA (Hons) Economics). Check Annexure-I of the JMI prospectus for subject rules.",
+    "pattern": {
+      "duration_min": 90,
+      "total_questions": null,
+      "sections": [
+        {
+          "name": "Language / English skills",
+          "questions": null,
+          "time_min": null,
+          "notes": "Section list as reported by Careers360"
+        },
+        {
+          "name": "General awareness",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Reasoning",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Numerical ability",
+          "questions": null,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "−0.25 for each wrong MCQ answer (JMI prospectus rule for all entrance tests); marks per question not published",
+      "sectional_timing": false,
+      "notes": "90 minutes per JMI's official test-date notice (12:00–1:30 pm). Question count not published. BBA, B.Com (Hons), B.Com (Hons) SF and BA (Hons) HRM (SF) share one test (code B04); BA (Hons) Economics has its own test (B59)."
+    },
+    "selection_process": "JMI's own entrance test, NOT CUET, for these programmes. Merit list on test score; JMI may add an interview or other component where the prospectus says so. Seats are a maximum; admission also needs a minimum benchmark score. A self-financed course may not run if under 50% of seats fill.",
+    "verbal_weight": "English / language skills is one of 4 reported sections; exact share not published",
+    "official_url": "https://admission.jmi.ac.in/",
+    "colleges": [
+      {
+        "name": "JMI Department of Commerce & Business Studies",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Central univ",
+        "programmes": [
+          "BBA",
+          "B.Com (Hons)",
+          "B.Com (Hons) Self-Financed"
+        ],
+        "seats": "BBA 44; B.Com (Hons) 55; B.Com (Hons) SF 55 (JMI prospectus 2026-27)",
+        "fees": "BBA ₹15,675/yr; B.Com (Hons) ₹10,175/yr; B.Com (Hons) SF ₹38,375/yr (JMI prospectus 2026-27)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "JMI does not publish closing test scores"
+        },
+        "selection": "Common test B04 (3 Jun 2026)",
+        "placements": "",
+        "url": "https://www.jmi.ac.in/"
+      },
+      {
+        "name": "JMI Department of Economics",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "type": "Central univ",
+        "programmes": [
+          "BA (Hons) Economics (4-yr)"
+        ],
+        "seats": "53 (JMI prospectus 2026-27)",
+        "fees": "₹10,175/yr (JMI prospectus 2026-27)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "JMI does not publish closing test scores"
+        },
+        "selection": "Test B59 (2 Jun 2026)",
+        "placements": "",
+        "url": "https://www.jmi.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://admission.jmi.ac.in/application/assets/pdfFile/notices/UniversityNotices/2026-27/University_Entrance_Test_Dates_2026_2027.pdf",
+      "https://admission.jmi.ac.in/application/assets/pdfFile/prospectus/UniversityProspectus/University_Prospectus_2026_2027.pdf",
+      "https://jmi.ac.in/upload/publication/pr2_English_2026February20.pdf",
+      "https://jmi.ac.in/upload/publication/pr2_English_2026March17.pdf",
+      "https://university.careers360.com/exams/jmi-entrance-exam",
+      "https://university.careers360.com/articles/jmi-prospectus-2026-27"
+    ],
+    "notes": "All 8-semester (4-yr FYUP) programmes. Also on the same test: BA (Hons) Human Resource Management (SF), 40 seats, ₹92,375/yr. JMI uses CUET for some other UG courses, but not for BBA, B.Com or BA Economics. 11 test centres in 2026 (Jaipur, Dehradun, Kishanganj added). No fee increase for 2026-27.",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Forms usually open around 20 Feb and close late Mar; BBA/B.Com/Eco tests early Jun (2026 pattern)",
+      "url": "https://admission.jmi.ac.in/",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": 50,
+      "min_10_pct": null,
+      "streams": [
+        "Any"
+      ],
+      "maths_required": null,
+      "max_age": null,
+      "age_note": "No age bar reported",
+      "note": "50% aggregate as reported by Careers360; confirm subject rules in JMI prospectus Annexure-I"
+    },
+    "papers": []
+  },
+  {
+    "id": "amu-admission-test-ug",
+    "name": "AMU Admission Test (B.Com / BBA / BA Hons)",
+    "full_name": "Aligarh Muslim University Admission Test (UG)",
+    "conducted_by": "Controller of Examinations, Aligarh Muslim University (central university)",
+    "category": "CUET & central universities",
+    "programme_types": [
+      "BCom",
+      "BBA",
+      "Economics"
+    ],
+    "mode": "Pen-and-paper (offline), MCQ",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Opened 1 Feb 2026 (oaps.amuonline.ac.in). B.Com (Hons) last date reported as 28 Feb 2026 (late fee till 7 Mar); BBA last date was extended (official notice)",
+      "exam_date": "BA (Hons): 12 Apr 2026 (reported); B.Com (Hons) / BBA: 19 Apr 2026 (reported). Answer-key challenge closed 15 Apr (BA Hons) and 22 Apr (B.Com/BBA) — official",
+      "result": "May 2026 (reported); results and firm admission lists on results.amucontrollerexams.com",
+      "fee": "Reported ₹650–₹1,050 depending on programme and category (sources conflict; check AMU Guide to Admissions)"
+    },
+    "cycle_2027": "Not announced yet (2026 forms opened 1 Feb 2026, so expect Feb 2027)",
+    "eligibility": "Class XII (or equivalent) with at least 50% aggregate (reported by Careers360). Course-wise rules are in Appendix I of AMU's Guide to Admissions.",
+    "pattern": {
+      "duration_min": 120,
+      "total_questions": null,
+      "sections": [
+        {
+          "name": "B.Com (Hons) paper: English",
+          "questions": null,
+          "time_min": null,
+          "notes": "25 marks"
+        },
+        {
+          "name": "B.Com (Hons) paper: Accountancy",
+          "questions": null,
+          "time_min": null,
+          "notes": "20 marks"
+        },
+        {
+          "name": "B.Com (Hons) paper: Business Studies",
+          "questions": null,
+          "time_min": null,
+          "notes": "15 marks"
+        },
+        {
+          "name": "B.Com (Hons) paper: Economics",
+          "questions": null,
+          "time_min": null,
+          "notes": "10 marks"
+        },
+        {
+          "name": "B.Com (Hons) paper: Elementary Maths & Statistics",
+          "questions": null,
+          "time_min": null,
+          "notes": "10 marks"
+        },
+        {
+          "name": "B.Com (Hons) paper: Reasoning & Numerical Ability",
+          "questions": null,
+          "time_min": null,
+          "notes": "10 marks"
+        },
+        {
+          "name": "B.Com (Hons) paper: General Awareness",
+          "questions": null,
+          "time_min": null,
+          "notes": "10 marks"
+        },
+        {
+          "name": "BA (Hons) paper",
+          "questions": null,
+          "time_min": null,
+          "notes": "English 25, General Awareness & Current Affairs 40, Reasoning 10, Indo-Islamic Culture & Aligarh Movement 25 marks"
+        }
+      ],
+      "marking": "100 marks per paper; −0.25 per wrong answer (reported by Careers360)",
+      "sectional_timing": false,
+      "notes": "Section marks as reported by Careers360; question count not published. B.Com (Hons) and BBA share one answer key, so they appear to share one test. Candidates scoring below 20% are ineligible (AMU Guide rule)."
+    },
+    "selection_process": "AMU's own admission test, NOT CUET, for these courses (AMU uses CUET only for some other courses). Merit list on test score → online counselling/admission portal → firm admission lists. BA (Hons) Economics comes through the common BA (Hons) test. AMU internal (school) candidates have a separate quota.",
+    "verbal_weight": "English = 25 of 100 marks in both the B.Com (Hons) and BA (Hons) papers (reported)",
+    "official_url": "https://amucontrollerexams.com/",
+    "colleges": [
+      {
+        "name": "AMU Faculty of Commerce",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh",
+        "type": "Central univ",
+        "programmes": [
+          "B.Com (Hons)",
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://www.amu.ac.in/"
+      },
+      {
+        "name": "AMU Department of Economics (Faculty of Social Sciences)",
+        "city": "Aligarh",
+        "state": "Uttar Pradesh",
+        "type": "Central univ",
+        "programmes": [
+          "BA (Hons) Economics"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "Via common BA (Hons) test",
+        "placements": "",
+        "url": "https://www.amu.ac.in/"
+      },
+      {
+        "name": "AMU Centres Malappuram and Murshidabad",
+        "city": "Malappuram / Murshidabad",
+        "state": "Kerala / West Bengal",
+        "type": "Central univ",
+        "programmes": [
+          "BBA"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "BBA listed at these centres in AMU Guide to Admissions 2026-27",
+        "placements": "",
+        "url": "https://www.amu.ac.in/"
+      }
+    ],
+    "sources": [
+      "https://amucontrollerexams.com/",
+      "https://amucontrollerexams.com/page/view/application-forms-and-admission-guide-for-programmes-offered-by-the-university-for-the-academic-session-2026-27-are-now-available-1769943641",
+      "https://amucontrollerexams.com/uploads/files/e97cf6112508c8e79149275de5ae1cb3.pdf",
+      "https://results.amucontrollerexams.com/display/anskeys",
+      "https://news.careers360.com/amu-entrance-exam-2026-27-admission-test-schedule-pen-and-paper-dates-february-1-april-12-btech-bcom-bba-ug-pg-amucontrollerexams",
+      "https://university.careers360.com/articles/amu-admission-test-2026",
+      "https://university.careers360.com/articles/amu-exam-pattern"
+    ],
+    "notes": "Test centres for B.Com (Hons)/BBA in 2026: Aligarh, Lucknow, Kolkata, Srinagar, Patna, Kozhikode. AMU has internal/external quotas; read the Guide to Admissions before applying. Pattern figures are from Careers360, not an AMU document.",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Forms usually open 1 Feb; B.Com/BBA forms close late Feb–early Mar; tests mid-April (2026 pattern)",
+      "url": "https://amucontrollerexams.com/",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": 50,
+      "min_10_pct": null,
+      "streams": [
+        "Any"
+      ],
+      "maths_required": null,
+      "max_age": null,
+      "age_note": "",
+      "note": "50% aggregate as reported; course-wise subject rules in AMU Guide to Admissions Appendix I"
+    },
+    "papers": [
+      {
+        "label": "Answer keys of AMU admission tests (official)",
+        "url": "https://results.amucontrollerexams.com/display/anskeys"
+      }
+    ]
+  },
+  {
+    "id": "kiitee-ug-management",
+    "name": "KIITEE (BBA / B.Com / Economics)",
+    "full_name": "Kalinga Institute of Industrial Technology Entrance Examination",
+    "conducted_by": "KIIT Deemed to be University, Bhubaneswar",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom",
+      "Economics"
+    ],
+    "mode": "Computer-based at centres; later phases remote-proctored from home",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Phase 1: 10 Nov 2025 – 8 Apr 2026; Phase 2: 13 Apr – 30 May 2026; Phase 4: 1–30 Jul 2026; Phase 5: 3–28 Aug 2026",
+      "exam_date": "Phase 1: 16–20 Apr 2026; Phase 2: 5–7 Jun 2026; Phase 4: 1 Aug 2026; Phase 5: 30 Aug 2026 (remote proctored)",
+      "result": "Phase 1 seat allotment 2 May 2026 (reported)",
+      "fee": "No application fee (reported by Careers360)"
+    },
+    "cycle_2027": "KIITEE 2027 Phase 1 form expected Nov 2026 (reported); exam Apr 2027",
+    "eligibility": "BBA: Class XII any stream, 50%, with Maths/Business Maths/Economics/Statistics. B.Com: 50%, with Maths or Business Maths & Statistics. BA (Hons) Economics: 50%. BSc Economics & Data Analytics: 50% with Basic Maths. (KIITEE official)",
+    "pattern": {
+      "duration_min": 180,
+      "total_questions": 120,
+      "sections": [
+        {
+          "name": "Verbal Ability",
+          "questions": 40,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Mathematical Ability",
+          "questions": 30,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "Analytical & Logical Ability",
+          "questions": 30,
+          "time_min": null,
+          "notes": ""
+        },
+        {
+          "name": "General Knowledge",
+          "questions": 20,
+          "time_min": null,
+          "notes": ""
+        }
+      ],
+      "marking": "+4 / −1",
+      "sectional_timing": false,
+      "notes": "BBA pattern as reported by Careers360 (2027 article). B.Com/Economics paper pattern not confirmed; check kiitee.kiit.ac.in."
+    },
+    "selection_process": "Rank on KIITEE → slot booking → counselling; seats allotted purely on merit until KIITEE seats are filled. Bring rank card to KSOM counselling (BBA).",
+    "verbal_weight": "40 of 120 questions are Verbal Ability (BBA paper, reported)",
+    "official_url": "https://kiitee.kiit.ac.in/",
+    "colleges": [
+      {
+        "name": "KIIT School of Management (KSOM)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (3/4-yr)"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "KIIT does not publish closing ranks"
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://ksom.ac.in/"
+      },
+      {
+        "name": "KIIT Deemed University (commerce and economics programmes)",
+        "city": "Bhubaneswar",
+        "state": "Odisha",
+        "type": "Deemed univ",
+        "programmes": [
+          "B.Com (3/4-yr)",
+          "BA (Hons) Economics (3/4-yr)",
+          "BSc Economics & Data Analytics"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://kiitee.kiit.ac.in/courses-available/"
+      }
+    ],
+    "sources": [
+      "https://kiitee.kiit.ac.in/",
+      "https://kiitee.kiit.ac.in/courses-available/",
+      "https://kiitee.kiit.ac.in/eligibility-criteria/",
+      "https://www.careers360.com/mba/articles/kiitee-bba",
+      "https://university.careers360.com/articles/kiitee-2026"
+    ],
+    "notes": "Several phases a year; later phases are remote-proctored. KIIT's site does not explicitly tie B.Com/Economics to KIITEE, but they are listed on the KIITEE portal. KSOM BBA is also listed as accepting AIMA UGAT.",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "upcoming",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "KIITEE 2027 Phase 1 form expected Nov 2026, Phase 1 exam Apr 2027, with more phases through summer (Careers360 and 2026 pattern)",
+      "url": "https://kiitee.kiit.ac.in/",
+      "source_status": "reported"
+    },
+    "elig": {
+      "min_12_pct": 50,
+      "min_10_pct": null,
+      "streams": [
+        "Any"
+      ],
+      "maths_required": null,
+      "max_age": null,
+      "age_note": "No age limit listed",
+      "note": "BBA needs Maths/Business Maths/Economics/Statistics in XII; B.Com needs Maths or Business Maths & Stats; BA Economics none"
+    },
+    "papers": [
+      {
+        "label": "KIITEE sample question papers (official)",
+        "url": "https://kiitee.kiit.ac.in/sample-question-papers/"
+      }
+    ]
+  },
+  {
+    "id": "mahe-bba-bcom",
+    "name": "Manipal (MAHE) BBA / B.Com",
+    "full_name": "Manipal Academy of Higher Education — MET (BBA) and interview-based merit (B.Com)",
+    "conducted_by": "Manipal Academy of Higher Education (Deemed university)",
+    "category": "Private university",
+    "programme_types": [
+      "BBA",
+      "BCom"
+    ],
+    "mode": "BBA: MET online test; B.Com: no test (personal interview)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Opened early 2026; deadline 15 Mar 2026 for most courses (reported)",
+      "exam_date": "MET 2026 Phase 1 around 13–14 Apr 2026 (reported)",
+      "result": "Not published",
+      "fee": "Reported ₹600 application fee + test fee where applicable (Collegedunia); MET 2027 fee reported as ₹2,000 total"
+    },
+    "cycle_2027": "MET 2027 registration reported open from ~19 Oct 2026; Phase 1 last date reported as 15 Mar 2027 (Careers360) or 31 Mar 2027 (Jagran)",
+    "eligibility": "Class XII with at least 50% aggregate (A-Level / IB routes also accepted). (MAHE UG eligibility document, 2024)",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "Not published for BBA",
+      "sectional_timing": false,
+      "notes": "MAHE does not publish a separate MET pattern for BBA; the widely quoted 60-question/120-min MET pattern is the B.Tech paper."
+    },
+    "selection_process": "Manipal campus: BBA = MET; merit list 50% MET score + 50% Class XII marks → counselling. B.Com (Hons / Professional / Business Process) = personal interview; merit list based on PI. Bengaluru campus B.Com = PI-based merit. (MAHE 2024 official UG eligibility & admission process; 2026 practice reported the same)",
+    "verbal_weight": "Not published",
+    "official_url": "https://manipal.edu/",
+    "colleges": [
+      {
+        "name": "MAHE Department of Commerce, Manipal",
+        "city": "Manipal",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "BBA (several specialisations)",
+          "B.Com (Hons)",
+          "B.Com Professional",
+          "B.Com Business Process"
+        ],
+        "seats": "Not published",
+        "fees": "B.Com ~₹1.4–1.5 L/yr (2023, Collegedunia); BBA (Economic Studies) ~₹6.45 L total (Careers360)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "BBA: 50% MET + 50% Class XII. B.Com: PI-based merit.",
+        "placements": "",
+        "url": "https://manipal.edu/"
+      },
+      {
+        "name": "MAHE Bengaluru — Department of Commerce",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "type": "Deemed univ",
+        "programmes": [
+          "B.Com variants"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "PI-based merit list",
+        "placements": "",
+        "url": "https://manipal.edu/"
+      }
+    ],
+    "sources": [
+      "https://careernext.manipal.edu/content/dam/manipal/mu/documents/Admissions/adm2024/2024_UG_Eligibility_Admission_Process.pdf",
+      "https://www.careers360.com/university/manipal-academy-of-higher-education-manipal/bba-economic-studies-course",
+      "https://bschool.careers360.com/articles/manipal-university-bba-admission-criteria",
+      "https://collegedunia.com/news/manipal-university-opens-2026-admissions-alertid-139517",
+      "https://engineering.careers360.com/articles/met-2027",
+      "https://www.thedailyjagran.com/lite/education/manipal-entrance-test-2027-mahe-opens-met-registration-window-at-manipaledu-check-application-process-eligibility-and-key-dates-10332373",
+      "https://s2.collegedunia.com/university/25617-manipal-academy-of-higher-education-mahe-manipal/bachelor-of-commerce-bcom-full-time"
+    ],
+    "notes": "Latest official route document found is MAHE's 2024 UG eligibility PDF; recheck on apply.manipal.edu. TAPMI's BBA (Hons) Bengaluru is a separate route (IPMAT/JIPMAT/SAT/MET + PI) already listed under TAPMI. Manipal University Jaipur is a different university (uses CUET and own process).",
+    "confidence": "low",
+    "next_cycle": {
+      "status": "open",
+      "apply_open": "2026-10-19",
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Phase 1 test around Apr 2027, Phase 2 around May 2027 (reported, tentative)",
+      "url": "https://apply.manipal.edu/",
+      "source_status": "reported",
+      "rounds": [
+        {
+          "label": "MET Phase 1",
+          "apply_close": null,
+          "exam_date": null
+        },
+        {
+          "label": "MET Phase 2",
+          "apply_close": null,
+          "exam_date": null
+        }
+      ]
+    },
+    "elig": {
+      "min_12_pct": 50,
+      "min_10_pct": null,
+      "streams": [
+        "Any"
+      ],
+      "maths_required": null,
+      "max_age": null,
+      "age_note": "",
+      "note": "B.Com: Commerce background with Maths/Economics advised (Collegedunia, unofficial)"
+    },
+    "papers": []
+  },
+  {
+    "id": "loyola-chennai-merit",
+    "name": "Loyola College Chennai (merit + interview)",
+    "full_name": "Loyola College (Autonomous), Chennai — UG admission on Class XII merit",
+    "conducted_by": "Loyola College (Autonomous), affiliated to University of Madras",
+    "category": "State & other",
+    "programme_types": [
+      "BCom",
+      "BBA",
+      "Economics"
+    ],
+    "mode": "No entrance test for B.Com/BBA/Economics (Class XII merit)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "7–19 May 2026 (reported by Collegedunia)",
+      "exam_date": "No test",
+      "result": "Merit lists June 2026 (reported)",
+      "fee": "Not published"
+    },
+    "cycle_2027": "Not announced yet (expected May 2027, after Class XII results)",
+    "eligibility": "Class XII pass; 45% reported minimum for B.A., B.Com and BBA (Collegedunia, unofficial)",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "No test",
+      "sectional_timing": false,
+      "notes": "Admission on Class XII marks; Loyola runs its own test (LoVAT) only for media programmes."
+    },
+    "selection_process": "Merit on Class XII marks (reported). Official selection rules are in Loyola's 2026-27 prospectus/legal note (not machine-readable). Aided (Shift I) and self-financed (Shift II) streams have separate merit lists and fees.",
+    "verbal_weight": "None (no test)",
+    "official_url": "https://www.loyolacollege.edu/",
+    "colleges": [
+      {
+        "name": "Loyola College",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "type": "Autonomous college",
+        "programmes": [
+          "B.Com (General, Hons, Accounting & Finance, Corporate Secretaryship, Computer Applications)",
+          "BBA",
+          "BA Economics"
+        ],
+        "seats": "Not published",
+        "fees": "B.Com (General) ~₹16,350/yr; B.Com specialised/Hons ~₹55,480–88,510/yr; BBA ~₹55,480/yr (Collegedunia, unofficial; figures conflict on the same page)",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": "Collegedunia FAQ says B.Com admits usually score 390+/400 (TN State Board), but no year is given"
+        },
+        "selection": "",
+        "placements": "2024-25 college-wide: avg ₹6.34 LPA, UG median ₹4.08 LPA (Collegedunia, unofficial)",
+        "url": "https://www.loyolacollege.edu/"
+      }
+    ],
+    "sources": [
+      "https://www.loyolacollege.edu/",
+      "https://collegedunia.com/college/2595-loyola-college-chennai"
+    ],
+    "notes": "Very competitive for B.Com; Tamil Nadu State Board and CBSE marks both accepted. Check loyolacollege.edu in April–May for the application portal.",
+    "confidence": "low",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Applications usually open in May after Class XII results; merit lists in June",
+      "url": "https://www.loyolacollege.edu/",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": 45,
+      "min_10_pct": null,
+      "streams": [
+        "Any"
+      ],
+      "maths_required": null,
+      "max_age": null,
+      "age_note": "",
+      "note": "45% reported (unofficial); B.Com usually needs Commerce/Accountancy background"
+    },
+    "papers": []
+  },
+  {
+    "id": "mcc-chennai-merit",
+    "name": "Madras Christian College (merit + interview)",
+    "full_name": "Madras Christian College (Autonomous), Chennai — UG admission on Class XII merit",
+    "conducted_by": "Madras Christian College (Autonomous), affiliated to University of Madras",
+    "category": "State & other",
+    "programme_types": [
+      "BCom",
+      "BBA",
+      "Economics"
+    ],
+    "mode": "No entrance test (Class XII marks; interview for shortlisted)",
+    "level": "University-specific",
+    "cycle_2026": {
+      "application_window": "Online portal open from 23 Feb 2026; admissions only after TN Class XII results (official)",
+      "exam_date": "No test",
+      "result": "Selection lists on mcc.edu.in/selection-list (enrolment from late June 2026)",
+      "fee": "Not published"
+    },
+    "cycle_2027": "Not announced yet (2026 portal opened 23 Feb 2026, so expect late Feb 2027)",
+    "eligibility": "Pass in TN Higher Secondary or equivalent; Class XII marks mandatory to apply. B.Com (aided): Commerce/Business Studies + Accountancy. BA Economics (aided): any group, preference for Economics. BBA (SF): 80% seats for Commerce + Accountancy, 10% other meritorious, 10% commerce vocational. Age ≤ 21 on 1 Jul 2026 (reported)",
+    "pattern": {
+      "duration_min": null,
+      "total_questions": null,
+      "sections": [],
+      "marking": "No test",
+      "sectional_timing": false,
+      "notes": ""
+    },
+    "selection_process": "Merit on Class XII marks; shortlisted candidates called for interview (Careers360); selection list on MCC site, then certificate verification and fee payment.",
+    "verbal_weight": "None (no test)",
+    "official_url": "https://mcc.edu.in/admission-2026-2027/",
+    "colleges": [
+      {
+        "name": "Madras Christian College",
+        "city": "Chennai (Tambaram)",
+        "state": "Tamil Nadu",
+        "type": "Autonomous college",
+        "programmes": [
+          "B.Com (aided)",
+          "BA Economics (aided)",
+          "BBA (SF)",
+          "B.Com General (SF)",
+          "B.Com Accounting & Finance (SF)",
+          "B.Com Professional Accounting (SF)"
+        ],
+        "seats": "Not published",
+        "fees": "Not published",
+        "cutoff": {
+          "value": "Not published",
+          "year": 2026,
+          "status": "not_published",
+          "note": ""
+        },
+        "selection": "",
+        "placements": "",
+        "url": "https://mcc.edu.in/"
+      }
+    ],
+    "sources": [
+      "https://mcc.edu.in/admission-2026-2027/",
+      "https://www.collegeadmission.in/notice/college/madras-christian-college-ug-admission-criteria-2026-12310",
+      "https://www.careers360.com/colleges/madras-christian-college-chennai/admission"
+    ],
+    "notes": "No free application forms for self-financed courses. Separate application links for SC/ST and foreign students.",
+    "confidence": "medium",
+    "next_cycle": {
+      "status": "not_announced",
+      "apply_open": null,
+      "apply_close": null,
+      "exam_dates": [],
+      "expected": "Portal usually opens late Feb; selection after TN Class XII results (May–June)",
+      "url": "https://mcc.edu.in/",
+      "source_status": "estimated"
+    },
+    "elig": {
+      "min_12_pct": null,
+      "min_10_pct": null,
+      "streams": [
+        "Any"
+      ],
+      "maths_required": false,
+      "max_age": 21,
+      "age_note": "≤21 on 1 July of admission year (5-yr relaxation differently-abled, 3-yr women) — reported",
+      "note": "B.Com needs Commerce + Accountancy; BBA mostly Commerce"
+    },
+    "papers": []
+  }
+]

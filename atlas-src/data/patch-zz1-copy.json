@@ -1,0 +1,319 @@
+[
+ {
+  "id": "iim-udaipur-bba",
+  "setp": {
+   "colleges[IIM Udaipur].cutoff.note": "No cutoff (no entrance test).",
+   "colleges[IIM Udaipur].fees": "From ₹50,000 in Yr 1 (tiered; an unofficial listing gives ₹50k / ₹1 L / ₹1.5 L / ₹2 L for Yrs 1–4); scholarships available"
+  }
+ },
+ {
+  "id": "iimb-dbe-test",
+  "setp": {
+   "pattern.notes": "IIMB has not published the test's sections, length or marking.",
+   "elig.note": "55% in XII for SC/ST/PwD. Indian nationals only. IIMB's own pages differ on whether Class X Maths is compulsory, so confirm before applying.",
+   "colleges[IIM Bangalore – BBA DBE (online)].cutoff.note": "Official: from IIMB's 2026–29 admission process document.",
+   "colleges[IIM Bangalore – BBA DBE (online)].seats": "Not published (about 1,000 per an unofficial source)"
+  }
+ },
+ {
+  "id": "iimb-ug-test",
+  "setp": {
+   "selection_process": "Test score → interview shortlist → final composite: test 60% + personal interview 40% (IIMB FAQ). Careers360 reports a more detailed split that also uses Class X marks; this is not official.",
+   "pattern.notes": "Pattern from IIMB's FAQ. Careers360 reports sectional times of 30/60/30 min and a possible change to 135 min for the 2027 intake; IIMB has not confirmed this."
+  }
+ },
+ {
+  "id": "iimk-bms-at",
+  "setp": {
+   "notes": "4-year programme (not a 5-yr IPM). News sites mention a JEE Main / SAT / ACT test waiver, but IIMK's 2026 admission policy does not include it. Check with IIMK before relying on it.",
+   "pattern.notes": "Two sections, Verbal and Quantitative (official). Question counts, timing and marking are unofficial (Cracku, MBA Universe).",
+   "pattern.marking": "+3 / −1 (unofficial). Max 300.",
+   "colleges[IIM Kozhikode (Kochi campus)].cutoff.note": "Estimate from MBA Universe. IIMK has not published a 2026 cutoff."
+  }
+ },
+ {
+  "id": "ipmat-indore",
+  "setp": {
+   "notes": "Biggest IIM UG exam: one score is used by 6 IIMs (Indore, Ranchi, Shillong, Amritsar, Sirmaur, Sambalpur), IIFT and several private universities. Each institute needs its OWN separate application and uses its own weightage; some (Shillong, Amritsar, IIFT) need Maths in XII, and Shillong needs 70% in X/XII. Not the same exam as IPMAT Rohtak. NICMAR is not on IIM Indore's official list of score users.",
+   "pattern.notes": "3 sections of 40 min each and the marking are official. Question counts (15/30/45) come from coaching sources; IIM Indore does not publish them.",
+   "colleges[IIM Indore].cutoff.note": "2025 Gen: QA-SA 24, QA-MCQ 28, VA 112. Reported by Cracku and Career Launcher from IIM Indore's shortlist notice; not shown on IIM Indore's website.",
+   "colleges[TAPMI (Manipal and Bengaluru)].selection": "Some coaching sites (MBA Universe, Cracku) say TAPMI accepts IPMAT Indore, but TAPMI is not on IIM Indore's official 2026 list. Check with TAPMI."
+  }
+ },
+ {
+  "id": "ipmat-rohtak",
+  "setp": {
+   "notes": "Used only by IIM Rohtak. The same test (plus a Legal Reasoning section) is used for IIM Rohtak's Integrated Programme in Law, which is outside this site's scope. Figures here come from news and coaching sites; confirm on IIM Rohtak's website.",
+   "eligibility": "Class XII passed / appearing in 2026; 60% in X and XII (55% SC/ST/PwD) as reported by Careers360; max age 20 as on 30 Jun 2026 (25 for SC/ST). Sources differ on the % rule, so check IIM Rohtak's notice.",
+   "pattern.notes": "Most sources say 40 min per section; Careers360 says one shared 120-min window. Confirm on the admit card.",
+   "elig.note": "55% for SC/ST/PwD. Sources differ on these rules, so check IIM Rohtak's official notice.",
+   "colleges[IIM Rohtak].cutoff.note": "Unofficial. 2025 figures from Careers360: Gen 381, EWS 331, NC-OBC 297, SC 230, ST 138 (also reported by iQuanta and Career Launcher).",
+   "colleges[IIM Rohtak].seats": "198 for 2026–31 (Careers360, Hitbullseye). One source says 165; confirm on the official site."
+  }
+ },
+ {
+  "id": "jee-iim-ug",
+  "setp": {
+   "colleges[IIM Lucknow].fees": "Not published (about ₹5 L/yr per an unofficial guide)"
+  }
+ },
+ {
+  "id": "jipmat",
+  "setp": {
+   "notes": "Only two IIMs use JIPMAT. There is no interview: the test score (plus board marks at Jammu) decides admission. Apply separately on each IIM's portal after the result.",
+   "colleges[IIM Jammu].fees": "Not published (offer acceptance fee ₹50,000, adjusted against Sem 1 fee)",
+   "colleges[IIM Bodh Gaya].cutoff.note": "Unofficial: from a Manabadi report of the 2025 first list. No official 2026 cutoff.",
+   "colleges[IIM Bodh Gaya].fees": "Not published (offer acceptance amount reported as ₹60,000–₹90,000)"
+  }
+ },
+ {
+  "id": "alliance-ausat",
+  "setp": {
+   "notes": "Alliance's own BBA page now names the test AUMAT and uses AUSAT for scholarships; older sites call it AUAT/AUSAT. The section pattern is unofficial (third-party sites)."
+  }
+ },
+ {
+  "id": "amity-bba",
+  "setp": {
+   "notes": "Details are from Careers360 (unofficial); confirm on amity.edu. Noida fee ~₹2.19 L/yr (non-sponsored) and ~₹3.28 L/yr (sponsored). Amity JEE is for BTech; BBA uses the university's own process.",
+   "eligibility": "Class XII any stream; 60% aggregate (55% sponsored) as reported by Careers360. Check the campus page.",
+   "pattern.notes": "Not published. Careers360 mentions an English test set by the university."
+  }
+ },
+ {
+  "id": "christ-university-et",
+  "setp": {
+   "pattern.notes": "Paper differs by programme group. BCom group: Fundamental Accounting, Maths, DI, Reasoning, GK, English (20 each). Economics group: English 20, GK 15, Current Affairs 10, Reasoning 20, Maths 15, DI 15, Economics 25. This split is from CHRIST's older official test page; check the 2027 'CHRIST-CUET Guidelines & Test Pattern' PDF for changes."
+  }
+ },
+ {
+  "id": "jain-jet",
+  "setp": {
+   "notes": "Details are from third-party sites (unofficial); confirm with JAIN.",
+   "pattern.notes": "BBA pattern as reported by Careers360."
+  }
+ },
+ {
+  "id": "karnavati-kuat",
+  "setp": {
+   "notes": "Karnavati's official site confirms KUAT and open 2026-27 applications but gives few details. Most facts here are from Careers360; confirm by phone (9667048555). Karnavati is also a participating institute in AIMA UGAT.",
+   "elig.note": "50% aggregate for BBA/BA/BCom, as reported by Careers360."
+  }
+ },
+ {
+  "id": "kiitee-ug-management",
+  "setp": {
+   "notes": "Several phases a year; later phases are remote-proctored. B.Com and Economics programmes are listed on the KIITEE portal; confirm the admission route with KIIT. KSOM BBA is also listed as accepting AIMA UGAT.",
+   "pattern.notes": "BBA pattern as reported by Careers360 (2027 article). The B.Com/Economics paper pattern is not published; check kiitee.kiit.ac.in."
+  }
+ },
+ {
+  "id": "lpunest",
+  "setp": {
+   "pattern.notes": "General UG paper: 400 marks, 4 subjects × 25 Qs × 4 marks (English is one option). A BBA-specific paper has not been published.",
+   "elig.note": "BBA: 60% in XII plus a valid LPUNEST, JEE Main or CUET score. LPU's BBA page lists Physics, Maths, English; confirm the subject rule with LPU."
+  }
+ },
+ {
+  "id": "mahe-bba-bcom",
+  "setp": {
+   "notes": "Rules here are from MAHE's 2024 UG eligibility document; check apply.manipal.edu for the current cycle. TAPMI's BBA (Hons) Bengaluru has a separate route (IPMAT/JIPMAT/SAT/MET + PI), listed under TAPMI. Manipal University Jaipur is a different university (uses CUET and its own process).",
+   "selection_process": "Manipal campus: BBA = MET; merit list 50% MET score + 50% Class XII marks → counselling. B.Com (Hons / Professional / Business Process) = personal interview; merit list based on PI. Bengaluru campus B.Com = PI-based merit. (MAHE 2024 official rules; reported unchanged for 2026.)"
+  }
+ },
+ {
+  "id": "mit-wpu-cet",
+  "setp": {
+   "pattern.notes": "Section break-up not published."
+  }
+ },
+ {
+  "id": "nirma-ug-management",
+  "setp": {
+   "notes": "Nirma also lists a BBA (Hons) with a 10 May 2026 deadline (Collegedunia). Its selection rules are not published officially; check with Nirma."
+  }
+ },
+ {
+  "id": "nmims-npat",
+  "setp": {
+   "notes": "Up to 5 programmes per application; no management quota. Fees shown are the latest Careers360 figures, not official 2026-27 or 2027-28 fees. NPAT is used only by NMIMS. Dhule/Shirpur campuses appear in some coaching lists but are not among the 7 campuses on the official NPAT page.",
+   "colleges[NMIMS Anil Surendra Modi School of Commerce (ASMSOC)].cutoff.note": "Unofficial estimate. NMIMS gives merit numbers to candidates but does not publish cutoff marks. Collegedunia's approximate closing marks (out of 120) are much higher than Careers360's expected ranges. Careers360 expects Mumbai BBA 72–76.",
+   "colleges[NMIMS Navi Mumbai campus].cutoff.note": "Unofficial estimate. NMIMS gives merit numbers to candidates but does not publish cutoff marks. Collegedunia's approximate closing marks (out of 120) are much higher than Careers360's expected ranges. Careers360 expects 65–67.",
+   "colleges[NMIMS Bengaluru campus].cutoff.note": "Unofficial estimate. NMIMS gives merit numbers to candidates but does not publish cutoff marks. Collegedunia's approximate closing marks (out of 120) are much higher than Careers360's expected ranges. Careers360 expects 67–70.",
+   "colleges[NMIMS Hyderabad campus].cutoff.note": "Unofficial estimate. NMIMS gives merit numbers to candidates but does not publish cutoff marks. Collegedunia's approximate closing marks (out of 120) are much higher than Careers360's expected ranges. Careers360 expects 67–69.",
+   "colleges[NMIMS Indore campus].cutoff.note": "Unofficial estimate. NMIMS gives merit numbers to candidates but does not publish cutoff marks. Collegedunia's approximate closing marks (out of 120) are much higher than Careers360's expected ranges. Careers360 expects 66–67.",
+   "colleges[NMIMS Chandigarh campus].cutoff.note": "Estimate from Collegedunia (unofficial).",
+   "colleges[NMIMS Ahmedabad campus].selection": "Listed among the 7 NPAT campuses on npat.nmims.edu; check the site for programmes offered."
+  }
+ },
+ {
+  "id": "symbiosis-set",
+  "setp": {
+   "notes": "All SET programmes are 4-year Honours / Honours with Research. Symbiosis does not run BCom through SET (no BCom in the 2026 participating list). Weightages differ by institute. For SCMS Pune, the official page gives PI 30 marks (Careers360 once listed 50:50). Other SET programmes (BSc Applied Statistics & Data Science, BSc Sport & Exercise Science, BBA Hospitality & Culinary Mgmt) are outside this site's scope.",
+   "colleges[Symbiosis Centre for Management Studies (SCMS) Noida].selection": "SET + online PI (50:50 per Cracku; unofficial)",
+   "colleges[Symbiosis Centre for Management Studies (SCMS) Pune].fees": "Academic fee ~₹1.92 L/yr + ₹20,000 deposit (Careers360, year unclear); check the official 2026-27 fee PDF on scmspune.ac.in"
+  }
+ },
+ {
+  "id": "amu-admission-test-ug",
+  "setp": {
+   "notes": "Test centres for B.Com (Hons)/BBA in 2026: Aligarh, Lucknow, Kolkata, Srinagar, Patna, Kozhikode. AMU has internal/external quotas; read the Guide to Admissions before applying. Pattern figures are from Careers360 (unofficial).",
+   "pattern.notes": "Section marks as reported by Careers360; question count not published. B.Com (Hons) and BBA appear to share one test (they share one answer key). Candidates scoring below 20% are ineligible (AMU Guide rule)."
+  }
+ },
+ {
+  "id": "cuet-ug",
+  "setp": {
+   "colleges[Shri Ram College of Commerce (SRCC)].cutoff.note": "Round 1 (rounded) from PW; Round 2 from Careers360. 2025 min UR: B.Com (Hons) 917.43, BA Eco 908.90",
+   "colleges[Shri Ram College of Commerce (SRCC)].seats": "Not available; check the DU seat matrix",
+   "colleges[Ramjas College].seats": "Not available; check the DU seat matrix",
+   "colleges[Sri Venkateswara College].seats": "Not available; check the DU seat matrix",
+   "colleges[Sri Guru Tegh Bahadur Khalsa College].seats": "Not available; check the DU seat matrix",
+   "colleges[Sri Guru Gobind Singh College of Commerce (SGGSCC)].seats": "Not available; check the DU seat matrix",
+   "colleges[Shaheed Sukhdev College of Business Studies (SSCBS)].seats": "Check the DU seat matrix PDF",
+   "colleges[Shaheed Sukhdev College of Business Studies (SSCBS)].cutoff.note": "Careers360 / iQuanta, from DU CSAS lists. 2025 min UR: BMS 554.99, BBA FIA 577.20 (reported). Scores change a lot between years, so compare within one year only.",
+   "colleges[Maitreyi College (W)].cutoff.note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list). BA Eco figure not available.",
+   "colleges[Kamala Nehru College (W)].cutoff.note": "Round 2 UR minimum allocation scores as reported by Careers360 (from DU CSAS list). BA Eco figure not available.",
+   "colleges[Aryabhatta College].cutoff.note": "Round 2 from Careers360 (one Careers360 table gives B.Com Round 2 as 789.22 instead). BBE Round 1 from DU's official list.",
+   "colleges[College of Vocational Studies].cutoff.note": "Careers360 (from DU CSAS lists); BBE Round 1 from DU's official list.",
+   "colleges[Banaras Hindu University (BHU)].cutoff.note": "Careers360 (round not stated). 2025 UR: B.Com (Hons) 548.99, FMM 545.97. BHU uses its own score total, so do not compare with DU.",
+   "colleges[Central University of Rajasthan].selection": "CUET (UG) 2026 (unofficial listing; confirm on curaj.ac.in)",
+   "colleges[Lakshmibai College (W)].cutoff.note": "No BBE Round 1 score in DU's official list.",
+   "colleges[Dr. Bhim Rao Ambedkar College].cutoff.note": "DU official Round 1 minimum allocation score.",
+   "colleges[Hindu College].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Hansraj College].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Deen Dayal Upadhyaya College].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Delhi College of Arts and Commerce (DCAC)].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Gargi College (W)].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Indraprastha College for Women (W)].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Daulat Ram College (W)].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list.",
+   "colleges[Atma Ram Sanatan Dharma College].cutoff.note": "Round 1: DU official minimum allocation scores. Round 2: as reported by Careers360 from the DU list."
+  }
+ },
+ {
+  "id": "aima-ugat",
+  "setp": {
+   "pattern.notes": "BHM candidates take 2 extra sections (Service Aptitude, Scientific Aptitude), 3 hours. Section counts in the AIMA 2026 prospectus add to 130, but the stated total is 120. Check the bulletin."
+  }
+ },
+ {
+  "id": "bumat",
+  "setp": {
+   "notes": "Details are from Careers360 (unofficial); check the official BVU bulletin."
+  }
+ },
+ {
+  "id": "gujarat-ug-commerce-merit",
+  "setp": {
+   "notes": "Gujarat has no state entrance test for BBA/BCom/BA. GCAS (gcas.gujgov.edu.in) covers 15 state universities (Gujarat Univ, MSU Baroda, Sardar Patel Univ, Saurashtra, VNSGU etc.) and ~26 private universities (incl. Silver Oak, LJ, CHARUSAT). Big private universities (Nirma, GLS, Ahmedabad Univ) run their own merit process. Exceptions with own tests: PDEU, Karnavati KUAT, Navrachana BBA-NUVET (separate entries). Nirma's All-India BBA-MBA seats need IPMAT. No UG route in scope: IIM Ahmedabad, MICA (PG only), CEPT (design/architecture). Adani University and Indus University: BBA admission route not published.",
+   "colleges[SEMCOM (CVM University)].selection": "Class XII merit; no entrance test reported. Careers360 still lists it under Sardar Patel University, but CVM University's 2026-27 admissions page lists SEMCOM under its Faculty of Commerce, Management & Law. Confirm with the college.",
+   "colleges[Parul University – Parul Institute of Commerce / Business Administration].selection": "Mainly Class XII merit (Careers360); application ₹500. No separate entrance test reported.",
+   "colleges[Silver Oak University].selection": "Listed as a GCAS participating private university. Careers360 mentions a university test + PI for some programmes; not confirmed for BBA/B.Com."
+  }
+ },
+ {
+  "id": "hsnc-h-cet",
+  "setp": {
+   "pattern.notes": "Pattern from HSNC's H-CET guidelines (2024 cycle); not confirmed for 2026, so check the latest guidelines."
+  }
+ },
+ {
+  "id": "ggsipu-cet-bba",
+  "setp": {
+   "notes": "IPU runs its own CET for BBA (2026); CUET is used only for vacant seats. 40+ affiliated colleges offer BBA/BBA (B&I)/BBA (CAM). A part academic fee of ₹40,000 is paid to confirm an allotted seat. Details are from secondary sources; confirm in the official IPU brochure."
+  }
+ },
+ {
+  "id": "loyola-chennai-merit",
+  "setp": {
+   "selection_process": "Merit on Class XII marks (reported). Official rules are in Loyola's 2026-27 prospectus. Aided (Shift I) and self-financed (Shift II) streams have separate merit lists and fees.",
+   "colleges[Loyola College].fees": "B.Com (General) ~₹16,350/yr; B.Com specialised/Hons ~₹55,480–88,510/yr; BBA ~₹55,480/yr (Collegedunia, unofficial; figures vary, so confirm with the college)"
+  }
+ },
+ {
+  "id": "mah-bba-bms-cet",
+  "setp": {
+   "colleges[Bhavan's College (autonomous)].cutoff.note": "Source: Bhavan's CAP Round II merit list"
+  }
+ },
+ {
+  "id": "mount-carmel-mcmat",
+  "setp": {
+   "pattern.notes": "The official 2026-27 prospectus lists a Personal Interview for BBA and does not mention MCMAT. Older aggregator pages describe an MCMAT test (reasoning, maths, English); treat that as outdated unless the college announces it."
+  }
+ },
+ {
+  "id": "navrachana-bba-nuvet",
+  "setp": {
+   "notes": "Small private university in Vadodara with its own BBA test. The B.Com/BA Economics admission route at NUV is not published."
+  }
+ },
+ {
+  "id": "sju-bengaluru-entrance",
+  "setp": {
+   "notes": "The test pattern shown (60 Qs, no negative) is for BBA Strategic Finance. Fees are from the official 2026-27 table on sjub.sju.edu.in. Different from St Joseph's College of Commerce (SJCC, separate entry)."
+  }
+ },
+ {
+  "id": "xavier-entrance-test-mumbai",
+  "setp": {
+   "pattern.notes": "100 marks (Careers360). Section weightages vary by source; question count not published."
+  }
+ },
+ {
+  "id": "ahmedabad-university-ug",
+  "setp": {
+   "notes": "Many small rounds; applying early improves scholarship chances. There is no aptitude test; admission is by holistic review."
+  }
+ },
+ {
+  "id": "ashoka-aptitude-assessment",
+  "setp": {
+   "notes": "SAT (DI code 7343, superscore accepted) and ACT are optional add-ons. They do NOT replace the Aptitude Assessment. One round per cycle only. 2027 round dates are from news reports of the official schedule; confirm on apply.ashoka.edu.in."
+  }
+ },
+ {
+  "id": "atlas-bat",
+  "setp": {
+   "notes": "No BA Liberal Arts listed on current ATLAS UG pages; BBA and BSc only."
+  }
+ },
+ {
+  "id": "jgu-jsat",
+  "setp": {
+   "colleges[O.P. Jindal Global University (JGBS, JSBF, JSGP, JSLH, JSIA and other schools)].cutoff.note": "Minimum score to reach the interview (JGU programme pages, via Collegedunia/CollegeChalo). Not a closing rank.",
+   "colleges[O.P. Jindal Global University (JGBS, JSBF, JSGP, JSLH, JSIA and other schools)].fees": "Official tuition not published online. Aggregator totals (full course): BBA ₹29.5 L–₹61.7 L; BA Liberal Arts ~₹34 L; BA Economics/PPE ~₹24.9 L; BCom ₹29.5–41.3 L. Residential charges ~₹3.56 L/yr (₹2.31 L stay + ₹1.25 L services)."
+  }
+ },
+ {
+  "id": "krea-kat",
+  "setp": {
+   "notes": "Name varies across Krea pages (Krea Assessment Test / Krea Aptitude Test). As of 21 Oct 2026, Round 1 for 2027 is still open (deadline 25 Oct 2026); next is Round 2 (deadline 6 Dec 2026). Application fee not published; check Krea's application portal."
+  }
+ },
+ {
+  "id": "mahindra-university-bba",
+  "setp": {
+   "notes": "Programme list is from the official School of Management page; eligibility and fees are from Careers360 (unofficial). BBA programmes designed with Cornell SC Johnson College of Business.",
+   "colleges[Mahindra University — School of Management].fees": "₹5 L/yr tuition (₹6 L for Entrepreneurship & Family Business) (Careers360)"
+  }
+ },
+ {
+  "id": "sai-university-saiu-cat",
+  "setp": {
+   "notes": "Fees are unofficial; confirm on Sai University's site."
+  }
+ },
+ {
+  "id": "sat-digital-india",
+  "setp": {
+   "notes": "College Board's India list also includes Plaksha, SRM AP, Amity and Alliance (covered elsewhere or outside this site's scope). Woxsen also accepts IPMAT for BBA. The pattern shown is the standard Digital SAT format, the same worldwide. Remember to send scores to each university using its DI code."
+  }
+ },
+ {
+  "id": "woxsen-wat",
+  "setp": {
+   "verbal_weight": "About 1 of 4 sections (Language Proficiency, 50 of 200 marks), per Woxsen's blog"
+  }
+ }
+]
